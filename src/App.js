@@ -3,9 +3,9 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Yo</h1>
-    </div>
+    
+    <h1 style={{ color: '#ffcc00' }}>Tudawe Children Development Center</h1>
+    
   );
 }
 
