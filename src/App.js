@@ -1,5 +1,6 @@
 import React from 'react';
-import { MyNavbar } from './components/Navbar';
+import { MyNavbar } from './components/Navbar/Navbar';
+
 import './App.css';
 import Imgswap from './components/Imgswap';
 function App() {
