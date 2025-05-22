@@ -12,7 +12,7 @@ function App() {
       <Imgswap />
       <div className="content-section">
         <h1>content</h1>
-        <p>content</p>
+        <p>contentt</p>
       </div>
     </div>
   );

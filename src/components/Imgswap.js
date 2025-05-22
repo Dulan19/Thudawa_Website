@@ -84,7 +84,7 @@ const Imgswap = () => {
           ))}
         </div>
 
-        {/* Optional overlay content */}
+        {}
         <div className="swap-overlay">
           <div className="overlay-content">
             <h1>Their Future, Our Promise</h1>
