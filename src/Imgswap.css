@@ -1,0 +1,168 @@
+.hero-swap {
+  position: relative;
+  width: 100%;
+  height: 85vh; 
+  min-height: 400px;
+  overflow: hidden;
+  background-color: #f0f0f0;
+}
+
+.hero-swap.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f9fa;
+}
+
+.loading-spinner {
+  font-size: 18px;
+  color: #666;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+.swap-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.swap-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.swap-slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,        
+    rgba(0, 0, 0, 0.1) 20%,   
+    rgba(0, 0, 0, 0.4) 50%,  
+    rgba(0, 0, 0, 0.8) 75%,     
+    rgba(0, 0, 0, 1) 100%     
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+.swap-slide.active {
+  opacity: 1;
+}
+
+.swap-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+/* Dots indicator */
+.swap-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 2;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: white;
+}
+
+.dot:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Overlay content */
+.swap-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  z-index: 2;
+}
+
+.overlay-content {
+  text-align: center;
+  color: white;
+  max-width: 600px;
+  padding: 0 20px;
+}
+
+.overlay-content h1 {
+  font-size: 3rem;
+  font-family: Arial Black;
+  word-spacing: -1px;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.overlay-content p {
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .hero-swap {
+    height: 50vh;
+    min-height: 300px;
+  }
+
+
+  .overlay-content h1 {
+    font-size: 2rem;
+    
+  }
+
+  .overlay-content p {
+    font-size: 1rem;
+    
+  }
+
+  .swap-dots {
+    bottom: 15px;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
+  }
+}

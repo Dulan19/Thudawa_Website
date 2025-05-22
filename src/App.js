@@ -1,14 +1,18 @@
 import React from 'react';
 import { MyNavbar } from './components/Navbar';
 import './App.css';
-
+import Imgswap from './components/Imgswap';
 function App() {
   return (
     <div className="App">
       
       <MyNavbar />
 
-      <h1>Yo</h1>
+      <Imgswap />
+      <div className="content-section">
+        <h1>content</h1>
+        <p>content</p>
+      </div>
     </div>
   );
 }
