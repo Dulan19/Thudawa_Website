@@ -11,9 +11,10 @@ function App() {
 
       <Imgswap />
       <div className="content-section">
-        <h1>content</h1>
-        <p>contentt</p>
+        
+        
       </div>
+      <div1>Mission</div1>
     </div>
   );
 }

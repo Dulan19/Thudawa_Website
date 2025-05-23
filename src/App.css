@@ -1,0 +1,9 @@
+body {
+  background-color: rgb(0, 0, 0);
+}
+div1 {
+  width: 300px;
+  border: 15px solid rgb(210, 250, 34);
+  padding: 50px;
+  margin: 200px;
+}
