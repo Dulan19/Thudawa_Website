@@ -5,6 +5,7 @@ import Imgswap from './components/Imgswap';
 
 function App() {
   return (
+    
     <div className="App">
       <Navbar />
       <Imgswap />
@@ -15,6 +16,7 @@ function App() {
       </div>
       
     </div>
+    
   );
 }
 
