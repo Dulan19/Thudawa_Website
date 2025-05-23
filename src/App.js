@@ -2,6 +2,8 @@ import React from 'react';
 import Navbar from './components/Navbar/Navbar'; 
 import './App.css';
 import Imgswap from './components/Imgswap';
+import Footer from './components/Footer/Footer';
+
 
 function App() {
   return (
@@ -25,7 +27,7 @@ function App() {
         </div>
       </div>
 
-      
+      <Footer />
     </div>
     
   );
