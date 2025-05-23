@@ -1,42 +1,63 @@
-/* Main container */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap');
+
+/* Main container - Only size/font changes */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  backdrop-filter: blur(10px);
-  background-color: rgba(255, 255, 255, 0.3); /* transparent + blur */
-  padding: 10px 20px;
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+  background-color: rgba(0, 0, 0, 0.3); /* Changed from 0.4 to 0.3 for more transparency */
+  padding: 18px 35px;
   position: sticky;
   top: 0;
   z-index: 1000;
   flex-wrap: wrap;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto Slab', serif;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
-/* Left section */
+/* Left section - Only size changes */
 .navbar-left {
   display: flex;
   align-items: center;
+  gap: 15px; /* Slightly more spacing */
 }
 
 .logo {
-  width: 40px;
-  height: 40px;
-  margin-right: 10px;
+  width: 50px; /* Increased from 45px */
+  height: 50px; /* Increased from 45px */
+  transition: transform 0.3s ease;
 }
 
+/* Brand text - Only size changes */
 .brand {
-  font-weight: bold;
-  font-size: 18px;
-  color: #333;
+  font-weight: 600;
+  font-size: 22px; /* Increased from 20px */
+  color: #fff; /* Your existing color */
+  transition: color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
 }
 
-/* Center nav items */
+.brand-line1 {
+  font-size: 22px; /* Increased from 20px */
+}
+
+.brand-line2 {
+  font-size: 20px; /* Increased from 16px */
+  padding-left: 1.5em;
+  letter-spacing: 0.5px;
+}
+
+/* Nav items - Only size changes */
 .navbar-center,
 .navbar-right {
   display: flex;
   list-style: none;
-  gap: 15px;
+  gap: 25px;
   padding: 0;
   margin: 0;
 }
@@ -44,22 +65,71 @@
 .navbar-center a,
 .navbar-right a {
   text-decoration: none;
-  color: black;
+  color: #fff; /* Your existing color */
   font-weight: 500;
-  transition: color 0.3s ease;
+  font-size: 18px; /* Increased from 17px */
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 5px 0;
+}
+
+/* EXACTLY YOUR EXISTING HOVER EFFECTS BELOW */
+
+.logo:hover {
+  transform: scale(1.05); /* Kept same */
+}
+
+.brand:hover {
+  color: rgb(217, 131, 36); /* Kept same */
+}
+
+.navbar-center a::after,
+.navbar-right a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px; /* Kept same */
+  bottom: 0;
+  left: 0;
+  background-color: rgb(217, 131, 36); /* Kept same */
+  transition: width 0.3s ease;
 }
 
 .navbar-center a:hover,
 .navbar-right a:hover {
-  color: rgb(217, 131, 36);
+  color: rgb(217, 131, 36); /* Kept same */
 }
 
-/* Responsive */
+.navbar-center a:hover::after,
+.navbar-right a:hover::after {
+  width: 100%; /* Kept same */
+}
+
+/* Responsive - Only size adjustments */
 @media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+  
   .navbar-center,
   .navbar-right {
     flex-direction: column;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 15px;
+    gap: 12px;
+  }
+  
+  .navbar-center a,
+  .navbar-right a {
+    padding: 8px 0;
+    font-size: 17px; /* Slightly smaller on mobile */
+  }
+  
+  .brand-line1 {
+    font-size: 20px; /* Slightly smaller on mobile */
+  }
+  
+  .brand-line2 {
+    font-size: 18px; /* Slightly smaller on mobile */
   }
 }

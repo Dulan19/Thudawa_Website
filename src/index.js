@@ -21,13 +21,13 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="aboutus" element={<Aboutus />} />
-      <Route path="background" element={<Background />} />
-      <Route path="behindus" element={<Behindus />} />
-      <Route path="achievements" element={<Achievements />} />
-      <Route path="events" element={<Events />} />
-      <Route path="contact" element={<Contact />} />
-      <Route path="donate" element={<Donate />} />
+      <Route path="Aboutus" element={<Aboutus />} />
+      <Route path="Background" element={<Background />} />
+      <Route path="Behindus" element={<Behindus />} />
+      <Route path="Achievements" element={<Achievements />} />
+      <Route path="Events" element={<Events />} />
+      <Route path="Contactus" element={<Contact />} />
+      <Route path="Donateus" element={<Donate />} />
       <Route path="*" element={<NoPage />} />
     </Routes>
   );
