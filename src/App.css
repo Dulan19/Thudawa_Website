@@ -4,6 +4,7 @@ body, html {
   padding: 0;
   box-sizing: border-box;
   background-color: black;
+  height: 100%;
 }
 .vision-mission-container {
   display: flex;
