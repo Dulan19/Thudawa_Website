@@ -3,19 +3,18 @@ import Navbar from './components/Navbar/Navbar';
 import './App.css';
 import Imgswap from './components/Imgswap';
 
-function App() {
+function Aboutus() {
   return (
-    <div className="App">
+    <div className="Aboutus">
       <Navbar />
       <Imgswap />
       
       <div className="content-section">
-        
-        
+        <h1>content</h1>
+        <p>contentt</p>
       </div>
-      <div1>Mission</div1>
     </div>
   );
 }
 
-export default App;
+export default Aboutus;

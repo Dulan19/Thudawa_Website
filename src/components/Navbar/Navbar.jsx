@@ -1,35 +1,28 @@
-import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-import './Navbar.css'; 
+import React from 'react';
+import './Navbar.css';
+//import logo from '../../../public/logo192.png'; // Adjust if incorrect
 
-export const MyNavbar = () => {
+function Navbar() {
   return (
-    <Navbar expand="lg" bg="light" variant="light" className="shadow-sm sticky-top">
-      <Container>
-        <Navbar.Brand as={Link} to="/" className="brand-title">
-          Thudawa Child <span className="highlight">Development Center</span>
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbar-nav" />
-        <Navbar.Collapse id="navbar-nav">
-          <Nav className="ms-auto">
-            <Nav.Link as={Link} to="/">Home</Nav.Link>
-            <Nav.Link as={Link} to="/about-us">About Us</Nav.Link>
-            <Nav.Link as={Link} to="/background">Background</Nav.Link>
-            <Nav.Link as={Link} to="/behind-us">Behind Us</Nav.Link>
-            <Nav.Link as={Link} to="/achievements">Achievements</Nav.Link>
-            <Nav.Link as={Link} to="/events">Events</Nav.Link>
-            <Nav.Link as={Link} to="/contact">Contact Us</Nav.Link>
-            <Nav.Link as={Link} to="/donate">Donate Us</Nav.Link>
-
-            <NavDropdown title="More" id="basic-nav-dropdown">
-              <NavDropdown.Item as={Link} to="/action1">Action</NavDropdown.Item>
-              <NavDropdown.Item as={Link} to="/action2">Another Action</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item as={Link} to="/separated">Separated Link</NavDropdown.Item>
-            </NavDropdown>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <nav className="navbar">
+      <div className="navbar-left">
+        {/* <img src={logo} alt="Logo" className="logo" /> */}
+        <span className="brand">Thudawa Child Development Center</span>
+      </div>
+      <ul className="navbar-center">
+        <li><a href="#">Home</a></li>
+       <li><a href="#Aboutus">About Us</a></li>
+        <li><a href="#">Background</a></li>
+        <li><a href="#">Behind Us</a></li>
+        <li><a href="#">Achievements</a></li>
+        <li><a href="#">Events</a></li>
+      </ul>
+      <ul className="navbar-right">
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Donate</a></li>
+      </ul>
+    </nav>
   );
-};
+}
+
+export default Navbar;
