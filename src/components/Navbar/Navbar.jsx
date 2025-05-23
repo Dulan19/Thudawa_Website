@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Navbar.css';
 //import logo from '../../../public/logo192.png'; // Adjust if incorrect
 
