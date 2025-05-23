@@ -5,7 +5,7 @@
   min-height: 400px;
   overflow: hidden;
   background-color: #f0f0f0;
-  margin: -1;
+  
 }
 
 .hero-swap.loading {
@@ -123,21 +123,44 @@
 .overlay-content {
   text-align: center;
   color: white;
-  max-width: 600px;
-  padding: 0 20px;
+  max-width: 850px;
+  max-height: 340px;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.2); /* Transparent black background */
+  border-radius: 25px;
+
+  margin-left: 30px;
+  margin-top: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
+
 .overlay-content h1 {
+  margin-top: -10pxS;
   font-size: 3.5rem;
   font-family: Arial Black;
   word-spacing: -1px;
   margin-bottom: 1rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  margin: 0 auto 10px auto;
 }
 
-.overlay-content p {
-  font-size: 1.2rem;
+.overlay-divider {
+  
+  width: 50%;
+  height: 2px;
+  margin: 1px auto;
+  border: none;
+  background-color: white;
+  opacity: 0.8;
+  margin-bottom: 10px; 
+}
+
+.overlay-content h2 {
+   margin: 0 auto 10px auto;
+  font-size: 3.0rem;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  
 }
 
 @media (max-width: 768px) {
