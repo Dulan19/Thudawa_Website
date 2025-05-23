@@ -13,7 +13,7 @@ function App() {
         
         
       </div>
-      <div1>Mission</div1>
+      
     </div>
   );
 }
