@@ -88,7 +88,7 @@ const Imgswap = () => {
         {}
         <div className="swap-overlay">
           <div className="overlay-content">
-            <h1>පරාතථයන කීතියෙ පරාර්ථය පිණිස මිස කිර්තිය පිනිස නොවේ</h1>
+            <h1>"පරාතථයන කීතියෙ" පරාර්ථය පිණිස මිස කිර්තිය පිණිස නොවේ</h1>
             <hr className="overlay-divider" />
             <h2>Welfare is not for Pride</h2>
           </div>
