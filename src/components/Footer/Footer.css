@@ -1,179 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Main Footer Styles */
 .footer {
-  background-color: #000000;
-  color: #ffffff;
-  padding: 2rem 0;
-  font-family: 'Comic Sans MS', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  border-top: 5px solid rgb(217, 131, 36);
+  background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #000000 100%);
+  color: white;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(217, 131, 36, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(217, 131, 36, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(217, 131, 36, 0.05) 0%, transparent 50%);
 }
 
 .footer-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 60px 40px 20px;
+  position: relative;
+  z-index: 1;
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  gap: 2rem;
+  grid-template-columns: 2fr 1fr 2fr;
+  grid-template-areas: "about links contact";
+  gap: 60px;
   align-items: start;
 }
 
+/* Section Styles */
 .footer-section {
-  margin-bottom: 1.5rem;
+  margin-bottom: 40px;
+  animation: slide-in 0.6s ease forwards;
+  opacity: 0;
 }
 
 .about-section {
-  text-align: left;
+  grid-area: about;
+  justify-self: start;
 }
 
 .links-section {
-  text-align: center;
+  grid-area: links;
+  justify-self: center;
 }
 
 .contact-section {
-  text-align: right;
+  grid-area: contact;
+  justify-self: end;
 }
 
+.footer-section:nth-child(1) { animation-delay: 0.1s; }
+.footer-section:nth-child(2) { animation-delay: 0.3s; }
+.footer-section:nth-child(3) { animation-delay: 0.5s; }
+
+/* Heading Styles */
 .footer-section h3 {
-  font-size: 1.3rem;
-  margin-bottom: 1rem;
   color: rgb(217, 131, 36);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
   position: relative;
-  padding-bottom: 0.5rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  display: inline-block;
 }
 
 .footer-section h3::after {
   content: '';
   position: absolute;
+  bottom: -5px;
   left: 0;
-  bottom: 0;
   width: 50px;
   height: 3px;
-  background-color: rgb(217, 131, 36);
-  border-radius: 3px;
+  background: linear-gradient(90deg, rgb(217, 131, 36), transparent);
+  border-radius: 2px;
 }
 
-.links-section h3::after {
-  left: 50%;
-  transform: translateX(-50%);
+/* About Section */
+.about-section p {
+  line-height: 1.6;
+  color: #e0e0e0;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  max-width: 350px;
 }
 
-.contact-section h3::after {
-  left: auto;
-  right: 0;
-}
-
-/* Grid layout for quick links */
+/* Links Section */
 .footer-links-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  grid-template-rows: repeat(3, auto);
+  gap: 15px 25px;
+  max-width: 450px;
+  min-width: 350px;
 }
 
 .footer-links-column {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: contents;
 }
 
 .footer-links-column li {
-  margin-bottom: 0.7rem;
-  position: relative;
+  margin-bottom: 0;
 }
 
 .footer-links-column a {
-  color: #ffffff;
+  color: #d0d0d0;
   text-decoration: none;
-  transition: all 0.3s;
-  font-size: 0.95rem;
+  padding: 8px 0;
   display: block;
-  padding: 0.2rem 0;
+  position: relative;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+  font-size: 0.95rem;
+}
+
+.footer-links-column a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, rgb(217, 131, 36), rgba(217, 131, 36, 0.5));
+  transition: width 0.3s ease;
 }
 
 .footer-links-column a:hover {
-  color: rgb(217, 131, 36);
-  transform: translateX(5px);
+  color: rgb(217, 131, 36) !important;
+  transform: translateX(8px);
+  padding-left: 8px;
+}
+
+.footer-links-column a:hover::before {
+  width: 100%;
 }
 
 .footer-links-column a.active {
-  color: rgb(217, 131, 36);
-  font-weight: bold;
+  color: rgb(217, 131, 36) !important;
+  font-weight: 500;
 }
 
+/* Contact Section */
 .contact-info {
   list-style: none;
   padding: 0;
-  color: #ffffff;
+  margin: 0;
+  max-width: 300px;
 }
 
 .contact-info li {
-  margin-bottom: 0.8rem;
   display: flex;
-  justify-content: flex-end;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
+  margin-bottom: 15px;
+  color: #e0e0e0;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
-.contact-info li::before {
-  content: '';
-  display: inline-block;
-  width: 6px;
-  height: 6px;
-  background-color: rgb(217, 131, 36);
-  border-radius: 50%;
+.contact-info li:hover {
+  transform: translateX(5px);
+  color: rgb(217, 131, 36) !important;
 }
 
+/* Footer Bottom */
 .footer-bottom {
-  text-align: center;
-  padding-top: 1.5rem;
-  margin-top: 1.5rem;
   border-top: 1px solid rgba(217, 131, 36, 0.3);
-  color: #ffffff;
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 40px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.footer-bottom p:first-child {
+  background: linear-gradient(45deg, #ffffff, rgb(217, 131, 36), #ffffff);
+  background-size: 200% 200%;
+  animation: gradient-shift 3s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 500;
+  margin: 0 0 10px 0;
+}
+
+.footer-bottom p:last-child {
+  color: rgb(217, 131, 36);
   font-size: 0.9rem;
-  background-color: rgba(0, 0, 0, 0.2);
+  margin: 10px 0 0 0;
+}
+
+/* Animations */
+@keyframes slide-in {
+  from { 
+    transform: translateX(-30px); 
+    opacity: 0; 
+  }
+  to { 
+    transform: translateX(0); 
+    opacity: 1; 
+  }
+}
+
+@keyframes gradient-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  14% { transform: scale(1.1); }
+  28% { transform: scale(1); }
+  42% { transform: scale(1.1); }
+  70% { transform: scale(1); }
+}
+
+@keyframes float-0 {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(180deg); }
+}
+
+@keyframes float-1 {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(-180deg); }
+}
+
+@keyframes float-2 {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(90deg); }
+}
+
+@keyframes sparkle {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 5px rgba(217, 131, 36, 0.3); }
+  50% { box-shadow: 0 0 20px rgba(217, 131, 36, 0.6); }
+}
+
+/* Utility Classes */
+.heart-beat {
+  animation: heartbeat 2s ease-in-out infinite;
+}
+
+.sparkle {
+  animation: sparkle 2s ease-in-out infinite;
+}
+
+.floating-star {
+  position: absolute;
+  color: rgb(217, 131, 36);
+  font-size: 12px;
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.floating-star:nth-child(1) { 
+  animation: float-0 3s ease-in-out infinite;
+  left: 10%; top: 10%; 
+}
+
+.floating-star:nth-child(2) { 
+  animation: float-1 3.5s ease-in-out infinite;
+  left: 22%; top: 30%; 
+}
+
+.floating-star:nth-child(3) { 
+  animation: float-2 4s ease-in-out infinite;
+  left: 34%; top: 10%; 
+}
+
+.floating-star:nth-child(4) { 
+  animation: float-0 4.5s ease-in-out infinite;
+  left: 46%; top: 30%; 
+}
+
+.floating-star:nth-child(5) { 
+  animation: float-1 5s ease-in-out infinite;
+  left: 58%; top: 10%; 
+}
+
+.floating-star:nth-child(6) { 
+  animation: float-2 5.5s ease-in-out infinite;
+  left: 70%; top: 30%; 
+}
+
+.floating-star:nth-child(7) { 
+  animation: float-0 6s ease-in-out infinite;
+  left: 82%; top: 10%; 
+}
+
+.floating-star:nth-child(8) { 
+  animation: float-1 6.5s ease-in-out infinite;
+  left: 94%; top: 30%; 
+}
+
+/* Special Elements */
+.inspirational-box {
+  margin-top: 25px;
   padding: 15px;
-  grid-column: 1 / -1;
+  background: rgba(217, 131, 36, 0.1);
+  border-radius: 10px;
+  border: 1px solid rgba(217, 131, 36, 0.3);
 }
 
-.footer-bottom p {
+.inspirational-box p {
   margin: 0;
+  font-size: 0.9rem;
+  color: rgb(217, 131, 36);
+  font-weight: 500;
 }
 
-/* Animation for children's appeal */
-@keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-5px); }
+.star-rating {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
 }
 
-.footer-links-column a:hover {
-  animation: bounce 0.5s;
+.star-rating svg {
+  animation: sparkle 2s ease-in-out infinite;
 }
 
+.star-rating svg:nth-child(1) { animation-delay: 0s; }
+.star-rating svg:nth-child(2) { animation-delay: 0.2s; }
+.star-rating svg:nth-child(3) { animation-delay: 0.4s; }
+.star-rating svg:nth-child(4) { animation-delay: 0.6s; }
+.star-rating svg:nth-child(5) { animation-delay: 0.8s; }
+
+.footer-icons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.footer-icons svg:nth-child(odd) {
+  animation: heartbeat 2s ease-in-out infinite;
+}
+
+.footer-icons svg:nth-child(even) {
+  animation: sparkle 2s ease-in-out infinite;
+}
+
+.footer-icons svg:nth-child(3) {
+  animation-delay: 1s;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
   .footer-container {
+    padding: 40px 15px 15px;
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    grid-template-areas: 
+      "about"
+      "links"
+      "contact";
+    gap: 30px;
   }
   
   .about-section,
   .links-section,
   .contact-section {
-    text-align: center;
+    justify-self: center;
   }
   
-  .footer-section h3::after {
-    left: 50% !important;
-    right: auto !important;
-    transform: translateX(-50%) !important;
+  .footer-links-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    max-width: 300px;
+  }
+  
+  .footer-section h3 {
+    font-size: 1.3rem;
+  }
+  
+  .about-section p {
+    font-size: 0.95rem;
+  }
+  
+  .footer-links-column a {
+    font-size: 0.9rem;
+  }
+  
+  .contact-info li {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 30px 10px 10px;
+  }
+  
+  .footer-section h3 {
+    font-size: 1.2rem;
   }
   
   .footer-links-grid {
     grid-template-columns: 1fr;
-    max-width: 300px;
-    margin: 0 auto;
+    grid-template-rows: repeat(8, auto);
+    max-width: 250px;
   }
   
-  .contact-info li {
-    justify-content: center;
+  .footer-bottom {
+    padding: 20px 0;
+  }
+  
+  .footer-bottom p {
+    font-size: 0.85rem;
   }
 }
