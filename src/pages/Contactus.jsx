@@ -203,7 +203,7 @@ const ContactUs = () => {
         </div>
 
         {/* Additional Services Section */}
-        <div className="row mt-5">
+        {/* <div className="row mt-5">
           <div className="col-12">
             <div className="services-highlight animate-fade-in-up">
               <h3 className="text-center mb-4">How We Can Help Your Child</h3>
@@ -247,7 +247,7 @@ const ContactUs = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       
       
