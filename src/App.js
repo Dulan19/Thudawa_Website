@@ -9,9 +9,10 @@ function App() {
   return (
     
     <div className="App">
+    
       <Navbar />
       <Imgswap />
-      
+       
       <div className="content-section">
         <div className="vision-mission-container">
           <div className="box vision-box">
