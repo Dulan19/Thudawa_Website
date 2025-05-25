@@ -6,6 +6,8 @@
   position: relative;
   color: white;
   overflow-x: hidden;
+  padding-top: 100px; /* Adjust based on your navbar height */
+  z-index: 1;
 }
 
 /* Floating Background Shapes */
