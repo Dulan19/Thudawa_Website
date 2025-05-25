@@ -80,39 +80,17 @@ const ContactUs = () => {
                 </div>
                 <div className="info-content">
                   <h5>Visit Our Centre</h5>
-                  <p>123 Child Development Street<br />Learning City, LC 12345</p>
-                </div>
-              </div>
+                  <p>154, Central Road,<br /> Wadduwa</p>
 
-              <div className="info-card mb-4">
-                <div className="info-icon">
-                  <i className="fas fa-phone"></i>
-                </div>
-                <div className="info-content">
                   <h5>Call Us</h5>
-                  <p>+1 (555) 123-4567<br />Mon-Fri: 8AM-6PM</p>
-                </div>
-              </div>
+                  <p>+94 (38) 2296222<br />Mon-Fri: 7AM-PM</p>
 
-              <div className="info-card mb-4">
-                <div className="info-icon">
-                  <i className="fas fa-envelope"></i>
-                </div>
-                <div className="info-content">
                   <h5>Email Us</h5>
-                  <p>info@childdevcentre.com<br />support@childdevcentre.com</p>
-                </div>
-              </div>
+                  <p>thudawahome@gmail.com</p>
 
-              <div className="info-card">
-                <div className="info-icon">
-                  <i className="fas fa-clock"></i>
-                </div>
-                <div className="info-content">
                   <h5>Operating Hours</h5>
-                  <p>Monday - Friday: 8:00 AM - 6:00 PM<br />
-                     Saturday: 9:00 AM - 4:00 PM<br />
-                     Sunday: Closed</p>
+                  <p>Monday - Sunday: 7:00 AM - 6:00 PM</p> 
+
                 </div>
               </div>
             </div>
