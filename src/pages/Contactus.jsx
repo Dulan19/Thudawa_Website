@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './Stylings/Contactus.css';
+import Navbar from '../components/Navbar/Navbar.jsx'; 
+import Footer from '../components/Footer/Footer.jsx';
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -38,7 +40,10 @@ const ContactUs = () => {
   };
 
   return (
+    <div>
+      <Navbar />
     <div className="contact-us-page">
+      
       {/* Floating Background Elements */}
       <div className="floating-shapes">
         <div className="shape shape-1"></div>
@@ -266,6 +271,10 @@ const ContactUs = () => {
           </div>
         </div>
       </div>
+      
+      
+    </div>
+      <Footer />
     </div>
   );
 };
