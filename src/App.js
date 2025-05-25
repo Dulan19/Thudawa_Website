@@ -22,7 +22,7 @@ function App() {
           <div className="box mission-box">
             <h2>Our Mission</h2>
             <p>Our mission is to foster, protect and provide, for those children who have been disowned, neglected, orphaned or abused and to provide all the inhabitants with welfare and guidance.</p>
-            <button className="seemore-btn">See More</button>
+            <button className="seemore-btn">Read More</button>
           </div>
         </div>
       </div>
