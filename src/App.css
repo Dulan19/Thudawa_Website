@@ -6,6 +6,7 @@ body, html {
   background-color: black;
   height: 100%;
 }
+
 .vision-mission-container {
   display: flex;
   justify-content: center;

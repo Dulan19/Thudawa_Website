@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap');
 
-/* Main container - Only size/font changes */
+/* Main container - Changed position to fixed for true overlay */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   backdrop-filter: blur(12px) saturate(180%);
   -webkit-backdrop-filter: blur(12px) saturate(180%);
-  background-color: rgba(0, 0, 0, 0.3); /* Changed from 0.4 to 0.3 for more transparency */
+  background-color: rgba(0, 0, 0, 0.3);
   padding: 18px 35px;
-  position: sticky;
+  position: fixed; /* Changed from sticky to fixed */
   top: 0;
+  left: 0; /* Added to ensure full width positioning */
+  right: 0; /* Added to ensure full width positioning */
   z-index: 1000;
   flex-wrap: wrap;
   font-family: 'Roboto Slab', serif;
@@ -18,24 +20,24 @@
   transition: all 0.3s ease;
 }
 
-/* Left section - Only size changes */
+/* Left section */
 .navbar-left {
   display: flex;
   align-items: center;
-  gap: 15px; /* Slightly more spacing */
+  gap: 15px;
 }
 
 .logo {
-  width: 50px; /* Increased from 45px */
-  height: 50px; /* Increased from 45px */
+  width: 50px;
+  height: 50px;
   transition: transform 0.3s ease;
 }
 
-/* Brand text - Only size changes */
+/* Brand text */
 .brand {
   font-weight: 600;
-  font-size: 22px; /* Increased from 20px */
-  color: #fff; /* Your existing color */
+  font-size: 22px;
+  color: #fff;
   transition: color 0.3s ease;
   display: flex;
   flex-direction: column;
@@ -43,16 +45,16 @@
 }
 
 .brand-line1 {
-  font-size: 22px; /* Increased from 20px */
+  font-size: 22px;
 }
 
 .brand-line2 {
-  font-size: 20px; /* Increased from 16px */
+  font-size: 20px;
   padding-left: 1.5em;
   letter-spacing: 0.5px;
 }
 
-/* Nav items - Only size changes */
+/* Nav items */
 .navbar-center,
 .navbar-right {
   display: flex;
@@ -65,22 +67,21 @@
 .navbar-center a,
 .navbar-right a {
   text-decoration: none;
-  color: #fff; /* Your existing color */
+  color: #fff;
   font-weight: 500;
-  font-size: 18px; /* Increased from 17px */
+  font-size: 18px;
   transition: all 0.3s ease;
   position: relative;
   padding: 5px 0;
 }
 
-/* EXACTLY YOUR EXISTING HOVER EFFECTS BELOW */
-
+/* Hover effects */
 .logo:hover {
-  transform: scale(1.05); /* Kept same */
+  transform: scale(1.05);
 }
 
 .brand:hover {
-  color: rgb(217, 131, 36); /* Kept same */
+  color: rgb(217, 131, 36);
 }
 
 .navbar-center a::after,
@@ -88,24 +89,24 @@
   content: '';
   position: absolute;
   width: 0;
-  height: 2px; /* Kept same */
+  height: 2px;
   bottom: 0;
   left: 0;
-  background-color: rgb(217, 131, 36); /* Kept same */
+  background-color: rgb(217, 131, 36);
   transition: width 0.3s ease;
 }
 
 .navbar-center a:hover,
 .navbar-right a:hover {
-  color: rgb(217, 131, 36); /* Kept same */
+  color: rgb(217, 131, 36);
 }
 
 .navbar-center a:hover::after,
 .navbar-right a:hover::after {
-  width: 100%; /* Kept same */
+  width: 100%;
 }
 
-/* Responsive - Only size adjustments */
+/* Responsive */
 @media (max-width: 768px) {
   .navbar {
     padding: 15px 20px;
@@ -122,14 +123,14 @@
   .navbar-center a,
   .navbar-right a {
     padding: 8px 0;
-    font-size: 17px; /* Slightly smaller on mobile */
+    font-size: 17px;
   }
   
   .brand-line1 {
-    font-size: 20px; /* Slightly smaller on mobile */
+    font-size: 20px;
   }
   
   .brand-line2 {
-    font-size: 18px; /* Slightly smaller on mobile */
+    font-size: 18px;
   }
 }
