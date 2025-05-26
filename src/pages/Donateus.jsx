@@ -4,14 +4,13 @@ import Navbar from '../components/Navbar/Navbar.jsx';
 import Footer from '../components/Footer/Footer.jsx';
 
 const DonateUs = () => {
-    <Navbar />
   const [donationAmount, setDonationAmount] = useState('');
   const [customAmount, setCustomAmount] = useState('');
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [paymentMethod, setPaymentMethod] = useState('credit-card');
-
+     <Navbar />
   const handleSubmit = (e) => {
     e.preventDefault();
     // Here you would typically connect to a payment processor
@@ -33,6 +32,7 @@ const DonateUs = () => {
   };
 
   return (
+    
     <div className="donate-us-container">
       <div className="donate-header">
         <h1>Support Our Cause</h1>
@@ -156,11 +156,6 @@ const DonateUs = () => {
             Donate Now
           </button>
         </form>
-      </div>
-
-      <div className="donate-footer">
-        <p>Your donation is tax-deductible to the fullest extent allowed by law.</p>
-        <p>For questions about donations, please contact us at donations@example.org</p>
       </div>
       <Footer />
     </div>
