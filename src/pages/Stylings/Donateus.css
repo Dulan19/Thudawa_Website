@@ -42,9 +42,9 @@
 
 .donation-options h2, .donation-form h2 {
   font-size: 1.5rem;
-  color: #2c3e50;
+  color: rgb(217, 131, 36);
   margin-bottom: 1.5rem;
-  border-bottom: 2px solid #3498db;
+  border-bottom: 2px solid rgb(217, 131, 36);
   padding-bottom: 0.5rem;
 }
 
@@ -66,15 +66,15 @@
 }
 
 .amount-btn:hover {
-  background: #3498db;
+  background: rgb(217, 131, 36);
   color: white;
-  border-color: #3498db;
+  border-color: rgb(217, 131, 36);
 }
 
 .amount-btn.selected {
-  background: #3498db;
+  background: rgb(217, 131, 36);
   color: white;
-  border-color: #3498db;
+  border-color: rgb(217, 131, 36);
 }
 
 .custom-amount {
@@ -149,13 +149,13 @@
 
 .donation-summary h3 {
   margin-top: 0;
-  color: #2980b9;
+  color: rgb(217, 131, 36);
 }
 
 .submit-donation {
   width: 100%;
   padding: 1rem;
-  background: #3498db;
+  background: rgb(217, 131, 36);
   color: white;
   border: none;
   border-radius: 4px;
@@ -165,7 +165,7 @@
 }
 
 .submit-donation:hover {
-  background: #2980b9;
+  background: rgb(217, 131, 36);
 }
 
 .donate-footer {
