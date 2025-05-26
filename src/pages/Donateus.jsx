@@ -36,7 +36,6 @@ const DonateUs = () => {
     <div className="donate-us-container">
       <div className="donate-header">
         <h1>Support Our Cause</h1>
-        <p>Your donation helps us continue our important work. Every contribution makes a difference!</p>
       </div>
 
       <div className="donate-content">
