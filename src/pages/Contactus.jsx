@@ -56,61 +56,58 @@ const ContactUs = () => {
           </div>
 
           <div className="row g-4">
-            {/* Contact Information */}
+            {/* Left Card - Visit Our Centre */}
             <div className="col-lg-6">
-              <div className="contact-info">
-                <div className="info-card">
-                  <h3 className="mb-4">Visit Our Centre</h3>
-                  <div className="info-content">
-                    <div className="info-item">
-                      <div className="info-icon">
-                        <i className="fas fa-map-marker-alt"></i>
-                      </div>
-                      <div>
-                        <h5>Address</h5>
-                        <p>154, Central Road,<br /> Wadduwa</p>
-                      </div>
+              <div className="info-card">
+                <h3 className="mb-4">Visit Our Centre</h3>
+                <div className="info-content">
+                  <div className="info-item">
+                    <div className="info-icon">
+                      <i className="fas fa-map-marker-alt"></i>
                     </div>
-
-                    <div className="info-item">
-                      <div className="info-icon">
-                        <i className="fas fa-phone"></i>
-                      </div>
-                      <div>
-                        <h5>Call Us</h5>
-                        <p>+94 (38) 2296222<br />Mon-Fri: 7AM-6PM</p>
-                      </div>
+                    <div>
+                      <h5>Address</h5>
+                      <p>154, Central Road,<br /> Wadduwa</p>
                     </div>
+                  </div>
 
-                    <div className="info-item">
-                      <div className="info-icon">
-                        <i className="fas fa-envelope"></i>
-                      </div>
-                      <div>
-                        <h5>Email Us</h5>
-                        <p>thudawahome@gmail.com</p>
-                      </div>
+                  <div className="info-item">
+                    <div className="info-icon">
+                      <i className="fas fa-phone"></i>
                     </div>
+                    <div>
+                      <h5>Call Us</h5>
+                      <p>+94 (38) 2296222<br />Mon-Fri: 7AM-6PM</p>
+                    </div>
+                  </div>
 
-                    <div className="info-item">
-                      <div className="info-icon">
-                        <i className="fas fa-clock"></i>
-                      </div>
-                      <div>
-                        <h5>Operating Hours</h5>
-                        <p>Monday - Sunday: 7:00 AM - 6:00 PM</p>
-                      </div>
+                  <div className="info-item">
+                    <div className="info-icon">
+                      <i className="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                      <h5>Email Us</h5>
+                      <p>thudawahome@gmail.com</p>
+                    </div>
+                  </div>
+
+                  <div className="info-item">
+                    <div className="info-icon">
+                      <i className="fas fa-clock"></i>
+                    </div>
+                    <div>
+                      <h5>Operating Hours</h5>
+                      <p>Monday - Sunday: 7:00 AM - 6:00 PM</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* Contact Form */}
+            {/* Right Card - Send Us a Message */}
             <div className="col-lg-6">
-              <div className="contact-form">
-                <div className="form-container">
-                  <h3 className="mb-4">Send Us a Message</h3>
+              <div className="form-container">
+                <h3 className="mb-4">Send Us a Message</h3>
                   <form onSubmit={handleSubmit}>
                     <div className="row">
                       <div className="col-md-6 mb-3">
@@ -206,8 +203,7 @@ const ContactUs = () => {
                         </>
                       )}
                     </button>
-                  </form>
-                </div>
+                </form>
               </div>
             </div>
           </div>
