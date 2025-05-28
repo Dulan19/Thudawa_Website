@@ -1,0 +1,39 @@
+.aboutus-section {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: 40px auto;
+  padding: 0 20px;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  animation: slideInUp 0.8s ease-out 0.2s both;
+}
+
+.about-box {
+  background-color: rgba(255, 255, 255, 0.35);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  flex: 1 1 300px;
+  max-width: 500px;
+  min-height: 200px;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease;
+}
+
+.about-box:hover {
+  transform: translateY(-5px);
+}
+
+.about-box h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+.about-box p {
+  font-size: 1.1rem;
+  color: #ffffff;
+  line-height: 1.6;
+}
