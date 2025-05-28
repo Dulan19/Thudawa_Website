@@ -9,7 +9,7 @@ function Navbar() {
       <div class="navbar-left">
           {/* <img src="your-logo.png" class="logo" alt="Logo"> */}
               <div class="brand">
-                  <span class="brand-line1">Thudawa Child</span>
+                  <span class="brand-line1">Tudawe Child</span>
                   <span class="brand-line2">Development Center</span>
               </div>
       </div>  
