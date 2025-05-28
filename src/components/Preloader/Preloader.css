@@ -196,7 +196,7 @@
   gap: 8px;
 }
 
-.dot {
+.dot1 {
   width: 12px;
   height: 12px;
   background: #4ecdc4;
@@ -204,15 +204,15 @@
   animation: dotPulse 1.4s ease-in-out infinite both;
 }
 
-.dot:nth-child(1) {
+.dot1:nth-child(1) {
   animation-delay: -0.32s;
 }
 
-.dot:nth-child(2) {
+.dot1:nth-child(2) {
   animation-delay: -0.16s;
 }
 
-.dot:nth-child(3) {
+.dot1:nth-child(3) {
   animation-delay: 0s;
 }
 

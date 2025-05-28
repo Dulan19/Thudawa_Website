@@ -3,13 +3,13 @@
 import React from "react"
 import Navbar from '../components/Navbar/Navbar.jsx'; 
 import Footer from '../components/Footer/Footer.jsx';
-import "../App.css"
+
 
 import "./Stylings/Aboutus.css";
 
 function Aboutus() {
   return (
-    <div className="App">
+    <div class="hero-image">
       <Navbar />
 
       <div className="aboutus-section">
@@ -20,22 +20,17 @@ function Aboutus() {
             content content content content content content content content 
             content content content content 
             content content content content 
-            content content content content 
-            content content content content 
-            content content content content 
-            content content content content 
-            content content content content 
-            content content content content content content content content content content content content content content content content content content content content 
-            content content content content content content content content 
-            content content content content 
-            content content content content 
-            content content content content 
-            content content content content 
-            content content content content 
-            content content content content 
-            content content content content 
+             
           </p>
         </div>
+        <p>
+          pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+          pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+          pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+          pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+          pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
+
+        </p>
 
         
       </div>

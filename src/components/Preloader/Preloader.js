@@ -48,9 +48,9 @@ const Preloader = () => {
         <div className="loading-section">
           <h2 className="welcome-text">Welcome to Our Home</h2>
           <div className="loading-dots">
-            <span className="dot"></span>
-            <span className="dot"></span>
-            <span className="dot"></span>
+            <span className="dot1"></span>
+            <span className="dot1"></span>
+            <span className="dot1"></span>
           </div>
         </div>
       </div>

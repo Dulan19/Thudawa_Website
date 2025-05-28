@@ -1,8 +1,19 @@
+
+
+.hero-image {
+  background-image: url("../../assets/background1.jpg");
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
 .aboutus-section {
   display: flex;
   justify-content: center;
   gap: 30px;
-  margin: 40px auto;
+  margin: 400px ;
   padding: 0 20px;
   max-width: 1200px;
   flex-wrap: wrap;
