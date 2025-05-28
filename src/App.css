@@ -1,10 +1,24 @@
-
-body, html {
+body,
+html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-color: black;
   height: 100%;
+}
+
+/* Smooth page transitions */
+.App {
+  animation: pageLoad 0.6s ease-out;
+}
+
+@keyframes pageLoad {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .vision-mission-container {
@@ -15,11 +29,22 @@ body, html {
   padding: 0 20px;
   max-width: 1200px;
   flex-wrap: wrap;
+  animation: slideInUp 0.8s ease-out 0.2s both;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .box {
   background-color: rgba(255, 255, 255, 0.4);
-  opacity: 04;
   padding: 25px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -27,6 +52,7 @@ body, html {
   max-width: 500px;
   min-height: 200px;
   transition: transform 0.3s ease;
+  backdrop-filter: blur(10px);
 }
 
 .box:hover {
@@ -43,6 +69,7 @@ body, html {
 .box p {
   font-size: 1.1rem;
   color: #ffffff;
+  line-height: 1.6;
 }
 
 .seemore-btn {
@@ -50,16 +77,27 @@ body, html {
   bottom: -2px;
   left: 400px;
   padding: 10px 18px;
-  background-color: #D98324;
+  background-color: #d98324;
   color: white;
   border: none;
   border-radius: 8px;
   font-size: 0.95rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .seemore-btn:hover {
-  background-color: #F7AD45;
-  
+  background-color: #f7ad45;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .seemore-btn {
+    left: 50%;
+    transform: translateX(-50%);
+    position: static;
+    margin-top: 15px;
+    display: block;
+  }
 }

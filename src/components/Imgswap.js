@@ -1,56 +1,63 @@
-import React, { useState, useEffect } from 'react';
-import '../Imgswap.css';
+"use client"
+
+import { useState, useEffect } from "react"
+import "../Imgswap.css"
 
 const Imgswap = () => {
   // Array of your image URLs - replace with your actual images
   const images = [
-    require('../assets/home1.jpg'),
-    require('../assets/home2.jpeg'),
-    require('../assets/home 3.jpg'),
-    require('../assets/home 4.jpg')
-  ];
+    require("../assets/home1.jpg"),
+    require("../assets/home2.jpeg"),
+    require("../assets/home 3.jpg"),
+    require("../assets/home 4.jpg"),
+  ]
 
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [isLoaded, setIsLoaded] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0)
+  const [loadedImages, setLoadedImages] = useState(new Set())
+  const [firstImageLoaded, setFirstImageLoaded] = useState(false)
 
   useEffect(() => {
     // Auto-advance images every 5 seconds
     const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => 
-        prevIndex === images.length - 1 ? 0 : prevIndex + 1
-      );
-    }, 5000); // Change image every 5 seconds
+      setCurrentImageIndex((prevIndex) => (prevIndex === images.length - 1 ? 0 : prevIndex + 1))
+    }, 5000)
 
-    return () => clearInterval(interval);
-  }, [images.length]);
+    return () => clearInterval(interval)
+  }, [images.length])
 
-  // Preload images for smooth transitions
+  // Optimized image loading - load first image immediately, others in background
   useEffect(() => {
-    const imagePromises = images.map((src) => {
-      return new Promise((resolve) => {
-        const img = new Image();
-        img.onload = resolve;
-        img.src = src;
-      });
-    });
+    // Load first image immediately
+    const firstImg = new Image()
+    firstImg.onload = () => {
+      setFirstImageLoaded(true)
+      setLoadedImages((prev) => new Set([...prev, 0]))
+    }
+    firstImg.src = images[0]
 
-    Promise.all(imagePromises).then(() => {
-      setIsLoaded(true);
-    });
-  }, [images]);
+    // Load other images in background
+    images.slice(1).forEach((src, index) => {
+      const img = new Image()
+      img.onload = () => {
+        setLoadedImages((prev) => new Set([...prev, index + 1]))
+      }
+      img.src = src
+    })
+  }, []) // Removed images from the dependency array
 
   const goToSlide = (index) => {
-    setCurrentImageIndex(index);
-  };
+    setCurrentImageIndex(index)
+  }
 
-  
-
-  if (!isLoaded) {
+  // Show loading only for a brief moment, then show first image even if others aren't loaded
+  if (!firstImageLoaded) {
     return (
       <div className="hero-swap loading">
-        <div className="loading-spinner">Loading...</div>
+        <div className="loading-spinner">
+          <div className="spinner-circle"></div>
+        </div>
       </div>
-    );
+    )
   }
 
   return (
@@ -60,32 +67,31 @@ const Imgswap = () => {
           <div
             key={index}
             className={`swap-slide ${
-              index === currentImageIndex ? 'active' : ''
-            }`}
+              index === currentImageIndex ? "active" : ""
+            } ${loadedImages.has(index) ? "loaded" : "loading-bg"}`}
           >
             <img
-              src={image}
+              src={image || "/placeholder.svg"}
               alt={`Hero ${index + 1}`}
               className="swap-image"
+              loading={index === 0 ? "eager" : "lazy"}
             />
           </div>
         ))}
-        
-        
 
         {/* Dots indicator */}
         <div className="swap-dots">
           {images.map((_, index) => (
             <button
               key={index}
-              className={`dot ${index === currentImageIndex ? 'active' : ''}`}
+              className={`dot ${index === currentImageIndex ? "active" : ""}`}
               onClick={() => goToSlide(index)}
               aria-label={`Go to slide ${index + 1}`}
             />
           ))}
         </div>
 
-        {}
+        {/* Overlay content */}
         <div className="swap-overlay">
           <div className="overlay-content">
             <h1>"පරාතථයන කීතියෙ" පරාර්ථය පිණිස මිස කිර්තිය පිණිස නොවේ</h1>
@@ -95,7 +101,7 @@ const Imgswap = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Imgswap;
+export default Imgswap
