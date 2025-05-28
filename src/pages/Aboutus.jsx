@@ -25,12 +25,6 @@ function Aboutus() {
             content content content content 
             content content content content 
             content content content content 
-          </p>
-        </div>
-
-        <div className="about-box">
-          <h2>What We Do</h2>
-          <p>
             content content content content content content content content content content content content content content content content content content content content 
             content content content content content content content content 
             content content content content 
@@ -42,6 +36,8 @@ function Aboutus() {
             content content content content 
           </p>
         </div>
+
+        
       </div>
 
       <Footer />
