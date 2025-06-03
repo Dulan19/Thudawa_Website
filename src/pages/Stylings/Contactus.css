@@ -11,6 +11,7 @@
 .container {
   position: relative;
   z-index: 2;
+  max-width: 1400px;
 }
 
 /* Header Styles */
@@ -53,9 +54,10 @@
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(217, 131, 36, 0.2);
-  border-radius: 15px;
-  padding: 2rem;
+  border-radius: 20px;
+  padding: 3rem 2.5rem;
   height: 100%;
+  min-height: 600px;
   display: flex;
   flex-direction: column;
   transition: all 0.3s ease;
@@ -72,8 +74,9 @@
 .form-container h3 {
   color: rgb(217, 131, 36);
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   font-weight: 600;
+  font-size: 1.8rem;
 }
 
 /* Info Card Content */
@@ -87,8 +90,9 @@
 .info-item {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 2rem;
-  gap: 1rem;
+  margin-bottom: 2.5rem;
+  gap: 1.5rem;
+  padding: 1rem;
 }
 
 .info-item:last-child {
@@ -99,8 +103,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   background: linear-gradient(45deg, rgb(217, 131, 36), #ffad5a);
   border-radius: 50%;
   box-shadow: 0 5px 20px rgba(217, 131, 36, 0.3);
@@ -108,7 +112,7 @@
 }
 
 .info-icon i {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: white;
 }
 
@@ -116,14 +120,14 @@
   color: rgb(217, 131, 36);
   margin-bottom: 0.5rem;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .info-content p {
   color: #cccccc;
   margin: 0;
   line-height: 1.6;
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 /* Form Container */
@@ -136,16 +140,16 @@
 /* Custom Form Elements */
 .form-group {
   position: relative;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .custom-input {
   background: rgba(255, 255, 255, 0.08) !important;
   border: 2px solid rgba(217, 131, 36, 0.3) !important;
-  border-radius: 10px !important;
+  border-radius: 12px !important;
   color: white !important;
-  padding: 12px 15px !important;
-  font-size: 1rem !important;
+  padding: 15px 20px !important;
+  font-size: 1.1rem !important;
   transition: all 0.3s ease !important;
   backdrop-filter: blur(10px);
   width: 100%;
@@ -164,12 +168,12 @@
 
 .form-label {
   position: absolute;
-  top: -8px;
-  left: 15px;
+  top: -10px;
+  left: 20px;
   background: rgba(0, 0, 0, 0.8);
   color: rgb(217, 131, 36);
-  padding: 0 8px;
-  font-size: 0.85rem;
+  padding: 0 10px;
+  font-size: 0.9rem;
   font-weight: 500;
   border-radius: 4px;
 }
@@ -178,9 +182,9 @@
 .custom-btn {
   background: linear-gradient(45deg, rgb(217, 131, 36), #ffad5a) !important;
   border: none !important;
-  border-radius: 10px !important;
-  padding: 15px 30px !important;
-  font-size: 1.1rem !important;
+  border-radius: 12px !important;
+  padding: 18px 35px !important;
+  font-size: 1.2rem !important;
   font-weight: 600 !important;
   color: white !important;
   transition: all 0.3s ease !important;
