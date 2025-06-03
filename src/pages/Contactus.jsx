@@ -55,10 +55,11 @@ const ContactUs = () => {
             </div>
           </div>
 
-          <div className="row g-4">
+          {/* Cards Container - Ensuring side by side layout */}
+          <div className="row g-4 align-items-stretch">
             {/* Left Card - Visit Our Centre */}
-            <div className="col-lg-6">
-              <div className="info-card">
+            <div className="col-lg-6 col-md-12">
+              <div className="info-card h-100">
                 <h3 className="mb-4">Visit Our Centre</h3>
                 <div className="info-content">
                   <div className="info-item">
@@ -105,104 +106,104 @@ const ContactUs = () => {
             </div>
 
             {/* Right Card - Send Us a Message */}
-            <div className="col-lg-6">
-              <div className="form-container">
+            <div className="col-lg-6 col-md-12">
+              <div className="form-container h-100">
                 <h3 className="mb-4">Send Us a Message</h3>
-                  <form onSubmit={handleSubmit}>
-                    <div className="row">
-                      <div className="col-md-6 mb-3">
-                        <div className="form-group">
-                          <input
-                            type="text"
-                            className="form-control custom-input"
-                            name="name"
-                            value={formData.name}
-                            onChange={handleChange}
-                            required
-                          />
-                          <label className="form-label">Full Name *</label>
-                        </div>
-                      </div>
-                      <div className="col-md-6 mb-3">
-                        <div className="form-group">
-                          <input
-                            type="email"
-                            className="form-control custom-input"
-                            name="email"
-                            value={formData.email}
-                            onChange={handleChange}
-                            required
-                          />
-                          <label className="form-label">Email Address *</label>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <div className="row">
-                      <div className="col-md-6 mb-3">
-                        <div className="form-group">
-                          <input
-                            type="tel"
-                            className="form-control custom-input"
-                            name="phone"
-                            value={formData.phone}
-                            onChange={handleChange}
-                          />
-                          <label className="form-label">Phone Number</label>
-                        </div>
-                      </div>
-                      <div className="col-md-6 mb-3">
-                        <div className="form-group">
-                          <select
-                            className="form-control custom-input"
-                            name="subject"
-                            value={formData.subject}
-                            onChange={handleChange}
-                            required
-                          >
-                            <option value="">Select Subject *</option>
-                            <option value="consultation">Initial Consultation</option>
-                            <option value="programs">Development Programs</option>
-                            <option value="assessment">Child Assessment</option>
-                            <option value="support">Family Support</option>
-                            <option value="other">Other Inquiry</option>
-                          </select>
-                          <label className="form-label">Subject *</label>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className="mb-4">
+                <form onSubmit={handleSubmit}>
+                  <div className="row">
+                    <div className="col-md-6 mb-3">
                       <div className="form-group">
-                        <textarea
+                        <input
+                          type="text"
                           className="form-control custom-input"
-                          name="message"
-                          rows="5"
-                          value={formData.message}
+                          name="name"
+                          value={formData.name}
                           onChange={handleChange}
                           required
-                        ></textarea>
-                        <label className="form-label">Your Message *</label>
+                        />
+                        <label className="form-label">Full Name *</label>
                       </div>
                     </div>
+                    <div className="col-md-6 mb-3">
+                      <div className="form-group">
+                        <input
+                          type="email"
+                          className="form-control custom-input"
+                          name="email"
+                          value={formData.email}
+                          onChange={handleChange}
+                          required
+                        />
+                        <label className="form-label">Email Address *</label>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="row">
+                    <div className="col-md-6 mb-3">
+                      <div className="form-group">
+                        <input
+                          type="tel"
+                          className="form-control custom-input"
+                          name="phone"
+                          value={formData.phone}
+                          onChange={handleChange}
+                        />
+                        <label className="form-label">Phone Number</label>
+                      </div>
+                    </div>
+                    <div className="col-md-6 mb-3">
+                      <div className="form-group">
+                        <select
+                          className="form-control custom-input"
+                          name="subject"
+                          value={formData.subject}
+                          onChange={handleChange}
+                          required
+                        >
+                          <option value="">Select Subject *</option>
+                          <option value="consultation">Initial Consultation</option>
+                          <option value="programs">Development Programs</option>
+                          <option value="assessment">Child Assessment</option>
+                          <option value="support">Family Support</option>
+                          <option value="other">Other Inquiry</option>
+                        </select>
+                        <label className="form-label">Subject *</label>
+                      </div>
+                    </div>
+                  </div>
 
-                    <button 
-                      type="submit" 
-                      className="btn custom-btn w-100"
-                      disabled={isSubmitting}
-                    >
-                      {isSubmitting ? (
-                        <>
-                          <span className="spinner-border spinner-border-sm me-2"></span>
-                          Sending Message...
-                        </>
-                      ) : (
-                        <>
-                          Send Message
-                          <i className="fas fa-paper-plane ms-2"></i>
-                        </>
-                      )}
-                    </button>
+                  <div className="mb-4">
+                    <div className="form-group">
+                      <textarea
+                        className="form-control custom-input"
+                        name="message"
+                        rows="5"
+                        value={formData.message}
+                        onChange={handleChange}
+                        required
+                      ></textarea>
+                      <label className="form-label">Your Message *</label>
+                    </div>
+                  </div>
+
+                  <button 
+                    type="submit" 
+                    className="btn custom-btn w-100"
+                    disabled={isSubmitting}
+                  >
+                    {isSubmitting ? (
+                      <>
+                        <span className="spinner-border spinner-border-sm me-2"></span>
+                        Sending Message...
+                      </>
+                    ) : (
+                      <>
+                        Send Message
+                        <i className="fas fa-paper-plane ms-2"></i>
+                      </>
+                    )}
+                  </button>
                 </form>
               </div>
             </div>
