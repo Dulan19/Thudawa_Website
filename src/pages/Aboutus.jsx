@@ -14,14 +14,8 @@ function Aboutus() {
 
       <div className="aboutus-section">
         <div className="about-box">
-          <h2>Who We Are</h2>
-          <p>
-            content content content content content content content content content content content content content content content content content content content content 
-            content content content content content content content content 
-            content content content content 
-            content content content content 
-             
-          </p>
+          <h2>Our Journey Since 1996</h2>
+          
         </div>
         <p>
           pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
