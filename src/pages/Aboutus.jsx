@@ -9,29 +9,17 @@ import "./Stylings/Aboutus.css";
 
 function Aboutus() {
   return (
-    <div class="hero-image">
-      <Navbar />
-
-      <div className="aboutus-section">
-        <div className="about-box">
-          <h2>Our Journey Since 1996</h2>
-          
-        </div>
-        <p>
-          pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
-          pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
-          pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
-          pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
-          pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
-          pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp
-
-        </p>
-
-        
+    <div>
+      <div className="background-image"></div>
+      <div className="page-content">
+        <Navbar />
+        <section className="intro-text">
+          <h1>Welcome to Thudawa</h1>
+          < p>Scroll down to learn more...</p>
+        </section>
+        <Footer />
       </div>
-
-      <Footer />
-    </div>
+    </div>  
   )
 }
 
