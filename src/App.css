@@ -4,6 +4,7 @@ html {
   padding: 0;
   box-sizing: border-box;
   background-color: black;
+  z-index: -1;
   height: 100%;
 }
 

@@ -13,10 +13,9 @@ function Aboutus() {
       <div className="background-image"></div>
       <div className="page-content">
         <Navbar />
-        <section className="intro-text">
-          <h1>Welcome to Thudawa</h1>
-          < p>Scroll down to learn more...</p>
-        </section>
+        <h1 className="aboutus-heading">
+          Our Journey Since 1996
+        </h1>
         <Footer />
       </div>
     </div>  
