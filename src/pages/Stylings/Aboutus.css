@@ -29,8 +29,22 @@
   z-index: 2;
   position: relative;
   margin-top:-50vh;
+  margin-bottom: 50vh;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7); 
  
 }
+
+.section-two {
+  background-color: rgba(255, 255, 255, 0.1); 
+  backdrop-filter: blur(8px);                 
+  color: white;
+  margin: 10px auto;
+  padding: 30px 30px;
+  border-radius: 12px;
+  max-width: 1000px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  animation: slideInUp 0.8s ease-out 0.2s both;
+}
+
 
 

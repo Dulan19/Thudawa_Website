@@ -16,6 +16,9 @@ function Aboutus() {
         <h1 className="aboutus-heading">
           Our Journey Since 1996
         </h1>
+        <div className="section-two">
+          <p>sgst</p>
+        </div>
         <Footer />
       </div>
     </div>  
