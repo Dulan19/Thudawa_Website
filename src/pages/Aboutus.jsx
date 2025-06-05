@@ -15,6 +15,9 @@ function Aboutus() {
         <Navbar />
         <h1 className="aboutus-heading">
           Our Journey Since 1996
+          <h6> Restoring childhoods, shaping futures — a home where compassion, education, and community<br />
+          create hope for every child.
+          </h6>
         </h1>
         <div className="section-two">
           <p>sgst</p>
