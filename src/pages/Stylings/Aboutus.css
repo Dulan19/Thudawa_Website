@@ -146,7 +146,7 @@
 .timeline-content h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
-  color: #4caf50;
+  color: rgb(217, 131, 36);
 }
 
 /* Mission, Vision, Values */
@@ -195,7 +195,7 @@
 .mvv-card h3 {
   font-size: 1.5rem;
   margin-bottom: 15px;
-  color: #4caf50;
+  color: rgb(217, 131, 36);
 }
 
 /* Facilities Section */
@@ -244,7 +244,7 @@
 .facility-card h3 {
   font-size: 1.3rem;
   margin-bottom: 15px;
-  color: #4caf50;
+  color: rgb(217, 131, 36);
 }
 
 .facility-fact {
@@ -290,7 +290,7 @@
 }
 
 .donor-card h3 {
-  color: #4caf50;
+  color: rgb(217, 131, 36);
   margin-bottom: 10px;
 }
 
@@ -373,7 +373,7 @@
 }
 
 .testimonial cite {
-  color: #4caf50;
+  color: rgb(217, 131, 36);
   font-weight: bold;
 }
 
