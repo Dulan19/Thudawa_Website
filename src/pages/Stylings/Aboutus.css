@@ -103,7 +103,7 @@
   top: 0;
   bottom: 0;
   width: 2px;
-  background: linear-gradient(to bottom, #4caf50, #2196f3);
+  background: linear-gradient(to bottom,  rgb(250, 201, 148),  rgb(217, 131, 36), rgb(46, 25, 2));
   transform: translateX(-50%);
 }
 

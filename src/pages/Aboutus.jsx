@@ -10,7 +10,7 @@ function Aboutus() {
       <div className="page-content">
         <Navbar />
 
-        {/* Hero Section - Keep existing */}
+        
         <h1 className="aboutus-heading">
           Our Journey Since 1996
           <h6>
@@ -21,7 +21,7 @@ function Aboutus() {
           </h6>
         </h1>
 
-        {/* Introduction Section */}
+        
         <div className="section-container">
           <div className="intro-section">
             <h2>Our Story</h2>
@@ -38,7 +38,7 @@ function Aboutus() {
             </p>
           </div>
 
-          {/* Timeline Section */}
+          
           <div className="timeline-section">
             <h2>Our History Timeline</h2>
             <div className="timeline">
@@ -77,7 +77,7 @@ function Aboutus() {
             </div>
           </div>
 
-          {/* Mission, Vision & Values */}
+          
           <div className="mvv-section">
             <h2>Our Foundation</h2>
             <div className="mvv-grid">
@@ -85,27 +85,33 @@ function Aboutus() {
                 <div className="mvv-icon">🎯</div>
                 <h3>Mission</h3>
                 <p>
-                  Foster, protect and guide disowned, neglected, and orphaned girls, providing them with love,
-                  education, and opportunities for a brighter future.
+                  Our mission is to foster, protect and provide, for those children who have been disowned, neglected,
+                   orphaned or abused and to provide all the inhabitants
+                  with welfare and guidance.
+                </p>
+                <h3>මෙහෙවර</h3>
+                <p>
+                  අනාථ,අසරණ ,අත්හල හා අපයෝජනයට  ලක් වු දරුවන්ට, රැකවරණය ,භාරය ,නඩත්තුව , සුබසාධනය සහ පරිවසිකයන්ට නිවැරදි මගපෙන්වීමක් ලබාදීම අපගේ මෙහෙවරයි.
                 </p>
               </div>
               <div className="mvv-card">
                 <div className="mvv-icon">👁️</div>
                 <h3>Vision</h3>
                 <p>
-                  A world where every child experiences childhood with dignity, care, and education, regardless of their
-                  circumstances.
+                 Our vision is to put an end to the sufferingsof innocent children who are being tampered by social imbalances and injustice; to recreate their childhoods
+                  through justice and social equality and through that, create a better future for them.
+                </p>
+                <h3>දැක්ම</h3>
+                <p>
+                  අසාධාරණය, යුක්තිය හා සමාජ විෂමතාවයන් මුල්කරගෙන ,අකාලයේ මුකුලිත වී යන මල් කැකුළු … සාධාරණය යුක්තිය හා සමාජ සාධාරණත්වය ඉදිරියේ විකසිත වී 
+                  සුවද හමන මල් බවට පත්කරන පැහැදිලි හෙටක් ඇති කිරීම, සුන්දර ළමා ලෝකයක් බිහි කිරීම අපේ දැක්මයි.
                 </p>
               </div>
-              <div className="mvv-card">
-                <div className="mvv-icon">💝</div>
-                <h3>Values</h3>
-                <p>Compassion, education, community, and resilience guide everything we do in nurturing young lives.</p>
-              </div>
+              
             </div>
           </div>
 
-          {/* Facilities Section */}
+          
           <div className="facilities-section">
             <h2>Meet Our Home</h2>
             <div className="facilities-grid">
@@ -144,7 +150,7 @@ function Aboutus() {
             </div>
           </div>
 
-          {/* Donor Appreciation */}
+          
           <div className="donor-section">
             <h2>Our Gratitude</h2>
             <div className="donor-content">
@@ -175,7 +181,7 @@ function Aboutus() {
             </div>
           </div>
 
-          {/* Life at Tudawe */}
+          
           <div className="life-section">
             <h2>Life at Tudawe</h2>
             <div className="life-content">
@@ -210,7 +216,7 @@ function Aboutus() {
             </div>
           </div>
 
-          {/* Spiritual & Community Focus */}
+          
           <div className="spiritual-section">
             <h2>Growing Together</h2>
             <div className="spiritual-content">
@@ -238,7 +244,7 @@ function Aboutus() {
             </div>
           </div>
 
-          {/* Closing Message */}
+          
           <div className="closing-section">
             <div className="closing-content">
               <h2>Our Promise</h2>
