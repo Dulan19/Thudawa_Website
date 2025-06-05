@@ -303,7 +303,7 @@
 }
 
 .donate-btn {
-  background: #4caf50;
+  background: rgb(217, 131, 36);
   color: white;
   border: none;
   padding: 12px 30px;
@@ -315,7 +315,7 @@
 }
 
 .donate-btn:hover {
-  background: #45a049;
+  background: rgb(224, 150, 71);
 }
 
 /* Life Section */
@@ -411,7 +411,7 @@
 .spiritual-item h3 {
   font-size: 1.3rem;
   margin-bottom: 15px;
-  color: #4caf50;
+  color: rgb(217, 131, 36);
 }
 
 /* Closing Section */
@@ -436,7 +436,7 @@
 .closing-message {
   font-size: 1.5rem;
   font-style: italic;
-  color: #4caf50;
+  color: rgb(217, 131, 36);
   margin: 20px 0;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
