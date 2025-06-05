@@ -85,13 +85,13 @@ function Aboutus() {
                 <div className="mvv-icon">🎯</div>
                 <h3>Mission</h3>
                 <p>
-                  Our mission is to foster, protect and provide, for those children who have been disowned, neglected,
+                  Our mission is to foster, protect and provide, for those<br/> children who have been disowned, neglected,
                    orphaned or abused and to provide all the inhabitants
                   with welfare and guidance.
                 </p>
                 <h3>මෙහෙවර</h3>
                 <p>
-                  අනාථ,අසරණ ,අත්හල හා අපයෝජනයට  ලක් වු දරුවන්ට, රැකවරණය ,භාරය ,නඩත්තුව , සුබසාධනය සහ පරිවසිකයන්ට නිවැරදි මගපෙන්වීමක් ලබාදීම අපගේ මෙහෙවරයි.
+                  අනාථ,අසරණ ,අත්හල හා අපයෝජනයට  ලක් වු <br/>දරුවන්ට, රැකවරණය ,භාරය ,නඩත්තුව , සුබසාධනය සහ <br/>පරිවසිකයන්ට නිවැරදි මගපෙන්වීමක් ලබාදීම <br/>අපගේ මෙහෙවරයි.
                 </p>
               </div>
               <div className="mvv-card">
@@ -103,8 +103,8 @@ function Aboutus() {
                 </p>
                 <h3>දැක්ම</h3>
                 <p>
-                  අසාධාරණය, යුක්තිය හා සමාජ විෂමතාවයන් මුල්කරගෙන ,අකාලයේ මුකුලිත වී යන මල් කැකුළු … සාධාරණය යුක්තිය හා සමාජ සාධාරණත්වය ඉදිරියේ විකසිත වී 
-                  සුවද හමන මල් බවට පත්කරන පැහැදිලි හෙටක් ඇති කිරීම, සුන්දර ළමා ලෝකයක් බිහි කිරීම අපේ දැක්මයි.
+                  අසාධාරණය, යුක්තිය හා සමාජ විෂමතාවයන් මුල්කරගෙන<br/> ,අකාලයේ මුකුලිත වී යන මල් කැකුළු … <br/>සාධාරණය යුක්තිය හා සමාජ සාධාරණත්වය ඉදිරියේ <br/>විකසිත වී 
+                  සුවද හමන මල් බවට පත්කරන පැහැදිලි හෙටක් <br/>ඇති කිරීම, සුන්දර ළමා ලෝකයක් බිහි කිරීම <br/>අපේ දැක්මයි.
                 </p>
               </div>
               
