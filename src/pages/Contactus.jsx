@@ -210,6 +210,30 @@ const ContactUs = () => {
           </div>
         </div>
       </div>
+
+      {/* Location Card - Google Map */}
+<div className="row justify-content-center mt-5">
+  <div className="col-lg-10">
+    <div className="info-card p-4 shadow-sm rounded-4">
+      <h3 className="mb-4 text-center">Find Us Here</h3>
+      <div className="ratio ratio-16x9">
+        <iframe
+          title="Tudawe Child Development Center"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2598.8003157609155!2d79.9298398283198!3d6.674426126532414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2486e40ab72dd%3A0xc601f53029188b6c!2sTudawe%20Child%20Development%20Center!5e0!3m2!1sen!2slk!4v1749135985836!5m2!1sen!2slk"
+          width="100%"
+          height="450"
+          style={{ border: 0, borderRadius: '12px' }}
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
       <Footer />
     </div>
   );
