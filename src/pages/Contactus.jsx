@@ -4,6 +4,7 @@ import "./Stylings/Contactus.css";
 
 const Contactus = () => {
   return (
+    <div>
     <div className="contactus-container">
       <Navbar />
       <div className="contactus-card">
@@ -26,7 +27,7 @@ const Contactus = () => {
       </div>
 
       <div className ="contactus-card">
-        <h2>Contact Form</h2>
+        <h2>Send Feedback</h2>
         <form>
           <div className="form-group">
             <label htmlFor="name">Name</label>
@@ -43,9 +44,10 @@ const Contactus = () => {
           <button type="submit">Send Message</button>
         </form>
         </div>
+      
+    </div>
       <Footer />
     </div>
-
   );
 };
 
