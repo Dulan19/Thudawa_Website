@@ -7,7 +7,8 @@
 }
 
 .contactus-card {
-  background-color: #f9f9f9;
+  background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #000000 100%);
+  color: white;
   border-radius: 8px;
   padding: 1.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -23,7 +24,7 @@
 .contactus-card h2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: ;
+  color: rgb(217, 131, 36);
 }
 
 .contactus-card p {
