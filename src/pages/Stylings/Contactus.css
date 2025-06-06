@@ -75,3 +75,65 @@
   height: 450px;
   display: block;
 }
+
+.contactus-card form {
+  text-align: left;
+  margin-top: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: rgb(217, 131, 36);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 75%;
+  padding: 0.8rem;
+  border: 2px solid rgba(217, 131, 36, 0.3);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 1rem;
+  backdrop-filter: blur(4px);
+  transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: rgb(217, 131, 36);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.contactus-card button {
+  background: linear-gradient(135deg, rgb(217, 131, 36), rgb(255, 165, 50));
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 50%;
+  margin: 1rem auto 0 auto;
+  display: block;
+}
+
+.contactus-card button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(217, 131, 36, 0.4);
+}
