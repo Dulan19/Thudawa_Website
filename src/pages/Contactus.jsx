@@ -48,6 +48,17 @@ const Contactus = () => {
         </div>
       
     </div>
+
+    <div className="contactus-map">
+      <iframe
+        title = "View Our Location"
+        src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.7779645279293!2d79.92924897568054!3d6.674409621389811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2486e40ab72dd%3A0xc601f53029188b6c!2sTudawe%20Child%20Development%20Center!5e0!3m2!1sen!2slk!4v1749225084210!5m2!1sen!2slk" 
+        style={{border:0}}
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
       <Footer />
     </div>
   );
