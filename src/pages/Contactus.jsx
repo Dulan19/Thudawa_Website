@@ -5,10 +5,12 @@ import "./Stylings/Contactus.css";
 const Contactus = () => {
   return (
     <div>
+      <div className="background-image"></div>
+      
     <div className="contactus-container">
       <Navbar />
       <div className="contactus-card">
-        <h2>Visit Our Centre</h2>
+        <h1>Visit Our Centre</h1>
         <h2>Address</h2>
         <p>
           154, Center Road,<br />
@@ -27,7 +29,7 @@ const Contactus = () => {
       </div>
 
       <div className ="contactus-card">
-        <h2>Send Feedback</h2>
+        <h1>Send Feedback</h1>
         <form>
           <div className="form-group">
             <label htmlFor="name">Name</label>
