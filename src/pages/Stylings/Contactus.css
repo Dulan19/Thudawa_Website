@@ -55,3 +55,23 @@
   color: white;
   line-height: 1.6;
 }
+
+.contactus-map {
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 1200px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 2;
+  background: rgb(255 ,255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  padding: 1rem;
+}
+
+.contactus-map iframe {
+  width: 100%;
+  height: 450px;
+  display: block;
+}
