@@ -9,7 +9,23 @@ function Background() {
   return (
     <div className="App">
       <Navbar />
-
+      <div className="content-section">
+          <div className="vision-mission-container">
+            <div className="box vision-box">
+              <h2>something</h2>
+              <p>
+                asfas
+              </p>
+            </div>
+            <div className="box mission-box">
+              <h2>something</h2>
+              <p>
+                cosdgd
+              </p>
+              <button className="seemore-btn">Read More</button>
+            </div>
+          </div>
+        </div>
       
 
       <Footer />
