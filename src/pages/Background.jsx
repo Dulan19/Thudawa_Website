@@ -14,7 +14,7 @@ function Background() {
             <div className="box vision-box">
               <h2>something</h2>
               <p>
-                asfas
+                Give me some time i will finish this page.
               </p>
             </div>
             <div className="box mission-box">
