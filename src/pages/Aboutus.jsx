@@ -6,7 +6,7 @@ import "./Stylings/Aboutus.css"
 function Aboutus() {
   return (
     <div>
-      <div className="background-image"></div>
+      <div className="background1-image"></div>
       <div className="page-content">
         <Navbar />
 
