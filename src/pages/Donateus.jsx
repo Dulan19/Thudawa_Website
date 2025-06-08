@@ -5,6 +5,7 @@ import "./Stylings/Donateus.css";
 const Donateus = () => {
   return (
     <div>
+      <div className="background-image"></div>
       <Navbar />
       <div className="donateus-container">
         <h1>Support Our Cause</h1>
