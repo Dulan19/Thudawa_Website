@@ -72,7 +72,9 @@
   text-align: justify;
 }
 
-
+table, th, td {
+  border: 1px solid black;
+}
 
 /* Animations */
 @keyframes slideInUp {

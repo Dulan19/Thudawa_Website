@@ -51,11 +51,11 @@ function Background() {
                       In the morning, it is wonderful to see the fishermen’ going to catch fish and meet their customers on the beach bargaining 
                         prices .you can see pulling nets by lots of people reciting traditional songs, and you can also join them, supporting and 
                       sharing their happiness after hard work. Now, you can relax under the shadows of coconut trees on the beach and feel the difference 
-                            between the midnight and sunset breeze.
+                            between the midnight and sunset breeze.<br/>
 
-                        History
-                        Natural Beauty
-                        Raja Maha Viharaya
+                        <ul><li>History</li>
+                        <li>Natural Beauty</li>
+                        <li>Raja Maha Viharaya</li></ul><br/>
                         Facilities
                         According to the Folklores Thalpitiya village is a land that provided coconut oil for the Kotte Dalada Maligawa where the honorable
                         tooth relic was placed those days.
@@ -95,7 +95,7 @@ function Background() {
           </div>
           <div className="section-container">
           <div className="intro-section">
-            <h2>Thalpitiya Village</h2>
+            <h2>Establisment</h2>
             <p>Under the guidance of  Lawrence Tudawe, members of the Tudawe family donated the Parental House and property of the Tudawe Family situated lonely at 
               Thalpitiya donated to the Buddhists Organisation called Samastha Lanka Bauddha Maha Sammelanaya (All Ceylon Buddhists Congress) in Colombo. It is the 
               foundation of the establishment of the Tudawe children’s home.
@@ -105,7 +105,36 @@ function Background() {
             {show2 && <p> by donating the property to the All Ceylon Buddhists Congress. It has been registered under…. on 01’st of June 1989. The first matron was 
               Miss. Yasawathi Jayawardhana. Since 1988 it has been a shelter for nearly 111 girls. most of them are now living in a good position in society.The 
               children’s home is controlled by a board of governors and the children are assigned to the home by the Department of Probation and Child Care Services.
-              1’st matron:  Miss Yasawathi Jayawardhana</p>}
+              1’st matron:  Miss Yasawathi Jayawardhana<br/>
+              <table>
+                <tr>
+                  <th>The first Board of trustees was fallows (1888),</th>
+                  <th>Committee Members –</th>
+                </tr>
+                <tr>
+                  <td>
+                    <ul>
+                      <li>President                 – Mr.Rohan Tudawe</li>
+                      <li>Vice Presidents      – Mr.Jayakis Tudawe</li>
+                      <li>General Secretary  – Mr. G Harischandra Graru</li>
+                      <li>Treasurer                – Mr. Layanal Hasthanayaka</li>
+                    </ul>
+                  </td>
+                  <td>
+                    <ul>
+                      <li>Mr.H.D.Soysa</li>
+                      <li>B.D.M.Samanthilaka</li>
+                      <li>Mr.M.D.Oliver Gunathillaka</li>
+                      <li>Mrs.Rathna Somadasa</li>
+                      <li>Mrs.T. Liliyan Silva</li>
+                      <li>Mrs. C de Silva</li>
+                      <li>Mrs. P.E.Gunathilaka</li>
+                    </ul>
+                  </td>
+                </tr>
+          
+              </table>
+              </p>}
           </div>
           </div>
 
