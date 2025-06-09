@@ -55,8 +55,8 @@ function Background() {
 
                         <ul><li>History</li>
                         <li>Natural Beauty</li>
-                        <li>Raja Maha Viharaya</li></ul><br/>
-                        Facilities
+                        <li>Raja Maha Viharaya</li>
+                        <li>Facilities</li></ul><br/>
                         According to the Folklores Thalpitiya village is a land that provided coconut oil for the Kotte Dalada Maligawa where the honorable
                         tooth relic was placed those days.
 
@@ -140,49 +140,58 @@ function Background() {
 
           <div className="section-container">
           <div className="intro-section">
-            <h2>Thalpitiya Village</h2>
-            <p>Under the guidance of  Lawrence Tudawe, members of the Tudawe family donated the Parental House and property of the Tudawe Family situated lonely at 
-              Thalpitiya donated to the Buddhists Organisation called Samastha Lanka Bauddha Maha Sammelanaya (All Ceylon Buddhists Congress) in Colombo. It is the 
-              foundation of the establishment of the Tudawe children’s home.
-              Tudawe Children’s Home has been started with 11 children who have been neglected and orphaned around the Wadduwa area on the 9th, of June 1988...</p>
+            <h2>Entrance to Premises</h2>
+            <p>Entrance to Premises Tudawe Chidren Development Center (Tudawe Chidren Home) located  in beautiful 
+              Thalpitiya village in the Panadura Electorate in Kalutara District in Sri Lanka. Although Thalpitiya 
+               is developing rapidly due to globalization you can still fell the  Natural beauty of the  Indian Ocean,
+               Thalpitya Cannal with the genuine worm welcomes of the villagers.In addition the village composite with 
+               best class hotels in Sri Lanka which  offers up the ultimate tropical  holiday. tudawe children home location 
+               can visit within one hour from …</p>
             <button onClick={() => setShow3(!show3)}>{show3 ? "Show Less" : "Read More"}
             </button>
-            {show3 && <p> by donating the property to the All Ceylon Buddhists Congress. It has been registered under…. on 01’st of June 1989. The first matron was 
-              Miss. Yasawathi Jayawardhana. Since 1988 it has been a shelter for nearly 111 girls. most of them are now living in a good position in society.The 
-              children’s home is controlled by a board of governors and the children are assigned to the home by the Department of Probation and Child Care Services.
-              1’st matron:  Miss Yasawathi Jayawardhana</p>}
+            {show3 && <p> the capital Colombo within 1 hour due to the development in the roadnetwork and trasport.If you are using
+              Public passport you can use bus with the destination preferably  Kaluathara  ,  Aluthgama or Mathugama travels in the 
+              Galle Road. If you comming from Colombo,you can get down from the Thalpitya Junction located approximately 3 and half 
+              kilo-meters away from the Panadura Town. Enternce to Daladawaththa TempleEnternce to Daladawaththa TempleAfter walking 
+              around 700m down in the Daladawaththa Road to the Land Side you can see the Daladawaththa Temple.It is a historical temple 
+               provided shelter to safeguard the sacred Tooth Relic of Lord Buddha hidden in a huge tree at the Thalpitiya Temple premises. 
+               Then you have to turn Right and walk along the Central road (Mada Para) around 250 m until you see the entrance of the Tudawe
+                Childrean Home. You can use the Train and get down in Pinwattha or Wadduwa Stations  and come to Galle Road.if you are at Pinawattha
+                 you have to travel further to Galle direction and If you are at  Wadduwa you have to travel to the direction of Colombo. If you are
+                  already in the ….. Happy traverelling and Tudawe Family waiting to see you there… [googlerouteplaner=2]</p>}
           </div>
           </div>
 
           <div className="section-container">
           <div className="intro-section">
-            <h2>Thalpitiya Village</h2>
-            <p>Under the guidance of  Lawrence Tudawe, members of the Tudawe family donated the Parental House and property of the Tudawe Family situated lonely at 
-              Thalpitiya donated to the Buddhists Organisation called Samastha Lanka Bauddha Maha Sammelanaya (All Ceylon Buddhists Congress) in Colombo. It is the 
-              foundation of the establishment of the Tudawe children’s home.
-              Tudawe Children’s Home has been started with 11 children who have been neglected and orphaned around the Wadduwa area on the 9th, of June 1988...</p>
+            <h2>Tudawe Philanthropist Family</h2>
+            <p>Tudawe Philanthropist Family During the 18 th century well known Tudawe Family lived in Thalpitiya Wadduwa engaged in religious and social 
+              activities in helping the temple and the poor families providing wealth and attending their needs. When the ancestors of the Tudawe philanthropist 
+              family passed away, the sons and daughters wanted to look after their business activities operating in Colombo and decided to live in Colombo leaving
+               their old parental house and property at Talpitiya valued millions of Rupees. They went …</p>
             <button onClick={() => setShow4(!show4)}>{show4 ? "Show Less" : "Read More"}
             </button>
-            {show4 && <p> by donating the property to the All Ceylon Buddhists Congress. It has been registered under…. on 01’st of June 1989. The first matron was 
-              Miss. Yasawathi Jayawardhana. Since 1988 it has been a shelter for nearly 111 girls. most of them are now living in a good position in society.The 
-              children’s home is controlled by a board of governors and the children are assigned to the home by the Department of Probation and Child Care Services.
-              1’st matron:  Miss Yasawathi Jayawardhana</p>}
+            {show4 && <p> Colombo and lived because it was very convenient to run their business enterprises. Late Lawrence Tudawe encouraged the other family members 
+              of the Tudawe family to donate the parental House and Property to a religious organization in the Country.A family friend Francis Wanigersekera suggested
+               that the Parental House and Prioperty of Tudawe Family situated lonely at Thalpitiya should be donated to the Buddhists Organisation called Samastha Lanka 
+               Bauddha Maha Sammelanaya (All Ceylon Buddhists Congress) in Colombo . At a discussion of all family members decided unanimously to donate their parental 
+               house and property to this Religious and Social Organization.</p>}
           </div>
           </div>
 
           <div className="section-container">
           <div className="intro-section">
             <h2>Thalpitiya Village</h2>
-            <p>Under the guidance of  Lawrence Tudawe, members of the Tudawe family donated the Parental House and property of the Tudawe Family situated lonely at 
-              Thalpitiya donated to the Buddhists Organisation called Samastha Lanka Bauddha Maha Sammelanaya (All Ceylon Buddhists Congress) in Colombo. It is the 
-              foundation of the establishment of the Tudawe children’s home.
-              Tudawe Children’s Home has been started with 11 children who have been neglected and orphaned around the Wadduwa area on the 9th, of June 1988...</p>
+            <p>Thalpitiya Village Thalpitiya is a remote village in the Panadura Electorate in Kalutara District in Sri Lanka .During the 18th century Panadura became a popular 
+              Buddhists City as the result of the Historical Panadura Great Controversy held on 26th August by Ven Wadeepasinghe Megettuwatta Gunananda Nayaka Thera an erudite 
+              Buddhist scholar lived in the country to save Sri Lanka Buddhasasanaya from missionary workers during the 18th Century invasion by the British Government. Thalpitiya 
+              village in Wadduwa Police area became very popular …</p>
             <button onClick={() => setShow5(!show5)}>{show5 ? "Show Less" : "Read More"}
             </button>
-            {show5 && <p> by donating the property to the All Ceylon Buddhists Congress. It has been registered under…. on 01’st of June 1989. The first matron was 
-              Miss. Yasawathi Jayawardhana. Since 1988 it has been a shelter for nearly 111 girls. most of them are now living in a good position in society.The 
-              children’s home is controlled by a board of governors and the children are assigned to the home by the Department of Probation and Child Care Services.
-              1’st matron:  Miss Yasawathi Jayawardhana</p>}
+            {show5 && <p> among the inhabitants in the past as the bhikkus lived in the Thalpitiya temple provided shelter to safeguard the sacred Tooth relic of Lord Buddha
+               hidden in a huge tree at the Thalpitiya Temple premises. Subsequently the sacred tooth relics was taken away to down south. Thereafter it was taken to Kandy
+                and kept at the Dalada Maligawa the palace of Sri Wickramarajasinghe the last king who was captured by the British Army. So that thalpitiya temple is very 
+                precious wealth for the villagers.</p>}
           </div>
           </div>
               
