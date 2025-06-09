@@ -1,5 +1,5 @@
-.background-image {
-  background-image: url("../../assets/Contactus Page.jpg");
+.contactus-background {
+  background-image: url("../../assets/ContactusPage.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
