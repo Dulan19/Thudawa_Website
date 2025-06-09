@@ -1,9 +1,15 @@
 "use client"
+import React, { useState } from "react";
 import Navbar from "../components/Navbar/Navbar.jsx"
 import Footer from "../components/Footer/Footer.jsx"
-import "./Stylings/Aboutus.css"
+import "./Stylings/Background.css"
 
-function Aboutus() {
+function Background() {
+  const [show1, setShow1] = useState(false);
+  const [show2, setShow2] = useState(false);
+  const [show3, setShow3] = useState(false);
+  const [show4, setShow4] = useState(false);
+  const [show5, setShow5] = useState(false);
   return (
     <div>
       <div className="background1-image"></div>
@@ -14,8 +20,8 @@ function Aboutus() {
         <h1 className="aboutus-heading">
           sdfsdfsdf
           <h6>
-            {" "}
-           fsdfsdf
+            
+           fsdfsd
             <br />
             sdfsdf
           </h6>
@@ -24,53 +30,19 @@ function Aboutus() {
         
         <div className="section-container">
           <div className="intro-section">
-            <h2>sfsdfsd</h2>
-            <p>
-              dsgsgs
-            </p>
-            <p>
-              dfgdfgdfg
-            </p>
+            <h2>Thalpitiya Village</h2>
+            <p>Thalpitiya Village Thalpitiya Village is located 31 km away from the central city, Colombo. 
+              Though it is close to city center, It has preserved the beauty of the Village, and currently going 
+              through a lot of development projects. Let’s see the Beauty of the Village, If you travel by train,you 
+              feel the  breeze of the Indian ocean,  you can get down from the Pinwattha or Wadduwa Station and walk
+               towards Thalpitiya. On the beach, and there are numerous hotels ready...</p>
+            <button onClick={() => setShow1(!show1)}>{show1 ? "Show Less" : "Read More"}
+            </button>
+            {show1 && <p>Full article content...</p>}
           </div>
 
           
-          <div className="timeline-section">
-            <h2>gdfgdfg</h2>
-            <div className="timeline">
-              <div className="timeline-item">
-                <div className="timeline-icon">📅</div>
-                <div className="timeline-content">
-                  <h3>dfgfdgfd</h3>
-                  <p>gdfgdfg</p>
-                </div>
-              </div>
-              <div className="timeline-item">
-                <div className="timeline-icon">🧱</div>
-                <div className="timeline-content">
-                  <h3>1997</h3>
-                  <p>dfgdfgdfg</p>
-                </div>
-              </div>
-              <div className="timeline-item">
-                <div className="timeline-icon">💻</div>
-                <div className="timeline-content">
-                  <h3>dfgfdg</h3>
-                  <p>
-                    dfgdfgfdg
-                  </p>
-                </div>
-              </div>
-              <div className="timeline-item">
-                <div className="timeline-icon">🏞️</div>
-                <div className="timeline-content">
-                  <h3>dfgfdg</h3>
-                  <p>
-                    dfgdfgd
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+        
 
           
           <div className="mvv-section">
@@ -250,4 +222,4 @@ function Aboutus() {
   )
 }
 
-export default Aboutus
+export default Background
