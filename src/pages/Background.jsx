@@ -18,13 +18,8 @@ function Background() {
 
         
         <h1 className="aboutus-heading">
-          sdfsdfsdf
-          <h6>
-            
-           fsdfsd
-            <br />
-            sdfsdf
-          </h6>
+          Background
+          
         </h1>
 
         
@@ -98,180 +93,73 @@ function Background() {
                           with ATM facilities. Fresh foods, vegetables, fruits, fish or meat form Market or Food City .Even medicines you can buy from there. We invite you to have 
                             a chat with villagers, and share their views.</p>}
           </div>
+          <div className="section-container">
+          <div className="intro-section">
+            <h2>Thalpitiya Village</h2>
+            <p>Under the guidance of  Lawrence Tudawe, members of the Tudawe family donated the Parental House and property of the Tudawe Family situated lonely at 
+              Thalpitiya donated to the Buddhists Organisation called Samastha Lanka Bauddha Maha Sammelanaya (All Ceylon Buddhists Congress) in Colombo. It is the 
+              foundation of the establishment of the Tudawe children’s home.
+              Tudawe Children’s Home has been started with 11 children who have been neglected and orphaned around the Wadduwa area on the 9th, of June 1988...</p>
+            <button onClick={() => setShow2(!show2)}>{show2 ? "Show Less" : "Read More"}
+            </button>
+            {show2 && <p> by donating the property to the All Ceylon Buddhists Congress. It has been registered under…. on 01’st of June 1989. The first matron was 
+              Miss. Yasawathi Jayawardhana. Since 1988 it has been a shelter for nearly 111 girls. most of them are now living in a good position in society.The 
+              children’s home is controlled by a board of governors and the children are assigned to the home by the Department of Probation and Child Care Services.
+              1’st matron:  Miss Yasawathi Jayawardhana</p>}
+          </div>
+          </div>
 
-          
-        
+          <div className="section-container">
+          <div className="intro-section">
+            <h2>Thalpitiya Village</h2>
+            <p>Under the guidance of  Lawrence Tudawe, members of the Tudawe family donated the Parental House and property of the Tudawe Family situated lonely at 
+              Thalpitiya donated to the Buddhists Organisation called Samastha Lanka Bauddha Maha Sammelanaya (All Ceylon Buddhists Congress) in Colombo. It is the 
+              foundation of the establishment of the Tudawe children’s home.
+              Tudawe Children’s Home has been started with 11 children who have been neglected and orphaned around the Wadduwa area on the 9th, of June 1988...</p>
+            <button onClick={() => setShow3(!show3)}>{show3 ? "Show Less" : "Read More"}
+            </button>
+            {show3 && <p> by donating the property to the All Ceylon Buddhists Congress. It has been registered under…. on 01’st of June 1989. The first matron was 
+              Miss. Yasawathi Jayawardhana. Since 1988 it has been a shelter for nearly 111 girls. most of them are now living in a good position in society.The 
+              children’s home is controlled by a board of governors and the children are assigned to the home by the Department of Probation and Child Care Services.
+              1’st matron:  Miss Yasawathi Jayawardhana</p>}
+          </div>
+          </div>
 
-          
-          <div className="mvv-section">
-            <h2>dfgfdgdfg</h2>
-            <div className="mvv-grid">
-              <div className="mvv-card">
-                <div className="mvv-icon">🎯</div>
-                <h3>fdgdfgd</h3>
-                <p>
-                  dfgfdgfdg
-                </p>
-                <h3>මෙහෙවර</h3>
-                <p>
-                  dfgfdg
-                </p>
-              </div>
-              <div className="mvv-card">
-                <div className="mvv-icon">👁️</div>
-                <h3>Vision</h3>
-                <p>
-                 dfgfdgdf
-                 </p>
-                <h3>දැක්ම</h3>
-                <p>
-                  dfgdfgdfg
-                </p>
-              </div>
+          <div className="section-container">
+          <div className="intro-section">
+            <h2>Thalpitiya Village</h2>
+            <p>Under the guidance of  Lawrence Tudawe, members of the Tudawe family donated the Parental House and property of the Tudawe Family situated lonely at 
+              Thalpitiya donated to the Buddhists Organisation called Samastha Lanka Bauddha Maha Sammelanaya (All Ceylon Buddhists Congress) in Colombo. It is the 
+              foundation of the establishment of the Tudawe children’s home.
+              Tudawe Children’s Home has been started with 11 children who have been neglected and orphaned around the Wadduwa area on the 9th, of June 1988...</p>
+            <button onClick={() => setShow4(!show4)}>{show4 ? "Show Less" : "Read More"}
+            </button>
+            {show4 && <p> by donating the property to the All Ceylon Buddhists Congress. It has been registered under…. on 01’st of June 1989. The first matron was 
+              Miss. Yasawathi Jayawardhana. Since 1988 it has been a shelter for nearly 111 girls. most of them are now living in a good position in society.The 
+              children’s home is controlled by a board of governors and the children are assigned to the home by the Department of Probation and Child Care Services.
+              1’st matron:  Miss Yasawathi Jayawardhana</p>}
+          </div>
+          </div>
+
+          <div className="section-container">
+          <div className="intro-section">
+            <h2>Thalpitiya Village</h2>
+            <p>Under the guidance of  Lawrence Tudawe, members of the Tudawe family donated the Parental House and property of the Tudawe Family situated lonely at 
+              Thalpitiya donated to the Buddhists Organisation called Samastha Lanka Bauddha Maha Sammelanaya (All Ceylon Buddhists Congress) in Colombo. It is the 
+              foundation of the establishment of the Tudawe children’s home.
+              Tudawe Children’s Home has been started with 11 children who have been neglected and orphaned around the Wadduwa area on the 9th, of June 1988...</p>
+            <button onClick={() => setShow5(!show5)}>{show5 ? "Show Less" : "Read More"}
+            </button>
+            {show5 && <p> by donating the property to the All Ceylon Buddhists Congress. It has been registered under…. on 01’st of June 1989. The first matron was 
+              Miss. Yasawathi Jayawardhana. Since 1988 it has been a shelter for nearly 111 girls. most of them are now living in a good position in society.The 
+              children’s home is controlled by a board of governors and the children are assigned to the home by the Department of Probation and Child Care Services.
+              1’st matron:  Miss Yasawathi Jayawardhana</p>}
+          </div>
+          </div>
               
-            </div>
-          </div>
 
           
-          <div className="facilities-section">
-            <h2>gdfgdfg</h2>
-            <div className="facilities-grid">
-              <div className="facility-card">
-                <div className="facility-image">🏠</div>
-                <h3>gdfgdfgdfg</h3>
-                <p>dfgfdgdf</p>
-                <div className="facility-fact">
-                  dfgdfgfd
-                </div>
-              </div>
-              <div className="facility-card">
-                <div className="facility-image">🛏️</div>
-                <h3>dfgfdgfdg</h3>
-                <p>dfgdfg</p>
-                <div className="facility-fact">dgdfgdfg</div>
-              </div>
-              <div className="facility-card">
-                <div className="facility-image">📚</div>
-                <h3>dgdfgdf</h3>
-                <p>gddfgfdg.</p>
-                <div className="facility-fact">dfgfdgdf</div>
-              </div>
-              <div className="facility-card">
-                <div className="facility-image">🎮</div>
-                <h3>fgdgdfg</h3>
-                <p>fdgfdgdf</p>
-                <div className="facility-fact">dgfdgd</div>
-              </div>
-              <div className="facility-card">
-                <div className="facility-image">🍳</div>
-                <h3>dgdfg</h3>
-                <p>dgfdgdf</p>
-                <div className="facility-fact">fdgdfg</div>
-              </div>
-            </div>
-          </div>
-
           
-          <div className="donor-section">
-            <h2>fdgfdg</h2>
-            <div className="donor-content">
-              <p>
-                dfgfdg
-              </p>
-              <div className="donor-highlights">
-                <div className="donor-card">
-                  <h3>dfgdf</h3>
-                  <p>dfgfd</p>
-                </div>
-                <div className="donor-card">
-                  <h3>fgdd</h3>
-                  <p>dfgdf</p>
-                </div>
-                <div className="donor-card">
-                  <h3>fdg</h3>
-                  <p>dfgd</p>
-                </div>
-              </div>
-              <div className="donation-call">
-                <p>
-                  dfgd
-                </p>
-                <button className="donate-btn">fdgd</button>
-              </div>
-            </div>
-          </div>
-
-          
-          <div className="life-section">
-            <h2>dfgfd</h2>
-            <div className="life-content">
-              <div className="daily-routine">
-                <h3>fdgd</h3>
-                <div className="routine-grid">
-                  <div className="routine-item">
-                    <span className="routine-icon">🌅</span>
-                    <span>dggd</span>
-                  </div>
-                  <div className="routine-item">
-                    <span className="routine-icon">📖</span>
-                    <span>dfg</span>
-                  </div>
-                  <div className="routine-item">
-                    <span className="routine-icon">🌱</span>
-                    <span>dfg</span>
-                  </div>
-                  <div className="routine-item">
-                    <span className="routine-icon">🍽️</span>
-                    <span>dfg</span>
-                  </div>
-                </div>
-              </div>
-              <div className="testimonial">
-                <blockquote>
-                  content
-                </blockquote>
-                <cite>sub contebnt</cite>
-              </div>
-            </div>
-          </div>
-
-          
-          <div className="spiritual-section">
-            <h2>topic</h2>
-            <div className="spiritual-content">
-              <div className="spiritual-item">
-                <h3>topic</h3>
-                <p>
-                  content
-                </p>
-              </div>
-              <div className="spiritual-item">
-                <h3>topic</h3>
-                <p>
-                 content
-                </p>
-              </div>
-              <div className="spiritual-item">
-                <h3>topic</h3>
-                <p>
-                  contenbt
-                </p>
-              </div>
-            </div>
-          </div>
-
-          
-          <div className="closing-section">
-            <div className="closing-content">
-              <h2>topic</h2>
-              <p className="closing-message">
-                content
-              </p>
-              <p>
-                
-              </p>
-            </div>
-          </div>
         </div>
 
         <Footer />
