@@ -104,4 +104,4 @@ const Imgswap = () => {
   )
 }
 
-export default Imgswap
+export default Imgswap;
