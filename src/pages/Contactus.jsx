@@ -5,7 +5,7 @@ import "./Stylings/Contactus.css";
 const Contactus = () => {
   return (
     <div>
-      <div className="background-image"></div>
+      <div className="contactus-background"></div>
       
     <div className="contactus-container">
       <Navbar />
