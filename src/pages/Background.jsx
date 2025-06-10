@@ -12,7 +12,7 @@ function Background() {
   const [show5, setShow5] = useState(false);
   return (
     <div>
-      <div className="background1-image"></div>
+      <div className="background2-image"></div>
       <div className="page-content">
         <Navbar />
 
