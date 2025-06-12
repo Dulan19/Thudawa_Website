@@ -4,14 +4,11 @@ const Preloader = () => {
   return (
     <div className="preloader-container">
       <div className="preloader-content">
-        {/* Logo placeholder - you can replace this with your actual logo */}
-        <div className="logo-container">
-          <div className="logo-placeholder">
-            <span>Your Logo Here</span>
-          </div>
-        </div>
 
-        {/* Animated children waving */}
+        <div className="logo">
+        
+        </div>
+        
         <div className="children-container">
           <div className="child child-1">
             <div className="child-body">
