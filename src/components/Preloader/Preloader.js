@@ -6,7 +6,7 @@ const Preloader = () => {
       <div className="preloader-content">
 
         <div className="logo">
-        
+
         </div>
         
         <div className="children-container">
@@ -43,7 +43,7 @@ const Preloader = () => {
 
         {/* Loading text and animation */}
         <div className="loading-section">
-          <h2 className="welcome-text">Welcome to Our Home</h2>
+          <h2 className="welcome-text">This area is still fixing </h2>
           <div className="loading-dots">
             <span className="dot1"></span>
             <span className="dot1"></span>
