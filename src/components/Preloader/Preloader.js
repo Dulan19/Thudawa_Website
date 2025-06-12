@@ -4,14 +4,11 @@ const Preloader = () => {
   return (
     <div className="preloader-container">
       <div className="preloader-content">
-        {/* Logo placeholder - you can replace this with your actual logo */}
-        <div className="logo-container">
-          <div className="logo-placeholder">
-            <span>Your Logo Here</span>
-          </div>
-        </div>
 
-        {/* Animated children waving */}
+        <div className="logo">
+
+        </div>
+        
         <div className="children-container">
           <div className="child child-1">
             <div className="child-body">
@@ -46,7 +43,7 @@ const Preloader = () => {
 
         {/* Loading text and animation */}
         <div className="loading-section">
-          <h2 className="welcome-text">Welcome to Our Home</h2>
+          <h2 className="welcome-text">This area is still fixing </h2>
           <div className="loading-dots">
             <span className="dot1"></span>
             <span className="dot1"></span>
