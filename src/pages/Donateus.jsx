@@ -18,7 +18,7 @@ const Donateus = () => {
           <li>In-Kind Donations: We accept toys, books, and educational materials.</li>
         </ul>
         <h2>Contact Us for More Information</h2>
-        <p>Email:</p>
+        <button className ="contactus-button">Contact Us</button>
         </div>
         </div>
         <Footer />
