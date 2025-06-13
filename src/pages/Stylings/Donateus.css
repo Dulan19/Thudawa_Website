@@ -11,3 +11,16 @@
   opacity: 0.8;
   filter: brightness(0.6);
 }
+
+.donateus-container {
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  color: white;
+  margin: 40px auto;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  max-width: 800px;
+  text-align: center;
+}
