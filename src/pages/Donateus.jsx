@@ -8,6 +8,7 @@ const Donateus = () => {
       <div className="background-image"></div>
       <Navbar />
       <div className="donateus-container">
+        <div className="donateus-card">
         <h1>Support Our Cause</h1>
         <p>Your contributions help us provide better care and facilities for the children at Tudawe Child Development Center.</p>
         <h2>How to Donate</h2>
@@ -18,6 +19,7 @@ const Donateus = () => {
         </ul>
         <h2>Contact Us for More Information</h2>
         <p>Email:</p>
+        </div>
         </div>
         <Footer />
         </div>
