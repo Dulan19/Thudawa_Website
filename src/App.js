@@ -55,18 +55,22 @@ function App() {
         
         <div className="Events-section">
           <h2>Events</h2>
-          <div className="events-container">
-            <div className="event-card">
-              <h3>Event 1</h3>
-              <p>Description of Event 1.</p>
+          <div className="vision-mission-container">
+            <div className="box vision-box">
+              <h2>Our Vision</h2>
+              <p>
+                Our vision is to put an end to the sufferings of innocent children who are being tampered by social
+                imbalances and injustice; to recreate their childhoods through justice and social equality and through
+                that, create a better future for them.
+              </p>
             </div>
-            <div className="event-card">
-              <h3>Event 2</h3>
-              <p>Description of Event 2.</p>
-            </div>
-            <div className="event-card">
-              <h3>Event 3</h3>
-              <p>Description of Event 3.</p>
+            <div className="box mission-box">
+              <h2>Our Mission</h2>
+              <p>
+                Our mission is to foster, protect and provide, for those children who have been disowned, neglected,
+                orphaned or abused and to provide all the inhabitants with welfare and guidance.
+              </p>
+              <button className="seemore-btn">Read More</button>
             </div>
           </div>
         </div>  
