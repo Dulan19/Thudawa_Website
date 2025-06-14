@@ -51,6 +51,26 @@ function App() {
             </div>
           </div>
         </div>
+
+        
+        <div className="Events-section">
+          <h2>Events</h2>
+          <div className="events-container">
+            <div className="event-card">
+              <h3>Event 1</h3>
+              <p>Description of Event 1.</p>
+            </div>
+            <div className="event-card">
+              <h3>Event 2</h3>
+              <p>Description of Event 2.</p>
+            </div>
+            <div className="event-card">
+              <h3>Event 3</h3>
+              <p>Description of Event 3.</p>
+            </div>
+          </div>
+        </div>  
+
         <Footer />
       </div>
     </div>
