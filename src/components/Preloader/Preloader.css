@@ -20,13 +20,13 @@
 
 
 .logo {
-  width: 120px;
-  height: 120px;
+  width: 350px;
+  height: 350px;
   margin: 0 auto 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("../../assets/preloaader.ico"); /* ✅ Corrected */
+  background-image: url("../../assets/logo transparent.png"); /* ✅ Corrected */
   background-size: cover; /* ✅ Ensures image fills the box */
   background-position: center; /* ✅ Keeps it centered */
   background-repeat: no-repeat; /* ✅ Prevents tiling */
