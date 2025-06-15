@@ -150,90 +150,20 @@ function Background() {
 
           <div className="section-container">
           <div className="intro-section">
-            <h2>Tudawe Brothers (Pvt) Ltd</h2>
-            <p>Tudawe Brothers (Pvt) Ltd The ancestral home of the Tudawe family was donated on 09th June 1988 to serve as a Home to take care of destitute girls in and around
-               the Wadduwa area. Presently the Home accommodates around 41 girls and since its inception, has benefited over 100 children, providing a comfortable home environment.
-                We are proud to record that these children have left the Home to become successful in society.   Tudawe Brothers was the brainchild of the … </p>
+            <h2>Best Children Development Home-2012 (Pvt) Ltd</h2>
+            <p>Tudawe Child Development Centre won the first place and received the Award participating in a competition to elect the
+               best Children Development Home in the Western Province organized by the Childcare and Probation Dept of the Western Province in 2012. Tudawe Child Development 
+               Center was graded by the Child care and Probation Dept and it had taken 91.85 points and graded as “A” Class Child Development Centre in the Western Province 
+               in 2012. In 2013 … </p>
             <button onClick={() => setShow5(!show5)}>{show5 ? "Show Less" : "Read More"}
             </button>
-            {show5 && <p> late Mr. Lawrence de S Tudawe,with a Diploma in Building Construction from Ceylon Technical College and his brother, 
-              the late Mr. Dionysius de S Tudawe, who had a passion for the construction field.
-              In 1942, the brothers identified the need for a stable construction firm in Sri Lanka and formed Tudawe Brothers as a partnership.
-              Subsequenlty,it was converted into a limited liability company in 1947 as Tudawe Brothers Limited,under the Companies Ordiance of 1938.
-              The company was established as a family business and grew to become one of Sri Lanka’s premier construction engineering firms, offering end-to-end 
-              construction solutions on par with international quality standards.
-              The ancestral home of the Tudawe family was donated on 09th June 1988 to serve as a Home to take care of destitute girls in and around the Wadduwa area.
-              Presently the Home accommodates around 41 girls and since its inception, has benefited over 100 children, providing a comfortable home environment. We are
-                proud to record that these children have left the Home to become successful in society.
-
-              Tudawe Brothers (Pvt) Ltd Website : http://www.tudawe.com/</p>}
+            {show5 && <p> it has won the  best children development center in Kaluthara District surpassing 16 Children Development centers.
+              In addition Tudawe Children home has capable to won quality awards in year year 2010 ,2011 and 2012 conservatively within the Western Province.</p>}
           </div>
           </div>
 
-          <div className="section-container">
-          <div className="intro-section">
-            <h2>Friends Kinderhilfe International e.V.</h2>
-            <p>Friends Kinderhilfe International e.V. FRIENDS Kinderhilfe International e.V. has addressed the heed „friend“ for children in Sri Lanka who need our help to 
-              give them a chance of a better future. As registered non-profit association we are getting involved with a manageable and transparent organization helping children
-               to find a home, but primarily a life with promising prospects. FRIENDS would like to be a „good friend” of the smallest and weakest in Sri Lanka. For years we have 
-               been getting … </p>
-            <button onClick={() => setShow5(!show5)}>{show5 ? "Show Less" : "Read More"}
-            </button>
-            {show5 && <p> involved on the spot offering lasting programs and projects to support education and training of street children and orphans 
-              as well as children of poor families. Oriented to the demands of children we strengthen our efforts in order to offer children in the third
-               world country Sri Lanka a future.
-              Our organization was founded in 1994 and has addressed the task to give abandoned and poor children and orphans in Sri Lanka a better life. As registered
-              and accredited non-profit association, located in Göppingen, we have presently more than 200 members who share the „idea of friendship“ – reflecting the 
-              aim of FRIENDS Kinderhilfe International e.V. – with us and form the basis of our activities by membership, sponsorship or personal engagement.
-              For more than fifty years, Germany has lend a helping hand to the people of Sri Lanka. Official development cooperation-projects laid the foundation in the
-              1950s. But as Germans started to travel to Sri Lanka in growing numbers, hundreds of private projects contributed to an impressive network of cooperation – 
-              and friendship.
-              Friends Kinderhilfe International e.V. Website : https://www.friends-kinderhilfe.de/index.php/en German Embassy in Colombo,Project Locations
-              in Sri Lanka :Reference :http://germanyhelpinghands.lk/projects.php?id=431&project=Tudawe-Girls-Home</p>}
-          </div>
-          </div>
-
-          <div className="section-container">
-          <div className="intro-section">
-            <h2>List of individual donor including Kusuma Paranagama, Swarna Padmini Thisera ,Soma Gunatilleka and Chitra Wijesekera who support for us for our education and facilities.</h2>
-            <p>List of individual donor including
-              <ul>
-                <li>Kusuma Paranagama</li>Kusuma Paranagama, Swarna Padmini Thisera ,Soma Gunatilleka and Chitra Wijesekera who support for us for our education and facilities.
-                <li>Swarna Padmini Thisera</li>
-                <li>Soma Gunatilleka</li>
-                <li>Chitra Wijesekera who support for us for our education and facilities.</li>
-              </ul>
-               
-               
-            </p>
-          </div>
-          </div>
-
-          <div className="section-container">
-          <div className="intro-section">
-            <h2>Well wishers including Professor Ven. Kotapitiye Rahula Nayaka Thera ,Ven.Sasthrapathi Thalpitiye Chandarathana Thera , Mr.G.G.D. Somarathna and Mr.Jagath 
-              Sumathipala have forwarded their messages of Goodwill wishing all success to the Tudawe Child Development Center.</h2>
-            <p>Well wishers including Professor Ven. Kotapitiye Rahula Nayaka Thera ,Ven.Sasthrapathi Thalpitiye Chandarathana Thera , Mr.G.G.D. Somarathna and Mr.Jagath
-               Sumathipala have forwarded their messages of Goodwill wishing all success to the Tudawe Child Development Center.
-            </p>
-          </div>
-          </div>
-              
-          <div className="section-container">
-          <div className="intro-section">
-            <h2>The Office Bearers of the Board of Trustees of Tudawe Child Development Centre for the year of 2013</h2>
-            <p>space for the image
-            </p>
-          </div>
-          </div> 
-          <div className="section-container">
-          <div className="intro-section">
-            <h2>Former Office Bearers,Patrons and Trustees has listed down as recognition for the great service they provided for the Thudwe Children Development Center.</h2>
-            <p>space for the image<br/>
-            Former Office Bearers,Patrons and Trustees has listed down as recognition for the great service they provided for the Thudwe Children Development Center.
-            </p>
-          </div>
-          </div>   
+          
+          
 
           
           
