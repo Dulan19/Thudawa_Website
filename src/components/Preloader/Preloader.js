@@ -5,51 +5,25 @@ const Preloader = () => {
     <div className="preloader-container">
       <div className="preloader-content">
 
-        <div className="logo">
-
-        </div>
         
-        <div className="children-container">
-          <div className="child child-1">
-            <div className="child-body">
-              <div className="child-head"></div>
-              <div className="child-torso"></div>
-              <div className="child-arm left-arm">
-                <div className="hand"></div>
-              </div>
-              <div className="child-arm right-arm waving-arm">
-                <div className="hand waving-hand"></div>
-              </div>
-              <div className="child-leg left-leg"></div>
-              <div className="child-leg right-leg"></div>
-            </div>
-          </div>
+          <div className="blur-box">
+            <div className="logo">
 
-          <div className="child child-2">
-            <div className="child-body">
-              <div className="child-head"></div>
-              <div className="child-torso"></div>
-              <div className="child-arm left-arm waving-arm">
-                <div className="hand waving-hand"></div>
-              </div>
-              <div className="child-arm right-arm">
-                <div className="hand"></div>
-              </div>
-              <div className="child-leg left-leg"></div>
-              <div className="child-leg right-leg"></div>
             </div>
-          </div>
-        </div>
 
-        {/* Loading text and animation */}
-        <div className="loading-section">
-          <h2 className="welcome-text">This area is still fixing </h2>
+            <div className="loading-section">
+          <h2 className="welcome-text">"Hope Starts Here." </h2>
           <div className="loading-dots">
             <span className="dot1"></span>
             <span className="dot1"></span>
             <span className="dot1"></span>
           </div>
         </div>
+
+          </div>
+        
+      
+        
       </div>
     </div>
   )

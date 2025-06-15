@@ -20,16 +20,32 @@
 
 
 .logo {
-  width: 350px;
-  height: 350px;
+  width: 200px;
+  height: 200px;
   margin: 0 auto 40px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("../../assets/logo transparent.png"); /* ✅ Corrected */
+  background-image: url("../../assets/logo icon@3x.png"); /* ✅ Corrected */
   background-size: cover; /* ✅ Ensures image fills the box */
   background-position: center; /* ✅ Keeps it centered */
   background-repeat: no-repeat; /* ✅ Prevents tiling */
+}
+
+.blur-box {
+  text-align: center;
+  color: white;
+  max-width: 850px;
+  max-height: 340px;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.2);
+
+  border-radius: 25px;
+  margin-left: 30px;
+  margin-top: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  animation: fadeInUp 0.8s ease-out 0.3s both;
 }
 
 
@@ -178,7 +194,7 @@
 }
 
 .welcome-text {
-  font-size: 24px;
+  font-size: 17px;
   font-weight: 300;
   color: #ffffff;
   margin-bottom: 20px;
