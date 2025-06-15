@@ -192,7 +192,32 @@ function Background() {
             </p>
           </div>
           </div>
+
+          <div className="section-container">
+          <div className="intro-section">
+            <h2>Well wishers including Professor Ven. Kotapitiye Rahula Nayaka Thera ,Ven.Sasthrapathi Thalpitiye Chandarathana Thera , Mr.G.G.D. Somarathna and Mr.Jagath 
+              Sumathipala have forwarded their messages of Goodwill wishing all success to the Tudawe Child Development Center.</h2>
+            <p>Well wishers including Professor Ven. Kotapitiye Rahula Nayaka Thera ,Ven.Sasthrapathi Thalpitiye Chandarathana Thera , Mr.G.G.D. Somarathna and Mr.Jagath
+               Sumathipala have forwarded their messages of Goodwill wishing all success to the Tudawe Child Development Center.
+            </p>
+          </div>
+          </div>
               
+          <div className="section-container">
+          <div className="intro-section">
+            <h2>The Office Bearers of the Board of Trustees of Tudawe Child Development Centre for the year of 2013</h2>
+            <p>space for the image
+            </p>
+          </div>
+          </div> 
+          <div className="section-container">
+          <div className="intro-section">
+            <h2>Former Office Bearers,Patrons and Trustees has listed down as recognition for the great service they provided for the Thudwe Children Development Center.</h2>
+            <p>space for the image<br/>
+            Former Office Bearers,Patrons and Trustees has listed down as recognition for the great service they provided for the Thudwe Children Development Center.
+            </p>
+          </div>
+          </div>   
 
           
           
