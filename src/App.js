@@ -53,50 +53,40 @@ function App() {
         </div>
 
         
-        <div className="Events-section">
-          <h1>Events</h1>
-          <div className="Events-container">
-            <div className="Events-box">
-              <h2>Our Vision</h2>
-              <p>
-                Our vision is to put an end to the sufferings of innocent children who are being tampered by social
-                imbalances and injustice; to recreate their childhoods through justice and social equality and through
-                that, create a better future for them.
-              </p>
-              <button className="view">View</button>
-            </div>
+          <div className="Events-section">
+                  <h1>Events</h1>
+              <div className="Events-scroll-wrapper">
+                <div className="Events-container">
+                  {/* Events boxes */}
+                  <div className="Events-box">
+                    <h2>Our Vision</h2>
+                    <p>
+                      Our vision is to put an end to the sufferings of innocent children who are being tampered by social
+                      imbalances and injustice; to recreate their childhoods through justice and social equality and through
+                      that, create a better future for them.
+                    </p>
+                    <button className="view">View</button>
+                  </div>
 
-            <div className="Events-box">
-              <h2>Our Vision</h2>
-              <p>
-                Our vision is to put an end to the sufferings of innocent children who are being tampered by social
-                imbalances and injustice; to recreate their childhoods through justice and social equality and through
-                that, create a better future for them.
-              </p>
-              <button className="view">View</button>
-            </div>
+                  {/* Copy-pasted boxes removed for brevity, add yours here */}
 
-            <div className="Events-box">
-              <h2>Our Vision</h2>
-              <p>
-                Our vision is to put an end to the sufferings of innocent children who are being tampered by social
-                imbalances and injustice; to recreate their childhoods through justice and social equality and through
-                that, create a better future for them.
-              </p>
-              <button className="view">View</button>
-            </div>
+                  <div className="Events-box">
+                    <h2>Our Mission</h2>
+                    <p>
+                      Our mission is to foster, protect and provide, for those children who have been disowned, neglected,
+                      orphaned or abused and to provide all the inhabitants with welfare and guidance.
+                    </p>
+                    <button className="view">View</button>
+                    <button className="seemore-btn">View More</button>
+                  </div>
+                </div>
 
-            <div className="Events-box">
-              <h2>Our Mission</h2>
-              <p>
-                Our mission is to foster, protect and provide, for those children who have been disowned, neglected,
-                orphaned or abused and to provide all the inhabitants with welfare and guidance.
-              </p>
-              <button className="view">View</button>
-              <button className="seemore-btn">View More</button>
-            </div>
+                <button className="scroll-arrow" onClick={() => window.location.href = '/events'}>
+                  →
+                </button>
+              </div>
           </div>
-        </div>  
+            
 
         <Footer />
       </div>
