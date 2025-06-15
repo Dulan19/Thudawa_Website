@@ -18,7 +18,7 @@ function Background() {
 
         
         <h1 className="aboutus-heading">
-          Background
+          Behind Us
           
         </h1>
 

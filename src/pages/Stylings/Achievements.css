@@ -1,0 +1,163 @@
+.background2-image {
+  background-image: url("../../assets/Wadduwa.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  opacity: 0.8;
+  filter: brightness(0.6);
+}
+
+.page-content {
+  position: relative;
+  z-index: 1;
+  padding-top: 100vh;
+  margin-top: -10vh;
+}
+
+.aboutus-heading {
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  margin-top: -50vh;
+  margin-bottom: 42vh;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.aboutus-heading h6 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-top: 10px;
+  text-align: center;
+  line-height: 1.5;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.section-container {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Introduction Section */
+.intro-section {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  color: white;
+  margin: 20px auto;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  animation: slideInUp 0.8s ease-out 0.2s both;
+}
+
+.intro-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.intro-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+table, th, td {
+  border: 0.1px solid rgb(217, 131, 36);
+}
+
+/* Animations */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .aboutus-heading {
+    font-size: 2rem;
+    margin-bottom: 30vh;
+  }
+
+  .aboutus-heading h6 {
+    font-size: 1.2rem;
+  }
+
+  .section-container {
+    padding: 0 15px;
+  }
+
+  .intro-section,
+  .timeline-section,
+  .mvv-section,
+  .facilities-section,
+  .donor-section,
+  .life-section,
+  .spiritual-section,
+  .closing-section {
+    padding: 25px;
+    margin: 20px auto;
+  }
+
+  .timeline::before {
+    left: 30px;
+  }
+
+  .timeline-item {
+    flex-direction: row !important;
+    padding-left: 70px;
+  }
+
+  .timeline-icon {
+    position: absolute;
+    left: 0;
+    margin: 0;
+  }
+
+  .mvv-grid,
+  .facilities-grid,
+  .spiritual-content {
+    grid-template-columns: 1fr;
+  }
+
+  .routine-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutus-heading {
+    font-size: 1.5rem;
+  }
+
+  .aboutus-heading h6 {
+    font-size: 1rem;
+  }
+
+  .intro-section h2,
+  .timeline-section h2,
+  .mvv-section h2,
+  .facilities-section h2,
+  .donor-section h2,
+  .life-section h2,
+  .spiritual-section h2,
+  .closing-content h2 {
+    font-size: 2rem;
+  }
+}
