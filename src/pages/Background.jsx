@@ -45,17 +45,21 @@ function Background() {
         </h1>
 
         
-        <div className="section-container">
-          <div className="intro-section">
-            <h2>Thalpitiya Village</h2>
-            <p>Thalpitiya Village Thalpitiya Village is located 31 km away from the central city, Colombo. 
+        
+          
+          <div className="section-container">
+            <div className="intro-section">
+              <h2>Establishment</h2>
+                <p>
+                Thalpitiya Village Thalpitiya Village is located 31 km away from the central city, Colombo. 
               Though it is close to city center, It has preserved the beauty of the Village, and currently going 
               through a lot of development projects. Let’s see the Beauty of the Village, If you travel by train,you 
               feel the  breeze of the Indian ocean,  you can get down from the Pinwattha or Wadduwa Station and walk
-               towards Thalpitiya. On the beach, and there are numerous hotels ready...</p>
-            <button onClick={() => setShow1(!show1)}>{show1 ? "Show Less" : "Read More"}
-            </button>
-            {show1 && <p>to provide accommodation in Thapitiya. The five-star Hotel, which is an architectural masterpiece designed
+               towards Thalpitiya. On the beach, and there are numerous hotels ready
+                {!show2 && "..."}
+                {show2 && (
+                  <>
+                    {" "} Pto provide accommodation in Thapitiya. The five-star Hotel, which is an architectural masterpiece designed
                       by Jeffry Bawa stands facing the Indian Ocean. It offers a great service to the customers including meals, 
                       rooms, spa and other facilities such as sports and travel arrangements. There are many players ready to provide
                         the service as a tailor made solution which ultimately makes you comfortable even if you are there for a short period.
@@ -74,12 +78,17 @@ function Background() {
                         prices .you can see pulling nets by lots of people reciting traditional songs, and you can also join them, supporting and 
                       sharing their happiness after hard work. Now, you can relax under the shadows of coconut trees on the beach and feel the difference 
                             between the midnight and sunset breeze.<br/>
-
-                        <ul><li>History</li>
-                        <li>Natural Beauty</li>
-                        <li>Raja Maha Viharaya</li>
-                        <li>Facilities</li></ul><br/>
-                        According to the Folklores Thalpitiya village is a land that provided coconut oil for the Kotte Dalada Maligawa where the honorable
+                  </>
+                )}
+              </p>
+          
+                      {show2 && (
+                        <div>
+                            <ul><li>History</li>
+                            <li>Natural Beauty</li>
+                            <li>Raja Maha Viharaya</li>
+                            <li>Facilities</li></ul><br/>
+                            <p>According to the Folklores Thalpitiya village is a land that provided coconut oil for the Kotte Dalada Maligawa where the honorable
                         tooth relic was placed those days.
 
                           Although this land is called Thalpitiya at present, it was called Thelpitiya or Thelwaththa then usually a village is named due to 
@@ -113,9 +122,16 @@ function Background() {
 
                           With the time,Thalpitiya has modernized with new facilities, with the influence of the transportation. In Wadduwa most of the local banks are available 
                           with ATM facilities. Fresh foods, vegetables, fruits, fish or meat form Market or Food City .Even medicines you can buy from there. We invite you to have 
-                            a chat with villagers, and share their views.</p>}
-          </div>
-          
+                            a chat with villagers, and share their views.</p>
+                        </div>
+                      )}
+                
+                
+                <button onClick={() => setShow2(!show2)}>
+                  {show2 ? "Show Less" : "Read More"}
+                </button>
+              </div>
+            </div>
 
           <div className="section-container">
             <div className="intro-section">
@@ -135,51 +151,48 @@ function Background() {
                 )}
               </p>
           
-              {show2 && (
-                <div>
-                  <p>1st matron: Miss Yasawathi Jayawardhana</p>
-                  
-                    <table>
-                      <tr>
-                        <th>The first Board of trustees was fallows (1888),</th>
-                        <th>Committee Members –</th>
-                      </tr>
-                      <tr>
-                        <td>
-                          <ul>
-                            <li>President                 – Mr.Rohan Tudawe</li>
-                            <li>Vice Presidents      – Mr.Jayakis Tudawe</li>
-                            <li>General Secretary  – Mr. G Harischandra Graru</li>
-                            <li>Treasurer                – Mr. Layanal Hasthanayaka</li>
-                          </ul>
-                        </td>
-                        <td>
-                          <ul>
-                            <li>Mr.H.D.Soysa</li>
-                            <li>B.D.M.Samanthilaka</li>
-                            <li>Mr.M.D.Oliver Gunathillaka</li>
-                            <li>Mrs.Rathna Somadasa</li>
-                            <li>Mrs.T. Liliyan Silva</li>
-                            <li>Mrs. C de Silva</li>
-                            <li>Mrs. P.E.Gunathilaka</li>
-                          </ul>
-                        </td>
-                      </tr>
+                      {show2 && (
+                        <div>
+                          <p>1st matron: Miss Yasawathi Jayawardhana</p>
+                          
+                            <table>
+                              <tr>
+                                <th>The first Board of trustees was fallows (1888),</th>
+                                <th>Committee Members –</th>
+                              </tr>
+                              <tr>
+                                <td>
+                                  <ul>
+                                    <li>President                 – Mr.Rohan Tudawe</li>
+                                    <li>Vice Presidents      – Mr.Jayakis Tudawe</li>
+                                    <li>General Secretary  – Mr. G Harischandra Graru</li>
+                                    <li>Treasurer                – Mr. Layanal Hasthanayaka</li>
+                                  </ul>
+                                </td>
+                                <td>
+                                  <ul>
+                                    <li>Mr.H.D.Soysa</li>
+                                    <li>B.D.M.Samanthilaka</li>
+                                    <li>Mr.M.D.Oliver Gunathillaka</li>
+                                    <li>Mrs.Rathna Somadasa</li>
+                                    <li>Mrs.T. Liliyan Silva</li>
+                                    <li>Mrs. C de Silva</li>
+                                    <li>Mrs. P.E.Gunathilaka</li>
+                                  </ul>
+                                </td>
+                              </tr>
+                        
+                            </table>
+                          
+                        </div>
+                      )}
                 
-                    </table>
-                  
-                </div>
-              )}
-        
-        
-        <button 
-          onClick={() => setShow2(!show2)}
-          className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded transition-colors duration-200 mt-4"
-        >
-          {show2 ? "Show Less" : "Read More"}
-        </button>
-      </div>
-    </div>
+                
+                <button onClick={() => setShow2(!show2)}>
+                  {show2 ? "Show Less" : "Read More"}
+                </button>
+              </div>
+            </div>
           
           <div className="section-container">
             <div className="intro-section">
@@ -226,7 +239,7 @@ function Background() {
 
           
           
-        </div>
+        
 
         <Footer />
       </div>
