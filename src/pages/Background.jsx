@@ -11,9 +11,22 @@ function Background() {
   const [show4, setShow4] = useState(false);
   const [show5, setShow5] = useState(false);
 
-  const fullText5 = `Thalpitiya Village Thalpitiya is a remote village in the Panadura Electorate in Kalutara District in Sri Lanka. During the 18th century Panadura became a popular Buddhists City as the result of the Historical Panadura Great Controversy held on 26th August by Ven Wadeepasinghe Megettuwatta Gunananda Nayaka Thera an erudite Buddhist scholar lived in the country to save Sri Lanka Buddhasasanaya from missionary workers during the 18th Century invasion by the British Government. Thalpitiya village in Wadduwa Police area became very popular among the inhabitants in the past as the bhikkus lived in the Thalpitiya temple provided shelter to safeguard the sacred Tooth relic of Lord Buddha hidden in a huge tree at the Thalpitiya Temple premises. Subsequently the sacred tooth relics was taken away to down south. Thereafter it was taken to Kandy and kept at the Dalada Maligawa the palace of Sri Wickramarajasinghe the last king who was captured by the British Army. So that thalpitiya temple is very precious wealth for the villagers.`;
+  const truncatedText4 = "Tudawe Philanthropist Family During the 18 th century well known Tudawe Family lived in Thalpitiya Wadduwa engaged in religious and social activities in helping the temple and the poor families providing wealth and attending their needs. When the ancestors of the Tudawe philanthropist family passed away, the sons and daughters wanted to look after their business activities operating in Colombo and decided to live in Colombo leaving their old parental house and property at Talpitiya valued millions of Rupees. They went";
+
+  const fullText4 = "Tudawe Philanthropist Family During the 18 th century well known Tudawe Family lived in Thalpitiya Wadduwa engaged in religious and social activities in helping the temple and the poor families providing wealth and attending their needs. When the ancestors of the Tudawe philanthropist  family passed away, the sons and daughters wanted to look after their business activities operating in Colombo and decided to live in Colombo leaving their old parental house and property at Talpitiya valued millions of Rupees. They went Colombo and lived because it was very convenient to run their business enterprises. Late Lawrence Tudawe encouraged the other family members of the Tudawe family to donate the parental House and Property to a religious organization in the Country.A family friend Francis Wanigersekera suggested that the Parental House and Prioperty of Tudawe Family situated lonely at Thalpitiya should be donated to the Buddhists Organisation called Samastha Lanka Bauddha Maha Sammelanaya (All Ceylon Buddhists Congress) in Colombo . At a discussion of all family members decided unanimously to donate their parental house and property to this Religious and Social Organization.";
+
+  const fullText5 = `Thalpitiya Village Thalpitiya is a remote village in the Panadura Electorate in Kalutara District in Sri Lanka. During the 18th 
+  century Panadura became a popular Buddhists City as the result of the Historical Panadura Great Controversy held on 26th August by Ven Wadeepasinghe
+   Megettuwatta Gunananda Nayaka Thera an erudite Buddhist scholar lived in the country to save Sri Lanka Buddhasasanaya from missionary workers during 
+   the 18th Century invasion by the British Government. Thalpitiya village in Wadduwa Police area became very popular among the inhabitants in the past
+    as the bhikkus lived in the Thalpitiya temple provided shelter to safeguard the sacred Tooth relic of Lord Buddha hidden in a huge tree at the Thalpitiya
+     Temple premises. Subsequently the sacred tooth relics was taken away to down south. Thereafter it was taken to Kandy and kept at the Dalada Maligawa the
+      palace of Sri Wickramarajasinghe the last king who was captured by the British Army. So that thalpitiya temple is very precious wealth for the villagers.`;
   
-  const truncatedText5 = `Thalpitiya Village Thalpitiya is a remote village in the Panadura Electorate in Kalutara District in Sri Lanka. During the 18th century Panadura became a popular Buddhists City as the result of the Historical Panadura Great Controversy held on 26th August by Ven Wadeepasinghe Megettuwatta Gunananda Nayaka Thera an erudite Buddhist scholar lived in the country to save Sri Lanka Buddhasasanaya from missionary workers during the 18th Century invasion by the British Government. Thalpitiya village in Wadduwa Police area became very popular`;
+  const truncatedText5 = `Thalpitiya Village Thalpitiya is a remote village in the Panadura Electorate in Kalutara District in Sri Lanka. During the 18th century
+   Panadura became a popular Buddhists City as the result of the Historical Panadura Great Controversy held on 26th August by Ven Wadeepasinghe Megettuwatta Gunananda
+    Nayaka Thera an erudite Buddhist scholar lived in the country to save Sri Lanka Buddhasasanaya from missionary workers during the 18th Century invasion by the British
+     Government. Thalpitiya village in Wadduwa Police area became very popular`;
 
   return (
     <div>
@@ -167,21 +180,19 @@ function Background() {
           </div>
           </div>
 
+          
+
           <div className="section-container">
-          <div className="intro-section">
-            <h2>Tudawe Philanthropist Family</h2>
-            <p>Tudawe Philanthropist Family During the 18 th century well known Tudawe Family lived in Thalpitiya Wadduwa engaged in religious and social 
-              activities in helping the temple and the poor families providing wealth and attending their needs. When the ancestors of the Tudawe philanthropist 
-              family passed away, the sons and daughters wanted to look after their business activities operating in Colombo and decided to live in Colombo leaving
-               their old parental house and property at Talpitiya valued millions of Rupees. They went …</p>
-            <button onClick={() => setShow4(!show4)}>{show4 ? "Show Less" : "Read More"}
-            </button>
-            {show4 && <p> Colombo and lived because it was very convenient to run their business enterprises. Late Lawrence Tudawe encouraged the other family members 
-              of the Tudawe family to donate the parental House and Property to a religious organization in the Country.A family friend Francis Wanigersekera suggested
-               that the Parental House and Prioperty of Tudawe Family situated lonely at Thalpitiya should be donated to the Buddhists Organisation called Samastha Lanka 
-               Bauddha Maha Sammelanaya (All Ceylon Buddhists Congress) in Colombo . At a discussion of all family members decided unanimously to donate their parental 
-               house and property to this Religious and Social Organization.</p>}
-          </div>
+            <div className="intro-section">
+              <h2>Tudawe Philanthropist Family</h2>
+              <p>
+              {show4 ? fullText4 : truncatedText4 + "..."}
+              </p>
+              <button 
+              onClick={() => setShow4(!show4)}>
+              {show4 ? "Show Less" : "Read More"}
+              </button>
+            </div>
           </div>
 
           <div className="section-container">
@@ -191,9 +202,7 @@ function Background() {
               {show5 ? fullText5 : truncatedText5 + "..."}
               </p>
               <button 
-              onClick={() => setShow5(!show5)}
-              className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded transition-colors duration-200"
-        >
+              onClick={() => setShow5(!show5)}>
               {show5 ? "Show Less" : "Read More"}
               </button>
             </div>
