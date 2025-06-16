@@ -71,7 +71,7 @@ function App() {
                   {/* Copy-pasted boxes removed for brevity, add yours here */}
 
                   <div className="Events-box">
-                    <h2>Our Mission</h2>
+                    <h2>Aurudu Event</h2>
                     <p>
                       Our mission is to foster, protect and provide, for those children who have been disowned, neglected,
                       orphaned or abused and to provide all the inhabitants with welfare and guidance.
