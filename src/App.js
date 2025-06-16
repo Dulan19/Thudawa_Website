@@ -59,7 +59,7 @@ function App() {
                 <div className="Events-container">
                   {/* Events boxes */}
                   <div className="Events-box">
-                    <h2>Our Vision</h2>
+                    <h2>Bakthi Geetha</h2>
                     <p>
                       Our vision is to put an end to the sufferings of innocent children who are being tampered by social
                       imbalances and injustice; to recreate their childhoods through justice and social equality and through
