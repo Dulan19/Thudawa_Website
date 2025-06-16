@@ -68,7 +68,7 @@ function App() {
                     <button className="view">View</button>
                   </div>
 
-                  {/* Copy-pasted boxes removed for brevity, add yours here */}
+                  
 
                   <div className="Events-box">
                     <h2>Aurudu Event</h2>
