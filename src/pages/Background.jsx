@@ -10,6 +10,11 @@ function Background() {
   const [show3, setShow3] = useState(false);
   const [show4, setShow4] = useState(false);
   const [show5, setShow5] = useState(false);
+
+  const fullText5 = `Thalpitiya Village Thalpitiya is a remote village in the Panadura Electorate in Kalutara District in Sri Lanka. During the 18th century Panadura became a popular Buddhists City as the result of the Historical Panadura Great Controversy held on 26th August by Ven Wadeepasinghe Megettuwatta Gunananda Nayaka Thera an erudite Buddhist scholar lived in the country to save Sri Lanka Buddhasasanaya from missionary workers during the 18th Century invasion by the British Government. Thalpitiya village in Wadduwa Police area became very popular among the inhabitants in the past as the bhikkus lived in the Thalpitiya temple provided shelter to safeguard the sacred Tooth relic of Lord Buddha hidden in a huge tree at the Thalpitiya Temple premises. Subsequently the sacred tooth relics was taken away to down south. Thereafter it was taken to Kandy and kept at the Dalada Maligawa the palace of Sri Wickramarajasinghe the last king who was captured by the British Army. So that thalpitiya temple is very precious wealth for the villagers.`;
+  
+  const truncatedText5 = `Thalpitiya Village Thalpitiya is a remote village in the Panadura Electorate in Kalutara District in Sri Lanka. During the 18th century Panadura became a popular Buddhists City as the result of the Historical Panadura Great Controversy held on 26th August by Ven Wadeepasinghe Megettuwatta Gunananda Nayaka Thera an erudite Buddhist scholar lived in the country to save Sri Lanka Buddhasasanaya from missionary workers during the 18th Century invasion by the British Government. Thalpitiya village in Wadduwa Police area became very popular`;
+
   return (
     <div>
       <div className="background2-image"></div>
@@ -180,20 +185,21 @@ function Background() {
           </div>
 
           <div className="section-container">
-          <div className="intro-section">
-            <h2>Thalpitiya Village</h2>
-            <p>Thalpitiya Village Thalpitiya is a remote village in the Panadura Electorate in Kalutara District in Sri Lanka .During the 18th century Panadura became a popular 
-              Buddhists City as the result of the Historical Panadura Great Controversy held on 26th August by Ven Wadeepasinghe Megettuwatta Gunananda Nayaka Thera an erudite 
-              Buddhist scholar lived in the country to save Sri Lanka Buddhasasanaya from missionary workers during the 18th Century invasion by the British Government. Thalpitiya 
-              village in Wadduwa Police area became very popular …</p>
-            <button onClick={() => setShow5(!show5)}>{show5 ? "Show Less" : "Read More"}
-            </button>
-            {show5 && <p> among the inhabitants in the past as the bhikkus lived in the Thalpitiya temple provided shelter to safeguard the sacred Tooth relic of Lord Buddha
-               hidden in a huge tree at the Thalpitiya Temple premises. Subsequently the sacred tooth relics was taken away to down south. Thereafter it was taken to Kandy
-                and kept at the Dalada Maligawa the palace of Sri Wickramarajasinghe the last king who was captured by the British Army. So that thalpitiya temple is very 
-                precious wealth for the villagers.</p>}
+            <div className="intro-section">
+              <h2>Thalpitiya Village</h2>
+              <p>
+              {show5 ? fullText5 : truncatedText5 + "..."}
+              </p>
+              <button 
+              onClick={() => setShow5(!show5)}
+              className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded transition-colors duration-200"
+        >
+              {show5 ? "Show Less" : "Read More"}
+              </button>
+            </div>
           </div>
-          </div>
+
+        
               
 
           
