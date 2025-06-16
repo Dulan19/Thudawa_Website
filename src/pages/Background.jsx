@@ -11,6 +11,10 @@ function Background() {
   const [show4, setShow4] = useState(false);
   const [show5, setShow5] = useState(false);
 
+  const truncatedText3 = "Entrance to Premises Tudawe Chidren Development Center (Tudawe Chidren Home) located  in beautiful  Thalpitiya village in the Panadura Electorate in Kalutara District in Sri Lanka. Although Thalpitiya  is developing rapidly due to globalization you can still fell the  Natural beauty of the  Indian Ocean, Thalpitya Cannal with the genuine worm welcomes of the villagers.In addition the village composite with best class hotels in Sri Lanka which  offers up the ultimate tropical  holiday. tudawe children home location  can visit within one hour from";
+
+  const fullText3 = "Entrance to Premises Tudawe Chidren Development Center (Tudawe Chidren Home) located  in beautiful  Thalpitiya village in the Panadura Electorate in Kalutara District in Sri Lanka. Although Thalpitiya  is developing rapidly due to globalization you can still fell the  Natural beauty of the  Indian Ocean, Thalpitya Cannal with the genuine worm welcomes of the villagers.In addition the village composite with best class hotels in Sri Lanka which  offers up the ultimate tropical  holiday. tudawe children home location  can visit within one hour from the capital Colombo within 1 hour due to the development in the roadnetwork and trasport.If you are using Public passport you can use bus with the destination preferably  Kaluathara  ,  Aluthgama or Mathugama travels in the  Galle Road. If you comming from Colombo,you can get down from the Thalpitya Junction located approximately 3 and half  kilo-meters away from the Panadura Town. Enternce to Daladawaththa TempleEnternce to Daladawaththa TempleAfter walking  around 700m down in the Daladawaththa Road to the Land Side you can see the Daladawaththa Temple.It is a historical temple  provided shelter to safeguard the sacred Tooth Relic of Lord Buddha hidden in a huge tree at the Thalpitiya Temple premises. Then you have to turn Right and walk along the Central road (Mada Para) around 250 m until you see the entrance of the Tudawe Childrean Home. You can use the Train and get down in Pinwattha or Wadduwa Stations  and come to Galle Road.if you are at Pinawattha you have to travel further to Galle direction and If you are at  Wadduwa you have to travel to the direction of Colombo. If you are already in the ….. Happy traverelling and Tudawe Family waiting to see you there… [googlerouteplaner=2]";
+
   const truncatedText4 = "Tudawe Philanthropist Family During the 18 th century well known Tudawe Family lived in Thalpitiya Wadduwa engaged in religious and social activities in helping the temple and the poor families providing wealth and attending their needs. When the ancestors of the Tudawe philanthropist family passed away, the sons and daughters wanted to look after their business activities operating in Colombo and decided to live in Colombo leaving their old parental house and property at Talpitiya valued millions of Rupees. They went";
 
   const fullText4 = "Tudawe Philanthropist Family During the 18 th century well known Tudawe Family lived in Thalpitiya Wadduwa engaged in religious and social activities in helping the temple and the poor families providing wealth and attending their needs. When the ancestors of the Tudawe philanthropist  family passed away, the sons and daughters wanted to look after their business activities operating in Colombo and decided to live in Colombo leaving their old parental house and property at Talpitiya valued millions of Rupees. They went Colombo and lived because it was very convenient to run their business enterprises. Late Lawrence Tudawe encouraged the other family members of the Tudawe family to donate the parental House and Property to a religious organization in the Country.A family friend Francis Wanigersekera suggested that the Parental House and Prioperty of Tudawe Family situated lonely at Thalpitiya should be donated to the Buddhists Organisation called Samastha Lanka Bauddha Maha Sammelanaya (All Ceylon Buddhists Congress) in Colombo . At a discussion of all family members decided unanimously to donate their parental house and property to this Religious and Social Organization.";
@@ -111,75 +115,84 @@ function Background() {
                           with ATM facilities. Fresh foods, vegetables, fruits, fish or meat form Market or Food City .Even medicines you can buy from there. We invite you to have 
                             a chat with villagers, and share their views.</p>}
           </div>
-          <div className="section-container">
-          <div className="intro-section">
-            <h2>Establisment</h2>
-            <p>Under the guidance of  Lawrence Tudawe, members of the Tudawe family donated the Parental House and property of the Tudawe Family situated lonely at 
-              Thalpitiya donated to the Buddhists Organisation called Samastha Lanka Bauddha Maha Sammelanaya (All Ceylon Buddhists Congress) in Colombo. It is the 
-              foundation of the establishment of the Tudawe children’s home.
-              Tudawe Children’s Home has been started with 11 children who have been neglected and orphaned around the Wadduwa area on the 9th, of June 1988...</p>
-            <button onClick={() => setShow2(!show2)}>{show2 ? "Show Less" : "Read More"}
-            </button>
-            {show2 && <p> by donating the property to the All Ceylon Buddhists Congress. It has been registered under…. on 01’st of June 1989. The first matron was 
-              Miss. Yasawathi Jayawardhana. Since 1988 it has been a shelter for nearly 111 girls. most of them are now living in a good position in society.The 
-              children’s home is controlled by a board of governors and the children are assigned to the home by the Department of Probation and Child Care Services.
-              1’st matron:  Miss Yasawathi Jayawardhana<br/>
-              <table>
-                <tr>
-                  <th>The first Board of trustees was fallows (1888),</th>
-                  <th>Committee Members –</th>
-                </tr>
-                <tr>
-                  <td>
-                    <ul>
-                      <li>President                 – Mr.Rohan Tudawe</li>
-                      <li>Vice Presidents      – Mr.Jayakis Tudawe</li>
-                      <li>General Secretary  – Mr. G Harischandra Graru</li>
-                      <li>Treasurer                – Mr. Layanal Hasthanayaka</li>
-                    </ul>
-                  </td>
-                  <td>
-                    <ul>
-                      <li>Mr.H.D.Soysa</li>
-                      <li>B.D.M.Samanthilaka</li>
-                      <li>Mr.M.D.Oliver Gunathillaka</li>
-                      <li>Mrs.Rathna Somadasa</li>
-                      <li>Mrs.T. Liliyan Silva</li>
-                      <li>Mrs. C de Silva</li>
-                      <li>Mrs. P.E.Gunathilaka</li>
-                    </ul>
-                  </td>
-                </tr>
           
-              </table>
-              </p>}
-          </div>
-          </div>
 
           <div className="section-container">
-          <div className="intro-section">
-            <h2>Entrance to Premises</h2>
-            <p>Entrance to Premises Tudawe Chidren Development Center (Tudawe Chidren Home) located  in beautiful 
-              Thalpitiya village in the Panadura Electorate in Kalutara District in Sri Lanka. Although Thalpitiya 
-               is developing rapidly due to globalization you can still fell the  Natural beauty of the  Indian Ocean,
-               Thalpitya Cannal with the genuine worm welcomes of the villagers.In addition the village composite with 
-               best class hotels in Sri Lanka which  offers up the ultimate tropical  holiday. tudawe children home location 
-               can visit within one hour from …</p>
-            <button onClick={() => setShow3(!show3)}>{show3 ? "Show Less" : "Read More"}
-            </button>
-            {show3 && <p> the capital Colombo within 1 hour due to the development in the roadnetwork and trasport.If you are using
-              Public passport you can use bus with the destination preferably  Kaluathara  ,  Aluthgama or Mathugama travels in the 
-              Galle Road. If you comming from Colombo,you can get down from the Thalpitya Junction located approximately 3 and half 
-              kilo-meters away from the Panadura Town. Enternce to Daladawaththa TempleEnternce to Daladawaththa TempleAfter walking 
-              around 700m down in the Daladawaththa Road to the Land Side you can see the Daladawaththa Temple.It is a historical temple 
-               provided shelter to safeguard the sacred Tooth Relic of Lord Buddha hidden in a huge tree at the Thalpitiya Temple premises. 
-               Then you have to turn Right and walk along the Central road (Mada Para) around 250 m until you see the entrance of the Tudawe
-                Childrean Home. You can use the Train and get down in Pinwattha or Wadduwa Stations  and come to Galle Road.if you are at Pinawattha
-                 you have to travel further to Galle direction and If you are at  Wadduwa you have to travel to the direction of Colombo. If you are
-                  already in the ….. Happy traverelling and Tudawe Family waiting to see you there… [googlerouteplaner=2]</p>}
+            <div className="intro-section">
+              <h2>Establishment</h2>
+                <p>
+                Under the guidance of Lawrence Tudawe, members of the Tudawe family donated the Parental House and property of the Tudawe Family situated lonely at 
+                Thalpitiya donated to the Buddhists Organisation called Samastha Lanka Bauddha Maha Sammelanaya (All Ceylon Buddhists Congress) in Colombo. It is the 
+                foundation of the establishment of the Tudawe children's home.
+                Tudawe Children's Home has been started with 11 children who have been neglected and orphaned around the Wadduwa area on the 9th, of June 1988
+                {!show2 && "..."}
+                {show2 && (
+                  <>
+                    {" "}by donating the property to the All Ceylon Buddhists Congress. It has been registered under…. on 01'st of June 1989. The first matron was 
+                    Miss. Yasawathi Jayawardhana. Since 1988 it has been a shelter for nearly 111 girls. most of them are now living in a good position in society. The 
+                    children's home is controlled by a board of governors and the children are assigned to the home by the Department of Probation and Child Care Services.
+                  </>
+                )}
+              </p>
+          
+              {show2 && (
+                <div>
+                  <p>1st matron: Miss Yasawathi Jayawardhana</p>
+                  
+                    <table>
+                      <tr>
+                        <th>The first Board of trustees was fallows (1888),</th>
+                        <th>Committee Members –</th>
+                      </tr>
+                      <tr>
+                        <td>
+                          <ul>
+                            <li>President                 – Mr.Rohan Tudawe</li>
+                            <li>Vice Presidents      – Mr.Jayakis Tudawe</li>
+                            <li>General Secretary  – Mr. G Harischandra Graru</li>
+                            <li>Treasurer                – Mr. Layanal Hasthanayaka</li>
+                          </ul>
+                        </td>
+                        <td>
+                          <ul>
+                            <li>Mr.H.D.Soysa</li>
+                            <li>B.D.M.Samanthilaka</li>
+                            <li>Mr.M.D.Oliver Gunathillaka</li>
+                            <li>Mrs.Rathna Somadasa</li>
+                            <li>Mrs.T. Liliyan Silva</li>
+                            <li>Mrs. C de Silva</li>
+                            <li>Mrs. P.E.Gunathilaka</li>
+                          </ul>
+                        </td>
+                      </tr>
+                
+                    </table>
+                  
+                </div>
+              )}
+        
+        
+        <button 
+          onClick={() => setShow2(!show2)}
+          className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded transition-colors duration-200 mt-4"
+        >
+          {show2 ? "Show Less" : "Read More"}
+        </button>
+      </div>
+    </div>
+          
+          <div className="section-container">
+            <div className="intro-section">
+              <h2>Entrance to Premises</h2>
+              <p>
+              {show3 ? fullText3 : truncatedText3 + "..."}
+              </p>
+              <button 
+              onClick={() => setShow3(!show3)}>
+              {show3 ? "Show Less" : "Read More"}
+              </button>
+            </div>
           </div>
-          </div>
-
           
 
           <div className="section-container">
