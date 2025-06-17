@@ -61,9 +61,8 @@ function App() {
                   <div className="Events-box">
                     <h2>Bakthi Geetha</h2>
                     <p>
-                      Our vision is to put an end to the sufferings of innocent children who are being tampered by social
-                      imbalances and injustice; to recreate their childhoods through justice and social equality and through
-                      that, create a better future for them.
+                      Mrs.Palika Darmawickrama, The Music teacher of the Thudawa Child Development Centre and the commitee of the 
+                      Thudawa Child Development Centre, has 
                     </p>
                     <button className="view">View</button>
                   </div>
