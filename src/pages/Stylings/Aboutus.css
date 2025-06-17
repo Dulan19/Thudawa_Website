@@ -72,6 +72,26 @@
   text-align: justify;
 }
 
+.intro-content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+  align-items: center;
+}
+
+.intro-image {
+  text-align: center;
+}
+
+.intro-main-image {
+  width: 100%;
+  max-width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
 /* Timeline Section */
 .timeline-section {
   background-color: rgba(255, 255, 255, 0.1);
@@ -103,7 +123,7 @@
   top: 0;
   bottom: 0;
   width: 2px;
-  background: linear-gradient(to bottom,  rgb(250, 201, 148),  rgb(217, 131, 36), rgb(46, 25, 2));
+  background: linear-gradient(to bottom, rgb(250, 201, 148), rgb(217, 131, 36), rgb(46, 25, 2));
   transform: translateX(-50%);
 }
 
@@ -122,9 +142,16 @@
   flex-direction: row-reverse;
 }
 
+.timeline-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
 .timeline-icon {
   font-size: 2rem;
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.9);
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -133,6 +160,8 @@
   justify-content: center;
   margin: 0 20px;
   z-index: 2;
+  overflow: hidden;
+  border: 3px solid rgb(217, 131, 36);
 }
 
 .timeline-content {
@@ -224,6 +253,24 @@
   margin-top: 30px;
 }
 
+.facility-image {
+  margin-bottom: 15px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.facility-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.facility-card:hover .facility-img {
+  transform: scale(1.05);
+}
+
 .facility-card {
   background: rgba(255, 255, 255, 0.15);
   padding: 25px;
@@ -234,11 +281,6 @@
 
 .facility-card:hover {
   transform: translateY(-5px);
-}
-
-.facility-image {
-  font-size: 3rem;
-  margin-bottom: 15px;
 }
 
 .facility-card h3 {
@@ -350,11 +392,19 @@
   background: rgba(255, 255, 255, 0.15);
   padding: 15px;
   border-radius: 10px;
+  gap: 15px;
+}
+
+.routine-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid rgb(217, 131, 36);
 }
 
 .routine-icon {
-  font-size: 1.5rem;
-  margin-right: 15px;
+  display: none;
 }
 
 .testimonial {
@@ -363,6 +413,9 @@
   border-radius: 15px;
   margin-top: 30px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .testimonial blockquote {
@@ -375,6 +428,18 @@
 .testimonial cite {
   color: rgb(217, 131, 36);
   font-weight: bold;
+}
+
+.testimonial-image {
+  margin-bottom: 20px;
+}
+
+.testimonial-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid rgb(217, 131, 36);
 }
 
 /* Spiritual Section */
@@ -530,5 +595,12 @@
   .spiritual-section h2,
   .closing-content h2 {
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro-content-wrapper {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 }

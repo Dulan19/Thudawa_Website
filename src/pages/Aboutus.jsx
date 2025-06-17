@@ -10,7 +10,6 @@ function Aboutus() {
       <div className="page-content">
         <Navbar />
 
-        
         <h1 className="aboutus-heading">
           Our Journey Since 1996
           <h6>
@@ -21,43 +20,62 @@ function Aboutus() {
           </h6>
         </h1>
 
-        
         <div className="section-container">
           <div className="intro-section">
-            <h2>Our Story</h2>
-            <p>
-              Tudawe Children Development Center began as a dream — a safe haven where children who have lost family or
-              support could regain hope, joy, and purpose. For nearly three decades, we've nurtured vulnerable girls
-              with love, shelter, and opportunity.
-            </p>
-            <p>
-              Tudawe historical house is located in the beautiful village area. The Tudawe Children Development Center
-              premises gathered around the parental House and Property which has enough space for buildings as well as
-              playgrounds. We have to remember Tudawe Family and other initiators who encourage us to donate this nearly
-              half-arced property for making a better world for children.
-            </p>
+            <div className="intro-content-wrapper">
+              <div className="intro-image">
+                <img
+                  src="/placeholder.svg?height=300&width=400"
+                  alt="Tudawe Children Development Center"
+                  className="intro-main-image"
+                />
+              </div>
+              <div className="intro-text">
+                <h2>Our Story</h2>
+                <p>
+                  Tudawe Children Development Center began as a dream — a safe haven where children who have lost family
+                  or support could regain hope, joy, and purpose. For nearly three decades, we've nurtured vulnerable
+                  girls with love, shelter, and opportunity.
+                </p>
+                <p>
+                  Tudawe historical house is located in the beautiful village area. The Tudawe Children Development
+                  Center premises gathered around the parental House and Property which has enough space for buildings
+                  as well as playgrounds. We have to remember Tudawe Family and other initiators who encourage us to
+                  donate this nearly half-arced property for making a better world for children.
+                </p>
+              </div>
+            </div>
           </div>
 
-          
           <div className="timeline-section">
             <h2>Our History Timeline</h2>
             <div className="timeline">
               <div className="timeline-item">
-                <div className="timeline-icon">📅</div>
+                <div className="timeline-icon">
+                  <img src="/placeholder.svg?height=60&width=60" alt="Foundation 1996" className="timeline-image" />
+                </div>
                 <div className="timeline-content">
                   <h3>1996</h3>
                   <p>Founded by the Tudawe family with a vision to provide hope and care for vulnerable children</p>
                 </div>
               </div>
               <div className="timeline-item">
-                <div className="timeline-icon">🧱</div>
+                <div className="timeline-icon">
+                  <img
+                    src="/placeholder.svg?height=60&width=60"
+                    alt="Building Construction 1997"
+                    className="timeline-image"
+                  />
+                </div>
                 <div className="timeline-content">
                   <h3>1997</h3>
                   <p>New two-storied building constructed to accommodate more children and provide better facilities</p>
                 </div>
               </div>
               <div className="timeline-item">
-                <div className="timeline-icon">💻</div>
+                <div className="timeline-icon">
+                  <img src="/placeholder.svg?height=60&width=60" alt="Study Room 2004" className="timeline-image" />
+                </div>
                 <div className="timeline-content">
                   <h3>2004</h3>
                   <p>
@@ -66,7 +84,9 @@ function Aboutus() {
                 </div>
               </div>
               <div className="timeline-item">
-                <div className="timeline-icon">🏞️</div>
+                <div className="timeline-icon">
+                  <img src="/placeholder.svg?height=60&width=60" alt="Playground 2010" className="timeline-image" />
+                </div>
                 <div className="timeline-content">
                   <h3>2010</h3>
                   <p>
@@ -77,7 +97,6 @@ function Aboutus() {
             </div>
           </div>
 
-          
           <div className="mvv-section">
             <h2>Our Foundation</h2>
             <div className="mvv-grid">
@@ -85,38 +104,46 @@ function Aboutus() {
                 <div className="mvv-icon">🎯</div>
                 <h3>Mission</h3>
                 <p>
-                  Our mission is to foster, protect and provide, for those<br/> children who have been disowned, neglected,
-                   orphaned or abused and to provide all the inhabitants
-                  with welfare and guidance.
+                  Our mission is to foster, protect and provide, for those
+                  <br /> children who have been disowned, neglected, orphaned or abused and to provide all the
+                  inhabitants with welfare and guidance.
                 </p>
                 <h3>මෙහෙවර</h3>
                 <p>
-                  අනාථ,අසරණ ,අත්හල හා අපයෝජනයට  ලක් වු <br/>දරුවන්ට, රැකවරණය ,භාරය ,නඩත්තුව , සුබසාධනය සහ <br/>පරිවසිකයන්ට නිවැරදි මගපෙන්වීමක් ලබාදීම <br/>අපගේ මෙහෙවරයි.
+                  අනාථ,අසරණ ,අත්හල හා අපයෝජනයට ලක් වු <br />
+                  දරුවන්ට, රැකවරණය ,භාරය ,නඩත්තුව , සුබසාධනය සහ <br />
+                  පරිවසිකයන්ට නිවැරදි මගපෙන්වීමක් ලබාදීම <br />
+                  අපගේ මෙහෙවරයි.
                 </p>
               </div>
               <div className="mvv-card">
                 <div className="mvv-icon">👁️</div>
                 <h3>Vision</h3>
                 <p>
-                 Our vision is to put an end to the sufferingsof innocent children who are being tampered by social imbalances and injustice; to recreate their childhoods
-                  through justice and social equality and through that, create a better future for them.
+                  Our vision is to put an end to the sufferingsof innocent children who are being tampered by social
+                  imbalances and injustice; to recreate their childhoods through justice and social equality and through
+                  that, create a better future for them.
                 </p>
                 <h3>දැක්ම</h3>
                 <p>
-                  අසාධාරණය, යුක්තිය හා සමාජ විෂමතාවයන් මුල්කරගෙන<br/> ,අකාලයේ මුකුලිත වී යන මල් කැකුළු … <br/>සාධාරණය යුක්තිය හා සමාජ සාධාරණත්වය ඉදිරියේ <br/>විකසිත වී 
-                  සුවද හමන මල් බවට පත්කරන පැහැදිලි හෙටක් <br/>ඇති කිරීම, සුන්දර ළමා ලෝකයක් බිහි කිරීම <br/>අපේ දැක්මයි.
+                  අසාධාරණය, යුක්තිය හා සමාජ විෂමතාවයන් මුල්කරගෙන
+                  <br /> ,අකාලයේ මුකුලිත වී යන මල් කැකුළු … <br />
+                  සාධාරණය යුක්තිය හා සමාජ සාධාරණත්වය ඉදිරියේ <br />
+                  විකසිත වී සුවද හමන මල් බවට පත්කරන පැහැදිලි හෙටක් <br />
+                  ඇති කිරීම, සුන්දර ළමා ලෝකයක් බිහි කිරීම <br />
+                  අපේ දැක්මයි.
                 </p>
               </div>
-              
             </div>
           </div>
 
-          
           <div className="facilities-section">
             <h2>Meet Our Home</h2>
             <div className="facilities-grid">
               <div className="facility-card">
-                <div className="facility-image">🏠</div>
+                <div className="facility-image">
+                  <img src="/placeholder.svg?height=200&width=300" alt="The Parental House" className="facility-img" />
+                </div>
                 <h3>The Parental House</h3>
                 <p>The heart of our home where children feel the warmth of family and belonging.</p>
                 <div className="facility-fact">
@@ -124,25 +151,33 @@ function Aboutus() {
                 </div>
               </div>
               <div className="facility-card">
-                <div className="facility-image">🛏️</div>
+                <div className="facility-image">
+                  <img src="/placeholder.svg?height=200&width=300" alt="Bedrooms and Office" className="facility-img" />
+                </div>
                 <h3>Bedrooms & Office</h3>
                 <p>Comfortable sleeping quarters and administrative spaces that ensure both rest and organization.</p>
                 <div className="facility-fact">Each child has their own personal space to call home.</div>
               </div>
               <div className="facility-card">
-                <div className="facility-image">📚</div>
+                <div className="facility-image">
+                  <img src="/placeholder.svg?height=200&width=300" alt="Study Room" className="facility-img" />
+                </div>
                 <h3>Study Room</h3>
                 <p>A dedicated learning environment built with international support to foster education and growth.</p>
                 <div className="facility-fact">Built in 2004 with donations from Germany!</div>
               </div>
               <div className="facility-card">
-                <div className="facility-image">🎮</div>
+                <div className="facility-image">
+                  <img src="/placeholder.svg?height=200&width=300" alt="Playground" className="facility-img" />
+                </div>
                 <h3>Playground</h3>
                 <p>Safe outdoor spaces where children can play, laugh, and simply be kids.</p>
                 <div className="facility-fact">Added in 2010 along with our beautiful butterfly garden.</div>
               </div>
               <div className="facility-card">
-                <div className="facility-image">🍳</div>
+                <div className="facility-image">
+                  <img src="/placeholder.svg?height=200&width=300" alt="Kitchen and Garden" className="facility-img" />
+                </div>
                 <h3>Kitchen & Garden</h3>
                 <p>Where nutritious meals are prepared and children learn valuable life skills through gardening.</p>
                 <div className="facility-fact">Each girl has her own tree to care for! 🌱</div>
@@ -150,7 +185,6 @@ function Aboutus() {
             </div>
           </div>
 
-          
           <div className="donor-section">
             <h2>Our Gratitude</h2>
             <div className="donor-content">
@@ -181,7 +215,6 @@ function Aboutus() {
             </div>
           </div>
 
-          
           <div className="life-section">
             <h2>Life at Tudawe</h2>
             <div className="life-content">
@@ -189,24 +222,27 @@ function Aboutus() {
                 <h3>A Day in Our Home</h3>
                 <div className="routine-grid">
                   <div className="routine-item">
-                    <span className="routine-icon">🌅</span>
+                    <img src="/placeholder.svg?height=80&width=80" alt="Morning prayers" className="routine-image" />
                     <span>Morning prayers and breakfast together</span>
                   </div>
                   <div className="routine-item">
-                    <span className="routine-icon">📖</span>
+                    <img src="/placeholder.svg?height=80&width=80" alt="School time" className="routine-image" />
                     <span>School and study time</span>
                   </div>
                   <div className="routine-item">
-                    <span className="routine-icon">🌱</span>
+                    <img src="/placeholder.svg?height=80&width=80" alt="Gardening" className="routine-image" />
                     <span>Gardening and caring for our trees</span>
                   </div>
                   <div className="routine-item">
-                    <span className="routine-icon">🍽️</span>
+                    <img src="/placeholder.svg?height=80&width=80" alt="Family meals" className="routine-image" />
                     <span>Shared meals and family time</span>
                   </div>
                 </div>
               </div>
               <div className="testimonial">
+                <div className="testimonial-image">
+                  <img src="/placeholder.svg?height=150&width=150" alt="Happy child" className="testimonial-img" />
+                </div>
                 <blockquote>
                   "This place gave me not just a home, but a family. Here, I learned that every ending can be a new
                   beginning."
@@ -216,7 +252,6 @@ function Aboutus() {
             </div>
           </div>
 
-          
           <div className="spiritual-section">
             <h2>Growing Together</h2>
             <div className="spiritual-content">
@@ -244,7 +279,6 @@ function Aboutus() {
             </div>
           </div>
 
-          
           <div className="closing-section">
             <div className="closing-content">
               <h2>Our Promise</h2>
