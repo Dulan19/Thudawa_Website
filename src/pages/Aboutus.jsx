@@ -47,31 +47,21 @@ function Aboutus() {
             <h2>Our History Timeline</h2>
             <div className="timeline">
               <div className="timeline-item">
-                <div className="timeline-icon">
-                  <img src="/placeholder.svg?height=60&width=60" alt="Foundation 1996" className="timeline-image" />
-                </div>
+                
                 <div className="timeline-content">
                   <h3>1996</h3>
                   <p>Founded by the Tudawe family with a vision to provide hope and care for vulnerable children</p>
                 </div>
               </div>
               <div className="timeline-item">
-                <div className="timeline-icon">
-                  <img
-                    src="/placeholder.svg?height=60&width=60"
-                    alt="Building Construction 1997"
-                    className="timeline-image"
-                  />
-                </div>
+                
                 <div className="timeline-content">
                   <h3>1997</h3>
                   <p>New two-storied building constructed to accommodate more children and provide better facilities</p>
                 </div>
               </div>
               <div className="timeline-item">
-                <div className="timeline-icon">
-                  <img src="/placeholder.svg?height=60&width=60" alt="Study Room 2004" className="timeline-image" />
-                </div>
+                
                 <div className="timeline-content">
                   <h3>2004</h3>
                   <p>
@@ -80,9 +70,7 @@ function Aboutus() {
                 </div>
               </div>
               <div className="timeline-item">
-                <div className="timeline-icon">
-                  <img src="/placeholder.svg?height=60&width=60" alt="Playground 2010" className="timeline-image" />
-                </div>
+                
                 <div className="timeline-content">
                   <h3>2010</h3>
                   <p>
