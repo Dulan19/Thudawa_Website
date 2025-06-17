@@ -45,7 +45,7 @@
   padding: 0 20px;
 }
 
-/* Introduction Section */
+
 .intro-section {
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(8px);
@@ -80,10 +80,19 @@
 }
 
 .intro-image {
-  text-align: center;
+  margin-top: 85px;
+  padding: 20px;
+  border-radius: 1px;
+  width: 400px;
+  height: 180px;
+  background-image: url("../../assets/background1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .intro-main-image {
+  
   width: 100%;
   max-width: 400px;
   height: 300px;

@@ -24,11 +24,7 @@ function Aboutus() {
           <div className="intro-section">
             <div className="intro-content-wrapper">
               <div className="intro-image">
-                <img
-                  src="/placeholder.svg?height=300&width=400"
-                  alt="Tudawe Children Development Center"
-                  className="intro-main-image"
-                />
+                
               </div>
               <div className="intro-text">
                 <h2>Our Story</h2>
