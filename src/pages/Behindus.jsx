@@ -31,7 +31,8 @@ function Background() {
               supportive matron and guard. Difficulties are common in a newly created Children Home since lack of 
               funding and support due to low consideration from the society.However with the support of villagers and 
               the board of trustees ,Children home developed from the facilities as well as the capabilities and skills …</p>
-            <button onClick={() => setShow1(!show1)}>{show1 ? "Show Less" : "Read More"}
+            <button className="read-btn"
+            onClick={() => setShow1(!show1)}>{show1 ? "Show Less" : "Read More"}
             </button>
             {show1 && <p>of children.At that time all the children attended to one school .However today they have opportunity 
               to attend four different schools based on there capabilities.It improved the quality of the education of the children
