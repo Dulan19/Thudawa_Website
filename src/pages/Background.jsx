@@ -56,8 +56,8 @@ function Background() {
               through a lot of development projects. Let’s see the Beauty of the Village, If you travel by train,you 
               feel the  breeze of the Indian ocean,  you can get down from the Pinwattha or Wadduwa Station and walk
                towards Thalpitiya. On the beach, and there are numerous hotels ready
-                {!show2 && "..."}
-                {show2 && (
+                {!show1 && "..."}
+                {show1 && (
                   <>
                     {" "} Pto provide accommodation in Thapitiya. The five-star Hotel, which is an architectural masterpiece designed
                       by Jeffry Bawa stands facing the Indian Ocean. It offers a great service to the customers including meals, 
@@ -82,7 +82,7 @@ function Background() {
                 )}
               </p>
           
-                      {show2 && (
+                      {show1 && (
                         <div>
                             <ul><li>History</li>
                             <li>Natural Beauty</li>
@@ -127,8 +127,9 @@ function Background() {
                       )}
                 
                 
-                <button onClick={() => setShow2(!show2)}>
-                  {show2 ? "Show Less" : "Read More"}
+                <button className="read-btn"
+                onClick={() => setShow1(!show1)}>
+                  {show1 ? "Show Less" : "Read More"}
                 </button>
               </div>
             </div>
@@ -188,7 +189,8 @@ function Background() {
                       )}
                 
                 
-                <button onClick={() => setShow2(!show2)}>
+                <button className="read-btn"
+                onClick={() => setShow2(!show2)}>
                   {show2 ? "Show Less" : "Read More"}
                 </button>
               </div>
@@ -200,7 +202,7 @@ function Background() {
               <p>
               {show3 ? fullText3 : truncatedText3 + "..."}
               </p>
-              <button 
+              <button className="read-btn"
               onClick={() => setShow3(!show3)}>
               {show3 ? "Show Less" : "Read More"}
               </button>
@@ -214,7 +216,7 @@ function Background() {
               <p>
               {show4 ? fullText4 : truncatedText4 + "..."}
               </p>
-              <button 
+              <button className="read-btn"
               onClick={() => setShow4(!show4)}>
               {show4 ? "Show Less" : "Read More"}
               </button>
@@ -227,7 +229,7 @@ function Background() {
               <p>
               {show5 ? fullText5 : truncatedText5 + "..."}
               </p>
-              <button 
+              <button className="read-btn"
               onClick={() => setShow5(!show5)}>
               {show5 ? "Show Less" : "Read More"}
               </button>

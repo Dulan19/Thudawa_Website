@@ -76,6 +76,22 @@ table, th, td {
   border: 0.1px solid rgb(217, 131, 36);
 }
 
+.read-btn {
+  background: rgb(217, 131, 36);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background 0.3s ease;
+}
+
+.read-btn:hover {
+  background: rgb(224, 150, 71);
+}
+
 /* Animations */
 @keyframes slideInUp {
   from {
