@@ -144,7 +144,7 @@ function Aboutus() {
               </div>
               <div className="facility-card">
                 <div className="facility-image">
-                  <img src="/placeholder.svg?height=200&width=300" alt="Study Room" className="facility-img" />
+                  <img src="/placeholder.svg?height=200&width=400" alt="Study Room" className="facility-img" />
                 </div>
                 <h3>Study Room</h3>
                 <p>A dedicated learning environment built with international support to foster education and growth.</p>
