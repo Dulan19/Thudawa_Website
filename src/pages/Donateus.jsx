@@ -14,7 +14,7 @@ const Donateus = () => {
             for the children at Tudawe Child Development Center.</p>
         <h1>How to Donate</h1>
         <ul>
-          <li>Bank Transfer: 
+          <li>Bank Transfer: < br />
             Account Name: Tudawe Children Development Centre<br />
             Bank: Bank of Ceylon (7010)<br />
             Account Number: 0003699120<br />
