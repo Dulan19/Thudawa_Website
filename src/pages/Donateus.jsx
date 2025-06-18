@@ -10,7 +10,8 @@ const Donateus = () => {
       <div className="donateus-container">
         <div className="donateus-card">
         <h1>Support Our Cause</h1>
-        <p>Your contributions help us provide better care and facilities for the children at Tudawe Child Development Center.</p>
+        <p>Your contributions help us provide better care and facilities and Quality Education 
+            for the children at Tudawe Child Development Center.</p>
         <h2>How to Donate</h2>
         <ul>
           <li>Bank Transfer: 
