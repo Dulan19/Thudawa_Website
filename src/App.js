@@ -84,12 +84,12 @@ function App() {
                       orphaned or abused and to provide all the inhabitants with welfare and guidance.
                     </p>
                     <button className="view">View</button>
-                    <button className="seemore-btn">View More</button>
+                  
                   </div>
                 </div>
 
                 <button className="scroll-arrow" onClick={() => window.location.href = '/events'}>
-                  →
+                  View More
                 </button>
               </div>
           </div>
