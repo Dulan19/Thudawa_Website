@@ -11,12 +11,12 @@ const Events = () => {
         <p>Join us for our exciting events at Tudawe Child Development Center!</p>
         <ul>
           <li>
-            <strong>Annual Fundraising Gala</strong> - Date: March 15, 2024
+            <strong>Bakthi Geetha</strong> - Date: March 15, 2025
             <br />
             Join us for an evening of fun and fundraising to support our programs.
           </li>
           <li>
-            <strong>Community Health Fair</strong> - Date: April 20, 2024
+            <strong>Aurudu Uthsawaya</strong> - Date: April 20, 2025
             <br />
             Free health screenings and wellness workshops for families in our community.
           </li>
