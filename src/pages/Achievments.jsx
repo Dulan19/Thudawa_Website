@@ -48,7 +48,8 @@ function Background() {
               children’s dance center.She is overall talented in designing dancing show,designing dancing dress,makeup and signing and playing instruments .She is always 
               behind the dancing talent of  these girls and we had a great gratitude on her . Tudawe  Children has developed there presentation skills over time under the 
               guidance of  dancing teacher ,Miss Nuwandi Nilangni in children’s dance center.She …</p>
-            <button onClick={() => setShow1(!show1)}>{show1 ? "Show Less" : "Read More"}
+            <button className="read-btn"
+            onClick={() => setShow1(!show1)}>{show1 ? "Show Less" : "Read More"}
             </button>
             {show1 && <p> is overall talented in designing dancing show,designing dancing dress,makeup and signing and playing instruments .She is always behind the dancing 
               talent of  these girls and we had a great gratitude on her .
@@ -65,7 +66,8 @@ function Background() {
           <div className="intro-section">
             <h2>space for income certificate phiot</h2>
             <p>hfgh.</p>
-            <button onClick={() => setShow2(!show2)}>{show2 ? "Show Less" : "Read More"}
+            <button className="read-btn"
+            onClick={() => setShow2(!show2)}>{show2 ? "Show Less" : "Read More"}
             </button>
             
               
@@ -80,7 +82,8 @@ function Background() {
               staged at the Wadduwa Wijaya Kumaratunga Auditorium on 17-03-2012. It was a very successful Entertainment show held due to the cooperation and assistance of the Dancing 
               Teacher. It was initiated as a request from the girls and Bord of trustees has taken effort by fund rising ,message passing and coordinating the ceremony with souvenirs 
               ,inviting …</p>
-            <button onClick={() => setShow3(!show3)}>{show3 ? "Show Less" : "Read More"}
+            <button className="read-btn"
+            onClick={() => setShow3(!show3)}>{show3 ? "Show Less" : "Read More"}
             </button>
             {show3 && <p>  guest and managing ,sound ,lighting and supportive dancing teams.From the talent show they have reflect there harmony , sharing happiness and work toward
                same goal sane as from one mother.It has become a great opportunity to reflect the hidden talents of these children.
@@ -113,7 +116,8 @@ function Background() {
             <p>We Play – We Win Our talents are not bound only to conventional education. When we play we win there. we could achieve the top level of various 
               sectors such as sports. The inmates of the Tudawe Child Development Home participated in the sport meets organized by the Western Province Childcare 
               and Probation Dept.                 They won the following events;     First Place Kalutara District Sports Meet held in 2010   Runners up …</p>
-            <button onClick={() => setShow4(!show4)}>{show4 ? "Show Less" : "Read More"}
+            <button className="read-btn"
+            onClick={() => setShow4(!show4)}>{show4 ? "Show Less" : "Read More"}
             </button>
             {show4 && <p> Our talents are not bound only to conventional education. When we play we win there. we could achieve the top level of various sectors such as sports.
               The inmates of the Tudawe Child Development Home participated in the sport meets organized by the Western Province Childcare and Probation Dept.enfant_51  <br />           
@@ -155,7 +159,8 @@ function Background() {
                best Children Development Home in the Western Province organized by the Childcare and Probation Dept of the Western Province in 2012. Tudawe Child Development 
                Center was graded by the Child care and Probation Dept and it had taken 91.85 points and graded as “A” Class Child Development Centre in the Western Province 
                in 2012. In 2013 … </p>
-            <button onClick={() => setShow5(!show5)}>{show5 ? "Show Less" : "Read More"}
+            <button className="read-btn"
+            onClick={() => setShow5(!show5)}>{show5 ? "Show Less" : "Read More"}
             </button>
             {show5 && <p> it has won the  best children development center in Kaluthara District surpassing 16 Children Development centers.
               In addition Tudawe Children home has capable to won quality awards in year year 2010 ,2011 and 2012 conservatively within the Western Province.</p>}

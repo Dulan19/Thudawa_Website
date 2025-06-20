@@ -53,7 +53,8 @@ function Background() {
           <div className="intro-section">
             <h2>space for income certificate phiot</h2>
             <p>hfgh.</p>
-            <button onClick={() => setShow2(!show2)}>{show2 ? "Show Less" : "Read More"}
+            <button className="read-btn"
+            onClick={() => setShow2(!show2)}>{show2 ? "Show Less" : "Read More"}
             </button>
             
               
@@ -68,7 +69,8 @@ function Background() {
               1919 specified as a special organization linkup with all other Buddhist Associations in Sri Lanka to ensure the stability of Buddhism, specially 
               dedicated to protecting and promoting Buddhism not only in Sri Lanka but also in another county as well. All Ceylon Buddhist Congress plays a vital 
               role to promote, foster and protect the interest of Buddhism and …</p>
-            <button onClick={() => setShow3(!show3)}>{show3 ? "Show Less" : "Read More"}
+            <button className="read-btn"
+            onClick={() => setShow3(!show3)}>{show3 ? "Show Less" : "Read More"}
             </button>
             {show3 && <p> of the Buddhist Community to safeguard the rights and privileges of Buddhists and also promote cooperation among Buddhists and Buddhist associations.
               The  Tudawe  Parental house and property at  Central  Road  Thalpitiya were handed over to the  Samastha  Lanka  Baudha  Mahasangamaya  (All  Ceylon  Buddhists Congress)  
@@ -97,7 +99,8 @@ function Background() {
               under the Department of Prisons. It was inaugurated with 10 Probation Officers who were paid salaries by the Government.
                However even before that the Probation system was tried in courts in Sri Lanka from time to time through voluntary Probation
                 officers after 1919. In 1944 the Probation Ordinance was enacted to keep offenders under Probation. Accordingly by 1960 the Probation system …</p>
-            <button onClick={() => setShow4(!show4)}>{show4 ? "Show Less" : "Read More"}
+            <button className="read-btn"
+            onClick={() => setShow4(!show4)}>{show4 ? "Show Less" : "Read More"}
             </button>
             {show4 && <p> had been extended throughout the Island by appointing Probation Officers to all Judicial Districts in the Island. Since the Probation 
               System was functioning under the Department of Prisons, it was known as the Department of Prisons and Probation with the extension of the probation 
@@ -139,7 +142,8 @@ function Background() {
             <p>Tudawe Brothers (Pvt) Ltd The ancestral home of the Tudawe family was donated on 09th June 1988 to serve as a Home to take care of destitute girls in and around
                the Wadduwa area. Presently the Home accommodates around 41 girls and since its inception, has benefited over 100 children, providing a comfortable home environment.
                 We are proud to record that these children have left the Home to become successful in society.   Tudawe Brothers was the brainchild of the … </p>
-            <button onClick={() => setShow5(!show5)}>{show5 ? "Show Less" : "Read More"}
+            <button className="read-btn"
+            onClick={() => setShow5(!show5)}>{show5 ? "Show Less" : "Read More"}
             </button>
             {show5 && <p> late Mr. Lawrence de S Tudawe,with a Diploma in Building Construction from Ceylon Technical College and his brother, 
               the late Mr. Dionysius de S Tudawe, who had a passion for the construction field.
@@ -162,7 +166,8 @@ function Background() {
               give them a chance of a better future. As registered non-profit association we are getting involved with a manageable and transparent organization helping children
                to find a home, but primarily a life with promising prospects. FRIENDS would like to be a „good friend” of the smallest and weakest in Sri Lanka. For years we have 
                been getting … </p>
-            <button onClick={() => setShow5(!show5)}>{show5 ? "Show Less" : "Read More"}
+            <button className="read-btn"
+            onClick={() => setShow5(!show5)}>{show5 ? "Show Less" : "Read More"}
             </button>
             {show5 && <p> involved on the spot offering lasting programs and projects to support education and training of street children and orphans 
               as well as children of poor families. Oriented to the demands of children we strengthen our efforts in order to offer children in the third
