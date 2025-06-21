@@ -24,7 +24,7 @@ const Donateus = () => {
           <li>In-Kind Donations: We accept toys, books, and educational materials.</li>
         </ul>
         <h1>Contact Us for More Information</h1>
-        <button className ="contactus-button" onClick={() => window.location.href = '/events'}>Contact Us</button>
+        <button className ="contactus-button" onClick={() => window.location.href = '/Contactus'}>Contact Us</button>
         </div>
         </div>
         <Footer />
