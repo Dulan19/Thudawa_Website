@@ -93,6 +93,29 @@ function App() {
                 </button>
               </div>
           </div>
+          <div className ="achievements-section">
+                <h1>Achievements</h1>
+                <div className="achievements-container">
+                  <div className="achievement-box">
+                    <h2>Best Child Development Center</h2>
+                    <p>
+                      Awarded by the Ministry of Child Affairs for outstanding contributions to child welfare.
+                    </p>
+                  </div>
+                  <div className="achievement-box">
+                    <h2>Community Service Award</h2>
+                    <p>
+                      Recognized for our efforts in community outreach and support programs.
+                    </p>
+                  </div>
+                  <div className="achievement-box">
+                    <h2>Excellence in Education</h2>
+                    <p>
+                      Received accolades for our innovative educational programs and child development initiatives.
+                    </p>
+                  </div>
+                  </div>
+                </div>
             
 
         <Footer />
