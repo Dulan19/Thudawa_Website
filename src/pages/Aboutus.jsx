@@ -160,7 +160,7 @@ function Aboutus() {
               </div>
               <div className="facility-card">
                 <div className="facility-image">
-                  <img src="/placeholder.svg?height=200&width=300" alt="Kitchen and Garden" className="facility-img" />
+                  <img src="/placeholderr.svg?height=200&width=300" alt="Kitchen and Garden" className="facility-img" />
                 </div>
                 <h3>Kitchen & Garden</h3>
                 <p>Where nutritious meals are prepared and children learn valuable life skills through gardening.</p>
