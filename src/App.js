@@ -95,26 +95,43 @@ function App() {
           </div>
           <div className ="achievements-section">
                 <h1>Achievements</h1>
-                <div className="achievements-container">
-                  <div className="achievement-box">
-                    <h2>Best Child Development Center</h2>
+                <div className="Events-scroll-wrapper">
+                <div className="Events-container">
+                  {/* Events boxes */}
+                  <div className="Events-box">
+                    <h2>Bakthi Geetha</h2>
                     <p>
-                      Awarded by the Ministry of Child Affairs for outstanding contributions to child welfare.
+                      Mrs.Palika Darmawickrama, The Music teacher of the Thudawa Child Development Centre and the commitee of the 
+                      Thudawa Child Development Centre, has 
                     </p>
+                    <button className="view">View</button>
                   </div>
-                  <div className="achievement-box">
-                    <h2>Community Service Award</h2>
+
+                  <div className="Events-box">
+                    <h2>Bakthi Geetha</h2>
                     <p>
-                      Recognized for our efforts in community outreach and support programs.
+                      Our vision is to put an end to the sufferings of innocent children who are being tampered by social
+                      imbalances and injustice; to recreate their childhoods through justice and social equality and through
+                      that, create a better future for them.
                     </p>
+                    <button className="view">View</button>
                   </div>
-                  <div className="achievement-box">
-                    <h2>Excellence in Education</h2>
+
+                  <div className="Events-box">
+                    <h2>Aurudu Event</h2>
                     <p>
-                      Received accolades for our innovative educational programs and child development initiatives.
+                      Our mission is to foster, protect and provide, for those children who have been disowned, neglected,
+                      orphaned or abused and to provide all the inhabitants with welfare and guidance.
                     </p>
+                    <button className="view">View</button>
+                  
                   </div>
-                  </div>
+                </div>
+
+                <button className="scroll-arrow" onClick={() => window.location.href = '/Achievements'}>
+                  View More
+                </button>
+              </div>
                 </div>
             
 
