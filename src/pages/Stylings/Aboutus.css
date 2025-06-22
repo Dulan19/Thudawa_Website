@@ -188,13 +188,14 @@
 
 .timeline-image-container {
   flex-shrink: 0;
-  width: 80px;
-  height: 80px;
+  width: 150px;
+  height: 75px;
   background-size: cover;
   background-position: center;
   border-radius: 8px;
   opacity: 0.8;
-  border: 2px solid rgba(217, 131, 36, 0.5);
+  margin-top: 0px;
+  
 }
 
 .timeline-image-1996 {
