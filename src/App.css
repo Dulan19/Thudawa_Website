@@ -145,3 +145,10 @@ html {
   cursor: pointer;
   z-index: 10;
 }
+
+.Events-section h1, .achievements-section h1 {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 2rem;
+} 
