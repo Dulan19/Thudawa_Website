@@ -45,7 +45,6 @@
   padding: 0 20px;
 }
 
-
 .intro-section {
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(8px);
@@ -92,7 +91,6 @@
 }
 
 .intro-main-image {
-  
   width: 100%;
   max-width: 400px;
   height: 300px;
@@ -179,6 +177,40 @@
   padding: 20px;
   border-radius: 10px;
   max-width: 400px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.timeline-text {
+  flex: 1;
+}
+
+.timeline-image-container {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  opacity: 0.8;
+  border: 2px solid rgba(217, 131, 36, 0.5);
+}
+
+.timeline-image-1996 {
+  background-image: url("../../assets/background1.jpg");
+}
+
+.timeline-image-1997 {
+  background-image: url("../../assets/background1.jpg");
+}
+
+.timeline-image-2004 {
+  background-image: url("../../assets/background1.jpg");
+}
+
+.timeline-image-2010 {
+  background-image: url("../../assets/background1.jpg");
 }
 
 .timeline-content h3 {
@@ -583,6 +615,18 @@
 
   .routine-grid {
     grid-template-columns: 1fr;
+  }
+
+  .timeline-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .timeline-image-container {
+    width: 60px;
+    height: 60px;
+    align-self: flex-end;
   }
 }
 

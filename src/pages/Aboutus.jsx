@@ -23,9 +23,7 @@ function Aboutus() {
         <div className="section-container">
           <div className="intro-section">
             <div className="intro-content-wrapper">
-              <div className="intro-image">
-                
-              </div>
+              <div className="intro-image"></div>
               <div className="intro-text">
                 <h2>Our Story</h2>
                 <p>
@@ -47,35 +45,46 @@ function Aboutus() {
             <h2>Our History Timeline</h2>
             <div className="timeline">
               <div className="timeline-item">
-                
                 <div className="timeline-content">
-                  <h3>1996</h3>
-                  <p>Founded by the Tudawe family with a vision to provide hope and care for vulnerable children</p>
+                  <div className="timeline-text">
+                    <h3>1996</h3>
+                    <p>Founded by the Tudawe family with a vision to provide hope and care for vulnerable children</p>
+                  </div>
+                  <div className="timeline-image-container timeline-image-1996"></div>
                 </div>
               </div>
               <div className="timeline-item">
-                
                 <div className="timeline-content">
-                  <h3>1997</h3>
-                  <p>New two-storied building constructed to accommodate more children and provide better facilities</p>
+                  <div className="timeline-text">
+                    <h3>1997</h3>
+                    <p>
+                      New two-storied building constructed to accommodate more children and provide better facilities
+                    </p>
+                  </div>
+                  <div className="timeline-image-container timeline-image-1997"></div>
                 </div>
               </div>
               <div className="timeline-item">
-                
                 <div className="timeline-content">
-                  <h3>2004</h3>
-                  <p>
-                    Study room built with generous donations from German supporters, enhancing educational opportunities
-                  </p>
+                  <div className="timeline-text">
+                    <h3>2004</h3>
+                    <p>
+                      Study room built with generous donations from German supporters, enhancing educational
+                      opportunities
+                    </p>
+                  </div>
+                  <div className="timeline-image-container timeline-image-2004"></div>
                 </div>
               </div>
               <div className="timeline-item">
-                
                 <div className="timeline-content">
-                  <h3>2010</h3>
-                  <p>
-                    Playground and butterfly garden added, creating spaces for recreation and connection with nature
-                  </p>
+                  <div className="timeline-text">
+                    <h3>2010</h3>
+                    <p>
+                      Playground and butterfly garden added, creating spaces for recreation and connection with nature
+                    </p>
+                  </div>
+                  <div className="timeline-image-container timeline-image-2010"></div>
                 </div>
               </div>
             </div>
