@@ -176,7 +176,7 @@
   background: rgba(255, 255, 255, 0.15);
   padding: 20px;
   border-radius: 10px;
-  max-width: 400px;
+  max-width: 500px;
   display: flex;
   align-items: center;
   gap: 15px;
@@ -188,8 +188,8 @@
 
 .timeline-image-container {
   flex-shrink: 0;
-  width: 150px;
-  height: 75px;
+  width: 200px;
+  height: 100px;
   background-size: cover;
   background-position: center;
   border-radius: 8px;
