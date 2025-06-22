@@ -62,24 +62,25 @@ function App() {
                   The Music Teacher of the Thudawa Child Development Centre, and the dedicated efforts of the Centre’s committee, 
                   The Thudawa Child Development Centre successfully presented “Bakthi Gee 2025” together with its children</p>
                   <button className="view" onClick={() => window.location.href = '/events'}>View</button>
-              </div>
-              <div className="facility-card">
-                <div className="facility-img-container facility-img-2"></div>
-                <h3>Bedrooms & Office</h3>
-                <p>Comfortable sleeping quarters and administrative spaces that ensure both rest and organization.</p>
-                <div className="facility-fact">Each child has their own personal space to call home.</div>
-              </div>
+              </div>              
               <div className="facility-card">
                 <div className="facility-img-container facility-img-3"></div>
-                <h3>Study Room</h3>
+                <h3>Fruit Dansala - 2025</h3>
                 <p>A dedicated learning environment built with international support to foster education and growth.</p>
-                <div className="facility-fact">Built in 2004 with donations from Germany!</div>
+                <button className="view" onClick={() => window.location.href = '/events'}>View</button>
               </div>
               <div className="facility-card">
                 <div className="facility-img-container facility-img-4"></div>
-                <h3>Playground</h3>
-                <p>Safe outdoor spaces where children can play, laugh, and simply be kids.</p>
-                <div className="facility-fact">Added in 2010 along with our beautiful butterfly garden.</div>
+                <h3>Bakthi Geetha</h3>
+                <p>all ceylong buddhist congrus</p>
+                <button className="view" onClick={() => window.location.href = '/events'}>View</button>                
+              </div>
+              <div className="facility-card">
+                <div className="facility-img-container facility-img-2"></div>
+                <h3>Avurudu Uthsawaya - 2025</h3>
+                <p>With the support of the Chief Matron and the committee, the Avurudu Uthsaya 2025 was successfully 
+                  organized for the children of the Child Development Centre in celebration of the Sinhala and Tamil New Year.</p>
+                  <button className="view" onClick={() => window.location.href = '/events'}>View</button>
               </div>
             </div>
           </div>
