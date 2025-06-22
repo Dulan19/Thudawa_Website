@@ -134,7 +134,7 @@ function Aboutus() {
             <h2>Meet Our Home</h2>
             <div className="facilities-grid">
               <div className="facility-card">
-                <div className="timeline-image-container facility-img-1"></div>
+                <div className="facility-img-container facility-img-1"></div>
                 <h3>The Parental House</h3>
                 <p>The heart of our home where children feel the warmth of family and belonging.</p>
                 <div className="facility-fact">
@@ -142,33 +142,25 @@ function Aboutus() {
                 </div>
               </div>
               <div className="facility-card">
-                <div className="facility-image">
-                  <img src="/placeholder.svg?height=200&width=300" alt="Bedrooms and Office" className="facility-img" />
-                </div>
+                <div className="facility-img-container facility-img-2"></div>
                 <h3>Bedrooms & Office</h3>
                 <p>Comfortable sleeping quarters and administrative spaces that ensure both rest and organization.</p>
                 <div className="facility-fact">Each child has their own personal space to call home.</div>
               </div>
               <div className="facility-card">
-                <div className="facility-image">
-                  <img src="/placeholder.svg?height=200&width=400" alt="Study Room" className="facility-img" />
-                </div>
+                <div className="facility-img-container facility-img-3"></div>
                 <h3>Study Room</h3>
                 <p>A dedicated learning environment built with international support to foster education and growth.</p>
                 <div className="facility-fact">Built in 2004 with donations from Germany!</div>
               </div>
               <div className="facility-card">
-                <div className="facility-image">
-                  <img src="/placeholder.svg?height=200&width=300" alt="Playground" className="facility-img" />
-                </div>
+                <div className="facility-img-container facility-img-4"></div>
                 <h3>Playground</h3>
                 <p>Safe outdoor spaces where children can play, laugh, and simply be kids.</p>
                 <div className="facility-fact">Added in 2010 along with our beautiful butterfly garden.</div>
               </div>
               <div className="facility-card">
-                <div className="facility-image">
-                  <img src="/placeholderr.svg?height=200&width=300" alt="Kitchen and Garden" className="facility-img" />
-                </div>
+                <div className="facility-img-container facility-img-5"></div>
                 <h3>Kitchen & Garden</h3>
                 <p>Where nutritious meals are prepared and children learn valuable life skills through gardening.</p>
                 <div className="facility-fact">Each girl has her own tree to care for! 🌱</div>
