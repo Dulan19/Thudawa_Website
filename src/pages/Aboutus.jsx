@@ -134,9 +134,7 @@ function Aboutus() {
             <h2>Meet Our Home</h2>
             <div className="facilities-grid">
               <div className="facility-card">
-                <div className="facility-image">
-                  <img src="/placeholder.svg?height=200&width=300" alt="The Parental House" className="facility-img" />
-                </div>
+                <div className="timeline-image-container facility-img-1"></div>
                 <h3>The Parental House</h3>
                 <p>The heart of our home where children feel the warmth of family and belonging.</p>
                 <div className="facility-fact">
