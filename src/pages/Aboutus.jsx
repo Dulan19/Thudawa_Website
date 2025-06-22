@@ -205,26 +205,26 @@ function Aboutus() {
                 <h3>A Day in Our Home</h3>
                 <div className="routine-grid">
                   <div className="routine-item">
-                    <img src="/placeholder.svg?height=80&width=80" alt="Morning prayers" className="routine-image" />
+                    <div className="day-img-container day-img-1"></div>
                     <span>Morning prayers and breakfast together</span>
                   </div>
                   <div className="routine-item">
-                    <img src="/placeholder.svg?height=80&width=80" alt="School time" className="routine-image" />
+                    <div className="day-img-container day-img-2"></div>
                     <span>School and study time</span>
                   </div>
                   <div className="routine-item">
-                    <img src="/placeholder.svg?height=80&width=80" alt="Gardening" className="routine-image" />
+                    <div className="day-img-container day-img-3"></div>
                     <span>Gardening and caring for our trees</span>
                   </div>
                   <div className="routine-item">
-                    <img src="/placeholder.svg?height=80&width=80" alt="Family meals" className="routine-image" />
+                    <div className="day-img-container day-img-4"></div>
                     <span>Shared meals and family time</span>
                   </div>
                 </div>
               </div>
               <div className="testimonial">
                 <div className="testimonial-image">
-                  <img src="/placeholder.svg?height=150&width=150" alt="Happy child" className="testimonial-img" />
+                  
                 </div>
                 <blockquote>
                   "This place gave me not just a home, but a family. Here, I learned that every ending can be a new
