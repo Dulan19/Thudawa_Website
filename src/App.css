@@ -102,3 +102,7 @@ html {
     display: block;
   }
 }
+
+.events-img-1 {
+  background-image: url("../../assets/Wadduwa.jpg");
+}
