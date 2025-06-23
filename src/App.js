@@ -56,7 +56,7 @@ function App() {
             <h2>Events</h2>
             <div className="facilities-grid">
               <div className="facility-card">
-                <div className="facility-img-container facility-img-1"></div>
+                <div className="events-img-container events-img-1"></div>
                 <h3>Bakthi Geetha - 2025</h3>
                 <p>On the occasion of Poson Poya Day, with the valuable support of Mrs. Palika Darmawickrama, 
                   The Music Teacher of the Thudawa Child Development Centre, and the dedicated efforts of the Centre’s committee, 
