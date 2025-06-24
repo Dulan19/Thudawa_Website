@@ -64,7 +64,7 @@ function App() {
                   <button className="view" onClick={() => window.location.href = '/events'}>View</button>
               </div>              
               <div className="facility-card">
-                <div className="facility-img-container facility-img-3"></div>
+                <div className="events-img-container events-img-2"></div>
                 <h3>Fruit Dansala - 2025</h3>
                 <p>On the occasion of Vesak Full Moon Poya Day 2025, the Chief Matron, committee members, and children of The 
                   Thudawa Child Development Centre organized a fruit Dansala for the devotees and travelers visiting Vesak celebrations
@@ -72,14 +72,14 @@ function App() {
                 <button className="view" onClick={() => window.location.href = '/events'}>View</button>
               </div>
               <div className="facility-card">
-                <div className="facility-img-container facility-img-4"></div>
+                <div className="events-img-container events-img-3"></div>
                 <h3>Bakthi Geetha at ACBC</h3>
                 <p>At the All Ceylon Buddhist Congress Vesak Kalapaya 2025, the children of The Thudawa Child Development Centre were 
                   invited to perform Bakthi Gee on the official stage. </p>
                 <button className="view" onClick={() => window.location.href = '/events'}>View</button>                
               </div>
               <div className="facility-card">
-                <div className="facility-img-container facility-img-2"></div>
+                <div className="events-img-container events-img-4"></div>
                 <h3>Avurudu Uthsawaya - 2025</h3>
                 <p>With the support of the Chief Matron and the committee, the Avurudu Uthsaya 2025 was successfully 
                   organized for the children of the Child Development Centre in celebration of the Sinhala and Tamil New Year.</p>

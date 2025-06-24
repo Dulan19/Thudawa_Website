@@ -103,6 +103,18 @@ html {
   }
 }
 
+.events-img-container {
+  flex-shrink: 0;
+  width: 280px;
+  height: 280px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  opacity: 0.8;
+  margin-top: 0px;
+  
+  
+}
 .events-img-1 {
-  background-image: url("../../assets/Wadduwa.jpg");
+  background-image: url("D:/Thudawa Website/thudawa-website/Thudawa_Website/src/assets/Events/Bhakthi_Geetha/bakthigeetha_home.jpeg");
 }
