@@ -57,13 +57,15 @@ function App() {
             <div className="events-grid">
               <div className="events-card">
                 <div className="events-img-container events-img-1"></div>
+                <div className="events-content">
                 <h3>Bakthi Geetha - 2025</h3>
                 <p>On the occasion of Poson Poya Day, with the valuable support of Mrs. Palika Darmawickrama, 
                   The Music Teacher of the Thudawa Child Development Centre, and the dedicated efforts of the Centre’s committee, 
                   The Thudawa Child Development Centre successfully presented “Bakthi Gee 2025” together with its children</p>
                   <button className="view" onClick={() => window.location.href = '/events'}>View</button>
+                  </div>
               </div>              
-              <div className="facility-card">
+              <div className="events-card">
                 <div className="events-img-container events-img-2"></div>
                 <h3>Dansala - 2025</h3>
                 <p>On the occasion of Vesak Full Moon Poya Day 2025, the Chief Matron, committee members, and children of The 
@@ -71,14 +73,14 @@ function App() {
                   .</p>
                 <button className="view" onClick={() => window.location.href = '/events'}>View</button>
               </div>
-              <div className="facility-card">
+              <div className="events-card">
                 <div className="events-img-container events-img-3"></div>
                 <h3>Bakthi Geetha at ACBC</h3>
                 <p>At the All Ceylon Buddhist Congress Vesak Kalapaya 2025, the children of The Thudawa Child Development Centre were 
                   invited to perform Bakthi Gee on the official stage. </p>
                 <button className="view" onClick={() => window.location.href = '/events'}>View</button>                
               </div>
-              <div className="facility-card">
+              <div className="events-card">
                 <div className="events-img-container events-img-4"></div>
                 <h3>Avurudu Uthsawaya - 2025</h3>
                 <p>With the support of the Chief Matron and the committee, the Avurudu Uthsaya 2025 was successfully 
