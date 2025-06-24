@@ -65,7 +65,7 @@ function App() {
               </div>              
               <div className="facility-card">
                 <div className="events-img-container events-img-2"></div>
-                <h3>Fruit Dansala - 2025</h3>
+                <h3>Dansala - 2025</h3>
                 <p>On the occasion of Vesak Full Moon Poya Day 2025, the Chief Matron, committee members, and children of The 
                   Thudawa Child Development Centre organized a fruit Dansala for the devotees and travelers visiting Vesak celebrations
                   .</p>
