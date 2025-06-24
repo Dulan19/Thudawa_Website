@@ -52,10 +52,10 @@ function App() {
           </div>
         </div>
 
-        <div className="facilities-section">
+        <div className="events-section">
             <h2>Events</h2>
-            <div className="facilities-grid">
-              <div className="facility-card">
+            <div className="events-grid">
+              <div className="events-card">
                 <div className="events-img-container events-img-1"></div>
                 <h3>Bakthi Geetha - 2025</h3>
                 <p>On the occasion of Poson Poya Day, with the valuable support of Mrs. Palika Darmawickrama, 
