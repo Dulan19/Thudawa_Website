@@ -179,7 +179,7 @@
   max-width: 500px;
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 1px;
 }
 
 .timeline-text {
