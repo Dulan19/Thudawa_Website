@@ -123,7 +123,7 @@ function App() {
               <div className="facility-card">
                 <div className="facility-img-container facility-img-4"></div>
                 <h3>4</h3>
-                <p>Safe outdoor spaces where children can play, laugh, and simply be kids.</p>
+                <p>Safe outdoor spaces where chidsfldren can play, laugh, and simply be kids.</p>
                 <div className="facility-fact">Added in 2010 along with our beautiful butterfly garden.</div>
               </div>
             </div>
