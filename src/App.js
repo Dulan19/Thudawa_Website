@@ -111,20 +111,20 @@ function App() {
                 <h3>2</h3>
                 <p>Comfortable sleeping quarters and administrative spaces that ensure both rest 
                   and organization.</p>
-                <div className="facility-fact">Each child has their own personal space to call home.</div>
+                
               </div>
               <div className="facility-card">
                 <div className="facility-img-container facility-img-3"></div>
                 <h3>3</h3>
                 <p>A dedicated learning environment built with international support to foster 
                   education and growth.</p>
-                <div className="facility-fact">Built in 2004 with donations from Germany!</div>
+                
               </div>
               <div className="facility-card">
                 <div className="facility-img-container facility-img-4"></div>
                 <h3>4</h3>
                 <p>Safe outdoor spaces where chidsfldren can play, laugh, and simply be kids.</p>
-                <div className="facility-fact">Added in 2010 along with our beautiful butterfly garden.</div>
+                
               </div>
             </div>
           </div>
