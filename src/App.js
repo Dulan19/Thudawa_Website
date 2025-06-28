@@ -116,7 +116,7 @@ function App() {
               <div className="facility-card">
                 <div className="facility-img-container facility-img-3"></div>
                 <h3>3</h3>
-                <p>A gooda learning environment built with international support to foster 
+                <p>A gooda learning environment built sivir sa with international support to foster 
                   education and growth.</p>
                 
               </div>
