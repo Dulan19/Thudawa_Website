@@ -27,7 +27,9 @@ const Events = () => {
         <div className="section-container">
           <div className="intro-section">
             <h2>Dansala -2025</h2>
-            <p>space for the image <br />
+            <p>On the occasion of Vesak Full Moon Poya Day 2025, the Chief Matron, committee members, and children of The 
+                  Thudawa Child Development Centre organized a fruit Dansala for the devotees and travelers visiting Vesak celebrations
+                   <br />
             
             </p>
           </div>
