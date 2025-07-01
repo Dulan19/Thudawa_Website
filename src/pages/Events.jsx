@@ -1,10 +1,11 @@
 import Navbar from "../components/Navbar/Navbar.jsx"
 import Footer from "../components/Footer/Footer.jsx"
+import "../pages/Stylings/Events.css";
 
 const Events = () => {
   return (
     <div>
-      <div className="background2-image"></div>
+      <div className="background-image-event"></div>
       <div className="page-content">
         <Navbar />
 
