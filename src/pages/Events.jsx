@@ -10,7 +10,7 @@ const Events = () => {
         <Navbar />
 
         
-        <h1 className="aboutus-heading">
+        <h1 className="events-heading">
           Events
           
         </h1>
