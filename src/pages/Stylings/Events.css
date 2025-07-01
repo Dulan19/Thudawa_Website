@@ -23,7 +23,18 @@
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
 }
 
-.intro-section h2 {
+.intro-section-events {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  color: white;
+  margin: 20px auto;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  animation: slideInUp 0.8s ease-out 0.2s both;
+}
+
+.intro-section-events h2 {
   font-size: 2.5rem;
   margin-bottom: 20px;
   text-align: center;
@@ -31,8 +42,8 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.intro-section p {
-  font-size: 1.1rem;
+.intro-section-events p {
+  font-size: 1.3rem;
   line-height: 1.8;
   margin-bottom: 20px;
   text-align: justify;
