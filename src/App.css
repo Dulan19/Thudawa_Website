@@ -208,9 +208,17 @@ html {
   background-image: url("/src/assets/Events/Bhakthi_Geetha/bakthigeetha_home.jpeg");
 }
 
+/* Container to center the button on the page */
+.events-button-wrapper {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  align-content: center;
+}
 
+/* CSS for the minimal button */
 .view-on-event-page {
-    margin: 0 auto;
     display: flex;
     background: rgba(217, 131, 36, 0.1);
     border: 1px solid rgba(217, 131, 36, 0.3);
