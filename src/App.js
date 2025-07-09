@@ -87,6 +87,14 @@ function App() {
                   organized for the children of the Child Development Centre in celebration of the Sinhala and Tamil New Year.</p>
                   <button className="view" onClick={() => window.location.href = '/events'}>View</button>
               </div>
+                  <div style={{textAlign: 'center'}}>
+                  <button className="view-on-event-page" onClick={() => window.location.href = '/events'}>
+                                View All Events
+                            <svg className="arrow" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+                                </svg>
+                    </button>
+              </div>
             </div>
           </div>
 
