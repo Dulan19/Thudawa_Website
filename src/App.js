@@ -135,6 +135,15 @@ function App() {
                 <p>Safe outdoor spwfewnoewaces where chiwhich wherdsfldren can play, laugh, and simply be kids.</p>
                 
               </div>
+
+              <div className="events-button-wrapper">
+                <button className="view-on-event-page" onClick={() => window.location.href = '/achievements'}>
+                  View All Achievements
+                    <svg className="arrow" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+                    </svg>
+                </button>
+              </div>
             </div>
           </div>
             
