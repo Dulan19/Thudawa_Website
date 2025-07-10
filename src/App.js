@@ -62,10 +62,6 @@ function App() {
               <div className="events-img-container events-img-1"></div>
               <div className="events-content">
                 <h3>Bakthi Geetha - 2025</h3>
-                <p>
-                  On Poson Poya Day, with the support of Mrs. Palika Darmawickrama
-                  and the committee, we successfully presented “Bakthi Gee 2025”.
-                </p>
                 <button
                   className="view"
                   onClick={() => (window.location.href = "/events")}
@@ -78,46 +74,43 @@ function App() {
             {/* Event Card 2 */}
             <div className="events-card">
               <div className="events-img-container events-img-2"></div>
-              <h3>Dansala - 2025</h3>
-              <p>
-                On Vesak Poya Day 2025, a fruit Dansala was organized for devotees.
-              </p>
-              <button
-                className="view"
-                onClick={() => (window.location.href = "/events")}
-              >
-                View
-              </button>
+              <div className="events-content">
+                <h3>Dansala - 2025</h3>
+                <button
+                  className="view"
+                  onClick={() => (window.location.href = "/events")}
+                >
+                  View
+                </button>
+              </div>
             </div>
 
             {/* Event Card 3 */}
             <div className="events-card">
               <div className="events-img-container events-img-3"></div>
-              <h3>Bakthi Geetha at ACBC</h3>
-              <p>
-                Children performed Bakthi Gee on the official stage of Vesak Kalapaya 2025.
-              </p>
-              <button
-                className="view"
-                onClick={() => (window.location.href = "/events")}
-              >
-                View
-              </button>
+              <div className="events-content">
+                <h3>Bakthi Geetha at ACBC- 2025</h3>
+                <button
+                  className="view"
+                  onClick={() => (window.location.href = "/events")}
+                >
+                  View
+                </button>
+              </div>
             </div>
 
             {/* Event Card 4 */}
             <div className="events-card">
               <div className="events-img-container events-img-4"></div>
-              <h3>Avurudu Uthsawaya - 2025</h3>
-              <p>
-                The Avurudu Uthsaya 2025 was organized to celebrate Sinhala & Tamil New Year.
-              </p>
-              <button
-                className="view"
-                onClick={() => (window.location.href = "/events")}
-              >
-                View
-              </button>
+              <div className="events-content">
+                <h3>Avurudu Uthsawaya - 2025</h3>
+                <button
+                  className="view"
+                  onClick={() => (window.location.href = "/events")}
+                >
+                  View
+                </button>
+              </div>
             </div>
 
             {/* Button to View All Events */}
