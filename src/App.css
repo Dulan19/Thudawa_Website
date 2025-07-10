@@ -145,10 +145,10 @@ html {
 
 .events-grid, .achievements-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(4, minmax(280px, 1fr)); /* Explicitly set 4 columns */
   gap: 25px;
   margin-top: 30px;
-  align-items: stretch;
+  justify-content: center; /* This centers the grid when there's extra space */
   position: relative;
   z-index: 1;
 }
@@ -206,9 +206,10 @@ html {
   font-size: 1.5rem;
   margin-bottom: 15px;
   color: rgb(217, 131, 36);
+  text-align: center;
 }
 
-.events-card p, .achievements-card p {
+.achievements-card p {
   font-size: 1rem;
   color: #ffffff;
   line-height: 1.5;
