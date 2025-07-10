@@ -22,6 +22,20 @@ html {
   }
 }
 
+/* Main content transition */
+.main-content {
+  transition: opacity 0.5s ease;
+}
+
+.main-content.content-loading {
+  opacity: 0;
+}
+
+.main-content.content-loaded {
+  opacity: 1;
+}
+
+/* Vision & Mission Section */
 .vision-mission-container {
   display: flex;
   justify-content: center;
@@ -93,106 +107,123 @@ html {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 768px) {
-  .seemore-btn {
-    left: 50%;
-    transform: translateX(-50%);
-    position: static;
-    margin-top: 15px;
-    display: block;
-  }
-}
-
-.events-section{
+/* Events & Achievements Section */
+.events-section , .achievements-section{
   background-image: url("/src/assets/Events/Events_background.JPG");
-  backdrop-filter: blur(8px);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   color: white;
   margin: 40px auto;
   padding: 40px;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  position: relative;
 }
 
-.events-section h2 {
+.events-section::before, .achievements-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  z-index: 0;
+}
+
+.events-section h2, .achievements-section h2{
   font-size: 2.5rem;
   margin-bottom: 30px;
   text-align: center;
   color: #fff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 1;
 }
 
-.events-grid {
+.events-grid, .achievements-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 25px;
   margin-top: 30px;
+  align-items: stretch;
+  position: relative;
+  z-index: 1;
 }
 
-.events-img {
-  width: 100%;
+.events-card, .achievements-card {
+  background: rgba(72, 62, 62, 0.673);
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
   height: 100%;
-  object-fit: cover;
+  overflow: hidden;
+}
+
+.events-card:hover, .achievements-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.events-img-container, .achievements-img-container {
+  width: 100%;
+  height: 0;
+  padding-bottom: 70%;
+  position: relative;
+  overflow: hidden;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.events-img-container::before, .achievements-img-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8;
   transition: transform 0.3s ease;
 }
 
-.events-card:hover .events-img {
+.events-card:hover .events-img-container::before, .achievements-card:hover .achievements-img-container::before {
   transform: scale(1.05);
 }
 
-.events-card {
-  background: rgba(72, 62, 62, 0.673);
-  border-radius: 15px;
-  text-align: center;
-  transition: transform 0.3s ease;
+.events-content, .achievements-content {
+  padding: 20px;
+  flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-  overflow: hidden;
-  
 }
 
-.events-content {
-  padding: 25px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.events-card:hover {
-  transform: translateY(-5px);
-}
-
-.events-card h3 {
+.events-card h3, .achievements-card h3 {
   font-size: 1.5rem;
   margin-bottom: 15px;
   color: rgb(217, 131, 36);
 }
 
-.events-card p {
+.events-card p, .achievements-card p {
   font-size: 1rem;
   color: #ffffff;
   line-height: 1.5;
   margin-bottom: 20px;
+  flex: 1;
 }
 
-.events-img-container {
-  width: 100%;         
-  height: 280px;
-  background-size: cover;
-  background-position: center;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  opacity: 0.8;
-}
-
-.view{
-  align-items: center;
-  padding: 2.5%;
+.view {
+  align-self: center;
+  margin-top: auto;
+  padding: 10px 20px;
   border-radius: 8px;
   background-color: #d98324;
   color: white;
   border: none;
-  border-radius: 8px;
   font-size: 0.95rem;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -204,61 +235,122 @@ html {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.events-img-1 {
-  background-image: url("/src/assets/Events/Bhakthi_Geetha/bakthigeetha_home.jpeg");
-}
-
-/* Container to center the button on the page */
-.events-button-wrapper {
+.events-button-wrapper, .achievements-button-wrapper {
   grid-column: 1 / -1;
   display: flex;
   justify-content: center;
   margin-top: 20px;
-  align-content: center;
+  position: relative;
+  z-index: 1;
 }
 
-/* CSS for the minimal button */
-.view-on-event-page {
-    display: flex;
-    background: rgba(217, 131, 36, 0.1);
-    border: 1px solid rgba(217, 131, 36, 0.3);
-    color: rgb(217, 131, 36);
-    backdrop-filter: blur(10px);
-    padding: 16px 32px;
-    font-size: 16px;
-    font-weight: 600;
-    border-radius: 50px;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    transition: all 0.3s ease;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    box-shadow: 0 4px 15px rgba(217, 131, 36, 0.2);
-    text-transform: uppercase;
-    letter-spacing: 1px;
+.view-on-event-page, .view-on-achievements-page {
+  display: flex;
+  background: rgba(217, 131, 36, 0.1);
+  border: 1px solid rgba(217, 131, 36, 0.3);
+  color: rgb(217, 131, 36);
+  backdrop-filter: blur(10px);
+  padding: 16px 32px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  box-shadow: 0 4px 15px rgba(217, 131, 36, 0.2);
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
-.view-on-event-page:hover {
-    transform: translateY(-2px);
-    background: rgba(217, 131, 36, 0.2);
-    border-color: rgb(217, 131, 36);
-    box-shadow: 0 8px 25px rgba(217, 131, 36, 0.3);
+.view-on-event-page:hover, .view-on-achievements-page:hover {
+  transform: translateY(-2px);
+  background: rgba(217, 131, 36, 0.2);
+  border-color: rgb(217, 131, 36);
+  box-shadow: 0 8px 25px rgba(217, 131, 36, 0.3);
 }
 
-.view-on-event-page:active {
-    transform: translateY(0);
-    box-shadow: 0 4px 15px rgba(217, 131, 36, 0.2);
+.view-on-event-page:active, .achievements-on-achievements-page:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 15px rgba(217, 131, 36, 0.2);
 }
 
 .arrow {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    transition: transform 0.3s ease;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
 }
 
-.view-on-event-page:hover .arrow {
-    transform: translateX(4px);
+.view-on-event-page:hover .arrow, .achievements-on-achievements-page:hover .arrow {
+  transform: translateX(4px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .vision-mission-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .box {
+    max-width: 100%;
+  }
+  
+  .seemore-btn {
+    left: 50%;
+    transform: translateX(-50%);
+    position: static;
+    margin-top: 15px;
+    display: block;
+  }
+  
+  .events-section,
+  .achievements-section {
+    padding: 20px;
+  }
+  
+  .events-grid,
+  .achievements-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .events-img-container,
+  .achievements-img-container {
+    padding-bottom: 60%;
+  }
+  
+  .events-section h2,
+  .achievements-section h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .events-grid,
+  .achievements-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Image specific classes */
+.events-img-1::before {
+  background-image: url("/src/assets/Events/Bhakthi_Geetha/bakthigeetha_home.jpeg");
+}
+
+.events-img-2::before {
+  background-image: url("");
+}
+
+.events-img-3::before {
+  background-image: url("");
+}
+
+.events-img-4::before {
+  background-image: url("");
 }
