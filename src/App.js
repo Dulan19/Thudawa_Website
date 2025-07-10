@@ -137,7 +137,7 @@ function App() {
 
         {/* achievements Section */}
         <div className="achievements-section">
-          <h2>Events</h2>
+          <h2>Achievements</h2>
           <div className="achievements-grid">
             {/* achievements Card 1 */}
             <div className="achievements-card">
