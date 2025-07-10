@@ -153,46 +153,55 @@ function App() {
             {/* achievements Card 2 */}
             <div className="achievements-card">
               <div className="achievements-img-container achievements-img-2"></div>
-              <h3>Dansala - 2025</h3>
-              <p>
-                On Vesak Poya Day 2025, a fruit Dansala was organized for devotees.
-              </p>
-              <button
-                className="view"
-                onClick={() => (window.location.href = "/achievements")}
-              >
-                View
-              </button>
+              <div className="achievements-content">
+                <h3>Bakthi Geetha - 2025</h3>
+                <p>
+                  On Poson Poya Day, with the support of Mrs. Palika Darmawickrama
+                  and the committee, we successfully presented “Bakthi Gee 2025”.
+                </p>
+                <button
+                  className="view"
+                  onClick={() => (window.location.href = "/achievements")}
+                >
+                  View
+                </button>
+              </div>
             </div>
 
             {/* achievements Card 3 */}
             <div className="achievements-card">
               <div className="achievements-img-container achievements-img-3"></div>
-              <h3>Bakthi Geetha at ACBC</h3>
-              <p>
-                Children performed Bakthi Gee on the official stage of Vesak Kalapaya 2025.
-              </p>
-              <button
-                className="view"
-                onClick={() => (window.location.href = "/achievements")}
-              >
-                View
-              </button>
+              <div className="achievements-content">
+                <h3>Bakthi Geetha - 2025</h3>
+                <p>
+                  On Poson Poya Day, with the support of Mrs. Palika Darmawickrama
+                  and the committee, we successfully presented “Bakthi Gee 2025”.
+                </p>
+                <button
+                  className="view"
+                  onClick={() => (window.location.href = "/achievements")}
+                >
+                  View
+                </button>
+              </div>
             </div>
 
             {/* achievements Card 4 */}
             <div className="achievements-card">
               <div className="achievements-img-container achievements-img-4"></div>
-              <h3>Avurudu Uthsawaya - 2025</h3>
-              <p>
-                The Avurudu Uthsaya 2025 was organized to celebrate Sinhala & Tamil New Year.
-              </p>
-              <button
-                className="view"
-                onClick={() => (window.location.href = "/achievements")}
-              >
-                View
-              </button>
+              <div className="achievements-content">
+                <h3>Bakthi Geetha - 2025</h3>
+                <p>
+                  On Poson Poya Day, with the support of Mrs. Palika Darmawickrama
+                  and the committee, we successfully presented “Bakthi Gee 2025”.
+                </p>
+                <button
+                  className="view"
+                  onClick={() => (window.location.href = "/achievements")}
+                >
+                  View
+                </button>
+              </div>
             </div>
 
             {/* Button to View All Events */}
