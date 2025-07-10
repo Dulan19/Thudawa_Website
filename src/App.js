@@ -1,164 +1,227 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import Navbar from "./components/Navbar/Navbar"
-import "./App.css"
-import Imgswap from "./components/Imgswap"
-import Footer from "./components/Footer/Footer"
-import Preloader from "./components/Preloader/Preloader"
+import { useState, useEffect } from "react";
+import Navbar from "./components/Navbar/Navbar";
+import Imgswap from "./components/Imgswap";
+import Footer from "./components/Footer/Footer";
+import Preloader from "./components/Preloader/Preloader";
+import "./App.css";
 
 function App() {
-  const [loading, setLoading] = useState(true)
-  const [contentReady, setContentReady] = useState(false)
+  const [loading, setLoading] = useState(true);         // State for preloader
+  const [contentReady, setContentReady] = useState(false); // Smooth transition for content
 
   useEffect(() => {
-    // Simulate loading
+    // Simulate loading with preloader
     const timer = setTimeout(() => {
-      setLoading(false)
-      // Small delay to ensure smooth transition
-      setTimeout(() => setContentReady(true), 100)
-    }, 7000)
+      setLoading(false);
+      setTimeout(() => setContentReady(true), 100); // Small delay for smooth transition
+    }, 7000);
 
-    return () => clearTimeout(timer)
-  }, [])
+    return () => clearTimeout(timer); // Clear timeout on unmount
+  }, []);
 
-  if (loading) {
-    return <Preloader />
-  }
+  if (loading) return <Preloader />; // Show preloader during initial load
 
   return (
     <div className="App">
       <Navbar />
-      <div className={`main-content ${contentReady ? "content-loaded" : "content-loading"}`}>
+      <div
+        className={`main-content ${
+          contentReady ? "content-loaded" : "content-loading"
+        }`}
+      >
         <Imgswap />
-        <div className="content-section">
-          <div className="vision-mission-container">
-            <div className="box vision-box">
-              <h2>Our Vision</h2>
-              <p>
-                Our vision is to put an end to the sufferings of innocent children who are being tampered by social
-                imbalances and injustice; to recreate their childhoods through justice and social equality and through
-                that, create a better future for them.
-              </p>
-            </div>
-            <div className="box mission-box">
-              <h2>Our Mission</h2>
-              <p>
-                Our mission is to foster, protect and provide, for those children who have been disowned, neglected,
-                orphaned or abused and to provide all the inhabitants with welfare and guidance.
-              </p>
-              <button className="seemore-btn">Read More</button>
-            </div>
+
+        {/* Vision and Mission Section */}
+        <div className="vision-mission-container">
+          <div className="box vision-box">
+            <h2>Our Vision</h2>
+            <p>
+              Our vision is to end the sufferings of innocent children, recreate
+              their childhoods with justice and equality, and create a better
+              future for them.
+            </p>
+          </div>
+          <div className="box mission-box">
+            <h2>Our Mission</h2>
+            <p>
+              Our mission is to foster, protect, and provide for disowned,
+              neglected, orphaned, or abused children with welfare and guidance.
+            </p>
+            <button className="seemore-btn">Read More</button>
           </div>
         </div>
 
         {/* Events Section */}
         <div className="events-section">
-            <h2>Events</h2>
-                <div className="events-grid">
+          <h2>Events</h2>
+          <div className="events-grid">
+            {/* Event Card 1 */}
+            <div className="events-card">
+              <div className="events-img-container events-img-1"></div>
+              <div className="events-content">
+                <h3>Bakthi Geetha - 2025</h3>
+                <p>
+                  On Poson Poya Day, with the support of Mrs. Palika Darmawickrama
+                  and the committee, we successfully presented “Bakthi Gee 2025”.
+                </p>
+                <button
+                  className="view"
+                  onClick={() => (window.location.href = "/events")}
+                >
+                  View
+                </button>
+              </div>
+            </div>
 
-                  <div className="events-card">
-                    <div className="events-img-container events-img-1"></div>
-                      <div className="events-content">
-                        <h3>Bakthi Geetha - 2025</h3>
-                          <p>On the occasion of Poson Poya Day, with the valuable support of Mrs. Palika Darmawickrama, 
-                  The Music Teacher of the Thudawa Child Development Centre, and the dedicated efforts of the Centre’s committee, 
-                  The Thudawa Child Development Centre successfully presented “Bakthi Gee 2025” together with its children</p>
-                          <button className="view" onClick={() => window.location.href = '/events'}>View</button>
-                      </div>
-                  </div> 
+            {/* Event Card 2 */}
+            <div className="events-card">
+              <div className="events-img-container events-img-2"></div>
+              <h3>Dansala - 2025</h3>
+              <p>
+                On Vesak Poya Day 2025, a fruit Dansala was organized for devotees.
+              </p>
+              <button
+                className="view"
+                onClick={() => (window.location.href = "/events")}
+              >
+                View
+              </button>
+            </div>
 
-                  <div className="events-card">
-                    <div className="events-img-container events-img-2"></div>
-                      <h3>Dansala - 2025</h3>
-                        <p>On the occasion of Vesak Full Moon Poya Day 2025, the Chief Matron, committee members, and children of The 
-                          Thudawa Child Development Centre organized a fruit Dansala for the devotees and travelers visiting Vesak celebrations
-                      .</p>
-                        <button className="view" onClick={() => window.location.href = '/events'}>View</button>
-                  </div>
+            {/* Event Card 3 */}
+            <div className="events-card">
+              <div className="events-img-container events-img-3"></div>
+              <h3>Bakthi Geetha at ACBC</h3>
+              <p>
+                Children performed Bakthi Gee on the official stage of Vesak Kalapaya 2025.
+              </p>
+              <button
+                className="view"
+                onClick={() => (window.location.href = "/events")}
+              >
+                View
+              </button>
+            </div>
 
-                  <div className="events-card">
-                    <div className="events-img-container events-img-3"></div>
-                      <h3>Bakthi Geetha at ACBC</h3>
-                        <p>At the All Ceylon Buddhist Congress Vesak Kalapaya 2025, the children of The Thudawa Child Development Centre were 
-                          invited to perform Bakthi Gee on the official stage. </p>
-                        <button className="view" onClick={() => window.location.href = '/events'}>View</button>                
-                  </div>
+            {/* Event Card 4 */}
+            <div className="events-card">
+              <div className="events-img-container events-img-4"></div>
+              <h3>Avurudu Uthsawaya - 2025</h3>
+              <p>
+                The Avurudu Uthsaya 2025 was organized to celebrate Sinhala & Tamil New Year.
+              </p>
+              <button
+                className="view"
+                onClick={() => (window.location.href = "/events")}
+              >
+                View
+              </button>
+            </div>
 
-                  <div className="events-card">
-                    <div className="events-img-container events-img-4"></div>
-                      <h3>Avurudu Uthsawaya - 2025</h3>
-                        <p>With the support of the Chief Matron and the committee, the Avurudu Uthsaya 2025 was successfully 
-                          organized for the children of the Child Development Centre in celebration of the Sinhala and Tamil New Year.</p>
-                        <button className="view" onClick={() => window.location.href = '/events'}>View</button>
-                  </div>
-                 
-                  <div className="events-button-wrapper">
-                    <button className="view-on-event-page" onClick={() => window.location.href = '/events'}>
-                      View All Events
-                        <svg className="arrow" viewBox="0 0 24 24" fill="currentColor">
-                          <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
-                        </svg>
-                    </button>
-                  </div>
-                </div>
-        </div>
-
-        {/* Achievements Section */}
-        <div className="facilities-section">
-            <h2>Achievements</h2>
-              <div className="facilities-grid">
-
-                <div className="facility-card">
-                  <div className="facility-img-container facility-img-1"></div>
-                    <h3>1</h3>
-                      <p>On the occasion of Poson Poya Day, with the valuable support of Mrs. Palika Darmawickrama, 
-                        The Music Teacher of the Thudawa Child Development Centre, and the dedicated efforts of the 
-                        Centre’s committee, 
-                        The Thudawa Child Development Centre successfully presented “Bakthi Gee 2025” together with
-                        its children</p>
-                      <button className="view" onClick={() => window.location.href = '/achievements'}>View</button>
-                </div>
-
-                <div className="facility-card">
-                  <div className="facility-img-container facility-img-2"></div>
-                    <h3>2</h3>
-                      <p>Comfortable sleeping quarters and administrative spaces that ensure both rest 
-                        and organization.</p>
-                      <button className="view" onClick={() => window.location.href = '/achievements'}>View</button>  
-                </div>
-              
-                <div className="facility-card">
-                  <div className="facility-img-container facility-img-3"></div>
-                    <h3>3</h3>
-                      <p>A gooda learning environment built sivir sa with international support to foster 
-                        education and growth.</p>
-                       <button className="view" onClick={() => window.location.href = '/achievements'}>View</button> 
-                </div>
-
-                <div className="facility-card">
-                  <div className="facility-img-container facility-img-4"></div>
-                    <h3>4</h3>
-                      <p>Safe outdoor spwfewnoewaces where chiwhich wherdsfldren can play, laugh, and simply be kids.</p>
-                      <button className="view" onClick={() => window.location.href = '/achievements'}>View</button>
-                </div>
-
-                <div className="events-button-wrapper">
-                  <button className="view-on-event-page" onClick={() => window.location.href = '/achievements'}>
-                      View All Achievements
-                        <svg className="arrow" viewBox="0 0 24 24" fill="currentColor">
-                          <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
-                        </svg>
-                  </button>
-                </div>
+            {/* Button to View All Events */}
+            <div className="events-button-wrapper">
+              <button
+                className="view-on-event-page"
+                onClick={() => (window.location.href = "/events")}
+              >
+                View All Events
+                <svg className="arrow" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" />
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
-            
-        <Footer />
 
+        {/* achievements Section */}
+        <div className="achievements-section">
+          <h2>Events</h2>
+          <div className="achievements-grid">
+            {/* achievements Card 1 */}
+            <div className="achievements-card">
+              <div className="achievements-img-container achievements-img-1"></div>
+              <div className="achievements-content">
+                <h3>Bakthi Geetha - 2025</h3>
+                <p>
+                  On Poson Poya Day, with the support of Mrs. Palika Darmawickrama
+                  and the committee, we successfully presented “Bakthi Gee 2025”.
+                </p>
+                <button
+                  className="view"
+                  onClick={() => (window.location.href = "/achievements")}
+                >
+                  View
+                </button>
+              </div>
+            </div>
+
+            {/* achievements Card 2 */}
+            <div className="achievements-card">
+              <div className="achievements-img-container achievements-img-2"></div>
+              <h3>Dansala - 2025</h3>
+              <p>
+                On Vesak Poya Day 2025, a fruit Dansala was organized for devotees.
+              </p>
+              <button
+                className="view"
+                onClick={() => (window.location.href = "/achievements")}
+              >
+                View
+              </button>
+            </div>
+
+            {/* achievements Card 3 */}
+            <div className="achievements-card">
+              <div className="achievements-img-container achievements-img-3"></div>
+              <h3>Bakthi Geetha at ACBC</h3>
+              <p>
+                Children performed Bakthi Gee on the official stage of Vesak Kalapaya 2025.
+              </p>
+              <button
+                className="view"
+                onClick={() => (window.location.href = "/achievements")}
+              >
+                View
+              </button>
+            </div>
+
+            {/* achievements Card 4 */}
+            <div className="achievements-card">
+              <div className="achievements-img-container achievements-img-4"></div>
+              <h3>Avurudu Uthsawaya - 2025</h3>
+              <p>
+                The Avurudu Uthsaya 2025 was organized to celebrate Sinhala & Tamil New Year.
+              </p>
+              <button
+                className="view"
+                onClick={() => (window.location.href = "/achievements")}
+              >
+                View
+              </button>
+            </div>
+
+            {/* Button to View All Events */}
+            <div className="achievements-button-wrapper">
+              <button
+                className="view-on-achievements-page"
+                onClick={() => (window.location.href = "/achievements")}
+              >
+                View All Events
+                <svg className="arrow" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Footer Section */}
+        <Footer />
       </div>
     </div>
-  )
+  );
 }
 
 export default App;
