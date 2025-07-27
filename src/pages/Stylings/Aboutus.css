@@ -198,6 +198,14 @@
   
 }
 
+.timeline-image-1994 {
+  background-image: url("../../assets/thudawe family.jpg");
+}
+
+.timeline-image-1995 {
+  background-image: url("../../assets/thudawe family.jpg");
+}
+
 .timeline-image-1996 {
   background-image: url("../../assets/thudawe family.jpg");
 }
@@ -225,6 +233,22 @@
   
   
 }
+
+
+
+.timeline-image {
+  transition: opacity 0.5s ease-in-out;
+  flex-shrink: 0;
+  width: 200px;
+  height: 100px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  opacity: 0.8;
+  margin-top: 0px;
+}
+
+
 .facility-img-1 {
   background-image: url("../../assets/thudawe family.jpg");
 }

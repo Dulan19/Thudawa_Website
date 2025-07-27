@@ -3,7 +3,25 @@ import Navbar from "../components/Navbar/Navbar.jsx"
 import Footer from "../components/Footer/Footer.jsx"
 import "./Stylings/Aboutus.css"
 
+import React, { useState, useEffect } from "react";
+
+
 function Aboutus() {
+  const images1997 = [
+  require("../assets/thudawe family.jpg"),
+  require("../assets/background1.jpg"),
+  require("../assets/thudawe family.jpg"),
+];
+
+const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+useEffect(() => {
+  const interval = setInterval(() => {
+    setCurrentImageIndex((prev) => (prev + 1) % images1997.length);
+  }, 3000);
+  return () => clearInterval(interval);
+}, []);
+
   return (
     <div>
       <div className="background1-image"></div>
@@ -51,7 +69,7 @@ function Aboutus() {
                     <p>The family home built in 1980 was officially transformed into the Tudawe Children Development
                       Center — dedicated to the care and development of children in need.</p>
                   </div>
-                  <div className="timeline-image-container timeline-image-1996"></div>
+                  <div className="timeline-image-container timeline-image-1994"></div>
                 </div>
               </div>
               <div className="timeline-item">
@@ -61,7 +79,7 @@ function Aboutus() {
                     <p>Due to the matron's dedication, the center's services grew, and more space was required as the
                       number of children increased.</p>
                   </div>
-                  <div className="timeline-image-container timeline-image-1996"></div>
+                  <div className="timeline-image-container timeline-image-1995"></div>
                 </div>
               </div>
               <div className="timeline-item">
@@ -83,7 +101,13 @@ function Aboutus() {
                       library, and a computer room.
                     </p>
                   </div>
-                  <div className="timeline-image-container timeline-image-1997"></div>
+                  <div className="timeline-image-container timeline-image">
+                    <img
+                      src={images1997[currentImageIndex]}
+                      alt="1997 events"
+                      className="timeline-image"
+                      />
+                  </div>
                 </div>
               </div>
               <div className="timeline-item">
