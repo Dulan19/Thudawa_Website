@@ -47,8 +47,29 @@ function Aboutus() {
               <div className="timeline-item">
                 <div className="timeline-content">
                   <div className="timeline-text">
+                    <h3>1994</h3>
+                    <p>The family home built in 1980 was officially transformed into the Tudawe Children Development
+                      Center — dedicated to the care and development of children in need.</p>
+                  </div>
+                  <div className="timeline-image-container timeline-image-1996"></div>
+                </div>
+              </div>
+              <div className="timeline-item">
+                <div className="timeline-content">
+                  <div className="timeline-text">
+                    <h3>1995</h3>
+                    <p>Due to the matron's dedication, the center's services grew, and more space was required as the
+                      number of children increased.</p>
+                  </div>
+                  <div className="timeline-image-container timeline-image-1996"></div>
+                </div>
+              </div>
+              <div className="timeline-item">
+                <div className="timeline-content">
+                  <div className="timeline-text">
                     <h3>1996</h3>
-                    <p>Founded by the Tudawe family with a vision to provide hope and care for vulnerable children</p>
+                    <p>Mrs. Maris Wenaer from Germany funded 10 washrooms, improving daily routines and hygiene for all
+                      the children at the center.</p>
                   </div>
                   <div className="timeline-image-container timeline-image-1996"></div>
                 </div>
@@ -58,7 +79,8 @@ function Aboutus() {
                   <div className="timeline-text">
                     <h3>1997</h3>
                     <p>
-                      New two-storied building constructed to accommodate more children and provide better facilities
+                      Mrs. Ingries Senanayaka and Lions Club Germany helped build a two-story building with new dorms, a
+                      library, and a computer room.
                     </p>
                   </div>
                   <div className="timeline-image-container timeline-image-1997"></div>
@@ -69,8 +91,8 @@ function Aboutus() {
                   <div className="timeline-text">
                     <h3>2004</h3>
                     <p>
-                      Study room built with generous donations from German supporters, enhancing educational
-                      opportunities
+                      Mrs. Silvia from Germany and Sunil's friends funded a dedicated Study Room – named 'Sumanasiri
+                      Perera Memorial Hall' – enhancing educational opportunities.
                     </p>
                   </div>
                   <div className="timeline-image-container timeline-image-2004"></div>
@@ -81,7 +103,8 @@ function Aboutus() {
                   <div className="timeline-text">
                     <h3>2010</h3>
                     <p>
-                      Playground and butterfly garden added, creating spaces for recreation and connection with nature
+                      Foreign and local donors helped build a swing set, slides, and a butterfly garden for play and
+                      joy, creating spaces for recreation and connection with nature.
                     </p>
                   </div>
                   <div className="timeline-image-container timeline-image-2010"></div>
