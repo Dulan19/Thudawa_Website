@@ -8,9 +8,11 @@ import React, { useState, useEffect } from "react";
 
 function Aboutus() {
   const images1997 = [
-  require("../assets/thudawe family.jpg"),
-  require("../assets/background1.jpg"),
-  require("../assets/thudawe family.jpg"),
+  require("../assets/gallery/planing-of-two-storid-new-bulding.jpg"),
+  require("../assets/gallery/opening-two-stiard-building.jpg"),
+  require("../assets/gallery/opening-two-stiard-building2.jpg"),
+  require("../assets/gallery/opening-study-room-tudawe-child-home.jpg"),
+  require("../assets/gallery/computer-room-tudawe-.jpg"),
 ];
 
 const [currentImageIndex, setCurrentImageIndex] = useState(0);
