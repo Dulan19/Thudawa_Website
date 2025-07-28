@@ -63,6 +63,15 @@ const Events = () => {
             </p>
           </div>
         </div>
+
+        <div className="section-container">
+          <div className="intro-section-events">
+            <h2>Avurudu Uthsawaya -2025</h2>
+            <p>space for the image <br />
+            
+            </p>
+          </div>
+        </div>
         
 
         <Footer />
