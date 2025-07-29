@@ -16,7 +16,7 @@ function App() {
     const timer = setTimeout(() => {
       setLoading(false);
       setTimeout(() => setContentReady(true), 100); // Small delay for smooth transition
-    }, 7000);
+    }, 11000);
 
     return () => clearTimeout(timer); // Clear timeout on unmount
   }, []);

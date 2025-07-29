@@ -10,188 +10,75 @@
     radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
     radial-gradient(circle at 40% 80%, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
   background-size: 100px 100px, 150px 150px, 80px 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: flex; /* Added for centering blur-box */
+  justify-content: center; /* Added for centering blur-box */
+  align-items: center; /* Added for centering blur-box */
   z-index: 9999;
   overflow: hidden;
 }
 
-/* Wall Photos Styling */
-.wall-photos {
+/* Background Image Rows (from animated-intro-page) */
+.background-animation {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1;
-  /* Remove filter: blur(3px); */
-}
-
-.photo-frame {
-  position: absolute;
-  background: linear-gradient(145deg, #8b4513, #654321);
-  padding: 12px;
-  border-radius: 6px;
-  box-shadow:
-    0 15px 35px rgba(0, 0, 0, 0.6),
-    0 8px 15px rgba(0, 0, 0, 0.4),
-    0 3px 8px rgba(0, 0, 0, 0.3),
-    inset 0 2px 4px rgba(255, 255, 255, 0.15),
-    inset 0 -2px 6px rgba(0, 0, 0, 0.25);
-  transform-style: preserve-3d;
-  transition: all 0.3s ease;
-  border: 2px solid #5d3a1a;
-}
-
-.photo-frame::before {
-  content: "";
-  position: absolute;
-  top: 6px;
-  left: 6px;
-  right: 6px;
-  bottom: 6px;
-  background: linear-gradient(135deg, #654321, #4a2c17);
-  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
   z-index: -1;
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.4);
 }
 
-.photo-frame::after {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  background: linear-gradient(45deg, rgba(0, 0, 0, 0.1), transparent, rgba(0, 0, 0, 0.1));
-  border-radius: 8px;
-  z-index: -2;
+.image-row {
+  flex: 1;
+  display: flex;
+  width: 200%; /* Double width for seamless loop */
+  animation-duration: 40s; /* Decreased speed */
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
-.photo-frame img {
-  width: 100%;
+.move-right {
+  animation-name: moveRight;
+}
+
+.move-left {
+  animation-name: moveLeft;
+}
+
+@keyframes moveRight {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes moveLeft {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.image-container {
+  flex-shrink: 0;
   height: 100%;
+  width: auto; /* Allows images to maintain aspect ratio */
+}
+
+.landscape-image {
+  height: 100%;
+  width: auto;
   object-fit: cover;
-  border-radius: 2px;
   display: block;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  filter: brightness(0.7); /* Slightly dim the background images */
 }
 
-.photo-frame:hover {
-  transform: translateY(-2px) scale(1.02);
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.7), 0 12px 20px rgba(0, 0, 0, 0.5), 0 5px 12px rgba(0, 0, 0, 0.4);
-}
-
-/* Individual photo positioning with random sizes and locations */
-.photo-1 {
-  top: 8%;
-  left: 5%;
-  width: 200px;
-  height: 150px;
-  transform: rotate(-4deg);
-  z-index: 5;
-}
-
-.photo-2 {
-  top: 12%;
-  right: 8%;
-  width: 160px;
-  height: 120px;
-  transform: rotate(3deg);
-  z-index: 4;
-}
-
-.photo-3 {
-  top: 35%;
-  left: 3%;
-  width: 140px;
-  height: 200px;
-  transform: rotate(-2deg);
-  z-index: 6;
-}
-
-.photo-4 {
-  top: 28%;
-  right: 12%;
-  width: 180px;
-  height: 140px;
-  transform: rotate(5deg);
-  z-index: 3;
-}
-
-.photo-5 {
-  bottom: 25%;
-  left: 12%;
-  width: 170px;
-  height: 130px;
-  transform: rotate(2deg);
-  z-index: 4;
-}
-
-.photo-6 {
-  bottom: 20%;
-  right: 15%;
-  width: 150px;
-  height: 180px;
-  transform: rotate(-3deg);
-  z-index: 5;
-}
-
-.photo-7 {
-  top: 5%;
-  left: 25%;
-  width: 120px;
-  height: 90px;
-  transform: rotate(1deg);
-  z-index: 2;
-}
-
-.photo-8 {
-  top: 45%;
-  left: 35%;
-  width: 110px;
-  height: 140px;
-  transform: rotate(-6deg);
-  z-index: 1;
-}
-
-.photo-9 {
-  top: 15%;
-  right: 35%;
-  width: 130px;
-  height: 100px;
-  transform: rotate(4deg);
-  z-index: 3;
-}
-
-.photo-10 {
-  bottom: 35%;
-  right: 5%;
-  width: 140px;
-  height: 110px;
-  transform: rotate(-1deg);
-  z-index: 4;
-}
-
-.photo-11 {
-  bottom: 8%;
-  left: 35%;
-  width: 160px;
-  height: 120px;
-  transform: rotate(3deg);
-  z-index: 2;
-}
-
-.photo-12 {
-  top: 60%;
-  left: 8%;
-  width: 100px;
-  height: 130px;
-  transform: rotate(-5deg);
-  z-index: 3;
-}
-
+/* Preloader Content (Central Blur Box) */
 .preloader-content {
   text-align: center;
   color: #fff;
@@ -199,183 +86,56 @@
   z-index: 10; /* Ensure blur-box stays on top */
 }
 
+.blur-box {
+  text-align: center;
+  color: white;
+  max-width: 850px; /* Retained from original Preloader.css */
+  max-height: 340px; /* Retained from original Preloader.css */
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 25px;
+  /* Removed margin-left and margin-top as flexbox handles centering */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  animation: fadeInUp 0.8s ease-out 0.3s both;
+  /* Added from animated-intro-page.css for centering content within blur-box */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .logo {
-  width: 200px;
-  height: 200px;
-  margin: 0 auto 40px;
+  width: 200px; /* Retained from original Preloader.css */
+  height: 200px; /* Retained from original Preloader.css */
+  margin: 0 auto 40px; /* Retained from original Preloader.css */
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("../../assets/smallLogo@3x.png");
+  /* Corrected path to reference public assets */
+  background-image: url("../../assets/smallLogo@3x.png"); /* Updated path to be relative to CSS file */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.blur-box {
-  text-align: center;
-  color: white;
-  max-width: 850px;
-  max-height: 340px;
-  padding: 30px;
-  background-color: rgba(255, 255, 255, 0.25);
-  border-radius: 25px;
-  margin-left: 30px;
-  margin-top: 30px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(15px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  animation: fadeInUp 0.8s ease-out 0.3s both;
-}
-
-/* Children Animation Container */
-.children-container {
-  display: flex;
-  justify-content: center;
-  gap: 60px;
-  margin: 40px 0;
-  animation: fadeInUp 1s ease-out 0.3s both;
-}
-
-.child {
-  position: relative;
-}
-
-.child-body {
-  position: relative;
-  animation: bounce 2s ease-in-out infinite;
-}
-
-.child-1 .child-body {
-  animation-delay: 0s;
-}
-
-.child-2 .child-body {
-  animation-delay: 0.5s;
-}
-
-/* Child Head */
-.child-head {
-  width: 40px;
-  height: 40px;
-  background: #ffb6b9;
-  border-radius: 50%;
-  margin: 0 auto 5px;
-  position: relative;
-}
-
-.child-head::before {
-  content: "";
-  position: absolute;
-  top: 8px;
-  left: 10px;
-  width: 4px;
-  height: 4px;
-  background: #333;
-  border-radius: 50%;
-  box-shadow: 16px 0 0 #333;
-}
-
-.child-head::after {
-  content: "";
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 8px;
-  height: 4px;
-  background: #ff6b6b;
-  border-radius: 0 0 8px 8px;
-}
-
-/* Child Torso */
-.child-torso {
-  width: 30px;
-  height: 45px;
-  background: #4ecdc4;
-  margin: 0 auto;
-  border-radius: 15px 15px 8px 8px;
-  position: relative;
-}
-
-/* Child Arms */
-.child-arm {
-  position: absolute;
-  width: 8px;
-  height: 25px;
-  background: #ffb6b9;
-  border-radius: 4px;
-  top: 45px;
-}
-
-.left-arm {
-  left: -8px;
-  transform-origin: top center;
-}
-
-.right-arm {
-  right: -8px;
-  transform-origin: top center;
-}
-
-.waving-arm {
-  animation: wave 1.5s ease-in-out infinite;
-}
-
-.child-1 .waving-arm {
-  animation-delay: 0.2s;
-}
-
-.child-2 .waving-arm {
-  animation-delay: 0.7s;
-}
-
-/* Hands */
-.hand {
-  position: absolute;
-  bottom: -8px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 12px;
-  height: 12px;
-  background: #ffb6b9;
-  border-radius: 50%;
-}
-
-.waving-hand {
-  animation: handWave 1.5s ease-in-out infinite;
-}
-
-/* Child Legs */
-.child-leg {
-  position: absolute;
-  width: 8px;
-  height: 20px;
-  background: #ffb6b9;
-  border-radius: 4px;
-  top: 85px;
-}
-
-.left-leg {
-  left: 8px;
-}
-
-.right-leg {
-  right: 8px;
-}
-
-/* Loading Section */
 .loading-section {
-  margin-top: 50px;
+  margin-top: 50px; /* Retained from original Preloader.css */
   animation: fadeIn 1s ease-out 0.6s both;
+  display: flex; /* Added for centering */
+  flex-direction: column; /* Added for centering */
+  align-items: center; /* Added for centering */
+  gap: 30px; /* Adjusted from original Preloader.css */
 }
 
 .welcome-text {
-  font-size: 17px;
-  font-weight: 300;
+  font-size: 17px; /* Retained from original Preloader.css */
+  font-weight: 300; /* Retained from original Preloader.css */
   color: #ffffff;
-  margin-bottom: 20px;
-  letter-spacing: 1px;
+  margin-bottom: 20px; /* Retained from original Preloader.css */
+  letter-spacing: 1px; /* Retained from original Preloader.css */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Added for better contrast */
 }
 
 .loading-dots {
@@ -387,7 +147,7 @@
 .dot1 {
   width: 12px;
   height: 12px;
-  background: #ffffff;
+  background: #ffffff; /* Retained from original Preloader.css */
   border-radius: 50%;
   animation: dotPulse 1.4s ease-in-out infinite both;
 }
@@ -404,7 +164,7 @@
   animation-delay: 0s;
 }
 
-/* Animations */
+/* Animations (Retained from original Preloader.css) */
 @keyframes fadeInDown {
   from {
     opacity: 0;
@@ -436,45 +196,7 @@
   }
 }
 
-@keyframes bounce {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-10px);
-  }
-  60% {
-    transform: translateY(-5px);
-  }
-}
-
-@keyframes wave {
-  0%,
-  100% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(-30deg);
-  }
-  75% {
-    transform: rotate(30deg);
-  }
-}
-
-@keyframes handWave {
-  0%,
-  100% {
-    transform: translateX(-50%) rotate(0deg);
-  }
-  50% {
-    transform: translateX(-50%) rotate(20deg);
-  }
-}
-
+/* Removed bounce, wave, handWave as children animation is removed */
 @keyframes dotPulse {
   0%,
   80%,
@@ -490,145 +212,57 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .photo-frame {
-    padding: 8px;
+  .blur-box {
+    padding: 20px;
+    max-width: 90vw; /* Adjusted for smaller screens */
+    max-height: 90vh; /* Adjusted for smaller screens */
   }
-
-  .photo-1 {
-    width: 140px;
-    height: 105px;
-  }
-  .photo-2 {
-    width: 120px;
-    height: 90px;
-  }
-  .photo-3 {
-    width: 100px;
-    height: 140px;
-  }
-  .photo-4 {
-    width: 130px;
-    height: 100px;
-  }
-  .photo-5 {
-    width: 120px;
-    height: 95px;
-  }
-  .photo-6 {
-    width: 110px;
-    height: 130px;
-  }
-  .photo-7 {
-    width: 90px;
-    height: 70px;
-  }
-  .photo-8 {
-    width: 80px;
-    height: 100px;
-  }
-  .photo-9 {
-    width: 95px;
-    height: 75px;
-  }
-  .photo-10 {
-    width: 100px;
-    height: 80px;
-  }
-  .photo-11 {
-    width: 115px;
-    height: 90px;
-  }
-  .photo-12 {
-    width: 75px;
-    height: 95px;
-  }
-
-  .children-container {
-    gap: 40px;
-  }
-
-  .welcome-text {
-    font-size: 20px;
-  }
-
   .logo {
     width: 150px;
     height: 150px;
+    margin-bottom: 30px;
   }
-
-  .blur-box {
-    margin-left: 15px;
-    margin-right: 15px;
-    padding: 20px;
+  .welcome-text {
+    font-size: 20px;
+  }
+  .image-row {
+    animation-duration: 30s; /* Slower animation on smaller screens */
   }
 }
 
 @media (max-width: 480px) {
-  .photo-frame {
-    padding: 6px;
+  .blur-box {
+    padding: 15px;
   }
-
-  .photo-1 {
+  .logo {
     width: 100px;
-    height: 75px;
+    height: 100px;
+    margin-bottom: 20px;
   }
-  .photo-2 {
-    width: 85px;
-    height: 65px;
-  }
-  .photo-3 {
-    width: 70px;
-    height: 95px;
-  }
-  .photo-4 {
-    width: 90px;
-    height: 70px;
-  }
-  .photo-5 {
-    width: 85px;
-    height: 65px;
-  }
-  .photo-6 {
-    width: 75px;
-    height: 90px;
-  }
-  .photo-7 {
-    width: 65px;
-    height: 50px;
-  }
-  .photo-8 {
-    width: 60px;
-    height: 75px;
-  }
-  .photo-9 {
-    width: 70px;
-    height: 55px;
-  }
-  .photo-10 {
-    width: 75px;
-    height: 60px;
-  }
-  .photo-11 {
-    width: 80px;
-    height: 65px;
-  }
-  .photo-12 {
-    width: 55px;
-    height: 70px;
-  }
-
-  .children-container {
-    gap: 30px;
-    transform: scale(0.8);
-  }
-
   .welcome-text {
     font-size: 18px;
   }
+  .image-row {
+    animation-duration: 24s; /* Even slower animation on very small screens */
+  }
+}
 
-  .blur-box {
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 15px;
+/* Portrait orientation adjustments */
+@media (orientation: portrait) {
+  .image-row {
+    animation-duration: 50s; /* Slower animation in portrait */
+  }
+  .landscape-image {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    object-fit: cover;
+  }
+}
+
+/* Landscape orientation adjustments */
+@media (orientation: landscape) {
+  .image-row {
+    animation-duration: 36s; /* Slower animation in landscape */
   }
 }
