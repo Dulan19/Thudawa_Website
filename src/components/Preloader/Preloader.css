@@ -107,8 +107,8 @@
 }
 
 .logo {
-  width: 200px; /* Retained from original Preloader.css */
-  height: 200px; /* Retained from original Preloader.css */
+  width: 250px; /* Retained from original Preloader.css */
+  height: 250px; /* Retained from original Preloader.css */
   margin: 0 auto 40px; /* Retained from original Preloader.css */
   display: flex;
   align-items: center;
@@ -121,7 +121,7 @@
 }
 
 .loading-section {
-  margin-top: 50px; /* Retained from original Preloader.css */
+  margin-top: -11px; /* Retained from original Preloader.css */
   animation: fadeIn 1s ease-out 0.6s both;
   display: flex; /* Added for centering */
   flex-direction: column; /* Added for centering */
@@ -130,7 +130,7 @@
 }
 
 .welcome-text {
-  font-size: 17px; /* Retained from original Preloader.css */
+  font-size: 25px; /* Retained from original Preloader.css */
   font-weight: 300; /* Retained from original Preloader.css */
   color: #ffffff;
   margin-bottom: 20px; /* Retained from original Preloader.css */
