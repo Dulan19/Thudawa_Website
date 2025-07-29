@@ -89,8 +89,8 @@
 .blur-box {
   text-align: center;
   color: white;
-  max-width: 850px; /* Retained from original Preloader.css */
-  max-height: 340px; /* Retained from original Preloader.css */
+  width: 350px; /* Retained from original Preloader.css */
+  height: 340px; /* Retained from original Preloader.css */
   padding: 30px;
   background-color: rgba(255, 255, 255, 0.25);
   border-radius: 25px;
