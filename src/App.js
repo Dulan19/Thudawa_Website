@@ -8,20 +8,20 @@ import Preloader from "./components/Preloader/Preloader";
 import "./App.css";
 
 function App() {
-  const [loading, setLoading] = useState(true);         // State for preloader
-  const [contentReady, setContentReady] = useState(false); // Smooth transition for content
+  const [loading, setLoading] = useState(true);         
+  const [contentReady, setContentReady] = useState(false);
 
   useEffect(() => {
-    // Simulate loading with preloader
+    // Simulate loading for 11 seconds
     const timer = setTimeout(() => {
       setLoading(false);
-      setTimeout(() => setContentReady(true), 100); // Small delay for smooth transition
+      setTimeout(() => setContentReady(true), 100);
     }, 11000);
 
-    return () => clearTimeout(timer); // Clear timeout on unmount
+    return () => clearTimeout(timer);
   }, []);
 
-  if (loading) return <Preloader />; // Show preloader during initial load
+  if (loading) return <Preloader />;
 
   return (
     <div className="App">
@@ -55,172 +55,89 @@ function App() {
 
         {/* Events Section */}
         <div className="events-section">
-  <h2>Events</h2>
-  <div className="events-grid">
-    {/* Event Card 1 */}
-    <div className="events-card">
-      <div className="events-img-container events-img-1"></div>
-      <div className="events-content">
-        <h3>Bakthi Geetha - 2025</h3>
-        <button
-          className="view"
-          onClick={() => (window.location.href = "/events")}
-        >
-          View
-        </button>
-      </div>
-    </div>
+          <h2>Events</h2>
+          <div className="events-grid">
+            {/* Event Cards */}
+            {[
+              "Bakthi Geetha - 2025",
+              "Dansala - 2025",
+              "Bakthi Geetha at ACBC - 2025",
+              "Avurudu Uthsawaya - 2025",
+            ].map((title, index) => (
+              <div className="events-card" key={index}>
+                <div className={`events-img-container events-img-${index + 1}`}></div>
+                <div className="events-content">
+                  <h3>{title}</h3>
+                  <button
+                    className="view"
+                    onClick={() => (window.location.href = "/events")}
+                  >
+                    View
+                  </button>
+                </div>
+              </div>
+            ))}
 
-    {/* Event Card 2 */}
-    <div className="events-card">
-      <div className="events-img-container events-img-2"></div>
-      <div className="events-content">
-        <h3>Dansala - 2025</h3>
-        <button
-          className="view"
-          onClick={() => (window.location.href = "/events")}
-        >
-          View
-        </button>
-      </div>
-    </div>
+            {/* View All Events */}
+            <div className="events-button-wrapper">
+              <button
+                className="view-on-event-page"
+                onClick={() => (window.location.href = "/events")}
+              >
+                View All Events
+                <svg className="arrow" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
 
-    {/* Event Card 3 */}
-    <div className="events-card">
-      <div className="events-img-container events-img-3"></div>
-      <div className="events-content">
-        <h3>Bakthi Geetha at ACBC - 2025</h3>
-        <button
-          className="view"
-          onClick={() => (window.location.href = "/events")}
-        >
-          View
-        </button>
-      </div>
-    </div>
+        {/* Achievements Section */}
+        <div className="achievements-section">
+          <h2>Achievements</h2>
+          <div className="achievements-grid">
+            {/* Achievements Cards */}
+            {Array(4)
+              .fill(0)
+              .map((_, index) => (
+                <div className="achievements-card" key={index}>
+                  <div
+                    className={`achievements-img-container achievements-img-${index + 1}`}
+                  ></div>
+                  <div className="achievements-content">
+                    <h3>Bakthi Geetha - 2025</h3>
+                    <p>
+                      On Poson Poya Day, with the support of Mrs. Palika
+                      Darmawickrama and the committee, we successfully presented
+                      “Bakthi Gee 2025”.
+                    </p>
+                    <button
+                      className="view"
+                      onClick={() => (window.location.href = "/achievements")}
+                    >
+                      View
+                    </button>
+                  </div>
+                </div>
+              ))}
 
-    {/* Event Card 4 */}
-    <div className="events-card">
-      <div className="events-img-container events-img-4"></div>
-      <div className="events-content">
-        <h3>Avurudu Uthsawaya - 2025</h3>
-        <button
-          className="view"
-          onClick={() => (window.location.href = "/events")}
-        >
-          View
-        </button>
-      </div>
-    </div>
+            {/* View All Achievements */}
+            <div className="achievements-button-wrapper">
+              <button
+                className="view-on-achievements-page"
+                onClick={() => (window.location.href = "/achievements")}
+              >
+                View All Achievements
+                <svg className="arrow" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
 
-    {/* Button to View All Events */}
-    <div className="events-button-wrapper">
-      <button
-        className="view-on-event-page"
-        onClick={() => (window.location.href = "/events")}
-      >
-        View All Events
-        <svg className="arrow" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" />
-        </svg>
-      </button>
-    </div>
-  </div>
-</div>
-
-{/* Achievements Section */}
-<div className="achievements-section">
-  <h2>Achievements</h2>
-  <div className="achievements-grid">
-    {/* Achievements Card 1 */}
-    <div className="achievements-card">
-      <div className="achievements-img-container achievements-img-1"></div>
-      <div className="achievements-content">
-        <h3>Bakthi Geetha - 2025</h3>
-        <p>
-          On Poson Poya Day, with the support of Mrs. Palika Darmawickrama
-          and the committee, we successfully presented “Bakthi Gee 2025”.
-        </p>
-        <button
-          className="view"
-          onClick={() => (window.location.href = "/achievements")}
-        >
-          View
-        </button>
-      </div>
-    </div>
-
-    {/* Achievements Card 2 */}
-    <div className="achievements-card">
-      <div className="achievements-img-container achievements-img-2"></div>
-      <div className="achievements-content">
-        <h3>Bakthi Geetha - 2025</h3>
-        <p>
-          On Poson Poya Day, with the support of Mrs. Palika Darmawickrama
-          and the committee, we successfully presented “Bakthi Gee 2025”.
-        </p>
-        <button
-          className="view"
-          onClick={() => (window.location.href = "/achievements")}
-        >
-          View
-        </button>
-      </div>
-    </div>
-
-    {/* Achievements Card 3 */}
-    <div className="achievements-card">
-      <div className="achievements-img-container achievements-img-3"></div>
-      <div className="achievements-content">
-        <h3>Bakthi Geetha - 2025</h3>
-        <p>
-          On Poson Poya Day, with the support of Mrs. Palika Darmawickrama
-          and the committee, we successfully presented “Bakthi Gee 2025”.
-        </p>
-        <button
-          className="view"
-          onClick={() => (window.location.href = "/achievements")}
-        >
-          View
-        </button>
-      </div>
-    </div>
-
-    {/* Achievements Card 4 */}
-    <div className="achievements-card">
-      <div className="achievements-img-container achievements-img-4"></div>
-      <div className="achievements-content">
-        <h3>Bakthi Geetha - 2025</h3>
-        <p>
-          On Poson Poya Day, with the support of Mrs. Palika Darmawickrama
-          and the committee, we successfully presented “Bakthi Gee 2025”.
-        </p>
-        <button
-          className="view"
-          onClick={() => (window.location.href = "/achievements")}
-        >
-          View
-        </button>
-      </div>
-    </div>
-
-    {/* Button to View All Achievements */}
-    <div className="achievements-button-wrapper">
-      <button
-        className="view-on-achievements-page"
-        onClick={() => (window.location.href = "/achievements")}
-      >
-        View All Achievements
-        <svg className="arrow" viewBox="0 0 24 24" fill="currentColor">
-          <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" />
-        </svg>
-      </button>
-    </div>
-  </div>
-</div>
-
-
-        {/* Footer Section */}
+        {/* Footer */}
         <Footer />
       </div>
     </div>
