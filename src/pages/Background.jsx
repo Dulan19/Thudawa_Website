@@ -49,7 +49,8 @@ function Background() {
           
           <div className="section-container">
             <div className="intro-section">
-              <h2>Establishment</h2>
+              <h2>Thalpitiya Village</h2>
+              <div className="intro-image"></div>
                 <p>
                 Thalpitiya Village Thalpitiya Village is located 31 km away from the central city, Colombo. 
               Though it is close to city center, It has preserved the beauty of the Village, and currently going 
