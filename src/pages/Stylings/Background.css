@@ -97,13 +97,22 @@ table, th, td {
   border-radius: 1px;
   width: 1600px;
   height: 400px;
-  background-image: url("../../assets/thalpitiya.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   margin-left: auto; /* Add this */
   margin-right: auto; /* Add this */
   display: block; /* Optional, ensures block behavior */
+}
+
+.image1 {
+  background-image: url("../../assets/thalpitiya.jpg");
+}
+
+.image2 {
+  background-image: url("../../assets/frist_log.jpg");
+  width: 1000px;
+  height: 400px;
 }
 
 /* Animations */

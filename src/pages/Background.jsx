@@ -50,7 +50,7 @@ function Background() {
           <div className="section-container">
             <div className="intro-section">
               <h2>Thalpitiya Village</h2>
-              <div className="intro-image"></div>
+              <div className="intro-image image1"></div>
                 <p>
                 Thalpitiya Village Thalpitiya Village is located 31 km away from the central city, Colombo. 
               Though it is close to city center, It has preserved the beauty of the Village, and currently going 
@@ -104,7 +104,7 @@ function Background() {
                           Take a bike or you can walk inside the village. Coconut is a plant that is fully integrated with the seaside lifestyle and Sri Lankans 
                           tend to utilize each part of the tree for different purposes. Thalpitiya is famous for producing coconut oil using a tool called Sekkuwa 
                           which is made by two stones touching each other and pulled by bulls in a circle. It has been designed in such a way, that the dried content
-                          (is) put into the space, and due to the pressure in between stones the oil in the dried coconut will be extracted and poured into the baskets.
+                          is put into the space, and due to the pressure in between stones the oil in the dried coconut will be extracted and poured into the baskets.
 
                           Toddy tapping is a major industry, in Thalpitiya and is famous due to natural toddy production. Although it is a nice experience to watch The 
                           Toddy Trapper tend to risk their life while going through the ropes linking trees everyday morning to collect toddy and bring them to down. 
@@ -138,6 +138,7 @@ function Background() {
           <div className="section-container">
             <div className="intro-section">
               <h2>Establishment</h2>
+                <div className="intro-image image2"></div>
                 <p>
                 Under the guidance of Lawrence Tudawe, members of the Tudawe family donated the Parental House and property of the Tudawe Family situated lonely at 
                 Thalpitiya donated to the Buddhists Organisation called Samastha Lanka Bauddha Maha Sammelanaya (All Ceylon Buddhists Congress) in Colombo. It is the 
