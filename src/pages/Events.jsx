@@ -73,7 +73,6 @@ const Events = () => {
           </div>
         </div>
 
-        
         <div className="section-container">
           <div className="intro-section-events">
             <h2>Avurudu Uthsawaya -2025</h2>
@@ -82,6 +81,29 @@ const Events = () => {
             </p>
           </div>
         </div>
+
+        <div className="section-container">
+          <div className="intro-section-events">
+              <h2>Annual Pirith Pinkama -2013</h2>
+                    <img src="/assets/Events/Annual2013.jpg" 
+                        alt="Annual Pirith Pinkama 2013" 
+                        className="event-image-img"/>
+                <p>The Child Devleopment Centre paying gratitude committed merits on the late members of the Board of Trustess of 
+              Our Centre who demised from by holding a Annual Pirith pinkama and arms giving. In addition all the ancestors of 
+              Tudawe philonthropic family were committed merits by the alms giving on behalf of 10 Buddhist monks at 12th of
+              May 2013 <br />
+                  The members passed away were,
+                  <ul>  
+                    <li>R.K.Perera</li>
+                    <li>Former Secretary Sumanasiri Perera</li>
+                    <li>Former Vice President M.K.Perera</li>
+                    <li>Former Librarian Mrs K.A. Silva.</li>
+                  </ul>
+                </p>
+          </div>
+        </div>
+
+
         
 
         <Footer />
