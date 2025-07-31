@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar/Navbar.jsx"
 import Footer from "../components/Footer/Footer.jsx"
-import "./Stylings/Background.css"
+import "./Stylings/Achievements.css";
 
 function Background() {
   const [show1, setShow1] = useState(false);
@@ -12,7 +12,7 @@ function Background() {
   const [show5, setShow5] = useState(false);
   return (
     <div>
-      <div className="background2-image"></div>
+      <div className="background-achievements-image"></div>
       <div className="page-content">
         <Navbar />
 
