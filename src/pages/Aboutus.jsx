@@ -31,7 +31,7 @@ useEffect(() => {
         <Navbar />
 
         <h1 className="aboutus-heading">
-          Our Journey Since 1996
+          Our Journey Since 1995
           <h6>
             {" "}
             Restoring childhoods, shaping futures — a home where compassion, education, and community
