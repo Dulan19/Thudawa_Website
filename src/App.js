@@ -42,6 +42,9 @@ function App() {
               their childhoods with justice and equality, and create a better
               future for them.
             </p>
+            <button className="view"
+              onClick={() => (window.location.href = "/Aboutus")}
+              >Read More</button>
           </div>
           <div className="box mission-box">
             <h2>Our Mission</h2>
@@ -49,7 +52,9 @@ function App() {
               Our mission is to foster, protect, and provide for disowned,
               neglected, orphaned, or abused children with welfare and guidance.
             </p>
-            <button className="seemore-btn">Read More</button>
+            <button className="view"
+              onClick={() => (window.location.href = "/Aboutus")}
+              >Read More</button>
           </div>
         </div>
 
