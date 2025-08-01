@@ -20,7 +20,7 @@ const Donateus = () => {
             Account Number: 0003699120<br />
             Branch: Wadduwa Branch (584)
           </li>
-          <li>Online Payment: Visit our website and click on the "Donate" button.</li>
+          <li>Online Payment: As same as the above details.</li>
           <li>In-Kind Donations: We accept toys, books, and educational materials.</li>
         </ul>
         <h1>Contact Us for More Information</h1>
