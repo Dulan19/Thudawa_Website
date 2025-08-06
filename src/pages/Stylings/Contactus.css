@@ -44,10 +44,11 @@
   color: rgb(217, 131, 36);
 }
 
-.contactus-card h1 {
+.contactus-card h1, .contactus-map h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
   color: rgb(217, 131, 36);
+  text-align: center;
 }
 
 .contactus-card p {
