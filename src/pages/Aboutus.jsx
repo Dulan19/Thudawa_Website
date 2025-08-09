@@ -5,24 +5,23 @@ import "./Stylings/Aboutus.css"
 
 import React, { useState, useEffect } from "react";
 
-
 function Aboutus() {
   const images1997 = [
-  require("../assets/gallery/planing-of-two-storid-new-bulding.jpg"),
-  require("../assets/gallery/opening-two-stiard-building.jpg"),
-  require("../assets/gallery/opening-two-stiard-building2.jpg"),
-  require("../assets/gallery/opening-study-room-tudawe-child-home.jpg"),
-  require("../assets/gallery/computer-room-tudawe-.jpg"),
-];
+    require("../assets/gallery/planing-of-two-storid-new-bulding.jpg"),
+    require("../assets/gallery/opening-two-stiard-building.jpg"),
+    require("../assets/gallery/opening-two-stiard-building2.jpg"),
+    require("../assets/gallery/opening-study-room-tudawe-child-home.jpg"),
+    require("../assets/gallery/computer-room-tudawe-.jpg"),
+  ];
 
-const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-useEffect(() => {
-  const interval = setInterval(() => {
-    setCurrentImageIndex((prev) => (prev + 1) % images1997.length);
-  }, 3000);
-  return () => clearInterval(interval);
-}, []);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % images1997.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div>
@@ -33,7 +32,6 @@ useEffect(() => {
         <h1 className="aboutus-heading">
           Our Journey Since 1995
           <h6>
-            {" "}
             Restoring childhoods, shaping futures — a home where compassion, education, and community
             <br />
             create hope for every child.
@@ -81,7 +79,6 @@ useEffect(() => {
                     <p>Due to the matron's dedication, the center's services grew, and more space was required as the
                       number of children increased.</p>
                   </div>
-                  
                   <div className="timeline-image-container timeline-image-1995"></div>
                 </div>
               </div>
@@ -109,7 +106,7 @@ useEffect(() => {
                       src={images1997[currentImageIndex]}
                       alt="1997 events"
                       className="timeline-image"
-                      />
+                    />
                   </div>
                 </div>
               </div>
@@ -135,6 +132,50 @@ useEffect(() => {
                     </p>
                   </div>
                   <div className="timeline-image-container timeline-image-2010"></div>
+                </div>
+              </div>
+              <div className="timeline-item">
+                <div className="timeline-content">
+                  <div className="timeline-text">
+                    <h3>2021</h3>
+                    <p>
+                      Successfully started counseling for children in need, supported by the Divisional Secretariat Office and M.D.S.R. Gunathilaka.
+                    </p>
+                  </div>
+                  <div className="timeline-image-container timeline-image-2021"></div>
+                </div>
+              </div>
+              <div className="timeline-item">
+                <div className="timeline-content">
+                  <div className="timeline-text">
+                    <h3>2023</h3>
+                    <p>
+                      The committee funded the construction of a stage, curtains, and a wall, enhancing the center's facilities for events and activities.
+                    </p>
+                  </div>
+                  <div className="timeline-image-container timeline-image-2023"></div>
+                </div>
+              </div>
+              <div className="timeline-item">
+                <div className="timeline-content">
+                  <div className="timeline-text">
+                    <h3>2024</h3>
+                    <p>
+                      Committee efforts led to painting wall art and adding gardening decor with interlock blocks and grasses. Friends donated chairs and tables to the classroom, and solar panels were installed with community support.
+                    </p>
+                  </div>
+                  <div className="timeline-image-container timeline-image-2024"></div>
+                </div>
+              </div>
+              <div className="timeline-item">
+                <div className="timeline-content">
+                  <div className="timeline-text">
+                    <h3>2025</h3>
+                    <p>
+                      Association funds supported the establishment of a computer lab, a new wall, and garden decorations, further enhancing the center's infrastructure and environment.
+                    </p>
+                  </div>
+                  <div className="timeline-image-container timeline-image-2025"></div>
                 </div>
               </div>
             </div>
