@@ -41,7 +41,7 @@ function Aboutus() {
         <div className="section-container">
           <div className="intro-section">
             <div className="intro-content-wrapper">
-              <div className="intro-image"></div>
+              <div className="intro-image-a"></div>
               <div className="intro-text">
                 <h2>Our Story</h2>
                 <p>

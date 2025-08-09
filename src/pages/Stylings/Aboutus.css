@@ -78,7 +78,7 @@
   align-items: center;
 }
 
-.intro-image {
+.intro-image-a {
   margin-top: 85px;
   padding: 20px;
   border-radius: 1px;
@@ -195,6 +195,7 @@
   border-radius: 8px;
   opacity: 0.8;
   margin-top: 0px;
+  
 }
 
 .timeline-image-1994 {
@@ -220,23 +221,6 @@
 .timeline-image-2010 {
   background-image: url("../../assets/Wadduwa.jpg");
 }
-
-.timeline-image-2021 {
-  background-image: url("../../assets/thudawe family.jpg");
-}
-
-.timeline-image-2023 {
-  background-image: url("../../assets/thudawe family.jpg");
-}
-
-.timeline-image-2024 {
-  background-image: url("../../assets/thudawe family.jpg");
-}
-
-.timeline-image-2025 {
-  background-image: url("../../assets/thudawe family.jpg");
-}
-
 .facility-img-container {
   flex-shrink: 0;
   width: 280px;
@@ -246,7 +230,11 @@
   border-radius: 8px;
   opacity: 0.8;
   margin-top: 0px;
+  
+  
 }
+
+
 
 .timeline-image {
   transition: opacity 0.5s ease-in-out;
@@ -259,6 +247,7 @@
   opacity: 0.8;
   margin-top: 0px;
 }
+
 
 .facility-img-1 {
   background-image: url("../../assets/thudawe family.jpg");
@@ -286,8 +275,8 @@
   opacity: 0.8;
   margin-top: 0px;
   margin-left: 8px;
+  
 }
-
 .day-img-1 {
   background-image: url("../../assets/thudawe family.jpg");
 }
@@ -419,10 +408,12 @@
   border-radius: 15px;
   text-align: center;
   transition: transform 0.3s ease;
+
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; /* Horizontally center all children */
 }
+
 
 .facility-card:hover {
   transform: translateY(-5px);
