@@ -2,49 +2,78 @@ import Navbar from "../components/Navbar/Navbar.jsx"
 import Footer from "../components/Footer/Footer.jsx"
 import "../pages/Stylings/Events.css";
 
-import { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
-const EventCarousel = ({ images, carouselId }) => {
+const EventCarousel = ({ carouselId, images }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
-  const changeSlide = (direction) => {
-    let newSlide = currentSlide + direction;
-    if (newSlide >= images.length) newSlide = 0;
-    if (newSlide < 0) newSlide = images.length - 1;
-    setCurrentSlide(newSlide);
-  };
+  // Auto-advance slides (optional)
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % images.length);
+    }, 5000); // Change slide every 5 seconds
+
+    return () => clearInterval(interval);
+  }, [images.length]);
 
   const goToSlide = (slideIndex) => {
     setCurrentSlide(slideIndex);
   };
 
+  const goToPrevious = () => {
+    setCurrentSlide((prev) => (prev - 1 + images.length) % images.length);
+  };
+
+  const goToNext = () => {
+    setCurrentSlide((prev) => (prev + 1) % images.length);
+  };
+
   return (
     <div className="carousel-container">
       <div className="carousel-wrapper">
-        <div className="carousel-track" 
-             style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
+        <div 
+          className="carousel-track"
+          style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+        >
           {images.map((image, index) => (
             <div key={index} className="carousel-slide">
-              <img src={image.src} alt={image.alt} className="carousel-image"/>
+              <img
+                src={image.src}
+                alt={image.alt}
+                className="carousel-image"
+                loading={index === 0 ? "eager" : "lazy"}
+              />
             </div>
           ))}
         </div>
-        
-        <button className="carousel-nav prev" 
-                onClick={() => changeSlide(-1)}>
-          ‹
+
+        {/* Navigation arrows */}
+        <button 
+          className="carousel-nav prev" 
+          onClick={goToPrevious}
+          aria-label="Previous image"
+        >
+          ❮
         </button>
-        <button className="carousel-nav next" 
-                onClick={() => changeSlide(1)}>
-          ›
+        <button 
+          className="carousel-nav next" 
+          onClick={goToNext}
+          aria-label="Next image"
+        >
+          ❯
         </button>
-        
+
+        {/* Thumbnail navigation */}
         <div className="carousel-dots">
-          {images.map((_, index) => (
-            <span key={index}
-                  className={`dot ${index === currentSlide ? 'active' : ''}`}
-                  onClick={() => goToSlide(index)}>
-            </span>
+          {images.map((image, index) => (
+            <img
+              key={index}
+              src={image.src}
+              alt={`Thumbnail ${index + 1}`}
+              className={`thumbnail ${index === currentSlide ? 'active' : ''}`}
+              onClick={() => goToSlide(index)}
+              loading="lazy"
+            />
           ))}
         </div>
       </div>
