@@ -179,6 +179,28 @@ const Events = () => {
           </div>
         </div>
 
+                <div className="section-container">
+          <div className="intro-section-events">
+            <h2>World Children Day -2021</h2>
+              <EventCarousel 
+                    carouselId="Avurudu-2021"
+                    images={[
+                      { src: "/assets/Events/childrenday2021-1.jpg", alt: "avurudu1" },
+                      { src: "/assets/Events/childrenday2021-2.jpg", alt: "avurudu2" },
+                      { src: "/assets/Events/childrenday2021-3.jpg", alt: "avurudu3" },
+                      { src: "/assets/Events/childrenday2021-4.jpg", alt: "avurudu4" },
+                      { src: "/assets/Events/childrenday2021-5.jpg", alt: "avurudu5" },
+                      { src: "/assets/Events/childrenday2021-6.jpg", alt: "avurudu6" },
+                    ]}
+                  />
+            <p> An event for World Children’s Day was organized by the matron and committee members, 
+              and was successfully held in October 2021 with the participation of all the children of the 
+              Thudawa Child Development Centre. The celebration featured a bonfire and dancing performances by 
+              the children, creating a memorable and joyful experience for everyone involved.
+            </p>
+          </div>
+        </div>
+
         <div className="section-container">
           <div className="intro-section-events">
             <h2>Avurudu Uthsawaya -2021</h2>
