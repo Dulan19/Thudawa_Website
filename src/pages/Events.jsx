@@ -2,6 +2,85 @@ import Navbar from "../components/Navbar/Navbar.jsx"
 import Footer from "../components/Footer/Footer.jsx"
 import "../pages/Stylings/Events.css";
 
+import React, { useState, useEffect } from 'react';
+
+const EventCarousel = ({ carouselId, images }) => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  // Auto-advance slides (optional)
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % images.length);
+    }, 5000); // Change slide every 5 seconds
+
+    return () => clearInterval(interval);
+  }, [images.length]);
+
+  const goToSlide = (slideIndex) => {
+    setCurrentSlide(slideIndex);
+  };
+
+  const goToPrevious = () => {
+    setCurrentSlide((prev) => (prev - 1 + images.length) % images.length);
+  };
+
+  const goToNext = () => {
+    setCurrentSlide((prev) => (prev + 1) % images.length);
+  };
+
+  return (
+    <div className="carousel-container">
+      <div className="carousel-wrapper">
+        <div 
+          className="carousel-track"
+          style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+        >
+          {images.map((image, index) => (
+            <div key={index} className="carousel-slide">
+              <img
+                src={image.src}
+                alt={image.alt}
+                className="carousel-image"
+                loading={index === 0 ? "eager" : "lazy"}
+              />
+            </div>
+          ))}
+        </div>
+
+        {/* Navigation arrows */}
+        <button 
+          className="carousel-nav prev" 
+          onClick={goToPrevious}
+          aria-label="Previous image"
+        >
+          ❮
+        </button>
+        <button 
+          className="carousel-nav next" 
+          onClick={goToNext}
+          aria-label="Next image"
+        >
+          ❯
+        </button>
+
+        {/* Thumbnail navigation */}
+        <div className="carousel-dots">
+          {images.map((image, index) => (
+            <img
+              key={index}
+              src={image.src}
+              alt={`Thumbnail ${index + 1}`}
+              className={`thumbnail ${index === currentSlide ? 'active' : ''}`}
+              onClick={() => goToSlide(index)}
+              loading="lazy"
+            />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const Events = () => {
   return (
     <div>
@@ -76,19 +155,108 @@ const Events = () => {
 
         <div className="section-container">
           <div className="intro-section-events">
-            <h2>Avurudu Uthsawaya -2025</h2>
-            <p>space for the image <br />
-            
+            <h2>Avurudu Uthsawaya -2022</h2>
+              <EventCarousel 
+                    carouselId="Avurudu-2022"
+                    images={[
+                      { src: "/assets/Events/avurudu2022-1.jpg", alt: "avurudu1" },
+                      { src: "/assets/Events/avurudu2022-2.jpg", alt: "avurudu2" },
+                      { src: "/assets/Events/avurudu2022-3.jpg", alt: "avurudu3" },
+                      { src: "/assets/Events/avurudu2022-4.jpg", alt: "avurudu4" },
+                      { src: "/assets/Events/avurudu2022-5.jpg", alt: "avurudu5" },
+                      { src: "/assets/Events/avurudu2022-6.jpg", alt: "avurudu6" },
+                      { src: "/assets/Events/avurudu2022-7.jpg", alt: "avurudu7" },
+                      { src: "/assets/Events/avurudu2022-8.jpg", alt: "avurudu8" },
+                      { src: "/assets/Events/avurudu2022-9.jpg", alt: "avurudu9" },
+                      { src: "/assets/Events/avurudu2022-10.jpg", alt: "avurudu10" },
+                      { src: "/assets/Events/avurudu2022-11.jpg", alt: "avurudu11" },
+                    ]}
+                  />
+            <p> The Avurudu Uthsawaa 2022 successfully held on April month of 2022 with the participation of
+              all the children of the Thudawa Child Development Centre. The event was filled with traditional games,
+              and cultural performances creating a joyful atmosphere for everyone involved.
+            </p>
+          </div>
+        </div>
+
+                <div className="section-container">
+          <div className="intro-section-events">
+            <h2>World Children Day -2021</h2>
+              <EventCarousel 
+                    carouselId="Avurudu-2021"
+                    images={[
+                      { src: "/assets/Events/childrenday2021-1.jpg", alt: "avurudu1" },
+                      { src: "/assets/Events/childrenday2021-2.jpg", alt: "avurudu2" },
+                      { src: "/assets/Events/childrenday2021-3.jpg", alt: "avurudu3" },
+                      { src: "/assets/Events/childrenday2021-4.jpg", alt: "avurudu4" },
+                      { src: "/assets/Events/childrenday2021-5.jpg", alt: "avurudu5" },
+                      { src: "/assets/Events/childrenday2021-6.jpg", alt: "avurudu6" },
+                    ]}
+                  />
+            <p> An event for World Children’s Day was organized by the matron and committee members, 
+              and was successfully held in October 2021 with the participation of all the children of the 
+              Thudawa Child Development Centre. The celebration featured a bonfire and dancing performances by 
+              the children, creating a memorable and joyful experience for everyone involved.
             </p>
           </div>
         </div>
 
         <div className="section-container">
           <div className="intro-section-events">
-            <h2>Avurudu Uthsawaya -2025</h2>
-            <p>space for the image <br />
-            
+            <h2>Avurudu Uthsawaya -2021</h2>
+              <EventCarousel 
+                    carouselId="Avurudu-2021"
+                    images={[
+                      { src: "/assets/Events/avurudu2021-1.jpg", alt: "avurudu1" },
+                      { src: "/assets/Events/avurudu2021-2.jpg", alt: "avurudu2" },
+                      { src: "/assets/Events/avurudu2021-3.jpg", alt: "avurudu3" },
+                      { src: "/assets/Events/avurudu2021-4.jpg", alt: "avurudu4" },
+                      { src: "/assets/Events/avurudu2021-5.jpg", alt: "avurudu5" },
+                      { src: "/assets/Events/avurudu2021-6.jpg", alt: "avurudu6" },
+                      { src: "/assets/Events/avurudu2021-7.jpg", alt: "avurudu7" },
+                      { src: "/assets/Events/avurudu2021-8.jpg", alt: "avurudu8" },
+                      { src: "/assets/Events/avurudu2021-9.jpg", alt: "avurudu9" }
+                    ]}
+                  />
+            <p> The Avurudu Uthsawaa 2021 was organized by the matron and committee members, 
+              and was successfully held in April 2021 with the participation of all the children of 
+              the Thudawa Child Development Centre. The celebration was filled with traditional games and 
+              cultural performances, creating a joyful and festive atmosphere for everyone involved.
             </p>
+          </div>
+        </div>
+
+        <div className="section-container">
+          <div className="intro-section-events">
+            <h2>Get together - 2015</h2>
+            <p>In March 2015, a special reunion was held at the Tudawe Children Development Centre, 
+              bringing together children who have grown up there since 1991. The event was thoughtfully organized by 
+              the current residents at the time, inspired by the vision of their chief matron. Many of the former children, 
+              now adults, have completed their education and built their own families and lives. 
+              This heartfelt gathering celebrated their journeys and the enduring bonds of the Tudawe family.           
+            </p>
+          </div>
+        </div>
+
+        <div className="section-container">
+          <div className="intro-section-events">
+            <h2>Visit by Rotaract Club of Faculty of Science, UOC</h2>
+                    <img src="/assets/Events/rotaractuoc.jpg" 
+                        alt="Annual Pirith Pinkama 2013" 
+                        className="event-image-img"/>
+                <p> In 2016, the Rotaract club of the Faculty of Science, University of Colombo, spent a joyful afternoon
+                  with the children at Thudawa Children's Home. The visit was filled with music, dancing, laugher, and touch
+                  of science including an exciting "Elephant toothpaste" experiment and fun card magic tricks. The Rotaract
+                  members also brought thoughful gifts for the children, creating a day full or warmth, learning, and happy 
+                  memorial for everyone involved.</p>  
+                <p>Read more :
+                          <a href="https://uocfosrotaract.wordpress.com/2016/03/17/joy-of-smile/" 
+                             target="_blank" 
+                             rel="noopener noreferrer"
+                             style={{ color: '#d98324', textDecoration: 'none' }}>
+                          View original post at UOC Rotaract page
+                        </a>
+                      </p>
           </div>
         </div>
 
