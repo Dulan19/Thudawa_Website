@@ -152,6 +152,31 @@ const Events = () => {
 
         <div className="section-container">
           <div className="intro-section-events">
+            <h2>Avurudu Uthsawaya -2021</h2>
+              <EventCarousel 
+                    carouselId="Avurudu-2021"
+                    images={[
+                      { src: "/assets/Events/avurudu2021-1.jpg", alt: "avurudu1" },
+                      { src: "/assets/Events/avurudu2021-2.jpg", alt: "avurudu2" },
+                      { src: "/assets/Events/avurudu2021-3.jpg", alt: "avurudu3" },
+                      { src: "/assets/Events/avurudu2021-4.jpg", alt: "avurudu4" },
+                      { src: "/assets/Events/avurudu2021-5.jpg", alt: "avurudu5" },
+                      { src: "/assets/Events/avurudu2021-6.jpg", alt: "avurudu6" },
+                      { src: "/assets/Events/avurudu2021-7.jpg", alt: "avurudu7" },
+                      { src: "/assets/Events/avurudu2021-8.jpg", alt: "avurudu8" },
+                      { src: "/assets/Events/avurudu2021-9.jpg", alt: "avurudu9" }
+                    ]}
+                  />
+            <p> The Avurudu Uthsawaa 2021 was organized by the matron and committee members, 
+              and was successfully held in April 2021 with the participation of all the children of 
+              the Thudawa Child Development Centre. The celebration was filled with traditional games and 
+              cultural performances, creating a joyful and festive atmosphere for everyone involved.
+            </p>
+          </div>
+        </div>
+
+        <div className="section-container">
+          <div className="intro-section-events">
             <h2>Get together - 2015</h2>
             <p>In March 2015, a special reunion was held at the Tudawe Children Development Centre, 
               bringing together children who have grown up there since 1991. The event was thoughtfully organized by 
