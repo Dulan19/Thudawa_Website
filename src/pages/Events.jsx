@@ -85,10 +85,23 @@ const Events = () => {
 
         <div className="section-container">
           <div className="intro-section-events">
-            <h2>Avurudu Uthsawaya -2025</h2>
-            <p>space for the image <br />
-            
-            </p>
+            <h2>Visit by Rotaract Club of Faculty of Science, University of Colombo</h2>
+                    <img src="/assets/Events/rotaractuoc.jpg" 
+                        alt="Visit by Rotaract Club of Faculty of Science, UOC" 
+                        className="event-image-img"/>
+                <p> In 2016, the Rotaract club of the Faculty of Science, University of Colombo, spent a joyful afternoon
+                  with the children at Thudawa Children's Home. The visit was filled with music, dancing, laugher, and touch
+                  of science including an exciting "Elephant toothpaste" experiment and fun card magic tricks. The Rotaract
+                  members also brought thoughful gifts for the children, creating a day full or warmth, learning, and happy 
+                  memorial for everyone involved</p>  
+                <p>Read more :
+                          <a href="https://uocfosrotaract.wordpress.com/2016/03/17/joy-of-smile/" 
+                             target="_blank" 
+                             rel="noopener noreferrer"
+                             style={{ color: '#d98324', textDecoration: 'none' }}>
+                          View original post at UOC Rotaract page
+                        </a>
+                      </p>
           </div>
         </div>
 
