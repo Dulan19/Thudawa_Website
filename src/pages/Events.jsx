@@ -4,7 +4,7 @@ import "../pages/Stylings/Events.css";
 
 import React, { useState, useEffect } from 'react';
 
-const EventCarousel = ({ carouselId, images }) => {
+const EventCarousel = ({  images }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   // Auto-advance slides (optional)
@@ -161,10 +161,8 @@ const Events = () => {
                     images={[
                       { src: "/assets/Events/avurudu2022-1.jpg", alt: "avurudu1" },
                       { src: "/assets/Events/avurudu2022-2.jpg", alt: "avurudu2" },
-                      { src: "/assets/Events/avurudu2022-3.jpg", alt: "avurudu3" },
-                    
-                      { src: "/assets/Events/avurudu2022-5.jpg", alt: "avurudu5" },
-                     
+                      { src: "/assets/Events/avurudu2022-3.jpg", alt: "avurudu3" },                    
+                      { src: "/assets/Events/avurudu2022-5.jpg", alt: "avurudu5" },                     
                       { src: "/assets/Events/avurudu2022-7.jpg", alt: "avurudu7" },
                       { src: "/assets/Events/avurudu2022-8.jpg", alt: "avurudu8" },
                       { src: "/assets/Events/avurudu2022-9.jpg", alt: "avurudu9" },
