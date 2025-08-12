@@ -106,6 +106,16 @@ const Events = () => {
 
         <div className="section-container">
           <div className="intro-section-events">
+            <h2>fggb</h2>
+            <p>On the occasion of Poson Poya Day, with the valuable support of Mrs. Palika Darmawickrama, 
+              The Music Teacher of the Thudawa Child Development Centre, and the dedicated efforts of the Centre’s committee, 
+              The Thudawa Child Development Centre successfully presented “Bakthi Gee 2025” together with its children
+            </p>
+          </div>
+        </div>
+
+        <div className="section-container">
+          <div className="intro-section-events">
             <h2>2025/07/06 Poshana thinig</h2>
             <p>On the occasion of Poson Poya Day, with the valuable support of Mrs. Palika Darmawickrama, 
               The Music Teacher of the Thudawa Child Development Centre, and the dedicated efforts of the Centre’s committee, 
