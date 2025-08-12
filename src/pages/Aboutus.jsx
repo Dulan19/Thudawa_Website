@@ -297,7 +297,7 @@ function Aboutus() {
                 <div className="routine-grid">
                   <div className="routine-item">
                     <div className="day-img-container day-img-1"></div>
-                    <span>Morning prayers and breakfast together</span>
+                    <span>weekdays Routine</span>
                   </div>
                   <div className="routine-item">
                     <div className="day-img-container day-img-2"></div>
