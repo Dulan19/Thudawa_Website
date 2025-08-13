@@ -301,7 +301,7 @@ function Aboutus() {
                   </div>
                   <div className="routine-item">
                     <div className="day-img-container day-img-2"></div>
-                    <span>School and study time</span>
+                    <span>Weekend</span>
                   </div>
                   <div className="routine-item">
                     <div className="day-img-container day-img-3"></div>
