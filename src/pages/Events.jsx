@@ -270,6 +270,56 @@ const Events = () => {
 
         <div className="section-container">
           <div className="intro-section-events">
+            <h2>Childrenday - 2013</h2>
+              <EventCarousel 
+                    carouselId="childrenday-2013"
+                    images={[
+                      { src: "assets/adishishta suhada hamuwa - 2013/image1.JPG", alt: "suhadahamuwa-1,2013" },
+                      { src: "assets/adishishta suhada hamuwa - 2013/image2.JPG", alt: "suhadahamuwa-2-2,2013" },
+                      { src: "assets/adishishta suhada hamuwa - 2013/image3.JPG", alt: "suhadahamuwa-2-2,2013" },
+                      { src: "assets/adishishta suhada hamuwa - 2013/image4.JPG", alt: "suhadahamuwa-2-2,2013" }
+                    ]}
+                  />
+            <p> fdfsa
+            </p>
+          </div>
+        </div>
+
+        <div className="section-container">
+          <div className="intro-section-events">
+            <h2>Suhada Hamuwa - 2013</h2>
+              <EventCarousel 
+                    carouselId="suhadahamuwa-2013"
+                    images={[
+                      { src: "assets/adishishta suhada hamuwa - 2013/image1.JPG", alt: "suhadahamuwa-1,2013" },
+                      { src: "assets/adishishta suhada hamuwa - 2013/image2.JPG", alt: "suhadahamuwa-2-2,2013" },
+                      { src: "assets/adishishta suhada hamuwa - 2013/image3.JPG", alt: "suhadahamuwa-2-2,2013" },
+                      { src: "assets/adishishta suhada hamuwa - 2013/image4.JPG", alt: "suhadahamuwa-2-2,2013" }
+                    ]}
+                  />
+            <p> fdfsa
+            </p>
+          </div>
+        </div>
+
+        <div className="section-container">
+          <div className="intro-section-events">
+            <h2>Bakthi Geetha - 2013</h2>
+              <EventCarousel 
+                    carouselId="Bakthi-2013"
+                    images={[
+                      { src: "/assets/2013-acbc-bakthi/IMG_20130526_214420.jpg", alt: "bakthi-1,2013" },
+                      { src: "/assets/2013-acbc-bakthi/IMG_20130526_223739.jpg", alt: "bakthi-2,2013" }
+                    ]}
+                  />
+            <p> Children of the Thudawa Child Development Centre performed a Bakthi Geetha concert at the All 
+              Ceylon Buddhist Congress (ACBC) on May of 2013. 
+            </p>
+          </div>
+        </div>
+
+        <div className="section-container">
+          <div className="intro-section-events">
               <h2>Annual Pirith Pinkama -2013</h2>
                     <img src="/assets/Events/Annual2013.jpg" 
                         alt="Annual Pirith Pinkama 2013" 
@@ -289,7 +339,23 @@ const Events = () => {
           </div>
         </div>
 
-
+        <div className="section-container">
+          <div className="intro-section-events">
+            <h2>Tharumuthudaru Annual Concert - 2012</h2>
+              <EventCarousel 
+                    carouselId="Tharumuthudaru-2012"
+                    images={[
+                      { src: "/assets/Events/avurudu2021-1.jpg", alt: "avurudu1" }
+                    ]}
+                  />
+            <p> Tharumuthudaru is the annual concert of the Thudawa Child Development Centre,
+              which showcases the talents and skills of the children. The event is a celebration of their hard work and dedication,
+              and it provides an opportunity for the children to express themselves through music, dance, and other performances.
+              The concert is a highlight of the year for the children and the community, and it is a testament to the positive impact
+              of the Thudawa Child Development Centre on the lives of the children.
+            </p>
+          </div>
+        </div>
         
 
         <Footer />
