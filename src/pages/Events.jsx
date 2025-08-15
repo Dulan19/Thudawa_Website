@@ -345,13 +345,16 @@ const Events = () => {
               <EventCarousel 
                     carouselId="childrenday-2013"
                     images={[
-                      { src: "assets/adishishta suhada hamuwa - 2013/image1.JPG", alt: "suhadahamuwa-1,2013" },
-                      { src: "assets/adishishta suhada hamuwa - 2013/image2.JPG", alt: "suhadahamuwa-2-2,2013" },
-                      { src: "assets/adishishta suhada hamuwa - 2013/image3.JPG", alt: "suhadahamuwa-2-2,2013" },
-                      { src: "assets/adishishta suhada hamuwa - 2013/image4.JPG", alt: "suhadahamuwa-2-2,2013" }
+                      { src: "assets/Zoo Children day celebration 2013/image1.jpg", alt: "zoo-1,2013" },
+                      { src: "assets/Zoo Children day celebration 2013/image2.jpg", alt: "zoo-2,2013" },
+                      { src: "assets/Zoo Children day celebration 2013/image3.jpg", alt: "zoo-3,2013" },
+                      { src: "assets/Zoo Children day celebration 2013/image4.jpg", alt: "zoo-4,2013" },
                     ]}
                   />
-            <p> fdfsa
+            <p> The Department of Probation and Child Care Services organized a special event for all Child Development 
+              Centres in the Western Province to celebrate World Children’s Day at the zoo. Our children also showcased a 
+              delightful dance performance during the event. It was a joyful and memorable experience for all the children 
+              who participated.
             </p>
           </div>
         </div>
