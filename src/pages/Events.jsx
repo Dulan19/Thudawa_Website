@@ -348,7 +348,9 @@ const Events = () => {
                       { src: "assets/adishishta suhada hamuwa - 2013/image4.JPG", alt: "suhadahamuwa-2-2,2013" }
                     ]}
                   />
-            <p> fdfsa
+            <p> "Suhada Hamuwa" is a special event organized by the Tudawe Child Development Centre, with the help of
+              the Friends Lanka Child Foundation. To a honor to the Matron of the Thudawa Child Development Centre, 
+              Mrs. A.Kirigalla.
             </p>
           </div>
         </div>
