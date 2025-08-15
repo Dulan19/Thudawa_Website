@@ -187,6 +187,26 @@ const Events = () => {
 
         <div className="section-container">
           <div className="intro-section-events">
+            <h2>Relegious Event - 2022</h2>
+              <EventCarousel 
+                    carouselId="Relegious-event-2022"
+                    images={[
+                      { src: "assets/2022 - Relegious Event/image1.jpg", alt: "relegious event - 2022-1" },
+                      { src: "assets/2022 - Relegious Event/image2.jpg", alt: "relegious event - 2022-2" },
+                      { src: "assets/2022 - Relegious Event/image3.jpg", alt: "relegious event - 2022-3" },
+                      { src: "assets/2022 - Relegious Event/image4.jpg", alt: "relegious event - 2022-4" },
+                      { src: "assets/2022 - Relegious Event/image5.jpg", alt: "relegious event - 2022-5" }
+                    ]}
+                  />
+            <p> In 2022, the committee, matron, and children of the Tudawe Child Development Centre organized and offered a 
+              special meritorious almsgiving to the Buddhist nuns in loving memory of our founding president, Mr. Rohan Tudawe, 
+              honoring his life, service, and lasting contributions.
+            </p>
+          </div>
+        </div>
+
+        <div className="section-container">
+          <div className="intro-section-events">
             <h2>Avurudu Uthsawaya -2022</h2>
               <EventCarousel 
                     carouselId="Avurudu-2022"
