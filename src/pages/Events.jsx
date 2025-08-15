@@ -165,6 +165,48 @@ const Events = () => {
 
         <div className="section-container">
           <div className="intro-section-events">
+            <h2>World Children Day -2022</h2>
+              <EventCarousel 
+                    carouselId="children-day-2022"
+                    images={[
+                      { src: "/assets/Events/childrenday2021-1.jpg", alt: "avurudu1" },
+                      { src: "/assets/Events/childrenday2021-2.jpg", alt: "avurudu2" },
+                      { src: "/assets/Events/childrenday2021-3.jpg", alt: "avurudu3" },
+                      { src: "/assets/Events/childrenday2021-4.jpg", alt: "avurudu4" },
+                      { src: "/assets/Events/childrenday2021-5.jpg", alt: "avurudu5" },
+                      { src: "/assets/Events/childrenday2021-6.jpg", alt: "avurudu6" },
+                    ]}
+                  />
+            <p> An event for World Children’s Day was organized by the matron and committee members, 
+              and was successfully held in October 2021 with the participation of all the children of the 
+              Thudawa Child Development Centre. The celebration featured a bonfire and dancing performances by 
+              the children, creating a memorable and joyful experience for everyone involved.
+            </p>
+          </div>
+        </div>
+
+        <div className="section-container">
+          <div className="intro-section-events">
+            <h2>Relegious Event - 2022</h2>
+              <EventCarousel 
+                    carouselId="Relegious-event-2022"
+                    images={[
+                      { src: "assets/2022 - Relegious Event/image1.jpg", alt: "relegious event - 2022-1" },
+                      { src: "assets/2022 - Relegious Event/image2.jpg", alt: "relegious event - 2022-2" },
+                      { src: "assets/2022 - Relegious Event/image3.jpg", alt: "relegious event - 2022-3" },
+                      { src: "assets/2022 - Relegious Event/image4.jpg", alt: "relegious event - 2022-4" },
+                      { src: "assets/2022 - Relegious Event/image5.jpg", alt: "relegious event - 2022-5" }
+                    ]}
+                  />
+            <p> In 2022, the committee, matron, and children of the Tudawe Child Development Centre organized and offered a 
+              special meritorious almsgiving to the Buddhist nuns in loving memory of our founding president, Mr. Rohan Tudawe, 
+              honoring his life, service, and lasting contributions.
+            </p>
+          </div>
+        </div>
+
+        <div className="section-container">
+          <div className="intro-section-events">
             <h2>Avurudu Uthsawaya -2022</h2>
               <EventCarousel 
                     carouselId="Avurudu-2022"
@@ -183,28 +225,6 @@ const Events = () => {
             <p> The Avurudu Uthsawaa 2022 successfully held on April month of 2022 with the participation of
               all the children of the Thudawa Child Development Centre. The event was filled with traditional games,
               and cultural performances creating a joyful atmosphere for everyone involved.
-            </p>
-          </div>
-        </div>
-
-        <div className="section-container">
-          <div className="intro-section-events">
-            <h2>World Children Day -2021</h2>
-              <EventCarousel 
-                    carouselId="children-day-2021"
-                    images={[
-                      { src: "/assets/Events/childrenday2021-1.jpg", alt: "avurudu1" },
-                      { src: "/assets/Events/childrenday2021-2.jpg", alt: "avurudu2" },
-                      { src: "/assets/Events/childrenday2021-3.jpg", alt: "avurudu3" },
-                      { src: "/assets/Events/childrenday2021-4.jpg", alt: "avurudu4" },
-                      { src: "/assets/Events/childrenday2021-5.jpg", alt: "avurudu5" },
-                      { src: "/assets/Events/childrenday2021-6.jpg", alt: "avurudu6" },
-                    ]}
-                  />
-            <p> An event for World Children’s Day was organized by the matron and committee members, 
-              and was successfully held in October 2021 with the participation of all the children of the 
-              Thudawa Child Development Centre. The celebration featured a bonfire and dancing performances by 
-              the children, creating a memorable and joyful experience for everyone involved.
             </p>
           </div>
         </div>
@@ -236,12 +256,34 @@ const Events = () => {
 
         <div className="section-container">
           <div className="intro-section-events">
-            <h2>Get together - 2015</h2>
-            <p>In March 2015, a special reunion was held at the Tudawe Children Development Centre, 
-              bringing together children who have grown up there since 1991. The event was thoughtfully organized by 
-              the current residents at the time, inspired by the vision of their chief matron. Many of the former children, 
-              now adults, have completed their education and built their own families and lives. 
-              This heartfelt gathering celebrated their journeys and the enduring bonds of the Tudawe family.           
+            <h2>Sportsmeet - 2018</h2>
+              <EventCarousel 
+                    carouselId="childrenday-2013"
+                    images={[
+                      { src: "assets/adishishta suhada hamuwa - 2013/image1.JPG", alt: "suhadahamuwa-1,2013" },
+                      { src: "assets/adishishta suhada hamuwa - 2013/image2.JPG", alt: "suhadahamuwa-2-2,2013" },
+                      { src: "assets/adishishta suhada hamuwa - 2013/image3.JPG", alt: "suhadahamuwa-2-2,2013" },
+                      { src: "assets/adishishta suhada hamuwa - 2013/image4.JPG", alt: "suhadahamuwa-2-2,2013" }
+                    ]}
+                  />
+            <p> fdfsa
+            </p>
+          </div>
+        </div>
+
+        <div className="section-container">
+          <div className="intro-section-events">
+            <h2>Sportsmeet - 2017</h2>
+              <EventCarousel 
+                    carouselId="childrenday-2013"
+                    images={[
+                      { src: "assets/adishishta suhada hamuwa - 2013/image1.JPG", alt: "suhadahamuwa-1,2013" },
+                      { src: "assets/adishishta suhada hamuwa - 2013/image2.JPG", alt: "suhadahamuwa-2-2,2013" },
+                      { src: "assets/adishishta suhada hamuwa - 2013/image3.JPG", alt: "suhadahamuwa-2-2,2013" },
+                      { src: "assets/adishishta suhada hamuwa - 2013/image4.JPG", alt: "suhadahamuwa-2-2,2013" }
+                    ]}
+                  />
+            <p> fdfsa
             </p>
           </div>
         </div>
@@ -270,7 +312,19 @@ const Events = () => {
 
         <div className="section-container">
           <div className="intro-section-events">
-            <h2>Childrenday - 2013</h2>
+            <h2>Get together - 2015</h2>
+            <p>In March 2015, a special reunion was held at the Tudawe Children Development Centre, 
+              bringing together children who have grown up there since 1991. The event was thoughtfully organized by 
+              the current residents at the time, inspired by the vision of their chief matron. Many of the former children, 
+              now adults, have completed their education and built their own families and lives. 
+              This heartfelt gathering celebrated their journeys and the enduring bonds of the Tudawe family.           
+            </p>
+          </div>
+        </div>
+
+        <div className="section-container">
+          <div className="intro-section-events">
+            <h2>Sportsmeet - 2014</h2>
               <EventCarousel 
                     carouselId="childrenday-2013"
                     images={[
@@ -287,6 +341,26 @@ const Events = () => {
 
         <div className="section-container">
           <div className="intro-section-events">
+            <h2>Childrenday - 2013</h2>
+              <EventCarousel 
+                    carouselId="childrenday-2013"
+                    images={[
+                      { src: "assets/Zoo Children day celebration 2013/image1.jpg", alt: "zoo-1,2013" },
+                      { src: "assets/Zoo Children day celebration 2013/image2.jpg", alt: "zoo-2,2013" },
+                      { src: "assets/Zoo Children day celebration 2013/image3.jpg", alt: "zoo-3,2013" },
+                      { src: "assets/Zoo Children day celebration 2013/image4.jpg", alt: "zoo-4,2013" },
+                    ]}
+                  />
+            <p> The Department of Probation and Child Care Services organized a special event for all Child Development 
+              Centres in the Western Province to celebrate World Children’s Day at the zoo. Our children also showcased a 
+              delightful dance performance during the event. It was a joyful and memorable experience for all the children 
+              who participated.
+            </p>
+          </div>
+        </div>
+
+        <div className="section-container">
+          <div className="intro-section-events">
             <h2>Suhada Hamuwa - 2013</h2>
               <EventCarousel 
                     carouselId="suhadahamuwa-2013"
@@ -297,7 +371,9 @@ const Events = () => {
                       { src: "assets/adishishta suhada hamuwa - 2013/image4.JPG", alt: "suhadahamuwa-2-2,2013" }
                     ]}
                   />
-            <p> fdfsa
+            <p> "Suhada Hamuwa" is a special event organized by the Tudawe Child Development Centre, with the help of
+              the Friends Lanka Child Foundation. To a honor to the Matron of the Thudawa Child Development Centre, 
+              Mrs. A.Kirigalla.
             </p>
           </div>
         </div>
