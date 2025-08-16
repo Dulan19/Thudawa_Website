@@ -309,7 +309,7 @@ function Aboutus() {
                   </div>
                   <div className="routine-item">
                     <div className="day-img-container day-img-4"></div>
-                    <span>Shared meals comm</span>
+                    <span>Shared meals com</span>
                   </div>
                 </div>
               </div>
