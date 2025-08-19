@@ -149,7 +149,7 @@ const Events = () => {
           <div className="intro-section-events">
             <h2>Bakthi Geetha at ACBC</h2>
             <p>space for the image <br />
-            ll
+            l
             </p>
           </div>
         </div>
