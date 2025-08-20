@@ -213,4 +213,5 @@ body, html {
 .events-img-1::before {
   background-image: url("/src/assets/Events/Bhakthi_Geetha/bakthigeetha_home.jpeg");
 }
-.events-img-2::before, .events-img-3::before, .events-img-4::before { background-image: url(""); }
+.events-img-2::before, .events-img-3::before, .events-img-4::before { background-image: url("/src/assets/Events/Bhakthi_Geetha/bakthigeetha_home.jpeg"); 
+}

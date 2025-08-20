@@ -43,7 +43,7 @@ const Imgswap = () => {
       }
       img.src = src
     })
-  }, []) // Removed images from the dependency array
+  }, ) 
 
   const goToSlide = (index) => {
     setCurrentImageIndex(index)
