@@ -21,7 +21,7 @@ function Aboutus() {
       setCurrentImageIndex((prev) => (prev + 1) % images1997.length);
     }, 3000);
     return () => clearInterval(interval);
-  }, []);
+  }, );
 
   return (
     <div>
