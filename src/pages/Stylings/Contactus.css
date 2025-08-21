@@ -1,3 +1,4 @@
+/* Base styles (desktop first) */
 .contactus-background {
   background-image: url("../../assets/ContactusPage.jpg");
   background-size: cover;
@@ -66,7 +67,7 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   position: relative;
   z-index: 2;
-  background: rgb(255 ,255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(8px);
   padding: 1rem;
 }
@@ -139,4 +140,283 @@
 .contactus-card button:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(217, 131, 36, 0.4);
+}
+
+/* MOBILE RESPONSIVE STYLES */
+
+/* Tablet styles (992px and below) */
+@media screen and (max-width: 992px) {
+  .contactus-container {
+    gap: 3rem;
+    padding: 1.5rem;
+    padding-top: 8rem;
+  }
+
+  .contactus-card {
+    width: 45%;
+    min-width: 300px;
+  }
+
+  .contactus-map {
+    width: 95%;
+    margin: 1.5rem auto;
+  }
+
+  .contactus-map iframe {
+    height: 400px;
+  }
+}
+
+/* Tablet styles (768px and below) */
+@media screen and (max-width: 768px) {
+  .contactus-background {
+    background-attachment: scroll; /* Fixed attachment issues on mobile */
+  }
+
+  .contactus-container {
+    gap: 2rem;
+    padding: 1rem;
+    padding-top: 6rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contactus-card {
+    width: 90%;
+    max-width: 500px;
+    min-width: auto;
+    margin-bottom: 1rem;
+  }
+
+  .contactus-card h1, .contactus-map h1 {
+    font-size: 1.8rem;
+  }
+
+  .contactus-card h2 {
+    font-size: 1.4rem;
+  }
+
+  .contactus-card p {
+    font-size: 1.1rem;
+  }
+
+  .contactus-map {
+    width: 95%;
+    margin: 1rem auto;
+    padding: 0.8rem;
+  }
+
+  .contactus-map iframe {
+    height: 350px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 90%;
+    padding: 0.7rem;
+  }
+
+  .form-group label {
+    font-size: 1rem;
+  }
+
+  .contactus-card button {
+    width: 60%;
+    padding: 0.9rem 1.5rem;
+    font-size: 1rem;
+  }
+}
+
+/* Mobile styles (480px and below) */
+@media screen and (max-width: 480px) {
+  .contactus-container {
+    gap: 1.5rem;
+    padding: 0.8rem;
+    padding-top: 4rem;
+  }
+
+  .contactus-card {
+    width: 95%;
+    padding: 1.2rem;
+    border-radius: 6px;
+  }
+
+  .contactus-card h1, .contactus-map h1 {
+    font-size: 1.6rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .contactus-card h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .contactus-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .contactus-map {
+    width: 95%;
+    margin: 0.8rem auto;
+    padding: 0.6rem;
+    border-radius: 8px;
+  }
+
+  .contactus-map iframe {
+    height: 300px;
+  }
+
+  .contactus-card form {
+    margin-top: 1rem;
+  }
+
+  .form-group {
+    margin-bottom: 1.2rem;
+  }
+
+  .form-group label {
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 95%;
+    padding: 0.6rem;
+    font-size: 0.9rem;
+    border-radius: 4px;
+  }
+
+  .form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+
+  .contactus-card button {
+    width: 70%;
+    padding: 0.8rem 1.2rem;
+    font-size: 0.9rem;
+    border-radius: 4px;
+  }
+
+  /* Hover effects adjustment for mobile */
+  .contactus-card:hover {
+    transform: none; /* Remove hover transform on mobile */
+  }
+}
+
+/* Extra small mobile devices (360px and below) */
+@media screen and (max-width: 360px) {
+  .contactus-container {
+    padding: 0.5rem;
+    padding-top: 3rem;
+    gap: 1rem;
+  }
+
+  .contactus-card {
+    width: 98%;
+    padding: 1rem;
+  }
+
+  .contactus-card h1, .contactus-map h1 {
+    font-size: 1.4rem;
+  }
+
+  .contactus-card h2 {
+    font-size: 1.2rem;
+  }
+
+  .contactus-card p {
+    font-size: 0.9rem;
+  }
+
+  .contactus-map {
+    width: 98%;
+    padding: 0.5rem;
+  }
+
+  .contactus-map iframe {
+    height: 250px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 0.85rem;
+  }
+
+  .form-group label {
+    font-size: 0.85rem;
+  }
+
+  .contactus-card button {
+    width: 80%;
+    padding: 0.7rem 1rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* Landscape orientation adjustments for mobile */
+@media screen and (max-height: 600px) and (orientation: landscape) {
+  .contactus-container {
+    padding-top: 2rem;
+  }
+
+  .contactus-map iframe {
+    height: 200px;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .contactus-card:hover {
+    transform: none; /* Remove hover effects on touch devices */
+  }
+
+  .contactus-card button:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  /* Make touch targets larger */
+  .contactus-card button {
+    min-height: 44px; /* Minimum touch target size */
+    padding: 0.8rem 1.5rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    min-height: 44px; /* Minimum touch target size */
+  }
+}
+
+/* High DPI display adjustments */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .contactus-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .contactus-map {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  .contactus-card,
+  .contactus-card button,
+  .form-group input,
+  .form-group textarea {
+    transition: none;
+  }
+
+  .contactus-card:hover {
+    transform: none;
+  }
+
+  .contactus-card button:hover {
+    transform: none;
+  }
 }
