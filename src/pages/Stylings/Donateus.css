@@ -1,3 +1,4 @@
+/* Base styles (desktop first) */
 .background-image {
   background-image: url("../../assets/donateus.jpg");
   background-size: cover;
@@ -44,7 +45,7 @@
   color: rgb(217, 131, 36);
 }
 
-.donateus-card p, li {
+.donateus-card p, .donateus-card li {
   font-size: 1.2rem;
   color: white;
   line-height: 1.6;
@@ -59,6 +60,291 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+
 .contactus-button:hover {
   background-color: rgb(255, 165, 0);
+}
+
+/* MOBILE RESPONSIVE STYLES */
+
+/* Large tablets (992px and below) */
+@media screen and (max-width: 992px) {
+  .donateus-container {
+    gap: 3rem;
+    padding: 1.5rem;
+    padding-top: 8rem;
+  }
+
+  .donateus-card {
+    width: 45%;
+    min-width: 350px;
+  }
+
+  .donateus-card h1 {
+    font-size: 1.8rem;
+  }
+
+  .donateus-card p, .donateus-card li {
+    font-size: 1.1rem;
+  }
+}
+
+/* Tablets (768px and below) */
+@media screen and (max-width: 768px) {
+  .background-image {
+    background-attachment: scroll; /* Fixed attachment can cause issues on mobile */
+  }
+
+  .donateus-container {
+    gap: 2.5rem;
+    padding: 1rem;
+    padding-top: 6rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .donateus-card {
+    width: 85%;
+    max-width: 600px;
+    min-width: auto;
+    margin-bottom: 1rem;
+  }
+
+  .donateus-card h1 {
+    font-size: 1.7rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .donateus-card p, .donateus-card li {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+
+  .contactus-button {
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    margin: 0.5rem 0;
+  }
+}
+
+/* Mobile devices (480px and below) */
+@media screen and (max-width: 480px) {
+  .donateus-container {
+    gap: 2rem;
+    padding: 0.8rem;
+    padding-top: 4rem;
+  }
+
+  .donateus-card {
+    width: 95%;
+    padding: 1.2rem;
+    border-radius: 6px;
+  }
+
+  .donateus-card h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .donateus-card p, .donateus-card li {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 0.8rem;
+  }
+
+  /* List styling improvements for mobile */
+  .donateus-card ul, .donateus-card ol {
+    text-align: left;
+    padding-left: 1.2rem;
+    margin: 0.8rem 0;
+  }
+
+  .donateus-card li {
+    margin-bottom: 0.5rem;
+    padding-left: 0.2rem;
+  }
+
+  .contactus-button {
+    padding: 0.7rem 1.4rem;
+    font-size: 0.95rem;
+    border-radius: 5px;
+    margin: 0.8rem 0;
+    min-height: 44px; /* Minimum touch target size */
+    min-width: 120px;
+  }
+
+  /* Remove hover effects on mobile */
+  .donateus-card:hover {
+    transform: none;
+  }
+}
+
+/* Extra small mobile devices (360px and below) */
+@media screen and (max-width: 360px) {
+  .donateus-container {
+    gap: 1.5rem;
+    padding: 0.5rem;
+    padding-top: 3rem;
+  }
+
+  .donateus-card {
+    width: 98%;
+    padding: 1rem;
+  }
+
+  .donateus-card h1 {
+    font-size: 1.3rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .donateus-card p, .donateus-card li {
+    font-size: 0.9rem;
+    line-height: 1.3;
+    margin-bottom: 0.6rem;
+  }
+
+  .donateus-card ul, .donateus-card ol {
+    padding-left: 1rem;
+    margin: 0.6rem 0;
+  }
+
+  .donateus-card li {
+    margin-bottom: 0.4rem;
+  }
+
+  .contactus-button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.85rem;
+    margin: 0.6rem 0;
+  }
+}
+
+/* Landscape orientation adjustments for mobile */
+@media screen and (max-height: 600px) and (orientation: landscape) {
+  .donateus-container {
+    padding-top: 2rem;
+    gap: 1.5rem;
+  }
+
+  .donateus-card {
+    padding: 1rem;
+  }
+
+  .donateus-card h1 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .donateus-card p, .donateus-card li {
+    font-size: 0.95rem;
+    line-height: 1.3;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .donateus-card:hover {
+    transform: none; /* Remove hover effects on touch devices */
+  }
+
+  .contactus-button:hover {
+    background-color: rgb(217, 131, 36); /* Keep original background on touch */
+  }
+
+  /* Enhanced touch targets */
+  .contactus-button {
+    min-height: 44px; /* Minimum recommended touch target size */
+    min-width: 100px;
+    padding: 0.7rem 1.3rem;
+  }
+}
+
+/* High DPI display adjustments */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .donateus-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+}
+
+/* Dark mode support (if needed) */
+@media (prefers-color-scheme: dark) {
+  .donateus-card {
+    background-color: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  .donateus-card,
+  .contactus-button {
+    transition: none;
+  }
+
+  .donateus-card:hover {
+    transform: none;
+  }
+}
+
+/* Focus states for better accessibility */
+.contactus-button:focus {
+  outline: 2px solid rgb(217, 131, 36);
+  outline-offset: 2px;
+}
+
+/* Additional mobile enhancements */
+@media screen and (max-width: 768px) {
+  /* Better text alignment for mobile reading */
+  .donateus-card p {
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+
+  /* Center important elements */
+  .donateus-card h1,
+  .contactus-button {
+    text-align: center;
+  }
+
+  /* Improve spacing between cards */
+  .donateus-card + .donateus-card {
+    margin-top: 1rem;
+  }
+}
+
+/* Very wide screens optimization */
+@media screen and (min-width: 1400px) {
+  .donateus-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 5px;
+    padding-top: 10rem;
+  }
+}
+
+/* Print styles (bonus) */
+@media print {
+  .background-image {
+    display: none;
+  }
+  
+  .donateus-card {
+    background-color: white;
+    color: black;
+    box-shadow: none;
+    border: 1px solid #ccc;
+    page-break-inside: avoid;
+  }
+  
+  .donateus-card h1 {
+    color: rgb(217, 131, 36);
+  }
+  
+  .contactus-button {
+    background-color: rgb(217, 131, 36) !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
 }
