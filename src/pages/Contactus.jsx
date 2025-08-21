@@ -30,7 +30,7 @@ const Contactus = () => {
 
       <div className ="contactus-card">
         <h1>Send Feedback</h1>
-        <form>
+        <form    action="https://formspree.io/f/mblkvvzp" method="POST">
           <div className="form-group">
             <label htmlFor="name">Name</label>
             <input type="text" id="name" name="name" required />
