@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap');
 
-/* Main container - Changed position to fixed for true overlay */
+/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -9,12 +9,11 @@
   -webkit-backdrop-filter: blur(12px) saturate(180%);
   background-color: rgba(0, 0, 0, 0.3);
   padding: 18px 35px;
-  position: fixed; /* Changed from sticky to fixed */
+  position: fixed;
   top: 0;
-  left: 0; /* Added to ensure full width positioning */
-  right: 0; /* Added to ensure full width positioning */
+  left: 0;
+  right: 0;
   z-index: 1000;
-  flex-wrap: wrap;
   font-family: 'Roboto Slab', serif;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
@@ -33,15 +32,14 @@
   transition: transform 0.3s ease;
 }
 
-/* Brand text */
 .brand {
   font-weight: 600;
   font-size: 22px;
   color: #fff;
-  transition: color 0.3s ease;
   display: flex;
   flex-direction: column;
   line-height: 1.2;
+  transition: color 0.3s ease;
 }
 
 .brand-line1 {
@@ -106,35 +104,6 @@
   width: 100%;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .navbar {
-    padding: 15px 20px;
-  }
-  
-  .navbar-center,
-  .navbar-right {
-    flex-direction: column;
-    width: 100%;
-    margin-top: 15px;
-    gap: 12px;
-  }
-  
-  .navbar-center a,
-  .navbar-right a {
-    padding: 8px 0;
-    font-size: 17px;
-  }
-  
-  .brand-line1 {
-    font-size: 20px;
-  }
-  
-  .brand-line2 {
-    font-size: 18px;
-  }
-}
-
 /* Active link styling */
 .navbar-center a.active,
 .navbar-right a.active {
@@ -145,4 +114,114 @@
 .navbar-right a.active::after {
   width: 100%;
   background-color: rgb(217, 131, 36);
+}
+
+/* ----------- Mobile styles ----------- */
+
+/* Hide desktop links by default on small screens */
+.desktop-only {
+  display: flex;
+}
+
+.mobile-only {
+  display: none;
+}
+
+/* Three-dots menu */
+.dots-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+  padding: 8px;
+}
+
+.dots-menu span {
+  width: 5px;
+  height: 5px;
+  background: #fff;
+  border-radius: 50%;
+  display: block;
+  transition: background 0.3s ease;
+}
+
+.dots-menu:hover span {
+  background: rgb(217, 131, 36); /* hover color */
+}
+
+/* Mobile dropdown */
+.mobile-menu {
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.95);
+  border-radius: 8px;
+  padding: 15px 20px;
+  display: none;
+  flex-direction: column;
+  gap: 15px;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Show on click (from JSX toggle) */
+.mobile-menu.open {
+  display: flex;
+}
+
+/* --- NEW: Show on hover as well --- */
+.dots-menu:hover + .mobile-menu {
+  display: flex;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-only {
+    display: flex;
+  }
+}
+
+.mobile-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.mobile-menu a:hover {
+  color: rgb(217, 131, 36);
+}
+
+.mobile-menu.open {
+  display: flex;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .desktop-only {
+    display: none; /* hide normal menu */
+  }
+
+  .mobile-only {
+    display: flex; /* show dots */
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
