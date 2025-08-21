@@ -1,3 +1,4 @@
+/* Base styles (desktop first) */
 .background-image-event {
   background-image: url("../../assets/home2.jpeg");
   background-size: cover;
@@ -58,7 +59,7 @@
   display: block;
 }
 
-/*multiple images styling*/
+/* Carousel styles */
 .carousel-container {
   position: relative;
   max-width: 600px;
@@ -126,7 +127,6 @@
   right: 15px;
 }
 
-/* Thumbnail navigation styles */
 .carousel-dots {
   display: flex;
   justify-content: center;
@@ -142,12 +142,12 @@
   backdrop-filter: blur(8px);
   max-width: 90%;
   overflow-x: auto;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .carousel-dots::-webkit-scrollbar {
-  display: none; /* Chrome, Safari, Opera */
+  display: none;
 }
 
 .thumbnail {
@@ -177,4 +177,234 @@
   border-width: 3px;
   transform: scale(1.1);
   box-shadow: 0 4px 15px rgba(217, 131, 36, 0.6);
+}
+
+/* MOBILE RESPONSIVE STYLES */
+
+/* Tablet styles (768px and below) */
+@media screen and (max-width: 768px) {
+  .background-image-event {
+    background-attachment: scroll; /* Fixed attachment can cause issues on mobile */
+  }
+
+  .events-heading {
+    font-size: 2.5rem;
+    margin-top: -40vh;
+    margin-bottom: 30vh;
+    padding: 0 20px;
+  }
+
+  .intro-section-events {
+    margin: 15px;
+    padding: 30px 25px;
+  }
+
+  .intro-section-events h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+
+  .intro-section-events p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    text-align: left;
+  }
+
+  .carousel-container {
+    margin: 15px;
+    max-width: calc(100% - 30px);
+  }
+
+  .carousel-image {
+    height: 300px;
+  }
+
+  .carousel-nav {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+  }
+
+  .carousel-nav.prev {
+    left: 10px;
+  }
+
+  .carousel-nav.next {
+    right: 10px;
+  }
+
+  .carousel-dots {
+    bottom: 10px;
+    padding: 10px 12px;
+    max-width: 85%;
+  }
+
+  .thumbnail {
+    width: 45px;
+    height: 30px;
+  }
+}
+
+/* Mobile styles (480px and below) */
+@media screen and (max-width: 480px) {
+  .events-heading {
+    font-size: 2rem;
+    margin-top: -35vh;
+    margin-bottom: 25vh;
+    padding: 0 15px;
+  }
+
+  .intro-section-events {
+    margin: 10px;
+    padding: 25px 20px;
+    border-radius: 8px;
+  }
+
+  .intro-section-events h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+
+  .intro-section-events p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+
+  .carousel-container {
+    margin: 10px;
+    max-width: calc(100% - 20px);
+    border-radius: 8px;
+  }
+
+  .carousel-wrapper {
+    border-radius: 8px;
+  }
+
+  .carousel-image {
+    height: 250px;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .carousel-nav {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .carousel-nav.prev {
+    left: 8px;
+  }
+
+  .carousel-nav.next {
+    right: 8px;
+  }
+
+  .carousel-nav:hover {
+    transform: translateY(-50%) scale(1.05); /* Reduced scale for mobile */
+  }
+
+  .carousel-dots {
+    bottom: 8px;
+    padding: 8px 10px;
+    max-width: 80%;
+    gap: 6px;
+  }
+
+  .thumbnail {
+    width: 40px;
+    height: 28px;
+    border-radius: 4px;
+  }
+
+  .thumbnail:hover {
+    transform: scale(1.02); /* Reduced hover effect for mobile */
+  }
+
+  .thumbnail.active {
+    transform: scale(1.05); /* Reduced active scale for mobile */
+  }
+
+  .event-image-img {
+    margin: 15px auto;
+    border-radius: 8px;
+  }
+}
+
+/* Extra small mobile devices (360px and below) */
+@media screen and (max-width: 360px) {
+  .events-heading {
+    font-size: 1.8rem;
+    margin-top: -30vh;
+    margin-bottom: 20vh;
+  }
+
+  .intro-section-events {
+    margin: 8px;
+    padding: 20px 15px;
+  }
+
+  .intro-section-events h2 {
+    font-size: 1.6rem;
+  }
+
+  .intro-section-events p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .carousel-image {
+    height: 200px;
+  }
+
+  .carousel-nav {
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+  }
+
+  .carousel-nav.prev {
+    left: 5px;
+  }
+
+  .carousel-nav.next {
+    right: 5px;
+  }
+
+  .thumbnail {
+    width: 35px;
+    height: 25px;
+  }
+
+  .carousel-dots {
+    gap: 4px;
+    padding: 6px 8px;
+  }
+}
+
+/* Landscape orientation adjustments for mobile */
+@media screen and (max-height: 600px) and (orientation: landscape) {
+  .events-heading {
+    margin-top: -20vh;
+    margin-bottom: 15vh;
+    font-size: 1.8rem;
+  }
+
+  .carousel-image {
+    height: 200px;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .carousel-nav:hover {
+    background: rgba(0,0,0,0.7); /* Remove hover effects on touch devices */
+    transform: translateY(-50%);
+  }
+
+  .thumbnail:hover {
+    opacity: 0.6;
+    transform: none;
+    border-color: transparent;
+  }
 }
