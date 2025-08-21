@@ -149,7 +149,7 @@ function Background() {
                   <>
                     {" "}by donating the property to the All Ceylon Buddhists Congress. It has been registered under…. on 01'st of June 1989. The first matron was 
                     Miss. Yasawathi Jayawardhana. Since 1988 it has been a shelter for nearly 111 girls. most of them are now living in a good position in society. The 
-                    children's home is controlled by a board of governors and the children are assigned to the home by the Department of Probation and Child Care Services.1234
+                    children's home is controlled by a board of governors and the children are assigned to the home by the Department of Probation and Child Care Services.123
                   </>
                 )}
               </p>
