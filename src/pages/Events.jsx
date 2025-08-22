@@ -2,7 +2,7 @@ import Navbar from "../components/Navbar/Navbar.jsx"
 import Footer from "../components/Footer/Footer.jsx"
 import "../pages/Stylings/Events.css";
 
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 const EventCarousel = ({  images }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
