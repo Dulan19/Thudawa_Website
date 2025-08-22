@@ -2,7 +2,8 @@
   background-image: url("../../assets/Wadduwa.jpg");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+  /* Removed fixed attachment for better mobile performance */
+  background-attachment: scroll;
   position: fixed;
   top: 0;
   left: 0;
@@ -17,21 +18,29 @@
   z-index: 1;
   padding-top: 100vh;
   margin-top: -10vh;
+  /* Added box-sizing and overflow handling */
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .aboutus-heading {
-  font-size: 3rem;
+  /* Made font size responsive with clamp */
+  font-size: clamp(2rem, 5vw, 3rem);
   color: white;
   text-align: center;
   z-index: 2;
   position: relative;
-  margin-top: -50vh;
-  margin-bottom: 42vh;
+  /* Made margins responsive */
+  margin-top: clamp(-60vh, -50vh, -40vh);
+  margin-bottom: clamp(30vh, 42vh, 50vh);
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  /* Added padding for mobile safety */
+  padding: 0 1rem;
 }
 
 .aboutus-heading h6 {
-  font-size: 1.5rem;
+  /* Made font size responsive */
+  font-size: clamp(1rem, 3vw, 1.5rem);
   color: #ffffff;
   margin-top: 10px;
   text-align: center;
@@ -40,9 +49,11 @@
 }
 
 .section-container {
-  max-width: 1800px;
+  /* Made max-width responsive and added proper centering */
+  max-width: min(1800px, 95vw);
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 clamp(15px, 3vw, 20px);
+  box-sizing: border-box;
 }
 
 /* Introduction Section */
@@ -51,14 +62,20 @@
   backdrop-filter: blur(8px);
   color: white;
   margin: 20px auto;
-  padding: 40px;
+  /* Made padding responsive */
+  padding: clamp(20px, 5vw, 40px);
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   animation: slideInUp 0.8s ease-out 0.2s both;
+  /* Added box-sizing and width constraints */
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
 }
 
 .intro-section h2 {
-  font-size: 2.5rem;
+  /* Made font size responsive */
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
   margin-bottom: 20px;
   text-align: center;
   color: #fff;
@@ -66,43 +83,94 @@
 }
 
 .intro-section p {
-  font-size: 1.1rem;
+  /* Made font size responsive and improved readability */
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
   line-height: 1.8;
   margin-bottom: 20px;
   text-align: justify;
+  word-wrap: break-word;
+  hyphens: auto;
 }
 
-table, th, td {
+/* Made table responsive */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: clamp(0.9rem, 2vw, 1rem);
+  overflow-x: auto;
+  display: block;
+  white-space: nowrap;
+}
+
+table,
+th,
+td {
   border: 0.1px solid rgb(217, 131, 36);
+}
+
+th,
+td {
+  padding: clamp(8px, 2vw, 12px);
+  text-align: left;
+  vertical-align: top;
+}
+
+/* Made table scrollable on mobile */
+@media (max-width: 768px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  th,
+  td {
+    white-space: normal;
+    min-width: 150px;
+  }
 }
 
 .read-btn {
   background: rgb(217, 131, 36);
   color: white;
   border: none;
-  padding: 12px 30px;
+  /* Made padding responsive */
+  padding: clamp(10px, 2vw, 12px) clamp(20px, 4vw, 30px);
   border-radius: 25px;
-  font-size: 1.1rem;
+  /* Made font size responsive */
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
   cursor: pointer;
   margin-top: 15px;
   transition: background 0.3s ease;
+  /* Added touch-friendly sizing */
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .read-btn:hover {
   background: rgb(224, 150, 71);
 }
+
 .intro-image {
-  margin-top: 85px;
-  padding: 20px;
+  margin-top: clamp(40px, 8vw, 85px);
+  padding: clamp(10px, 3vw, 20px);
   border-radius: 1px;
-  width: 1600px;
-  height: 400px;
+  /* Made width responsive and removed fixed dimensions */
+  width: 100%;
+  max-width: 100%;
+  height: clamp(200px, 40vw, 400px);
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
-  margin-left: auto; /* Add this */
-  margin-right: auto; /* Add this */
-  display: block; /* Optional, ensures block behavior */
+  /* Removed fixed attachment for mobile performance */
+  background-attachment: scroll;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  box-sizing: border-box;
 }
 
 .image1 {
@@ -111,8 +179,7 @@ table, th, td {
 
 .image2 {
   background-image: url("../../assets/frist_log.jpg");
-  width: 1000px;
-  height: 400px;
+  /* Removed fixed dimensions, now inherits responsive sizing */
 }
 
 /* Animations */
@@ -127,11 +194,23 @@ table, th, td {
   }
 }
 
-/* Responsive Design */
+/* Enhanced responsive design with more breakpoints */
+@media (max-width: 1200px) {
+  .section-container {
+    max-width: 95vw;
+    padding: 0 2rem;
+  }
+}
+
 @media (max-width: 768px) {
+  .background2-image {
+    background-attachment: scroll;
+  }
+
   .aboutus-heading {
     font-size: 2rem;
-    margin-bottom: 30vh;
+    margin-bottom: 25vh;
+    margin-top: -45vh;
   }
 
   .aboutus-heading h6 {
@@ -139,64 +218,75 @@ table, th, td {
   }
 
   .section-container {
-    padding: 0 15px;
+    padding: 0 1rem;
   }
 
-  .intro-section,
-  .timeline-section,
-  .mvv-section,
-  .facilities-section,
-  .donor-section,
-  .life-section,
-  .spiritual-section,
-  .closing-section {
-    padding: 25px;
-    margin: 20px auto;
+  .intro-section {
+    padding: 20px;
+    margin: 15px auto;
   }
 
-  .timeline::before {
-    left: 30px;
-  }
-
-  .timeline-item {
-    flex-direction: row !important;
-    padding-left: 70px;
-  }
-
-  .timeline-icon {
-    position: absolute;
-    left: 0;
-    margin: 0;
-  }
-
-  .mvv-grid,
-  .facilities-grid,
-  .spiritual-content {
-    grid-template-columns: 1fr;
-  }
-
-  .routine-grid {
-    grid-template-columns: 1fr;
+  .intro-image {
+    height: clamp(150px, 35vw, 250px);
+    margin-top: 30px;
   }
 }
 
 @media (max-width: 480px) {
   .aboutus-heading {
     font-size: 1.5rem;
+    margin-top: -40vh;
+    margin-bottom: 20vh;
   }
 
   .aboutus-heading h6 {
     font-size: 1rem;
   }
 
-  .intro-section h2,
-  .timeline-section h2,
-  .mvv-section h2,
-  .facilities-section h2,
-  .donor-section h2,
-  .life-section h2,
-  .spiritual-section h2,
-  .closing-content h2 {
-    font-size: 2rem;
+  .intro-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .intro-section {
+    padding: 15px;
+    margin: 10px auto;
+  }
+
+  .intro-image {
+    height: clamp(120px, 30vw, 200px);
+    margin-top: 20px;
+    padding: 5px;
+  }
+
+  .section-container {
+    padding: 0 0.5rem;
+  }
+}
+
+/* Added extra small screen support */
+@media (max-width: 360px) {
+  .aboutus-heading {
+    font-size: 1.3rem;
+    margin-top: -35vh;
+    margin-bottom: 15vh;
+  }
+
+  .intro-section {
+    padding: 12px;
+    margin: 8px auto;
+  }
+
+  .intro-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .intro-section p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .read-btn {
+    padding: 8px 16px;
+    font-size: 0.95rem;
   }
 }
