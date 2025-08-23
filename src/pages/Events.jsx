@@ -329,13 +329,19 @@ const Events = () => {
               <EventCarousel 
                     carouselId="childrenday-2013"
                     images={[
-                      { src: "assets/adishishta suhada hamuwa - 2013/image1.JPG", alt: "suhadahamuwa-1,2013" },
-                      { src: "assets/adishishta suhada hamuwa - 2013/image2.JPG", alt: "suhadahamuwa-2-2,2013" },
-                      { src: "assets/adishishta suhada hamuwa - 2013/image3.JPG", alt: "suhadahamuwa-2-2,2013" },
-                      { src: "assets/adishishta suhada hamuwa - 2013/image4.JPG", alt: "suhadahamuwa-2-2,2013" }
+                      { src: "assets/Sport meet 2014/sportsmeet2014 (1).JPG", alt: "sportsmeet-1,2014" },
+                      { src: "assets/Sport meet 2014/sportsmeet2014 (2).JPG", alt: "sportsmeet-2,2014" },
+                      { src: "assets/Sport meet 2014/sportsmeet2014 (3).JPG", alt: "sportsmeet-3,2014" },
+                      { src: "assets/Sport meet 2014/sportsmeet2014 (4).JPG", alt: "sportsmeet-4,2014" },
+                      { src: "assets/Sport meet 2014/sportsmeet2014 (5).JPG", alt: "sportsmeet-5,2014" },
+                      { src: "assets/Sport meet 2014/sportsmeet2014 (6).JPG", alt: "sportsmeet-6,2014" },
+                      { src: "assets/Sport meet 2014/sportsmeet2014 (7).JPG", alt: "sportsmeet-7,2014" },
                     ]}
                   />
-            <p> fdfsa
+            <p> The Sportsmeet 2014 was successfully held in 2014 with the participation of all the children of 
+              the Thudawa Child Development Centre. The event was filled with various sports activities and competitions,
+              creating a lively and energetic atmosphere for everyone involved. The children showcased their athletic skills
+              and teamwork, making it a memorable day for all.
             </p>
           </div>
         </div>
