@@ -2,7 +2,7 @@ import Navbar from "../components/Navbar/Navbar.jsx"
 import Footer from "../components/Footer/Footer.jsx"
 import "../pages/Stylings/Events.css";
 
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 const EventCarousel = ({  images }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -106,10 +106,11 @@ const Events = () => {
 
         <div className="section-container">
           <div className="intro-section-events">
-            <h2>fggb</h2>
+            <h2>2025/08</h2>
             <p>On the occasion of Poson Poya Day, with the valuable support of Mrs. Palika Darmawickrama, 
               The Music Teacher of the Thudawa Child Development Centre, and the dedicated efforts of the Centre’s committee, 
               The Thudawa Child Development Centre successfully presented “Bakthi Gee 2025” together with its children
+              {/* 2025/8/ - session from wadduwa library about the reading(new photos from whatsapp) */}
             </p>
           </div>
         </div>
@@ -165,7 +166,7 @@ const Events = () => {
 
         <div className="section-container">
           <div className="intro-section-events">
-            <h2>World Children Day -2022</h2>
+            <h2>World Children's Day -2022</h2>
               <EventCarousel 
                     carouselId="children-day-2022"
                     images={[
@@ -258,15 +259,20 @@ const Events = () => {
           <div className="intro-section-events">
             <h2>Sportsmeet - 2018</h2>
               <EventCarousel 
-                    carouselId="childrenday-2013"
+                    carouselId="Sportsmeet-2018"
                     images={[
-                      { src: "assets/adishishta suhada hamuwa - 2013/image1.JPG", alt: "suhadahamuwa-1,2013" },
-                      { src: "assets/adishishta suhada hamuwa - 2013/image2.JPG", alt: "suhadahamuwa-2-2,2013" },
-                      { src: "assets/adishishta suhada hamuwa - 2013/image3.JPG", alt: "suhadahamuwa-2-2,2013" },
-                      { src: "assets/adishishta suhada hamuwa - 2013/image4.JPG", alt: "suhadahamuwa-2-2,2013" }
+                      { src: "assets/2018 - sportsmeet/2018 - sportsmeet (1).JPG", alt: "sportsmeet-1,2018" },
+                      { src: "assets/2018 - sportsmeet/2018 - sportsmeet (2).JPG", alt: "sportsmeet-2,2018" },
+                      { src: "assets/2018 - sportsmeet/2018 - sportsmeet (3).JPG", alt: "sportsmeet-3,2018" },
+                      { src: "assets/2018 - sportsmeet/2018 - sportsmeet (4).JPG", alt: "sportsmeet-4,2018" },
+                      { src: "assets/2018 - sportsmeet/2018 - sportsmeet (5).JPG", alt: "sportsmeet-5,2018" },
+                      { src: "assets/2018 - sportsmeet/2018 - sportsmeet (6).JPG", alt: "sportsmeet-6,2018" },
+                      { src: "assets/2018 - sportsmeet/2018 - sportsmeet (7).JPG", alt: "sportsmeet-7,2018" },
                     ]}
                   />
-            <p> fdfsa
+            <p> The Sportsmeet 2018 was successfully held in 2018 with the participation of all the children of 
+              the Thudawa Child Development Centre. The event was filled with various sports activities and competitions,
+              creating a lively and energetic atmosphere for everyone involved. The children showcased their athletic skills.
             </p>
           </div>
         </div>
@@ -277,13 +283,13 @@ const Events = () => {
               <EventCarousel 
                     carouselId="childrenday-2013"
                     images={[
-                      { src: "assets/adishishta suhada hamuwa - 2013/image1.JPG", alt: "suhadahamuwa-1,2013" },
-                      { src: "assets/adishishta suhada hamuwa - 2013/image2.JPG", alt: "suhadahamuwa-2-2,2013" },
-                      { src: "assets/adishishta suhada hamuwa - 2013/image3.JPG", alt: "suhadahamuwa-2-2,2013" },
-                      { src: "assets/adishishta suhada hamuwa - 2013/image4.JPG", alt: "suhadahamuwa-2-2,2013" }
+                      { src: "assets/2017  - sportsmeet/sportsmeet - 2017 (1).JPG", alt: "suhadahamuwa-1,2013" },
+                      { src: "assets/2017  - sportsmeet/sportsmeet - 2017 (1).JPG", alt: "suhadahamuwa-1,2013" }
                     ]}
                   />
-            <p> fdfsa
+            <p> The Sportsmeet 2017 was successfully held in 2017 with the participation of all the children of 
+              the Thudawa Child Development Centre. The event was filled with various sports activities and competitions,
+              creating a lively and energetic atmosphere for everyone involved. The children showcased their athletic skills .
             </p>
           </div>
         </div>
@@ -326,22 +332,28 @@ const Events = () => {
           <div className="intro-section-events">
             <h2>Sportsmeet - 2014</h2>
               <EventCarousel 
-                    carouselId="childrenday-2013"
+                    carouselId="Sportsmeet-2014"
                     images={[
-                      { src: "assets/adishishta suhada hamuwa - 2013/image1.JPG", alt: "suhadahamuwa-1,2013" },
-                      { src: "assets/adishishta suhada hamuwa - 2013/image2.JPG", alt: "suhadahamuwa-2-2,2013" },
-                      { src: "assets/adishishta suhada hamuwa - 2013/image3.JPG", alt: "suhadahamuwa-2-2,2013" },
-                      { src: "assets/adishishta suhada hamuwa - 2013/image4.JPG", alt: "suhadahamuwa-2-2,2013" }
+                      { src: "assets/Sport meet 2014/sportsmeet2014 (1).JPG", alt: "sportsmeet-1,2014" },
+                      { src: "assets/Sport meet 2014/sportsmeet2014 (2).JPG", alt: "sportsmeet-2,2014" },
+                      { src: "assets/Sport meet 2014/sportsmeet2014 (3).JPG", alt: "sportsmeet-3,2014" },
+                      { src: "assets/Sport meet 2014/sportsmeet2014 (4).JPG", alt: "sportsmeet-4,2014" },
+                      { src: "assets/Sport meet 2014/sportsmeet2014 (5).JPG", alt: "sportsmeet-5,2014" },
+                      { src: "assets/Sport meet 2014/sportsmeet2014 (6).JPG", alt: "sportsmeet-6,2014" },
+                      { src: "assets/Sport meet 2014/sportsmeet2014 (7).JPG", alt: "sportsmeet-7,2014" },
                     ]}
                   />
-            <p> fdfsa
+            <p> The Sportsmeet 2014 was successfully held in 2014 with the participation of all the children of 
+              the Thudawa Child Development Centre. The event was filled with various sports activities and competitions,
+              creating a lively and energetic atmosphere for everyone involved. The children showcased their athletic skills
+              and teamwork, making it a memorable day for all.
             </p>
           </div>
         </div>
 
         <div className="section-container">
           <div className="intro-section-events">
-            <h2>Childrenday - 2013</h2>
+            <h2>Children's Day - 2013</h2>
               <EventCarousel 
                     carouselId="childrenday-2013"
                     images={[
@@ -421,14 +433,17 @@ const Events = () => {
               <EventCarousel 
                     carouselId="Tharumuthudaru-2012"
                     images={[
-                      { src: "/assets/Events/avurudu2021-1.jpg", alt: "avurudu1" }
+                      { src: "assets/2012 - tharumuthu daru/Tharumuthu Daru/DSC09381.JPG", alt: "tharumuthudaru-2012" },
+                      { src: "assets/2012 - tharumuthu daru/Tharumuthu Daru/DSC09387.JPG", alt: "tharumuthudaru-2012" },
+                      { src: "assets/2012 - tharumuthu daru/Tharumuthu Daru/DSC09458.JPG", alt: "tharumuthudaru-2012" },
+                      { src: "assets/2012 - tharumuthu daru/Tharumuthu Daru/DSC09463.JPG", alt: "tharumuthudaru-2012" },
                     ]}
                   />
-            <p> Tharumuthudaru is the annual concert of the Thudawa Child Development Centre,
+            <p> Tharumuthudaru is the annual concert of the All Ceylon BUddhist Congras child care section,
               which showcases the talents and skills of the children. The event is a celebration of their hard work and dedication,
               and it provides an opportunity for the children to express themselves through music, dance, and other performances.
               The concert is a highlight of the year for the children and the community, and it is a testament to the positive impact
-              of the Thudawa Child Development Centre on the lives of the children.
+              of the children from various child care centers.
             </p>
           </div>
         </div>

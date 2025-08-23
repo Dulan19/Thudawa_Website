@@ -64,7 +64,8 @@ function App() {
           <div className="events-grid">
             {/* Event Cards */}
             {[
-              "Bakthi Geetha - 2025",
+              // library thing
+              "Bakthi Geetha - 2025", 
               "Dansala - 2025",
               "Bakthi Geetha at ACBC - 2025",
               "Avurudu Uthsawaya - 2025",
