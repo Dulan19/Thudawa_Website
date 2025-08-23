@@ -166,7 +166,7 @@ const Events = () => {
 
         <div className="section-container">
           <div className="intro-section-events">
-            <h2>World Children Day -2022</h2>
+            <h2>World Children's Day -2022</h2>
               <EventCarousel 
                     carouselId="children-day-2022"
                     images={[
@@ -342,7 +342,7 @@ const Events = () => {
 
         <div className="section-container">
           <div className="intro-section-events">
-            <h2>Childrenday - 2013</h2>
+            <h2>Children's Day - 2013</h2>
               <EventCarousel 
                     carouselId="childrenday-2013"
                     images={[
