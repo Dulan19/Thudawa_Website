@@ -106,10 +106,11 @@ const Events = () => {
 
         <div className="section-container">
           <div className="intro-section-events">
-            <h2>fggb</h2>
+            <h2>2025/08</h2>
             <p>On the occasion of Poson Poya Day, with the valuable support of Mrs. Palika Darmawickrama, 
               The Music Teacher of the Thudawa Child Development Centre, and the dedicated efforts of the Centre’s committee, 
               The Thudawa Child Development Centre successfully presented “Bakthi Gee 2025” together with its children
+              {/* 2025/8/ - session from wadduwa library about the reading(new photos from whatsapp) */}
             </p>
           </div>
         </div>
@@ -421,14 +422,17 @@ const Events = () => {
               <EventCarousel 
                     carouselId="Tharumuthudaru-2012"
                     images={[
-                      { src: "/assets/Events/avurudu2021-1.jpg", alt: "avurudu1" }
+                      { src: "assets/2012 - tharumuthu daru/Tharumuthu Daru/DSC09381.JPG", alt: "tharumuthudaru-2012" },
+                      { src: "assets/2012 - tharumuthu daru/Tharumuthu Daru/DSC09387.JPG", alt: "tharumuthudaru-2012" },
+                      { src: "assets/2012 - tharumuthu daru/Tharumuthu Daru/DSC09458.JPG", alt: "tharumuthudaru-2012" },
+                      { src: "assets/2012 - tharumuthu daru/Tharumuthu Daru/DSC09463.JPG", alt: "tharumuthudaru-2012" },
                     ]}
                   />
-            <p> Tharumuthudaru is the annual concert of the Thudawa Child Development Centre,
+            <p> Tharumuthudaru is the annual concert of the All Ceylon BUddhist Congras child care section,
               which showcases the talents and skills of the children. The event is a celebration of their hard work and dedication,
               and it provides an opportunity for the children to express themselves through music, dance, and other performances.
               The concert is a highlight of the year for the children and the community, and it is a testament to the positive impact
-              of the Thudawa Child Development Centre on the lives of the children.
+              of the children from various child care centers.
             </p>
           </div>
         </div>
