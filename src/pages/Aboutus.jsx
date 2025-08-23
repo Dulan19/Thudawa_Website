@@ -88,7 +88,7 @@ function Aboutus() {
                   <div className="timeline-text">
                     <h3>1997</h3>
                     <p>
-                      Mrs. Ingries Senanayaka and Lions Club Germany helped build a two-story building with new dorms, a 123456
+                      Mrs. Ingries Senanayaka and Lions Club Germany helped build a two-story building with new dorms, a 1234
                       library, and a computer room.
                     </p>
                   </div>
