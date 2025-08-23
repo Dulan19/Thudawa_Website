@@ -259,15 +259,20 @@ const Events = () => {
           <div className="intro-section-events">
             <h2>Sportsmeet - 2018</h2>
               <EventCarousel 
-                    carouselId="childrenday-2013"
+                    carouselId="Sportsmeet-2018"
                     images={[
-                      { src: "assets/adishishta suhada hamuwa - 2013/image1.JPG", alt: "suhadahamuwa-1,2013" },
-                      { src: "assets/adishishta suhada hamuwa - 2013/image2.JPG", alt: "suhadahamuwa-2-2,2013" },
-                      { src: "assets/adishishta suhada hamuwa - 2013/image3.JPG", alt: "suhadahamuwa-2-2,2013" },
-                      { src: "assets/adishishta suhada hamuwa - 2013/image4.JPG", alt: "suhadahamuwa-2-2,2013" }
+                      { src: "assets/2018 - sportsmeet/2018 - sportsmeet (1).JPG", alt: "sportsmeet-1,2018" },
+                      { src: "assets/2018 - sportsmeet/2018 - sportsmeet (2).JPG", alt: "sportsmeet-2,2018" },
+                      { src: "assets/2018 - sportsmeet/2018 - sportsmeet (3).JPG", alt: "sportsmeet-3,2018" },
+                      { src: "assets/2018 - sportsmeet/2018 - sportsmeet (4).JPG", alt: "sportsmeet-4,2018" },
+                      { src: "assets/2018 - sportsmeet/2018 - sportsmeet (5).JPG", alt: "sportsmeet-5,2018" },
+                      { src: "assets/2018 - sportsmeet/2018 - sportsmeet (6).JPG", alt: "sportsmeet-6,2018" },
+                      { src: "assets/2018 - sportsmeet/2018 - sportsmeet (7).JPG", alt: "sportsmeet-7,2018" },
                     ]}
                   />
-            <p> fdfsa
+            <p> The Sportsmeet 2018 was successfully held in 2018 with the participation of all the children of 
+              the Thudawa Child Development Centre. The event was filled with various sports activities and competitions,
+              creating a lively and energetic atmosphere for everyone involved. The children showcased their athletic skills.
             </p>
           </div>
         </div>
@@ -278,13 +283,13 @@ const Events = () => {
               <EventCarousel 
                     carouselId="childrenday-2013"
                     images={[
-                      { src: "assets/adishishta suhada hamuwa - 2013/image1.JPG", alt: "suhadahamuwa-1,2013" },
-                      { src: "assets/adishishta suhada hamuwa - 2013/image2.JPG", alt: "suhadahamuwa-2-2,2013" },
-                      { src: "assets/adishishta suhada hamuwa - 2013/image3.JPG", alt: "suhadahamuwa-2-2,2013" },
-                      { src: "assets/adishishta suhada hamuwa - 2013/image4.JPG", alt: "suhadahamuwa-2-2,2013" }
+                      { src: "assets/2017  - sportsmeet/sportsmeet - 2017 (1).JPG", alt: "suhadahamuwa-1,2013" },
+                      { src: "assets/2017  - sportsmeet/sportsmeet - 2017 (1).JPG", alt: "suhadahamuwa-1,2013" }
                     ]}
                   />
-            <p> fdfsa
+            <p> The Sportsmeet 2017 was successfully held in 2017 with the participation of all the children of 
+              the Thudawa Child Development Centre. The event was filled with various sports activities and competitions,
+              creating a lively and energetic atmosphere for everyone involved. The children showcased their athletic skills .
             </p>
           </div>
         </div>
@@ -327,7 +332,7 @@ const Events = () => {
           <div className="intro-section-events">
             <h2>Sportsmeet - 2014</h2>
               <EventCarousel 
-                    carouselId="childrenday-2013"
+                    carouselId="Sportsmeet-2014"
                     images={[
                       { src: "assets/Sport meet 2014/sportsmeet2014 (1).JPG", alt: "sportsmeet-1,2014" },
                       { src: "assets/Sport meet 2014/sportsmeet2014 (2).JPG", alt: "sportsmeet-2,2014" },
