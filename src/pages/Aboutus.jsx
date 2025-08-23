@@ -72,16 +72,7 @@ function Aboutus() {
                   <div className="timeline-image-container timeline-image-1994"></div>
                 </div>
               </div>
-              <div className="timeline-item">
-                <div className="timeline-content">
-                  <div className="timeline-text">
-                    <h3>1995</h3>
-                    <p>Due to the matron's dedication, the center's services grew, and more space was required as the
-                      number of children increased.</p>
-                  </div>
-                  <div className="timeline-image-container timeline-image-1995"></div>
-                </div>
-              </div>
+              
               <div className="timeline-item">
                 <div className="timeline-content">
                   <div className="timeline-text">
@@ -97,7 +88,7 @@ function Aboutus() {
                   <div className="timeline-text">
                     <h3>1997</h3>
                     <p>
-                      Mrs. Ingries Senanayaka and Lions Club Germany helped build a two-story building with new dorms, a
+                      Mrs. Ingries Senanayaka and Lions Club Germany helped build a two-story building with new dorms, a 1234567
                       library, and a computer room.
                     </p>
                   </div>
