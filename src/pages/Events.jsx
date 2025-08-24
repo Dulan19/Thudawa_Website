@@ -257,6 +257,28 @@ const Events = () => {
 
         <div className="section-container">
           <div className="intro-section-events">
+            <h2>Bakthi Geetha - 2018</h2>
+              <EventCarousel 
+                    carouselId="BakthiGeetha-2018"
+                    images={[
+                      { src: "assets/2018 - bakthi geehta ymba/2018- BakthiGeetha (1).JPG", alt: "bakthigeetha-1,2018" },
+                      { src: "assets/2018 - bakthi geehta ymba/2018- BakthiGeetha (2).JPG", alt: "bakthigeetha-2,2018" },
+                      { src: "assets/2018 - bakthi geehta ymba/2018- BakthiGeetha (3).JPG", alt: "bakthigeetha-3,2018" },
+                      { src: "assets/2018 - bakthi geehta ymba/2018- BakthiGeetha (4).JPG", alt: "bakthigeetha-4,2018" },
+                      { src: "assets/2018 - bakthi geehta ymba/2018- BakthiGeetha (5).JPG", alt: "bakthigeetha-5,2018" },
+                      { src: "assets/2018 - bakthi geehta ymba/2018- BakthiGeetha (6).JPG", alt: "bakthigeetha-6,2018" },
+                      { src: "assets/2018 - bakthi geehta ymba/2018- BakthiGeetha (7).JPG", alt: "bakthigeetha-7,2018" },
+                      { src: "assets/2018 - bakthi geehta ymba/2018- BakthiGeetha (8).JPG", alt: "bakthigeetha-8,2018" },
+                    ]}
+                  />
+            <p> On the occasion of Poson Poya Day in 2018, Our Children of the Thudawa Child Development Centre
+              performed a Bakthi Geetha concert at Young Members Buddhist Association (YMBA).
+            </p>
+          </div>
+        </div>
+
+        <div className="section-container">
+          <div className="intro-section-events">
             <h2>Sportsmeet - 2018</h2>
               <EventCarousel 
                     carouselId="Sportsmeet-2018"
