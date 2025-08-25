@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar/Navbar.jsx"
 import Footer from "../components/Footer/Footer.jsx"
 import "./Stylings/Aboutus.css"
 
-import React, { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react"
 
 function Aboutus() {
   const images1997 = [
@@ -12,16 +12,46 @@ function Aboutus() {
     require("../assets/gallery/opening-two-stiard-building2.jpg"),
     require("../assets/gallery/opening-study-room-tudawe-child-home.jpg"),
     require("../assets/gallery/computer-room-tudawe-.jpg"),
-  ];
+  ]
 
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const audioFile = require("../assets/background1.mp3")
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0)
+  const [isPlaying, setIsPlaying] = useState(false)
+  const audioRef = useRef(null)
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImageIndex((prev) => (prev + 1) % images1997.length);
-    }, 3000);
-    return () => clearInterval(interval);
-  }, );
+      setCurrentImageIndex((prev) => (prev + 1) % images1997.length)
+    }, 3000)
+    return () => clearInterval(interval)
+  })
+
+  const handlePlay = () => {
+    if (audioRef.current) {
+      audioRef.current.play()
+      setIsPlaying(true)
+    }
+  }
+
+  const handlePause = () => {
+    if (audioRef.current) {
+      audioRef.current.pause()
+      setIsPlaying(false)
+    }
+  }
+
+  const handleRestart = () => {
+    if (audioRef.current) {
+      audioRef.current.currentTime = 0
+      audioRef.current.play()
+      setIsPlaying(true)
+    }
+  }
+
+  const handleAudioEnd = () => {
+    setIsPlaying(false)
+  }
 
   return (
     <div>
@@ -61,24 +91,45 @@ function Aboutus() {
 
           <div className="timeline-section">
             <h2>Our History Timeline</h2>
+            <div className="audio-player">
+              <audio ref={audioRef} onEnded={handleAudioEnd} preload="metadata">
+                <source src={audioFile} type="audio/mpeg" />
+                Your browser does not support the audio element.
+              </audio>
+              <div className="audio-controls">
+                <button className="audio-btn play-btn" onClick={handlePlay} disabled={isPlaying}>
+                  ▶️ 
+                </button>
+                <button className="audio-btn pause-btn" onClick={handlePause} disabled={!isPlaying}>
+                  ⏸️ 
+                </button>
+                <button className="audio-btn restart-btn" onClick={handleRestart}>
+                  🔄 
+                </button>
+              </div>
+            </div>
             <div className="timeline">
               <div className="timeline-item">
                 <div className="timeline-content">
                   <div className="timeline-text">
                     <h3>1994</h3>
-                    <p>The family home built in 1980 was officially transformed into the Tudawe Children Development
-                      Center — dedicated to the care and development of children in need.</p>
+                    <p>
+                      The family home built in 1980 was officially transformed into the Tudawe Children Development
+                      Center — dedicated to the care and development of children in need.
+                    </p>
                   </div>
                   <div className="timeline-image-container timeline-image-1994"></div>
                 </div>
               </div>
-              
+
               <div className="timeline-item">
                 <div className="timeline-content">
                   <div className="timeline-text">
                     <h3>1996</h3>
-                    <p>Mrs. Maris Wenaer from Germany funded 10 washrooms, improving daily routines and hygiene for all
-                      the children at the center.</p>
+                    <p>
+                      Mrs. Maris Wenaer from Germany funded 10 washrooms, improving daily routines and hygiene for all
+                      the children at the center.
+                    </p>
                   </div>
                   <div className="timeline-image-container timeline-image-1996"></div>
                 </div>
@@ -88,13 +139,13 @@ function Aboutus() {
                   <div className="timeline-text">
                     <h3>1997</h3>
                     <p>
-                      Mrs. Ingries Senanayaka and Lions Club Germany helped build a two-story building with new dorms, a 
+                      Mrs. Ingries Senanayaka and Lions Club Germany helped build a two-story building with new dorms, a
                       library, and a computer room.
                     </p>
                   </div>
                   <div className="timeline-image-container timeline-image">
                     <img
-                      src={images1997[currentImageIndex]}
+                      src={images1997[currentImageIndex] || "/placeholder.svg"}
                       alt="1997 events"
                       className="timeline-image"
                     />
@@ -130,7 +181,8 @@ function Aboutus() {
                   <div className="timeline-text">
                     <h3>2021</h3>
                     <p>
-                      Successfully started counseling for children in need, supported by the Divisional Secretariat Office and M.D.S.R. Gunathilaka.
+                      Successfully started counseling for children in need, supported by the Divisional Secretariat
+                      Office and M.D.S.R. Gunathilaka.
                     </p>
                   </div>
                   <div className="timeline-image-container timeline-image-2021"></div>
@@ -141,7 +193,8 @@ function Aboutus() {
                   <div className="timeline-text">
                     <h3>2023</h3>
                     <p>
-                      The committee funded the construction of a stage, curtains, and a wall, enhancing the center's facilities for events and activities.
+                      The committee funded the construction of a stage, curtains, and a wall, enhancing the center's
+                      facilities for events and activities.
                     </p>
                   </div>
                   <div className="timeline-image-container timeline-image-2023"></div>
@@ -152,7 +205,9 @@ function Aboutus() {
                   <div className="timeline-text">
                     <h3>2024</h3>
                     <p>
-                      Committee efforts led to painting wall art and adding gardening decor with interlock blocks and grasses. Friends donated chairs and tables to the classroom, and solar panels were installed with community support.
+                      Committee efforts led to painting wall art and adding gardening decor with interlock blocks and
+                      grasses. Friends donated chairs and tables to the classroom, and solar panels were installed with
+                      community support.
                     </p>
                   </div>
                   <div className="timeline-image-container timeline-image-2024"></div>
@@ -163,7 +218,8 @@ function Aboutus() {
                   <div className="timeline-text">
                     <h3>2025</h3>
                     <p>
-                      Association funds supported the establishment of a computer lab, a new wall, and garden decorations, further enhancing the center's infrastructure and environment.
+                      Association funds supported the establishment of a computer lab, a new wall, and garden
+                      decorations, further enhancing the center's infrastructure and environment.
                     </p>
                   </div>
                   <div className="timeline-image-container timeline-image-2025"></div>
@@ -305,9 +361,7 @@ function Aboutus() {
                 </div>
               </div>
               <div className="testimonial">
-                <div className="testimonial-image">
-                  
-                </div>
+                <div className="testimonial-image"></div>
                 <blockquote>
                   "This place gave me not just a home, but a family. Here, I learned that every ending can be a new
                   beginning."
