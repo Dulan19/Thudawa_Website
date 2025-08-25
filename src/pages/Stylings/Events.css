@@ -408,3 +408,334 @@
     border-color: transparent;
   }
 }
+
+/* ===== EXPANDABLE EVENTS STYLES ===== */
+
+/* Recent Events Section */
+.recent-events-section {
+  margin-bottom: 2rem;
+}
+
+/* Toggle Button Section */
+.toggle-section {
+  text-align: center;
+  margin: 3rem auto;
+  padding: 1.5rem;
+  max-width: 600px;
+}
+
+/* Toggle Button */
+.toggle-older-events-btn {
+  background: linear-gradient(135deg, #d98324 0%, #b36b1e 100%); /* Matches orange accent */
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(217, 131, 36, 0.3); /* Matches shadow style */
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.toggle-older-events-btn:hover {
+  background: linear-gradient(135deg, #e89b3c 0%, #a55c1b 100%); /* Slightly lighter gradient */
+  transform: translateY(-2px) scale(1.05); /* Matches hover transform */
+  box-shadow: 0 6px 20px rgba(217, 131, 36, 0.4);
+}
+
+.toggle-older-events-btn:active {
+  transform: translateY(0);
+}
+
+.button-icon {
+  font-size: 1.3rem;
+  transition: transform 0.3s ease;
+}
+
+.toggle-older-events-btn:hover .button-icon {
+  transform: scale(1.1);
+}
+
+.button-text {
+  position: relative;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Matches text-shadow style */
+}
+
+/* Toggle Description */
+.toggle-description {
+  color: rgba(255, 255, 255, 0.8); /* Matches white text with slight opacity */
+  font-size: 1rem;
+  margin-top: 1rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* Older Events Section */
+.older-events-section {
+  animation: slideDown 0.8s ease-out; /* Matches slideInUp animation style */
+  border-top: 2px solid rgba(217, 131, 36, 0.2); /* Subtle orange accent */
+  padding-top: 2rem;
+  margin-top: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.05); /* Matches intro-section-events */
+  backdrop-filter: blur(4px);
+  border-radius: 12px;
+} 
+
+/* Animation for older events appearing */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Back to Top Section */
+.back-to-top-section {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(217, 131, 36, 0.2); /* Matches orange accent */
+}
+
+.back-to-top-btn {
+  background: linear-gradient(135deg, #d98324 0%, #b36b1e 100%); /* Matches orange accent */
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(217, 131, 36, 0.3); /* Matches shadow style */
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+}
+
+.back-to-top-btn:hover {
+  background: rgba(217, 131, 36, 0.9); /* Matches orange accent */
+  transform: translateY(-2px) scale(1.05); /* Matches hover transform */
+  box-shadow: 0 6px 20px rgba(217, 131, 36, 0.4);
+}
+
+/* ===== MOBILE RESPONSIVE STYLES ===== */
+
+/* Tablet Styles (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .toggle-section {
+    margin: 2rem 15px;
+    padding: 1rem;
+  }
+
+  .toggle-older-events-btn {
+    padding: 0.875rem 1.5rem;
+    font-size: 1.1rem;
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+  }
+
+  .button-text {
+    text-align: center;
+    line-height: 1.4;
+  }
+
+  .toggle-description {
+    font-size: 0.95rem;
+    padding: 0 1rem;
+  }
+
+  .older-events-section {
+    padding-top: 1.5rem;
+    margin-top: 1rem;
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 8px;
+  }
+
+  .back-to-top-section {
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+  }
+
+  .back-to-top-btn {
+    padding: 0.75rem 1.25rem;
+    font-size: 0.95rem;
+    min-width: 200px;
+  }
+}
+
+/* Mobile Styles (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  .toggle-section {
+    margin: 1.5rem 10px;
+    padding: 0.75rem;
+  }
+
+  .toggle-older-events-btn {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    width: 100%;
+    gap: 0.4rem;
+    border-radius: 8px;
+  }
+
+  .button-text {
+    font-size: 0.95rem;
+  }
+
+  .toggle-description {
+    font-size: 0.9rem;
+    margin-top: 0.75rem;
+  }
+
+  .older-events-section {
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 8px;
+  }
+
+  .back-to-top-btn {
+    padding: 0.625rem 1rem;
+    font-size: 0.9rem;
+    min-width: 180px;
+    border-radius: 8px;
+  }
+}
+
+/* Extra Small Mobile Devices (max-width: 360px) */
+@media screen and (max-width: 360px) {
+  .toggle-section {
+    margin: 1rem 8px;
+    padding: 0.5rem;
+  }
+
+  .toggle-older-events-btn {
+    padding: 0.625rem 0.875rem;
+    font-size: 0.9rem;
+    max-width: 280px;
+  }
+
+  .button-text {
+    font-size: 0.85rem;
+  }
+
+  .toggle-description {
+    font-size: 0.85rem;
+  }
+
+  .back-to-top-btn {
+    padding: 0.5rem 0.875rem;
+    font-size: 0.85rem;
+    min-width: 160px;
+  }
+}
+
+/* Landscape Orientation Adjustments */
+@media screen and (max-height: 600px) and (orientation: landscape) {
+  .toggle-section {
+    margin: 1rem 10px;
+    padding: 0.75rem;
+  }
+
+  .toggle-older-events-btn {
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .toggle-description {
+    font-size: 0.9rem;
+  }
+
+  .older-events-section {
+    padding-top: 1rem;
+  }
+}
+
+/* Touch Device Optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .toggle-older-events-btn:hover {
+    background: linear-gradient(135deg, #d98324 0%, #b36b1e 100%); /* Remove hover effect */
+    transform: translateY(0);
+    box-shadow: 0 4px 15px rgba(217, 131, 36, 0.3);
+  }
+
+  .back-to-top-btn:hover {
+    background: rgba(0, 0, 0, 0.7);
+    transform: translateY(0);
+  }
+}
+
+/* ===== ENHANCED VISUAL EFFECTS ===== */
+
+/* Loading state for older events */
+.older-events-section.loading {
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+/* Smooth height transition */
+.older-events-section {
+  overflow: hidden;
+}
+
+/* Focus styles for accessibility */
+.toggle-older-events-btn:focus,
+.back-to-top-btn:focus {
+  outline: 3px solid rgba(217, 131, 36, 0.5); /* Matches orange accent */
+  outline-offset: 2px;
+}
+
+/* Fade in animation for individual events */
+.section-container {
+  animation: fadeInUp 0.6s ease-out;
+  animation-fill-mode: both;
+}
+
+.older-events-section .section-container {
+  animation-delay: 0.1s;
+}
+
+.older-events-section .section-container:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.older-events-section .section-container:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Divider line styling */
+.older-events-section::before {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #d98324, transparent); /* Matches orange accent */
+  margin: 0 auto 1.5rem;
+}
