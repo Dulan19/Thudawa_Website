@@ -82,6 +82,9 @@ const EventCarousel = ({  images }) => {
 };
 
 const Events = () => {
+
+  const[showOlderEvents, setShowOlderEvents] = useState(false);
+
   return (
     <div>
       <div className="background-image-event"></div>
@@ -90,9 +93,10 @@ const Events = () => {
 
         
         <h1 className="events-heading">
-          Events
-          
+          Events  
         </h1>
+
+        <div className="recent-events-section"></div>
         
         <div className="section-container">
           <div className="intro-section-events">
@@ -205,6 +209,29 @@ const Events = () => {
             </p>
           </div>
         </div>
+      </div>
+
+      <div className="toggle-section">
+        <button
+          onClick={() => setShowOlderEvents(!showOlderEvents)}
+          className="toggle-older-events-btn"  
+        >
+          <span className = "button-icon">
+            {showOlderEvents ? '▲' : '▼'}
+          </span>
+          <span className="button-text">
+            {showOlderEvents ? 'Hide Older Events' : 'View All Events'}
+          </span>
+        </button>
+        <p className="toggle-description">
+          {showOlderEvents
+            ? "Showing all events from our history"
+            : "Click to view more events from our archives"}
+            </p>
+      </div>
+
+      {showOlderEvents &&(
+        <div className="older-events-section">
 
         <div className="section-container">
           <div className="intro-section-events">
@@ -469,12 +496,25 @@ const Events = () => {
             </p>
           </div>
         </div>
-        
 
+        <div className="back-to-top-container">
+          <button
+            onClick = {() => {
+              setShowOlderEvents(false);
+              window.scrollTo({ top: 0, behavior: 'smooth' });
+            }}
+            className="back-to-top-btn"
+          >
+            Back to Recent Events ↑
+          </button> 
+        </div>
+      </div>
+      )}
+        
         <Footer />
       </div>
-    </div>
-  )
+    
+  );
 };
 
 export default Events;
