@@ -169,6 +169,23 @@ const Events = () => {
 
         <div className="section-container">
           <div className="intro-section-events">
+            <h2>Avurudu Uthsawaya -2023</h2>
+              <EventCarousel 
+                    carouselId="aurudu uthsawaya-2023"
+                    images={[
+                      { src: "assets/2022 - loka lama dinaya/2022 World Children Day/childrenday - 2022 (1).jpg", alt: "avurudu1" },
+                      
+                    ]}
+                  />
+              <p> The Avurudu Uthsawaa 2023 successfully held on April month of 2023 with the participation of
+              all the children of the Thudawa Child Development Centre. The event was filled with traditional games,
+              and cultural performances creating a joyful atmosphere for everyone involved.
+              </p>
+          </div>
+        </div>
+
+        <div className="section-container">
+          <div className="intro-section-events">
             <h2>World Children's Day -2022</h2>
               <EventCarousel 
                     carouselId="children-day-2022"
