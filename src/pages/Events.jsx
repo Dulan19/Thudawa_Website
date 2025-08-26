@@ -144,8 +144,7 @@ const Events = () => {
             <h2>Dansala -2025</h2>
             <p>On the occasion of Vesak Full Moon Poya Day 2025, the Chief Matron, committee members, and children of The 
                   Thudawa Child Development Centre organized a fruit Dansala for the devotees and travelers visiting Vesak celebrations
-                   <br />
-            
+                   <br />            
             </p>
           </div>
         </div>
@@ -170,23 +169,41 @@ const Events = () => {
 
         <div className="section-container">
           <div className="intro-section-events">
+            <h2>Avurudu Uthsawaya -2023</h2>
+              <EventCarousel 
+                    carouselId="aurudu uthsawaya-2023"
+                    images={[
+                      { src: "assets/2022 - loka lama dinaya/2022 World Children Day/childrenday - 2022 (1).jpg", alt: "avurudu1" },
+                      
+                    ]}
+                  />
+              <p> The Avurudu Uthsawaa 2023 successfully held on April month of 2023 with the participation of
+              all the children of the Thudawa Child Development Centre. The event was filled with traditional games,
+              and cultural performances creating a joyful atmosphere for everyone involved.
+              </p>
+          </div>
+        </div>
+
+        <div className="section-container">
+          <div className="intro-section-events">
             <h2>World Children's Day -2022</h2>
               <EventCarousel 
                     carouselId="children-day-2022"
                     images={[
-                      { src: "/assets/Events/childrenday2021-1.jpg", alt: "avurudu1" },
-                      { src: "/assets/Events/childrenday2021-2.jpg", alt: "avurudu2" },
-                      { src: "/assets/Events/childrenday2021-3.jpg", alt: "avurudu3" },
-                      { src: "/assets/Events/childrenday2021-4.jpg", alt: "avurudu4" },
-                      { src: "/assets/Events/childrenday2021-5.jpg", alt: "avurudu5" },
-                      { src: "/assets/Events/childrenday2021-6.jpg", alt: "avurudu6" },
+                      { src: "assets/2022 - loka lama dinaya/2022 World Children Day/childrenday - 2022 (1).jpg", alt: "avurudu1" },
+                      { src: "assets/2022 - loka lama dinaya/2022 World Children Day/childrenday - 2022 (2).jpg", alt: "avurudu1" },
+                      { src: "assets/2022 - loka lama dinaya/2022 World Children Day/childrenday - 2022 (3).jpg", alt: "avurudu1" },
+                      { src: "assets/2022 - loka lama dinaya/2022 World Children Day/childrenday - 2022 (4).jpg", alt: "avurudu1" },
+                      { src: "assets/2022 - loka lama dinaya/2022 World Children Day/childrenday - 2022 (5).jpg", alt: "avurudu1" },
+                      { src: "assets/2022 - loka lama dinaya/2022 World Children Day/childrenday - 2022 (6).jpg", alt: "avurudu1" },
+                      { src: "assets/2022 - loka lama dinaya/2022 World Children Day/childrenday - 2022 (7).jpg", alt: "avurudu1" },
                     ]}
                   />
-            <p> An event for World Children’s Day was organized by the matron and committee members, 
-              and was successfully held in October 2021 with the participation of all the children of the 
-              Thudawa Child Development Centre. The celebration featured a bonfire and dancing performances by 
-              the children, creating a memorable and joyful experience for everyone involved.
-            </p>
+              <p> An event for World Children’s Day was organized by the matron and committee members, 
+                and was successfully held in October 2022 with the participation of all the children of the 
+                Thudawa Child Development Centre. The celebration featured a bonfire and dancing performances by 
+                the children, creating a memorable and joyful experience for everyone involved.
+              </p>
           </div>
         </div>
 
@@ -209,29 +226,6 @@ const Events = () => {
             </p>
           </div>
         </div>
-      </div>
-
-      <div className="toggle-section">
-        <button
-          onClick={() => setShowOlderEvents(!showOlderEvents)}
-          className="toggle-older-events-btn"  
-        >
-          <span className = "button-icon">
-            {showOlderEvents ? '▲' : '▼'}
-          </span>
-          <span className="button-text">
-            {showOlderEvents ? 'Hide Older Events' : 'View All Events'}
-          </span>
-        </button>
-        <p className="toggle-description">
-          {showOlderEvents
-            ? "Showing all events from our history"
-            : "Click to view more events from our archives"}
-            </p>
-      </div>
-
-      {showOlderEvents &&(
-        <div className="older-events-section">
 
         <div className="section-container">
           <div className="intro-section-events">
@@ -256,6 +250,29 @@ const Events = () => {
             </p>
           </div>
         </div>
+      </div>
+      
+      <div className="toggle-section">
+        <button
+          onClick={() => setShowOlderEvents(!showOlderEvents)}
+          className="toggle-older-events-btn"  
+        >
+          <span className = "button-icon">
+            {showOlderEvents ? '▲' : '▼'}
+          </span>
+          <span className="button-text">
+            {showOlderEvents ? 'Hide Older Events' : 'View All Events'}
+          </span>
+        </button>
+        <p className="toggle-description">
+          {showOlderEvents
+            ? "Showing all events from our history"
+            : "Click to view more events from our archives"}
+            </p>
+      </div>
+
+      {showOlderEvents &&(
+        <div className="older-events-section">
 
         <div className="section-container">
           <div className="intro-section-events">
