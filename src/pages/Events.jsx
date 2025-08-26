@@ -144,8 +144,7 @@ const Events = () => {
             <h2>Dansala -2025</h2>
             <p>On the occasion of Vesak Full Moon Poya Day 2025, the Chief Matron, committee members, and children of The 
                   Thudawa Child Development Centre organized a fruit Dansala for the devotees and travelers visiting Vesak celebrations
-                   <br />
-            
+                   <br />            
             </p>
           </div>
         </div>
@@ -170,7 +169,7 @@ const Events = () => {
 
         <div className="section-container">
           <div className="intro-section-events">
-            <h2>World Children's Day -2022</h2>
+            <h2>World Children's Day -2021</h2>
               <EventCarousel 
                     carouselId="children-day-2022"
                     images={[
