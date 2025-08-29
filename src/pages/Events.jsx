@@ -189,6 +189,21 @@ const Events = () => {
 
         <div className="section-container">
           <div className="intro-section-events">
+            <h2>Relic Enshrinement Ceremony - 2023</h2>
+              <EventCarousel 
+                    carouselId="relic-2023"
+                    images={[
+                      
+                    ]}
+                  />
+              <p> The new Buddha Shrine at the Tudawe Child Development Centre was officially opened in a special ceremony in 
+                2023. The construction was made possible through the generous donations of Mr. and Mrs. Udugahapaththuwa.           
+              </p>
+          </div>
+        </div>
+
+        <div className="section-container">
+          <div className="intro-section-events">
             <h2>Avurudu Uthsawaya -2023</h2>
               <EventCarousel 
                     carouselId="aurudu uthsawaya-2023"
