@@ -83,7 +83,7 @@ function Aboutus() {
                   Tudawe historical house is located in the beautiful village area. The Tudawe Children Development
                   Center premises gathered around the parental House and Property which has enough space for buildings
                   as well as playgrounds. We have to remember Tudawe Family and other initiators who encourage us to
-                  donate this nearly half-arced property for making a better world for children.
+                  donate this nearly half-arced property for making a better world for children.1234567
                 </p>
               </div>
             </div>
