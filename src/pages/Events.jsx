@@ -169,6 +169,41 @@ const Events = () => {
 
         <div className="section-container">
           <div className="intro-section-events">
+            <h2>Buddha Shrine Opening - 2023</h2>
+              <EventCarousel 
+                    carouselId="shrine-2023"
+                    images={[
+                      { src: "assets/2023 - buduge sadeema/2023-shrine (1).jpeg", alt: "shrine1" },
+                      { src: "assets/2023 - buduge sadeema/2023-shrine (2).jpg", alt: "shrine7" },
+                      { src: "assets/2023 - buduge sadeema/2023-shrine (3).jpg", alt: "shrine6" },
+                      { src: "assets/2023 - buduge sadeema/2023-shrine (4).jpeg", alt: "shrine5" },
+                      { src: "assets/2023 - buduge sadeema/2023-shrine (5).jpeg", alt: "shrine4" },
+                      { src: "assets/2023 - buduge sadeema/2023-shrine (6).jpeg", alt: "shrine3" },
+                    ]}
+                  />
+              <p> The new Buddha Shrine at the Tudawe Child Development Centre was officially opened in a special ceremony in 
+                2023. The construction was made possible through the generous donations of Mr. and Mrs. Udugahapaththuwa.           
+              </p>
+          </div>
+        </div>
+
+        <div className="section-container">
+          <div className="intro-section-events">
+            <h2>Relic Enshrinement Ceremony - 2023</h2>
+              <EventCarousel 
+                    carouselId="relic-2023"
+                    images={[
+                      
+                    ]}
+                  />
+              <p> The new Buddha Shrine at the Tudawe Child Development Centre was officially opened in a special ceremony in 
+                2023. The construction was made possible through the generous donations of Mr. and Mrs. Udugahapaththuwa.           
+              </p>
+          </div>
+        </div>
+
+        <div className="section-container">
+          <div className="intro-section-events">
             <h2>Avurudu Uthsawaya -2023</h2>
               <EventCarousel 
                     carouselId="aurudu uthsawaya-2023"
