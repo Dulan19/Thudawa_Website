@@ -86,7 +86,7 @@ function Aboutus() {
                   donate this nearly half-arced property for making a better world for children.
                 </p>
               </div>
-            </div>12
+            </div>1
           </div>
 
           <div className="timeline-section">
