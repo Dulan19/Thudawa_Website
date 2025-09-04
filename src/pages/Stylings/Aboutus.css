@@ -287,10 +287,13 @@
 
 .facility-img-1,
 .facility-img-2,
-.facility-img-3,
+
 .facility-img-4,
 .facility-img-5 {
   background-image: url("../../assets/thudawe family.jpg");
+}
+.facility-img-3 {
+  background-image: url("../../assets/ClassRoom/IMG20250611124831.jpg");
 }
 
 .day-img-container {
