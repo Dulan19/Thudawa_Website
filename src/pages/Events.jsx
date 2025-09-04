@@ -167,6 +167,30 @@ const Events = () => {
           </div>
         </div>
 
+        <div className="section-container">
+          <div className="intro-section-events">
+            <h2>Skill Development Workshop - 2023</h2>
+              <EventCarousel 
+                    carouselId="shrine-2023"
+                    images={[
+                      { src: "assets/2023 - kusalatha elidakweema/kusalatha elidakweema (1).jpeg", alt: "tharumuthudaru 2023 - 1" },
+                      { src: "assets/2023 - kusalatha elidakweema/kusalatha elidakweema (2).jpeg", alt: "tharumuthudaru 2023 - 2" },
+                      { src: "assets/2023 - kusalatha elidakweema/kusalatha elidakweema (3).jpeg", alt: "tharumuthudaru 2023 - 3" },
+                      { src: "assets/2023 - kusalatha elidakweema/kusalatha elidakweema (4).jpeg", alt: "tharumuthudaru 2023 - 4" },
+                      { src: "assets/2023 - kusalatha elidakweema/kusalatha elidakweema (5).jpeg", alt: "tharumuthudaru 2023 - 5" },
+                      { src: "assets/2023 - kusalatha elidakweema/kusalatha elidakweema (6).jpeg", alt: "tharumuthudaru 2023 - 6" },
+                      { src: "assets/2023 - kusalatha elidakweema/kusalatha elidakweema (7).jpeg", alt: "tharumuthudaru 2023 - 7" },
+                      { src: "assets/2023 - kusalatha elidakweema/kusalatha elidakweema (8).jpeg", alt: "tharumuthudaru 2023 - 8" },
+                      { src: "assets/2023 - kusalatha elidakweema/kusalatha elidakweema (9).jpeg", alt: "tharumuthudaru 2023 - 9" },
+                      { src: "assets/2023 - kusalatha elidakweema/kusalatha elidakweema (10).jpeg", alt: "tharumuthudaru 2023 - 10" },
+                      { src: "assets/2023 - kusalatha elidakweema/kusalatha elidakweema (11).jpeg", alt: "tharumuthudaru 2023 - 11" },
+                      { src: "assets/2023 - kusalatha elidakweema/kusalatha elidakweema (12).jpeg", alt: "tharumuthudaru 2023 - 12" },
+                    ]}
+                  />
+              <p> tbd          
+              </p>
+          </div>
+        </div>
         
         <div className="section-container">
           <div className="intro-section-events">
@@ -224,8 +248,7 @@ const Events = () => {
               <EventCarousel 
                     carouselId="aurudu uthsawaya-2023"
                     images={[
-                      { src: "assets/2022 - loka lama dinaya/2022 World Children Day/childrenday - 2022 (1).jpg", alt: "avurudu1" },
-                      
+                      { src: "assets/2022 - loka lama dinaya/2022 World Children Day/childrenday - 2022 (1).jpg", alt: "avurudu1" }                    
                     ]}
                   />
               <p> The Avurudu Uthsawaa 2023 successfully held on April month of 2023 with the participation of
@@ -234,7 +257,25 @@ const Events = () => {
               </p>
           </div>
         </div>
+
+        <div className="section-container">
+          <div className="intro-section-events">
+            <h2>Tudawe Concert -2023</h2>
+              <EventCarousel 
+                    carouselId="aurudu uthsawaya-2023"
+                    images={[
+                      { src: "assets/2022 - loka lama dinaya/2022 World Children Day/childrenday - 2022 (1).jpg", alt: "avurudu1" }                    
+                    ]}
+                  />
+              <p> The Tudawe Concert 2023 was a memorable event that showcased the talents and skills of the children from the 
+                Child Development Centre. The concert was organized with the support of the Centre's committee, Matron and the dedicated 
+                efforts of the children.
+              </p>
+          </div>
+        </div>
       </div>
+
+      
       
       <div className="toggle-section">
         <button
