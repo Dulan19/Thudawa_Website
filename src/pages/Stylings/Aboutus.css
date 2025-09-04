@@ -250,7 +250,6 @@
 .timeline-image-1996,
 .timeline-image-1997,
 .timeline-image-2010,
-.timeline-image-2021,
 .timeline-image-2023,
 .timeline-image-2024,
 .timeline-image-2025 {
@@ -262,6 +261,9 @@
 
 .timeline-image-2010 {
   background-image: url("../../assets/Wadduwa.jpg");
+}
+.timeline-image-2021 {
+  background-image: url("../../assets/counseling.png");
 }
 
 .facility-img-container {
