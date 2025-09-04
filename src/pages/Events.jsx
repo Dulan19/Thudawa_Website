@@ -167,6 +167,25 @@ const Events = () => {
           </div>
         </div>
 
+        
+        <div className="section-container">
+          <div className="intro-section-events">
+            <h2>Tharumuthudaru - 2023</h2>
+              <EventCarousel 
+                    carouselId="shrine-2023"
+                    images={[
+                      { src: "assets/2023 - buduge sadeema/2023-shrine (1).jpg", alt: "shrine1" },
+                    ]}
+                  />
+              <p> Tharumuthudaru is the annual concert of the All Ceylon BUddhist Congras child care section,which showcases
+                  the talents and skills of the children. The event is a celebration of their hard work and dedication, and 
+                  it provides an opportunity for the children to express themselves through music, dance, and other performances.
+              The concert is a highlight of the year for the children and the community, and it is a testament to the positive impact
+              of the children from various child care centers.           
+              </p>
+          </div>
+        </div>
+
         <div className="section-container">
           <div className="intro-section-events">
             <h2>Buddha Shrine Construction & Relic Enshrinement Ceremony - 2023</h2>
