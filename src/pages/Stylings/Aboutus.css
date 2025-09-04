@@ -251,7 +251,7 @@
 .timeline-image-1997,
 .timeline-image-2010,
 .timeline-image-2023,
-.timeline-image-2024,
+
 .timeline-image-2025 {
   background-image: url("../../assets/thudawe family.jpg");
 }
@@ -264,6 +264,10 @@
 }
 .timeline-image-2021 {
   background-image: url("../../assets/counseling.png");
+}
+
+.timeline-image-2024 {
+  background-image: url("../../assets/wall.jpg");
 }
 
 .facility-img-container {
