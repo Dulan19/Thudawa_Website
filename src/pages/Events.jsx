@@ -475,10 +475,10 @@ const Events = () => {
               <EventCarousel 
                     carouselId="childrenday-2013"
                     images={[
-                      { src: "assets/Zoo Children day celebration 2013/image1.jpg", alt: "zoo-1,2013" },
-                      { src: "assets/Zoo Children day celebration 2013/image2.jpg", alt: "zoo-2,2013" },
-                      { src: "assets/Zoo Children day celebration 2013/image3.jpg", alt: "zoo-3,2013" },
-                      { src: "assets/Zoo Children day celebration 2013/image4.jpg", alt: "zoo-4,2013" },
+                      { src: "assets/2013 - Zoo Children day celebration/image1.jpg", alt: "zoo-1,2013" },
+                      { src: "assets/2013 - Zoo Children day celebration/image2.jpg", alt: "zoo-2,2013" },
+                      { src: "assets/2013 - Zoo Children day celebration/image3.jpg", alt: "zoo-3,2013" },
+                      { src: "assets/2013 - Zoo Children day celebration/image4.jpg", alt: "zoo-4,2013" },
                     ]}
                   />
             <p> The Department of Probation and Child Care Services organized a special event for all Child Development 
