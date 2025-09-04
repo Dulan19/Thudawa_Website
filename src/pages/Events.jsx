@@ -174,7 +174,15 @@ const Events = () => {
               <EventCarousel 
                     carouselId="shrine-2023"
                     images={[
-                      { src: "assets/2023 - buduge sadeema/2023-shrine (1).jpg", alt: "shrine1" },
+                      { src: "assets/2023 - Tharumuthudaru/tharumuthudaru - 2023 (1).JPG", alt: "tharumuthudaru 2023 - 1" },
+                      { src: "assets/2023 - Tharumuthudaru/tharumuthudaru - 2023 (2).JPG", alt: "tharumuthudaru 2023 - 2" },
+                      { src: "assets/2023 - Tharumuthudaru/tharumuthudaru - 2023 (3).JPG", alt: "tharumuthudaru 2023 - 3" },
+                      { src: "assets/2023 - Tharumuthudaru/tharumuthudaru - 2023 (4).JPG", alt: "tharumuthudaru 2023 - 4" },
+                      { src: "assets/2023 - Tharumuthudaru/tharumuthudaru - 2023 (5).JPG", alt: "tharumuthudaru 2023 - 5" },
+                      { src: "assets/2023 - Tharumuthudaru/tharumuthudaru - 2023 (6).JPG", alt: "tharumuthudaru 2023 - 6" },
+                      { src: "assets/2023 - Tharumuthudaru/tharumuthudaru - 2023 (7).JPG", alt: "tharumuthudaru 2023 - 7" },
+                      { src: "assets/2023 - Tharumuthudaru/tharumuthudaru - 2023 (8).JPG", alt: "tharumuthudaru 2023 - 8" },
+                      { src: "assets/2023 - Tharumuthudaru/tharumuthudaru - 2023 (9).JPG", alt: "tharumuthudaru 2023 - 9" },
                     ]}
                   />
               <p> Tharumuthudaru is the annual concert of the All Ceylon BUddhist Congras child care section,which showcases
