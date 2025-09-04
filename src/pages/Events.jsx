@@ -452,13 +452,13 @@ const Events = () => {
               <EventCarousel 
                     carouselId="Sportsmeet-2014"
                     images={[
-                      { src: "assets/Sport meet 2014/sportsmeet2014 (1).JPG", alt: "sportsmeet-1,2014" },
-                      { src: "assets/Sport meet 2014/sportsmeet2014 (2).JPG", alt: "sportsmeet-2,2014" },
-                      { src: "assets/Sport meet 2014/sportsmeet2014 (3).JPG", alt: "sportsmeet-3,2014" },
-                      { src: "assets/Sport meet 2014/sportsmeet2014 (4).JPG", alt: "sportsmeet-4,2014" },
-                      { src: "assets/Sport meet 2014/sportsmeet2014 (5).JPG", alt: "sportsmeet-5,2014" },
-                      { src: "assets/Sport meet 2014/sportsmeet2014 (6).JPG", alt: "sportsmeet-6,2014" },
-                      { src: "assets/Sport meet 2014/sportsmeet2014 (7).JPG", alt: "sportsmeet-7,2014" },
+                      { src: "assets/2014 - Sport meet/sportsmeet2014 (1).JPG", alt: "sportsmeet-1,2014" },
+                      { src: "assets/2014 - Sport meet/sportsmeet2014 (2).JPG", alt: "sportsmeet-2,2014" },
+                      { src: "assets/2014 - Sport meet/sportsmeet2014 (3).JPG", alt: "sportsmeet-3,2014" },
+                      { src: "assets/2014 - Sport meet/sportsmeet2014 (4).JPG", alt: "sportsmeet-4,2014" },
+                      { src: "assets/2014 - Sport meet/sportsmeet2014 (5).JPG", alt: "sportsmeet-5,2014" },
+                      { src: "assets/2014 - Sport meet/sportsmeet2014 (6).JPG", alt: "sportsmeet-6,2014" },
+                      { src: "assets/2014 - Sport meet/sportsmeet2014 (7).JPG", alt: "sportsmeet-7,2014" },
                     ]}
                   />
             <p> The Sportsmeet 2014 was successfully held in 2014 with the participation of all the children of 
