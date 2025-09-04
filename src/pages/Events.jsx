@@ -234,6 +234,29 @@ const Events = () => {
               </p>
           </div>
         </div>
+      </div>
+      
+      <div className="toggle-section">
+        <button
+          onClick={() => setShowOlderEvents(!showOlderEvents)}
+          className="toggle-older-events-btn"  
+        >
+          <span className = "button-icon">
+            {showOlderEvents ? '▲' : '▼'}
+          </span>
+          <span className="button-text">
+            {showOlderEvents ? 'Hide Older Events' : 'View All Events'}
+          </span>
+        </button>
+        <p className="toggle-description">
+          {showOlderEvents
+            ? "Showing all events from our history"
+            : "Click to view more events from our archives"}
+            </p>
+      </div>
+
+      {showOlderEvents &&(
+        <div className="older-events-section">
 
         <div className="section-container">
           <div className="intro-section-events">
@@ -301,29 +324,7 @@ const Events = () => {
             </p>
           </div>
         </div>
-      </div>
       
-      <div className="toggle-section">
-        <button
-          onClick={() => setShowOlderEvents(!showOlderEvents)}
-          className="toggle-older-events-btn"  
-        >
-          <span className = "button-icon">
-            {showOlderEvents ? '▲' : '▼'}
-          </span>
-          <span className="button-text">
-            {showOlderEvents ? 'Hide Older Events' : 'View All Events'}
-          </span>
-        </button>
-        <p className="toggle-description">
-          {showOlderEvents
-            ? "Showing all events from our history"
-            : "Click to view more events from our archives"}
-            </p>
-      </div>
-
-      {showOlderEvents &&(
-        <div className="older-events-section">
 
         <div className="section-container">
           <div className="intro-section-events">
@@ -494,10 +495,11 @@ const Events = () => {
               <EventCarousel 
                     carouselId="suhadahamuwa-2013"
                     images={[
-                      { src: "assets/adishishta suhada hamuwa - 2013/image1.JPG", alt: "suhadahamuwa-1,2013" },
-                      { src: "assets/adishishta suhada hamuwa - 2013/image2.JPG", alt: "suhadahamuwa-2-2,2013" },
-                      { src: "assets/adishishta suhada hamuwa - 2013/image3.JPG", alt: "suhadahamuwa-2-2,2013" },
-                      { src: "assets/adishishta suhada hamuwa - 2013/image4.JPG", alt: "suhadahamuwa-2-2,2013" }
+                      { src: "assets/2013 - adishishta suhada hamuwa/image1.JPG", alt: "suhadahamuwa-1,2013" },
+                      { src: "assets/2013 - adishishta suhada hamuwa/image2.JPG", alt: "suhadahamuwa-2,2013" },
+                      { src: "assets/2013 - adishishta suhada hamuwa/image3.JPG", alt: "suhadahamuwa-3,2013" },
+                      { src: "assets/2013 - adishishta suhada hamuwa/image4.JPG", alt: "suhadahamuwa-4,2013" },
+                      { src: "assets/2013 - adishishta suhada hamuwa/image5.JPG", alt: "suhadahamuwa-5,2013" }
                     ]}
                   />
             <p> "Suhada Hamuwa" is a special event organized by the Tudawe Child Development Centre, with the help of
@@ -513,8 +515,8 @@ const Events = () => {
               <EventCarousel 
                     carouselId="Bakthi-2013"
                     images={[
-                      { src: "/assets/2013-acbc-bakthi/IMG_20130526_214420.jpg", alt: "bakthi-1,2013" },
-                      { src: "/assets/2013-acbc-bakthi/IMG_20130526_223739.jpg", alt: "bakthi-2,2013" }
+                      { src: "assets/2013 - acbc-bakthi/bakthigeetha - 2013 (1).jpg", alt: "bakthi-1,2013" },
+                      { src: "assets/2013 - acbc-bakthi/bakthigeetha - 2013 (2).jpg", alt: "bakthi-2,2013" }
                     ]}
                   />
             <p> Children of the Thudawa Child Development Centre performed a Bakthi Geetha concert at the All 
