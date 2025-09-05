@@ -260,11 +260,26 @@ const Events = () => {
 
         <div className="section-container">
           <div className="intro-section-events">
-            <h2>Tudawe Concert -2023</h2>
+            <h2>Tudawe Concert - 2023</h2>
               <EventCarousel 
                     carouselId="aurudu uthsawaya-2023"
                     images={[
-                      { src: "assets/2022 - loka lama dinaya/2022 World Children Day/childrenday - 2022 (1).jpg", alt: "avurudu1" }                    
+                      { src: "assets/2023-01-05 concert/1.JPG", alt: "concert1" }, 
+                      { src: "assets/2023-01-05 concert/2.JPG", alt: "concert2" },   
+                      { src: "assets/2023-01-05 concert/3.JPG", alt: "concert3" },                      
+                      { src: "assets/2023-01-05 concert/4.JPG", alt: "concert4" },   
+                      { src: "assets/2023-01-05 concert/5.jpeg", alt: "concert5" },   
+                      { src: "assets/2023-01-05 concert/6.jpg", alt: "concert6" },
+                      { src: "assets/2023-01-05 concert/7.jpeg", alt: "concert7" },   
+                      { src: "assets/2023-01-05 concert/8.jpeg", alt: "concert8" },
+                      { src: "assets/2023-01-05 concert/9.jpeg", alt: "concert9" },
+                      { src: "assets/2023-01-05 concert/10.jpg", alt: "concert10" },
+                      { src: "assets/2023-01-05 concert/11.jpeg", alt: "concert11" },
+                      { src: "assets/2023-01-05 concert/12.jpeg", alt: "concert12" },
+                      { src: "assets/2023-01-05 concert/13.jpeg", alt: "concert13" },
+                      { src: "assets/2023-01-05 concert/14.jpeg", alt: "concert14" },
+                      { src: "assets/2023-01-05 concert/15.jpeg", alt: "concert15" },
+                      { src: "assets/2023-01-05 concert/16.jpeg", alt: "concert16" },
                     ]}
                   />
               <p> The Tudawe Concert 2023 was a memorable event that showcased the talents and skills of the children from the 
