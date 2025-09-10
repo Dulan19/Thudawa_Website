@@ -276,7 +276,7 @@ function Aboutus() {
                 <h3>The Parental House</h3>
                 <p>The heart of our home where children feel the warmth of family and belonging.</p>
                 <div className="facility-fact">
-                  Did you know? This historic house has been a beacon of hope for nearly 30 years!
+                  Did you know? This historic house has been a beacon of hope for nearly 30 years!12345678
                 </div>
               </div>
               <div className="facility-card">
