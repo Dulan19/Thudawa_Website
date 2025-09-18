@@ -285,12 +285,15 @@
   min-height: 120px;
 }
 
-.facility-img-1,
+
 .facility-img-2,
 
 
 .facility-img-5 {
   background-image: url("../../assets/thudawe family.jpg");
+}
+.facility-img-1 {
+  background-image: url("../../assets/background1.jpg");
 }
 .facility-img-3 {
   background-image: url("../../assets/ClassRoom/homeStudy.jpg");
