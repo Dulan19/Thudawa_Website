@@ -7,17 +7,18 @@ import { useState, useEffect, useRef } from "react"
 
 function Aboutus() {
   const images1997 = [
-    require("../assets/gallery/planing-of-two-storid-new-bulding.jpg"),
-    require("../assets/gallery/opening-two-stiard-building.jpg"),
-    require("../assets/gallery/opening-two-stiard-building2.jpg"),
-    require("../assets/gallery/opening-study-room-tudawe-child-home.jpg"),
-    require("../assets/gallery/computer-room-tudawe-.jpg"),
+    "/placeholder-g9ixb.png",
+    "/placeholder-oolqr.png",
+    "/placeholder-nctzu.png",
+    "/placeholder-4qjmy.png",
+    "/placeholder-4yxla.png",
   ]
 
-  const audioFile = require("../assets/background1.mp3")
+  const audioFile = "/placeholder-eqap6.png"
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
   const [isPlaying, setIsPlaying] = useState(false)
+  const [activeTab, setActiveTab] = useState("weekdays")
   const audioRef = useRef(null)
 
   useEffect(() => {
@@ -26,6 +27,31 @@ function Aboutus() {
     }, 3000)
     return () => clearInterval(interval)
   })
+
+  useEffect(() => {
+    const tabButtons = document.querySelectorAll(".routine-tab-btn")
+    const tabContents = document.querySelectorAll(".routine-tab-content")
+
+    tabButtons.forEach((button) => {
+      button.addEventListener("click", (e) => {
+        const tabName = e.target.getAttribute("data-tab")
+        setActiveTab(tabName)
+
+        // Update active states
+        tabButtons.forEach((btn) => btn.classList.remove("active"))
+        tabContents.forEach((content) => content.classList.remove("active"))
+
+        e.target.classList.add("active")
+        document.getElementById(tabName)?.classList.add("active")
+      })
+    })
+
+    return () => {
+      tabButtons.forEach((button) => {
+        button.removeEventListener("click", () => {})
+      })
+    }
+  }, [])
 
   const handlePlay = () => {
     if (audioRef.current) {
@@ -98,13 +124,13 @@ function Aboutus() {
               </audio>
               <div className="audio-controls">
                 <button className="audio-btn play-btn" onClick={handlePlay} disabled={isPlaying}>
-                  ▶️ 
+                  ▶️
                 </button>
                 <button className="audio-btn pause-btn" onClick={handlePause} disabled={!isPlaying}>
-                  ⏸️ 
+                  ⏸️
                 </button>
                 <button className="audio-btn restart-btn" onClick={handleRestart}>
-                  🔄 
+                  🔄
                 </button>
               </div>
             </div>
@@ -260,8 +286,7 @@ function Aboutus() {
                   අසාධාරණය, යුක්තිය හා සමාජ විෂමතාවයන් මුල්කරගෙන
                   <br /> ,අකාලයේ මුකුලිත වී යන මල් කැකුළු … <br />
                   සාධාරණය යුක්තිය හා සමාජ සාධාරණත්වය ඉදිරියේ <br />
-                  විකසිත වී සුවද හමන මල් බවට පත්කරන පැහැදිලි හෙටක් <br />
-                  ඇති කිරීම, සුන්දර ළමා ලෝකයක් බිහි කිරීම <br />
+                  විකසිත වී සුවද ළමා ලෝකයක් බිහි කිරීම <br />
                   අපේ දැක්මයි.
                 </p>
               </div>
@@ -340,23 +365,314 @@ function Aboutus() {
             <h2>Life at Tudawe</h2>
             <div className="life-content">
               <div className="daily-routine">
-                <h3>A Day in Our Home</h3>
-                <div className="routine-grid">
-                  <div className="routine-item">
-                    <div className="day-img-container day-img-1"></div>
-                    <span>weekdays Routine</span>
+                <h3>Our Weekly Routine</h3>
+
+                <div className="routine-tabs">
+                  <div className="routine-tab-buttons">
+                    <button className="routine-tab-btn active" data-tab="weekdays">
+                      Weekdays
+                    </button>
+                    <button className="routine-tab-btn" data-tab="saturday">
+                      Saturday
+                    </button>
+                    <button className="routine-tab-btn" data-tab="sunday">
+                      Sunday
+                    </button>
                   </div>
-                  <div className="routine-item">
-                    <div className="day-img-container day-img-2"></div>
-                    <span>Weekend</span>
+
+                  <div className="routine-tab-content active" id="weekdays">
+                    <div className="routine-schedule">
+                      <div className="routine-time-block">
+                        <div className="time-icon">🌅</div>
+                        <div className="time-details">
+                          <span className="time">5:00 AM</span>
+                          <span className="activity">Wake up</span>
+                        </div>
+                      </div>
+                      <div className="routine-time-block">
+                        <div className="time-icon">📚</div>
+                        <div className="time-details">
+                          <span className="time">5:45 AM</span>
+                          <span className="activity">Education</span>
+                        </div>
+                      </div>
+                      <div className="routine-time-block">
+                        <div className="time-icon">🧹</div>
+                        <div className="time-details">
+                          <span className="time">6:00 AM</span>
+                          <span className="activity">Cleaning</span>
+                        </div>
+                      </div>
+                      <div className="routine-time-block">
+                        <div className="time-icon">👕</div>
+                        <div className="time-details">
+                          <span className="time">6:30 AM</span>
+                          <span className="activity">Ready for school</span>
+                        </div>
+                      </div>
+                      <div className="routine-time-block">
+                        <div className="time-icon">🍳</div>
+                        <div className="time-details">
+                          <span className="time">6:45 AM</span>
+                          <span className="activity">Breakfast & Go to school</span>
+                        </div>
+                      </div>
+                      <div className="routine-time-block">
+                        <div className="time-icon">🍽️</div>
+                        <div className="time-details">
+                          <span className="time">2:00 PM</span>
+                          <span className="activity">Lunch</span>
+                        </div>
+                      </div>
+                      <div className="routine-time-block">
+                        <div className="time-icon">🚿</div>
+                        <div className="time-details">
+                          <span className="time">3:30 PM</span>
+                          <span className="activity">Wash & Classes (3:30-5:00)</span>
+                        </div>
+                      </div>
+                      <div className="routine-time-block">
+                        <div className="time-icon">🎭</div>
+                        <div className="time-details">
+                          <span className="time">4:00 PM</span>
+                          <span className="activity">Extracurricular activities & Rest</span>
+                        </div>
+                      </div>
+                      <div className="routine-time-block">
+                        <div className="time-icon">☕</div>
+                        <div className="time-details">
+                          <span className="time">5:15 PM</span>
+                          <span className="activity">Tea time</span>
+                        </div>
+                      </div>
+                      <div className="routine-time-block">
+                        <div className="time-icon">🤝</div>
+                        <div className="time-details">
+                          <span className="time">5:45 PM</span>
+                          <span className="activity">Cleaning & Team work</span>
+                        </div>
+                      </div>
+                      <div className="routine-time-block">
+                        <div className="time-icon">🙏</div>
+                        <div className="time-details">
+                          <span className="time">6:00 PM</span>
+                          <span className="activity">Worship Buddha</span>
+                        </div>
+                      </div>
+                      <div className="routine-time-block">
+                        <div className="time-icon">📖</div>
+                        <div className="time-details">
+                          <span className="time">7:30 PM</span>
+                          <span className="activity">Education</span>
+                        </div>
+                      </div>
+                      <div className="routine-time-block">
+                        <div className="time-icon">🍽️</div>
+                        <div className="time-details">
+                          <span className="time">8:00 PM</span>
+                          <span className="activity">Dinner</span>
+                        </div>
+                      </div>
+                      <div className="routine-time-block">
+                        <div className="time-icon">📚</div>
+                        <div className="time-details">
+                          <span className="time">9:00 PM</span>
+                          <span className="activity">Education & Sleep</span>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div className="routine-item">
-                    <div className="day-img-container day-img-3"></div>
-                    <span>Gardening and caring for our trees</span>
+
+                  <div className="routine-tab-content" id="saturday">
+                    <div className="routine-schedule">
+                      <div className="routine-time-block">
+                        <div className="time-icon">🌅</div>
+                        <div className="time-details">
+                          <span className="time">6:30 AM</span>
+                          <span className="activity">Wake up</span>
+                        </div>
+                      </div>
+                      <div className="routine-time-block">
+                        <div className="time-icon">🚿</div>
+                        <div className="time-details">
+                          <span className="time">7:00 AM</span>
+                          <span className="activity">Wash & Tea</span>
+                        </div>
+                      </div>
+                      <div className="routine-time-block">
+                        <div className="time-icon">🧹</div>
+                        <div className="time-details">
+                          <span className="time">8:15 AM</span>
+                          <span className="activity">Shramadana (Community work)</span>
+                        </div>
+                      </div>
+                      <div className="routine-time-block">
+                        <div className="time-icon">🚿</div>
+                        <div className="time-details">
+                          <span className="time">8:45 AM</span>
+                          <span className="activity">Wash</span>
+                        </div>
+                      </div>
+                      <div className="routine-time-block">
+                        <div className="time-icon">🍳</div>
+                        <div className="time-details">
+                          <span className="time">9:00 AM</span>
+                          <span className="activity">Breakfast</span>
+                        </div>
+                      </div>
+                      <div className="routine-time-block">
+                        <div className="time-icon">📚</div>
+                        <div className="time-details">
+                          <span className="time">10:30 AM</span>
+                          <span className="activity">Tuition</span>
+                        </div>
+                      </div>
+                      <div className="routine-time-block">
+                        <div className="time-icon">☕</div>
+                        <div className="time-details">
+                          <span className="time">10:45 AM</span>
+                          <span className="activity">Tea time</span>
+                        </div>
+                      </div>
+                      <div className="routine-time-block">
+                        <div className="time-icon">📖</div>
+                        <div className="time-details">
+                          <span className="time">12:30 PM</span>
+                          <span className="activity">Tuition</span>
+                        </div>
+                      </div>
+                      <div className="routine-time-block">
+                        <div className="time-icon">🍽️</div>
+                        <div className="time-details">
+                          <span className="time">1:00 PM</span>
+                          <span className="activity">Lunch</span>
+                        </div>
+                      </div>
+                      <div className="routine-time-block">
+                        <div className="time-icon">😴</div>
+                        <div className="time-details">
+                          <span className="time">1:30 PM</span>
+                          <span className="activity">Rest</span>
+                        </div>
+                      </div>
+                      <div className="routine-time-block">
+                        <div className="time-icon">📚</div>
+                        <div className="time-details">
+                          <span className="time">3:45 PM</span>
+                          <span className="activity">Education tuition & Extracurricular</span>
+                        </div>
+                      </div>
+                      <div className="routine-time-block">
+                        <div className="time-icon">☕</div>
+                        <div className="time-details">
+                          <span className="time">4:00 PM</span>
+                          <span className="activity">Tea</span>
+                        </div>
+                      </div>
+                      <div className="routine-time-block">
+                        <div className="time-icon">⚽</div>
+                        <div className="time-details">
+                          <span className="time">5:00 PM</span>
+                          <span className="activity">Sports</span>
+                        </div>
+                      </div>
+                      <div className="routine-time-block">
+                        <div className="time-icon">🤝</div>
+                        <div className="time-details">
+                          <span className="time">5:45 PM</span>
+                          <span className="activity">Cleaning & Team work</span>
+                        </div>
+                      </div>
+                      <div className="routine-time-block">
+                        <div className="time-icon">🙏</div>
+                        <div className="time-details">
+                          <span className="time">6:00 PM</span>
+                          <span className="activity">Worship Buddha</span>
+                        </div>
+                      </div>
+                      <div className="routine-time-block">
+                        <div className="time-icon">📖</div>
+                        <div className="time-details">
+                          <span className="time">7:30 PM</span>
+                          <span className="activity">Education</span>
+                        </div>
+                      </div>
+                      <div className="routine-time-block">
+                        <div className="time-icon">🍽️</div>
+                        <div className="time-details">
+                          <span className="time">8:00 PM</span>
+                          <span className="activity">Dinner</span>
+                        </div>
+                      </div>
+                      <div className="routine-time-block">
+                        <div className="time-icon">📚</div>
+                        <div className="time-details">
+                          <span className="time">9:00 PM</span>
+                          <span className="activity">Education & Sleep</span>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div className="routine-item">
-                    <div className="day-img-container day-img-4"></div>
-                    <span>Shared meals c</span>
+
+                  <div className="routine-tab-content" id="sunday">
+                    <div className="routine-schedule">
+                      <div className="routine-time-block">
+                        <div className="time-icon">🌅</div>
+                        <div className="time-details">
+                          <span className="time">6:00 AM</span>
+                          <span className="activity">Wake up</span>
+                        </div>
+                      </div>
+                      <div className="routine-time-block">
+                        <div className="time-icon">☕</div>
+                        <div className="time-details">
+                          <span className="time">6:15 AM</span>
+                          <span className="activity">Tea</span>
+                        </div>
+                      </div>
+                      <div className="routine-time-block">
+                        <div className="time-icon">🧹</div>
+                        <div className="time-details">
+                          <span className="time">6:45 AM</span>
+                          <span className="activity">Cleaning & Buddha Vandana</span>
+                        </div>
+                      </div>
+                      <div className="routine-time-block">
+                        <div className="time-icon">🍳</div>
+                        <div className="time-details">
+                          <span className="time">7:15 AM</span>
+                          <span className="activity">Breakfast</span>
+                        </div>
+                      </div>
+                      <div className="routine-time-block">
+                        <div className="time-icon">🏛️</div>
+                        <div className="time-details">
+                          <span className="time">8:00 AM</span>
+                          <span className="activity">Go to Dhamma School</span>
+                        </div>
+                      </div>
+                      <div className="routine-time-block">
+                        <div className="time-icon">🚿</div>
+                        <div className="time-details">
+                          <span className="time">12:00 PM</span>
+                          <span className="activity">Wash</span>
+                        </div>
+                      </div>
+                      <div className="routine-time-block">
+                        <div className="time-icon">🍽️</div>
+                        <div className="time-details">
+                          <span className="time">1:00 PM</span>
+                          <span className="activity">Lunch</span>
+                        </div>
+                      </div>
+                      <div className="routine-time-block">
+                        <div className="time-icon">📚</div>
+                        <div className="time-details">
+                          <span className="time">Afternoon</span>
+                          <span className="activity">Same as Saturday routine</span>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

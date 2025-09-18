@@ -250,7 +250,6 @@
 .timeline-image-1996,
 .timeline-image-1997,
 .timeline-image-2023,
-
 .timeline-image-2025 {
   background-image: url("../../assets/ComputerLab/IMG20250611130458.jpg");
 }
@@ -285,10 +284,7 @@
   min-height: 120px;
 }
 
-
 .facility-img-2,
-
-
 .facility-img-5 {
   background-image: url("../../assets/thudawe family.jpg");
 }
@@ -299,7 +295,7 @@
   background-image: url("../../assets/ClassRoom/homeStudy.jpg");
 }
 .facility-img-4 {
-  background-image: url("../../assets/play ground.jpg"); 
+  background-image: url("../../assets/play ground.jpg");
 }
 .day-img-container {
   flex-shrink: 0;
@@ -599,6 +595,157 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   word-spacing: 0.1em;
   letter-spacing: 0.02em;
+}
+
+.routine-tabs {
+  margin-top: clamp(20px, 5vw, 30px);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: clamp(20px, 5vw, 30px);
+  backdrop-filter: blur(8px);
+}
+
+.routine-tab-buttons {
+  display: flex;
+  justify-content: center;
+  gap: clamp(10px, 3vw, 20px);
+  margin-bottom: clamp(20px, 5vw, 30px);
+  flex-wrap: wrap;
+}
+
+.routine-tab-btn {
+  background: rgba(217, 131, 36, 0.8);
+  color: white;
+  border: none;
+  padding: clamp(10px, 2.5vw, 15px) clamp(20px, 5vw, 30px);
+  border-radius: 25px;
+  font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  min-width: clamp(100px, 20vw, 120px);
+  box-sizing: border-box;
+}
+
+.routine-tab-btn:hover {
+  background: rgba(224, 150, 71, 0.9);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(217, 131, 36, 0.3);
+}
+
+.routine-tab-btn.active {
+  background: rgb(217, 131, 36);
+  box-shadow: 0 4px 15px rgba(217, 131, 36, 0.4);
+  transform: translateY(-1px);
+}
+
+.routine-tab-content {
+  display: none;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.routine-tab-content.active {
+  display: block;
+}
+
+.routine-schedule {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(clamp(280px, 45vw, 350px), 1fr));
+  gap: clamp(15px, 4vw, 20px);
+  margin-top: clamp(15px, 4vw, 20px);
+}
+
+.routine-time-block {
+  background: rgba(0, 0, 0, 0.5);
+  padding: clamp(15px, 4vw, 20px);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: clamp(12px, 3vw, 15px);
+  transition: all 0.3s ease;
+  border-left: 4px solid rgb(217, 131, 36);
+  box-sizing: border-box;
+}
+
+.routine-time-block:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateX(5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.time-icon {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  flex-shrink: 0;
+  width: clamp(40px, 8vw, 50px);
+  height: clamp(40px, 8vw, 50px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(217, 131, 36, 0.2);
+  border-radius: 50%;
+  border: 2px solid rgba(217, 131, 36, 0.5);
+}
+
+.time-details {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(4px, 1vw, 6px);
+}
+
+.time {
+  font-weight: bold;
+  color: rgb(217, 131, 36);
+  font-size: clamp(0.9rem, 2.5vw, 1.1rem);
+}
+
+.activity {
+  color: white;
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  line-height: 1.4;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile responsiveness for routine tabs */
+@media (max-width: 768px) {
+  .routine-schedule {
+    grid-template-columns: 1fr;
+    gap: clamp(12px, 3vw, 15px);
+  }
+
+  .routine-tab-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(8px, 2vw, 12px);
+  }
+
+  .routine-tab-btn {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .routine-time-block {
+    padding: clamp(12px, 3vw, 15px);
+    gap: clamp(10px, 2.5vw, 12px);
+  }
+
+  .time-icon {
+    width: clamp(35px, 7vw, 40px);
+    height: clamp(35px, 7vw, 40px);
+    font-size: clamp(1.2rem, 3.5vw, 1.5rem);
+  }
 }
 
 .routine-grid {
