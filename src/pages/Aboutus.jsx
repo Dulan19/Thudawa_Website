@@ -2,7 +2,7 @@
 import Navbar from "../components/Navbar/Navbar.jsx"
 import Footer from "../components/Footer/Footer.jsx"
 import "./Stylings/Aboutus.css"
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom"
 import { useState, useEffect, useRef } from "react"
 
 function Aboutus() {
@@ -28,30 +28,9 @@ function Aboutus() {
     return () => clearInterval(interval)
   })
 
-  useEffect(() => {
-    const tabButtons = document.querySelectorAll(".routine-tab-btn")
-    const tabContents = document.querySelectorAll(".routine-tab-content")
-
-    tabButtons.forEach((button) => {
-      button.addEventListener("click", (e) => {
-        const tabName = e.target.getAttribute("data-tab")
-        setActiveTab(tabName)
-
-        // Update active states
-        tabButtons.forEach((btn) => btn.classList.remove("active"))
-        tabContents.forEach((content) => content.classList.remove("active"))
-
-        e.target.classList.add("active")
-        document.getElementById(tabName)?.classList.add("active")
-      })
-    })
-
-    return () => {
-      tabButtons.forEach((button) => {
-        button.removeEventListener("click", () => {})
-      })
-    }
-  }, [])
+  const handleTabClick = (tabName) => {
+    setActiveTab(tabName)
+  }
 
   const handlePlay = () => {
     if (audioRef.current) {
@@ -331,8 +310,6 @@ function Aboutus() {
             </div>
           </div>
 
-         
-
           <div className="life-section">
             <h2>Life at Tudawe</h2>
             <div className="life-content">
@@ -341,18 +318,27 @@ function Aboutus() {
 
                 <div className="routine-tabs">
                   <div className="routine-tab-buttons">
-                    <button className="routine-tab-btn active" data-tab="weekdays">
+                    <button
+                      className={`routine-tab-btn ${activeTab === "weekdays" ? "active" : ""}`}
+                      onClick={() => handleTabClick("weekdays")}
+                    >
                       Weekdays
                     </button>
-                    <button className="routine-tab-btn" data-tab="saturday">
+                    <button
+                      className={`routine-tab-btn ${activeTab === "saturday" ? "active" : ""}`}
+                      onClick={() => handleTabClick("saturday")}
+                    >
                       Saturday
                     </button>
-                    <button className="routine-tab-btn" data-tab="sunday">
+                    <button
+                      className={`routine-tab-btn ${activeTab === "sunday" ? "active" : ""}`}
+                      onClick={() => handleTabClick("sunday")}
+                    >
                       Sunday
                     </button>
                   </div>
 
-                  <div className="routine-tab-content active" id="weekdays">
+                  <div className={`routine-tab-content ${activeTab === "weekdays" ? "active" : ""}`}>
                     <div className="routine-schedule">
                       <div className="routine-time-block">
                         <div className="time-icon">🌅</div>
@@ -455,7 +441,7 @@ function Aboutus() {
                     </div>
                   </div>
 
-                  <div className="routine-tab-content" id="saturday">
+                  <div className={`routine-tab-content ${activeTab === "saturday" ? "active" : ""}`}>
                     <div className="routine-schedule">
                       <div className="routine-time-block">
                         <div className="time-icon">🌅</div>
@@ -586,7 +572,7 @@ function Aboutus() {
                     </div>
                   </div>
 
-                  <div className="routine-tab-content" id="sunday">
+                  <div className={`routine-tab-content ${activeTab === "sunday" ? "active" : ""}`}>
                     <div className="routine-schedule">
                       <div className="routine-time-block">
                         <div className="time-icon">🌅</div>
@@ -659,7 +645,7 @@ function Aboutus() {
             </div>
           </div>
 
-           <div className="donor-section">
+          <div className="donor-section">
             <h2>Our Gratitude</h2>
             <div className="donor-content">
               <p>
