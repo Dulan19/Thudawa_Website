@@ -288,14 +288,16 @@
 .facility-img-1,
 .facility-img-2,
 
-.facility-img-4,
+
 .facility-img-5 {
   background-image: url("../../assets/thudawe family.jpg");
 }
 .facility-img-3 {
   background-image: url("../../assets/ClassRoom/homeStudy.jpg");
 }
-
+.facility-img-4 {
+  background-image: url("../../assets/play ground.jpg"); 
+}
 .day-img-container {
   flex-shrink: 0;
   width: clamp(120px, 25vw, 180px);
