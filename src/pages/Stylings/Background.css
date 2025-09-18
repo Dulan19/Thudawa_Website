@@ -93,15 +93,7 @@
 }
 
 /* Made table responsive */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 20px 0;
-  font-size: clamp(0.9rem, 2vw, 1rem);
-  overflow-x: auto;
-  display: block;
-  white-space: nowrap;
-}
+
 
 table,
 th,

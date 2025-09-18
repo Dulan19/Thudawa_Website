@@ -155,39 +155,45 @@ function Background() {
               </p>
           
                       {show2 && (
-                        <div>
-                          <p>1st matron: Miss Yasawathi Jayawardhana</p>
+                        <table>
+                          <caption>Committee Members(2025)</caption>
                           
-                            <table>
-                              <tr>
-                                <th>The first Board of trustees was fallows (1888),</th>
-                                <th>Committee Members –</th>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <ul>
-                                    <li>President                 – Mr.Rohan Tudawe</li>
-                                    <li>Vice Presidents      – Mr.Jayakis Tudawe</li>
-                                    <li>General Secretary  – Mr. G Harischandra Graru</li>
-                                    <li>Treasurer                – Mr. Layanal Hasthanayaka</li>
-                                  </ul>
-                                </td>
-                                <td>
-                                  <ul>
-                                    <li>Mr.H.D.Soysa</li>
-                                    <li>B.D.M.Samanthilaka</li>
-                                    <li>Mr.M.D.Oliver Gunathillaka</li>
-                                    <li>Mrs.Rathna Somadasa</li>
-                                    <li>Mrs.T. Liliyan Silva</li>
-                                    <li>Mrs. C de Silva</li>
-                                    <li>Mrs. P.E.Gunathilaka</li>
-                                  </ul>
-                                </td>
-                              </tr>
+                            <tr>
+                              <th>Role</th>
+                              <th>Name</th>
+                            </tr>
+                          
                         
-                            </table>
-                          
-                        </div>
+                            <tr>
+                              <td>Chairmon</td>
+                              <td>Mr. Jaikish Tudawe</td>
+                            </tr>
+                            <tr>
+                              <td>As Chairmon</td>
+                              <td>Mr. Lal Perera</td>
+                            </tr>
+                            <tr>
+                              <td>Treasurer</td>
+                              <td>Mr. Nihal Fernando</td>
+                            </tr>
+                            <tr>
+                              <td>Secretary</td>
+                              <td>Mr. Oliver Gunathilake</td>
+                            </tr>
+                            <tr>
+                              <td>As.Sec</td>
+                              <td>Ms. Sanjeewa Priyantha</td>
+                            </tr>
+                            <tr>
+                              <td>Manager</td>
+                              <td>Mr. Swarna Padmini Thisera</td>
+                            </tr>
+                            <tr>
+                              <td>Matron</td>
+                              <td>Ms. Dumila Dahanayake</td>
+                            </tr>
+                        
+                        </table>
                       )}
                 
                 
