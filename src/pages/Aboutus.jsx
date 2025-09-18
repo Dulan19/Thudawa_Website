@@ -331,35 +331,7 @@ function Aboutus() {
             </div>
           </div>
 
-          <div className="donor-section">
-            <h2>Our Gratitude</h2>
-            <div className="donor-content">
-              <p>
-                We extend our heartfelt gratitude to our generous donors and supporters who make our mission possible:
-              </p>
-              <div className="donor-highlights">
-                <div className="donor-card">
-                  <h3>Mrs. Maris Wenaer</h3>
-                  <p>A dedicated supporter whose contributions have touched countless lives</p>
-                </div>
-                <div className="donor-card">
-                  <h3>Lions International</h3>
-                  <p>Providing ongoing support and resources for our children's development</p>
-                </div>
-                <div className="donor-card">
-                  <h3>German Donors</h3>
-                  <p>Made our study room possible, opening doors to education and opportunity</p>
-                </div>
-              </div>
-              <div className="donation-call">
-                <p>
-                  Want to make a difference? Your support can help us continue providing hope, education, and love to
-                  vulnerable children.
-                </p>
-                <button className="donate-btn">Support Our Mission</button>
-              </div>
-            </div>
-          </div>
+          
 
           <div className="life-section">
             <h2>Life at Tudawe</h2>
@@ -683,6 +655,36 @@ function Aboutus() {
                   beginning."
                 </blockquote>
                 <cite>- A grateful resident</cite>
+              </div>
+            </div>
+          </div>
+
+          <div className="donor-section">
+            <h2>Our Gratitude</h2>
+            <div className="donor-content">
+              <p>
+                We extend our heartfelt gratitude to our generous donors and supporters who make our mission possible:
+              </p>
+              <div className="donor-highlights">
+                <div className="donor-card">
+                  <h3>Mrs. Maris Wenaer</h3>
+                  <p>A dedicated supporter whose contributions have touched countless lives</p>
+                </div>
+                <div className="donor-card">
+                  <h3>Lions International</h3>
+                  <p>Providing ongoing support and resources for our children's development</p>
+                </div>
+                <div className="donor-card">
+                  <h3>German Donors</h3>
+                  <p>Made our study room possible, opening doors to education and opportunity</p>
+                </div>
+              </div>
+              <div className="donation-call">
+                <p>
+                  Want to make a difference? Your support can help us continue providing hope, education, and love to
+                  vulnerable children.
+                </p>
+                <button className="donate-btn">Support Our Mission</button>
               </div>
             </div>
           </div>
