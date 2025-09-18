@@ -92,20 +92,24 @@
   hyphens: auto;
 }
 
-/* Made table responsive */
-
-
-table,
-th,
-td {
-  border: 0.1px solid rgb(217, 131, 36);
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: rgba(20, 20, 20, 0.5);
+  backdrop-filter: blur(8px);
+  color: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
 }
+
+
+
 
 th,
 td {
   padding: clamp(8px, 2vw, 12px);
   text-align: left;
-  vertical-align: top;
 }
 
 /* Made table scrollable on mobile */
