@@ -2,7 +2,7 @@
 import Navbar from "../components/Navbar/Navbar.jsx"
 import Footer from "../components/Footer/Footer.jsx"
 import "./Stylings/Aboutus.css"
-
+import { Link } from 'react-router-dom';
 import { useState, useEffect, useRef } from "react"
 
 function Aboutus() {
@@ -331,7 +331,7 @@ function Aboutus() {
             </div>
           </div>
 
-          
+         
 
           <div className="life-section">
             <h2>Life at Tudawe</h2>
@@ -659,7 +659,7 @@ function Aboutus() {
             </div>
           </div>
 
-          <div className="donor-section">
+           <div className="donor-section">
             <h2>Our Gratitude</h2>
             <div className="donor-content">
               <p>
@@ -684,7 +684,9 @@ function Aboutus() {
                   Want to make a difference? Your support can help us continue providing hope, education, and love to
                   vulnerable children.
                 </p>
-                <button className="donate-btn">Support Our Mission</button>
+                <Link to="/Donateus">
+                  <button className="donate-btn">Support Our Mission</button>
+                </Link>
               </div>
             </div>
           </div>
