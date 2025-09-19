@@ -6,10 +6,10 @@ import "../Imgswap.css"
 const Imgswap = () => {
   // Array of your image URLs - replace with your actual images
   const images = [
-    require("../assets/home1.jpg"),
-    require("../assets/home2.jpeg"),
-    require("../assets/home 3.jpg"),
-    require("../assets/home 4.jpg"),
+    require("../assets/image swap/home1.jpg"),
+    require("../assets/image swap/home2.jpeg"),
+    require("../assets/image swap/home 3.jpg"),
+    require("../assets/image swap/home 4.jpg"),
   ]
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0)

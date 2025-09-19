@@ -331,7 +331,7 @@
   margin-top: 0px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url("../../assets/home2.jpeg");
+  background-image: url('../../../public/assets/1All-images/home2.jpeg');
   /* Better mobile testimonial image */
   min-width: 200px;
   min-height: 120px;

@@ -1,6 +1,6 @@
 /* Base styles (desktop first) */
 .background-image-event {
-  background-image: url("../../assets/home2.jpeg");
+  background-image: url('../../../public/assets/1All-images/home2.jpeg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
