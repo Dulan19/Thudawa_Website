@@ -114,7 +114,7 @@
   align-items: center;
   justify-content: center;
   /* Corrected path to reference public assets */
-  background-image: url("../../assets/smallLogo@3x.png"); /* Updated path to be relative to CSS file */
+  background-image: url("../../assets/logo\ transparent.png"); /* Updated path to be relative to CSS file */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
