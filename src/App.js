@@ -99,50 +99,6 @@ function App() {
           </div>
         </div>
 
-        {/* Achievements Section */}
-        <div className="achievements-section">
-          <h2>Achievements</h2>
-          <div className="achievements-grid">
-            {/* Achievements Cards */}
-            {Array(4)
-              .fill(0)
-              .map((_, index) => (
-                <div className="achievements-card" key={index}>
-                  <div
-                    className={`achievements-img-container achievements-img-${index + 1}`}
-                  ></div>
-                  <div className="achievements-content">
-                    <h3>Bakthi Geetha - 2025</h3>
-                    <p>
-                      On Poson Poya Day, with the support of Mrs. Palika
-                      Darmawickrama and the committee, we successfully presented
-                      “Bakthi Gee 2025”.
-                    </p>
-                    <button
-                      className="view"
-                      onClick={() => (window.location.href = "/achievements")}
-                    >
-                      View
-                    </button>
-                  </div>
-                </div>
-              ))}
-
-            {/* View All Achievements */}
-            <div className="achievements-button-wrapper">
-              <button
-                className="view-on-achievements-page"
-                onClick={() => (window.location.href = "/achievements")}
-              >
-                View All Achievements
-                <svg className="arrow" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" />
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
-
         {/* Footer */}
         <Footer />
       </div>
