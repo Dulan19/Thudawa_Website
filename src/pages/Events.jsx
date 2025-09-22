@@ -169,6 +169,24 @@ const Events = () => {
 
         <div className="section-container">
           <div className="intro-section-events">
+            <h2>Pirith Pinkama 2023</h2>
+              <EventCarousel
+                    carouselId="pirith-pinkama-2023"
+                    images={[
+                      { src: "assets/New Images/2023 july Piritha/1.jpeg", alt: "Piritha 2023 - 1" },
+                      { src: "assets/New Images/2023 july Piritha/2.jpeg", alt: "Piritha 2023 - 2" },
+                      { src: "assets/New Images/2023 july Piritha/3.jpeg", alt: "Piritha 2023 - 3" },
+                      { src: "assets/New Images/2023 july Piritha/4.jpeg", alt: "Piritha 2023 - 4" },
+                      { src: "assets/New Images/2023 july Piritha/5.jpeg", alt: "Piritha 2023 - 5" },
+                      { src: "assets/New Images/2023 july Piritha/6.jpeg", alt: "Piritha 2023 - 6" }
+                    ]}
+                    />
+                    <p> Will Update Soon</p>
+          </div>
+        </div>  
+
+        <div className="section-container">
+          <div className="intro-section-events">
             <h2>Skill Development Workshop - 2023</h2>
               <EventCarousel 
                     carouselId="shrine-2023"
@@ -187,7 +205,7 @@ const Events = () => {
                       { src: "assets/2023 - kusalatha elidakweema/kusalatha elidakweema (12).jpeg", alt: "tharumuthudaru 2023 - 12" },
                     ]}
                   />
-              <p> tbd          
+              <p> Will Update Soon    
               </p>
           </div>
         </div>
