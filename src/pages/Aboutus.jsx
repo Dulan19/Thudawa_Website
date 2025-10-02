@@ -713,7 +713,7 @@ function Aboutus() {
               <p>
                 At Tudawe Children Development Center, every day is an opportunity to nurture hope, foster dreams, and
                 create futures filled with possibility. Together, we continue this journey of transformation, one child
-                at a time.12345
+                at a time.1234
               </p>
             </div>
           </div>
