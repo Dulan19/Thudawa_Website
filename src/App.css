@@ -211,7 +211,13 @@ body, html {
 
 /* Image Classes */
 .events-img-1::before {
-  background-image: url("/src/assets/Events/Bhakthi_Geetha/bakthigeetha_home.jpeg");
+  background-image: url("/public/assets/Dance-competition-2025/1.jpg");
 }
-.events-img-2::before, .events-img-3::before, .events-img-4::before { background-image: url("/src/assets/Events/Bhakthi_Geetha/bakthigeetha_home.jpeg"); 
+.events-img-2::before {
+  background-image: url("/src/assets/Events/Bhakthi_Geetha/bakthigeetha_home.jpeg");
+} 
+.events-img-3::before{
+  background-image: url("/public/assets/2025-dansala/1.jpg");
+} 
+.events-img-4::before { background-image: url("/src/assets/Events/Bhakthi_Geetha/bakthigeetha_home.jpeg"); 
 }

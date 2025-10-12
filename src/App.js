@@ -64,11 +64,11 @@ function App() {
           <div className="events-grid">
             {/* Event Cards */}
             {[
-              // library thing
+              "Western Province Probation Dance Competition - 2025",
               "Bakthi Geetha - 2025", 
               "Dansala - 2025",
-              "Bakthi Geetha at ACBC - 2025",
-              "Avurudu Uthsawaya - 2025",
+              "Bakthi Geetha at ACBC - 2025"
+              // "Avurudu Uthsawaya - 2025",
             ].map((title, index) => (
               <div className="events-card" key={index}>
                 <div className={`events-img-container events-img-${index + 1}`}></div>
