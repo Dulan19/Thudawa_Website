@@ -100,10 +100,19 @@ const Events = () => {
         
         <div className="section-container">
           <div className="intro-section-events">
-            <h2>fggiopb</h2>
-            <p>On the occasion of Poson Poya Day, with the valuable support of Mrs. Palika Darmawickrama, 
-              The Music Teacher of the Thudawa Child Development Centre, and the dedicated efforts of the Centre’s committee, 
-              The Thudawa Child Development Centre successfully presented “Bakthi Gee 2025” together with its children
+            <h2>Western Province Probation Dance Competition - 2025</h2>
+            <EventCarousel
+                    carouselId="dance-competition-2025"
+                    images={[
+                      { src: "/assets/Dance-competition-2025/1.jpg", alt: "Dance-competition - 1" },
+                      { src: "/assets/Dance-competition-2025/2.jpg", alt: "Dance-competition - 2" },
+                      { src: "/assets/Dance-competition-2025/3.jpg", alt: "Dance-competition - 3" },
+                      { src: "/assets/Dance-competition-2025/4.jpg", alt: "Dance-competition - 4" },
+                      { src: "/assets/Dance-competition-2025/5.jpg", alt: "Dance-competition - 5" }
+                    ]}
+                    />
+            <p>Children of the Thudawa Child Development Centre participated in the Western Province Probation
+               Dance Competition 2025.
             </p>
           </div>
         </div>
