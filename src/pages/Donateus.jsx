@@ -14,12 +14,11 @@ const Donateus = () => {
             for the children at Tudawe Child Development Center.</p>
         <h1>How to Donate</h1>
         <ul>
-          <li>Bank Transfer: < br />
+          <li>Bank Transfer < br />
             Account Name: Tudawe Children Development Centre<br />
             Bank: Bank of Ceylon (7010)<br />
-            Account Number: 0003699120<br />
-            Branch: Wadduwa Branch (584)
-          </li>
+            Account Number: 000 369 9120<br />
+            Branch: Wadduwa Branch (584)</li>
           <li>Online Payment: As same as the above details.</li>
           <li>In-Kind Donations: We accept toys, books, and educational materials.</li>
         </ul>
@@ -29,7 +28,6 @@ const Donateus = () => {
         </div>
         <Footer />
         </div>
-      
   );
 }
 export default Donateus;
