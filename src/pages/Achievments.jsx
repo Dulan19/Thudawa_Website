@@ -25,14 +25,6 @@ function Background() {
         <div className="section-container">
           <div className="intro-section">
             <h2>our band</h2>
-            <p>space for the image
-            </p>
-          </div>
-        </div>
-
-        <div className="section-container">
-          <div className="intro-section">
-            <h2>our band</h2>
             <p>space for the image <br />
             This is a showcase of our talents as at 2023 , We would like to thank all the teachers and volunteers 
             helped to upskill our hidden talents in arts and crafts. Lets help to make products to support our home. 
@@ -60,19 +52,6 @@ function Background() {
               and Child Care Services,Western Province .Young girls in tudawe Children Home displaced there talents in….
               
               </p>}
-          </div>
-
-          <div className="section-container">
-          <div className="intro-section">
-            <h2>space for income certificate phiot</h2>
-            <p>hfgh.</p>
-            <button className="read-btn"
-            onClick={() => setShow2(!show2)}>{show2 ? "Show Less" : "Read More"}
-            </button>
-            
-              
-              
-          </div>
           </div>
 
           <div className="section-container">
