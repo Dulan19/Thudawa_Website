@@ -31,7 +31,7 @@
   padding: 1.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: 35%;
+  width: 40%;
   transition: transform 0.3s ease;
 }
 
@@ -45,10 +45,18 @@
   color: rgb(217, 131, 36);
 }
 
-.donateus-card p, .donateus-card li {
+.donateus-card p {
   font-size: 1.2rem;
   color: white;
   line-height: 1.6;
+  text-align: center;
+}
+
+.donateus-card li {
+  font-size: 1.2rem;
+  color: white;
+  margin-bottom: 0.5rem;
+  text-align: start;
 }
 
 .contactus-button {
