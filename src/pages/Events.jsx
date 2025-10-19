@@ -130,7 +130,7 @@ const Events = () => {
 
         <div className="section-container">
           <div className="intro-section-events">
-            <h2>2025/07/06 Poshana thinig</h2>
+            <h2>2025/07/06 GPN</h2>
             <p>On the occasion of Poson Poya Day, with the valuable support of Mrs. Palika Darmawickrama, 
               The Music Teacher of the Thudawa Child Development Centre, and the dedicated efforts of the Centre’s committee, 
               The Thudawa Child Development Centre successfully presented “Bakthi Gee 2025” together with its children
@@ -200,21 +200,21 @@ const Events = () => {
               <EventCarousel 
                     carouselId="shrine-2023"
                     images={[
-                      { src: "assets/2023 - kusalatha elidakweema/kusalatha elidakweema (1).jpeg", alt: "tharumuthudaru 2023 - 1" },
-                      { src: "assets/2023 - kusalatha elidakweema/kusalatha elidakweema (2).jpeg", alt: "tharumuthudaru 2023 - 2" },
-                      { src: "assets/2023 - kusalatha elidakweema/kusalatha elidakweema (3).jpeg", alt: "tharumuthudaru 2023 - 3" },
-                      { src: "assets/2023 - kusalatha elidakweema/kusalatha elidakweema (4).jpeg", alt: "tharumuthudaru 2023 - 4" },
-                      { src: "assets/2023 - kusalatha elidakweema/kusalatha elidakweema (5).jpeg", alt: "tharumuthudaru 2023 - 5" },
-                      { src: "assets/2023 - kusalatha elidakweema/kusalatha elidakweema (6).jpeg", alt: "tharumuthudaru 2023 - 6" },
-                      { src: "assets/2023 - kusalatha elidakweema/kusalatha elidakweema (7).jpeg", alt: "tharumuthudaru 2023 - 7" },
-                      { src: "assets/2023 - kusalatha elidakweema/kusalatha elidakweema (8).jpeg", alt: "tharumuthudaru 2023 - 8" },
-                      { src: "assets/2023 - kusalatha elidakweema/kusalatha elidakweema (9).jpeg", alt: "tharumuthudaru 2023 - 9" },
-                      { src: "assets/2023 - kusalatha elidakweema/kusalatha elidakweema (10).jpeg", alt: "tharumuthudaru 2023 - 10" },
-                      { src: "assets/2023 - kusalatha elidakweema/kusalatha elidakweema (11).jpeg", alt: "tharumuthudaru 2023 - 11" },
-                      { src: "assets/2023 - kusalatha elidakweema/kusalatha elidakweema (12).jpeg", alt: "tharumuthudaru 2023 - 12" },
+                      { src: "assets/2023 - kusalatha elidakweema/kusalatha elidakweema (1).jpeg", alt: "Skill Development - 1" },
+                      { src: "assets/2023 - kusalatha elidakweema/kusalatha elidakweema (2).jpeg", alt: "Skill Development - 2" },
+                      { src: "assets/2023 - kusalatha elidakweema/kusalatha elidakweema (3).jpeg", alt: "Skill Development - 3" },
+                      { src: "assets/2023 - kusalatha elidakweema/kusalatha elidakweema (4).jpeg", alt: "Skill Development - 4" },
+                      { src: "assets/2023 - kusalatha elidakweema/kusalatha elidakweema (5).jpeg", alt: "Skill Development - 5" },
+                      { src: "assets/2023 - kusalatha elidakweema/kusalatha elidakweema (6).jpeg", alt: "Skill Development - 6" },
+                      { src: "assets/2023 - kusalatha elidakweema/kusalatha elidakweema (7).jpeg", alt: "Skill Development - 7" },
+                      { src: "assets/2023 - kusalatha elidakweema/kusalatha elidakweema (8).jpeg", alt: "Skill Development - 8" },
+                      { src: "assets/2023 - kusalatha elidakweema/kusalatha elidakweema (9).jpeg", alt: "Skill Development - 9" },
+                      { src: "assets/2023 - kusalatha elidakweema/kusalatha elidakweema (10).jpeg", alt: "Skill Development - 10" },
+                      { src: "assets/2023 - kusalatha elidakweema/kusalatha elidakweema (11).jpeg", alt: "Skill Development - 11" },
+                      { src: "assets/2023 - kusalatha elidakweema/kusalatha elidakweema (12).jpeg", alt: "Skill Development - 12" },
                     ]}
                   />
-              <p> Will Update Soon    
+              <p> In 2023, A skill development workshop was organized at the Tudawe Child Development Cente.  
               </p>
           </div>
         </div>
