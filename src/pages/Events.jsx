@@ -112,7 +112,7 @@ const Events = () => {
                     ]}
                     />
             <p>Children of the Thudawa Child Development Centre participated in the Western Province Probation
-               Dance Competition 2025.
+               Dance Competition 2025.jk
             </p>
           </div>
         </div>
